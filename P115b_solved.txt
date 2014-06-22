@@ -1,0 +1,28 @@
+child
+parent
+great great great grand child
+great great great grand parent
+great great grand parent
+great grand parent
+grand parent
+parent
+4 cousin
+3 cousin
+2 cousin
+1 cousin
+sibling
+1 cousin removed 3
+1 cousin removed 2
+1 cousin removed 1
+1 cousin
+1 cousin removed 3
+2 cousin removed 2
+3 cousin removed 1
+4 cousin
+no relation
+no relation
+no relation
+no relation
+no relation
+no relation
+no relation

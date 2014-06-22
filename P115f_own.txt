@@ -1,0 +1,21 @@
+child
+no relation
+no relation
+parent
+no relation
+no relation
+no relation
+no relation
+sibling
+no relation
+no relation
+2 cousin
+3 cousin
+3 cousin
+sibling
+sibling
+no relation
+great great grand child
+great grand child
+no relation
+great grand child

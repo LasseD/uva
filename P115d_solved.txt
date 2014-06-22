@@ -1,0 +1,16 @@
+3 cousin
+2 cousin
+1 cousin removed 1
+no relation
+great great grand parent
+sibling
+0 cousin removed 1
+1 cousin
+0 cousin removed 1
+0 cousin removed 4
+1 cousin
+grand parent
+great great great grand parent
+3 cousin
+1 cousin
+1 cousin removed 1
