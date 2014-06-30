@@ -1,2 +1,129 @@
-P122.cpp:
+P100.java: The 3n + 1 problem
+brute force
+
+P101.java: The Blocks Problem
+brute force, simulation
+
+P102.java: Ecological Bin Packing
+reverse search
+
+P103.java: Stacking Boxes
+brute force
+
+P104.java: Arbitrage
+Floyd-Warshall
+
+P105.java: The Skyline Problem
+skyline
+
+P106.java: Fermat vs Pythagoras
+TODO
+
+P107.java: The Cat in the Hat
+quick pow
+
+P108.java: Maximum Sum
+2D max sum
+
+P109.java: SCUD Buster
+ch, ch contains, ch area
+
+P110.java: Meta-Loopless Sorts
+comparison tree computation
+
+P111.cpp
+dp, length of longest increasing subsequence, n^2 non-optimal implementation
+
+P112.cpp: Tree Summing
+dfs, tree parsing, lisp
+
+P113.java: Power of Cryptography
+binary search, biginteger, speed up binary search
+
+P114.cpp: Simulating Wizardry
+ad hoc, grid, simulation, stepping, pinball, bumper
+
+P115.cpp Climbing Trees
+Use P115x, simple tree structure, ad hoc
+
+P116.cpp: Unidirectional TSP
+tsp, dp, lexicographical backtracking
+
+P117.cpp: The Postal Worker Rings Once
+graph traversal, sssp, even degree graph trick
+
+P118.cpp: Mutant Flatworld Explorers
+simulation
+
+P119.cpp: Greedy Gift Givers
+count in map
+
+P120.cpp: Stack of Flapjacks
+array sort, greedy
+
+P121.cpp: Pipe Fitters
+circle packing, geometry
+
+P122.cpp: Trees on the level
 binary tree, tree traversal, bfs
+
+P123.cpp: Searching Quickly
+getline, split string on space, line to string, multimap
+
+P124.cpp: Following orders
+alphabet, np solution, all strings search, relationship propagation
+
+P125: Numbering Paths
+distinct path counting in graph, cycle detection
+
+P126.cpp The Errant Physicist
+polygon multiplication, getline, stringbuffer, set erase insert
+
+P127.cpp "Accordian" Patience
+ostream << debugging, ad hoc
+
+P136.java: Ugly Numbers
+Precompute
+
+P138.java: Street Numbers
+brute force
+
+P218.java: Moth Eradication
+ch
+
+P291.java: The House of Santa Claus
+string check
+
+P361.java: Cops and Robbers
+ch, ch contains point
+
+P386.java: Perfect Cubes
+reuse computations
+
+P485.java: Pascal's Triangle of Death
+Brute force
+
+P681.java: Convex Hull Finding
+ch
+
+P10002.cpp: Center of Masses
+BEST, ch, ch center of mass
+
+P10055.cpp: Hashmat the Brave Warrior
+abs
+
+P10078.java: The Art Gallery
+angle check
+
+P10173.java: Smallest Bounding Rectangle
+Ch, ch walk, ch bounding box turn
+
+P10432.java: Polygon Inside A Circle
+Area of pizza slize, area of circular segment
+
+P11236.java: Grocery store
+sum = product calculation
+
+P11626.java: Convex Hull
+ch
+
