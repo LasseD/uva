@@ -79,8 +79,23 @@ distinct path counting in graph, cycle detection
 P126.cpp The Errant Physicist
 polygon multiplication, getline, stringbuffer, set erase insert
 
-P127.cpp "Accordian" Patience
+P127.cpp: "Accordian" Patience
 ostream << debugging, ad hoc
+
+P128.cpp: Software CRC
+gets. printf width precision and prefix 0, warning about handling \r
+
+P129.cpp: Krypton Factor
+Duplicate detection in strings
+
+P130.cpp: Roman Roulette
+ad hoc, simulation
+
+P131.cpp: The Psychic Poker Player
+<< ostream on std::pair, byte mapping
+
+P132.cpp: Bumpy Objects
+Convex hull, CH, rightturn, leftturn, colinear, point above line, 
 
 P136.java: Ugly Numbers
 Precompute
