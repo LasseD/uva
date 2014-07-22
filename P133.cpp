@@ -18,25 +18,39 @@ int main() {
     // calculate:
     while(maxI > 0) {
       // Print state:
-      std::cerr << "{";
+      /*std::cerr << "{";
       for(int i = 0; i < maxI; ++i) {
 	std::cerr << " ";
 	if(i == kI)
 	  std::cerr << "(";
-	else if(i == mI)
+	if(i == mI)
 	  std::cerr << "[";
 	std::cerr << men[i];
+	if(i == mI)
+	  std::cerr << "]";
 	if(i == kI)
 	  std::cerr << ")";
-	else if(i == mI)
-	  std::cerr << "]";
       }
-      std::cerr << "}" << std::endl;
+      std::cerr << "} size " << maxI << ", mI=" << mI << " kI=" << kI << std::endl;//*/
 
       // Kill:
-      kI = (kI-(k-1)+maxI)%maxI;
-      mI = (mI+(m-1))%maxI;
-      //std::cerr << "Killing " << men[toDieI] << "@" << toDieI << " -> " << men[toReplaceI] << "@" << toReplaceI << std::endl;
+      kI = (kI-(k%maxI-1)+maxI) % maxI;
+      mI = (mI+(m%maxI-1)) % maxI;
+      /*std::cerr << "{";
+      for(int i = 0; i < maxI; ++i) {
+	std::cerr << " ";
+	if(i == kI)
+	  std::cerr << "(";
+	if(i == mI)
+	  std::cerr << "[";
+	std::cerr << men[i];
+	if(i == mI)
+	  std::cerr << "]";
+	if(i == kI)
+	  std::cerr << ")";
+      }
+      std::cerr << "} size " << maxI << ", mI=" << mI << " kI=" << kI << std::endl;//*/
+
       if(maxI != N)
 	printf(",");
       if(kI == mI) {
@@ -52,14 +66,14 @@ int main() {
 	men[j] = men[j+1];
       }
       if(mI > kI)
-	--mI;
+	mI = (mI-1+maxI)%maxI;
       --maxI;
       if(!same) {
 	for(int j = mI; j < maxI-1; ++j) {
 	  men[j] = men[j+1];
 	}
 	if(mI < kI)
-	  --kI;	
+	  kI = (kI-1+maxI)%maxI;	
 	--maxI;
       }
       if(maxI != 0)

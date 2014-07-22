@@ -73,17 +73,27 @@ getline, split string on space, line to string, multimap
 P124.cpp: Following orders
 alphabet, np solution, all strings search, relationship propagation
 
-P125: Numbering Paths
+P125.java: Numbering Paths
 distinct path counting in graph, cycle detection
 
 P126.cpp The Errant Physicist
 polygon multiplication, getline, stringbuffer, set erase insert
 
-P127.cpp "Accordian" Patience
+P127.cpp: "Accordian" Patience
 ostream << debugging, ad hoc
+
+P128.cpp: Software CRC
+Shift byte and mod rules, RSA 
+
+P129.cpp: Krypton Factor
+TODO - WEBSITE DOWN FOR SUBMISSION
+counting strings, no duplicate substrings, no aa, char* '\0' set.
 
 P136.java: Ugly Numbers
 Precompute
+
+P137.cpp:
+TODO WA
 
 P138.java: Street Numbers
 brute force
