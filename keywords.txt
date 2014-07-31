@@ -97,14 +97,29 @@ P131.cpp: The Psychic Poker Player
 P132.cpp: Bumpy Objects
 Convex hull, CH, rightturn, leftturn, colinear, point above line, 
 
+P133.cpp: The Dole Queue
+ad hoc, simulation, decimal printf 3 wide
+
+P134.cpp: Loglan-A Logical Language
+std::istringstream >> string, grammar parser, vowel, string find, npos
+
 P136.java: Ugly Numbers
 Precompute
 
-P137.cpp:
+P137.cpp: Polygons
 TODO WA
 
 P138.java: Street Numbers
 brute force
+
+P140.cpp: Bandwidth
+Compute permutations in alphabetical order, permutation handler, bandwidth, char array, reverse char lookup, max, abs, getline to string, read line as string, printf of chars, printf of ints
+
+P141.cpp: The Spot Game
+custom bitvector implementation for 2D board up to 64x64, operator[], operator<, mask bit, rotate x y
+
+P191.cpp: Intersection
+rectangle line intersection, line line intersection, colinear, rightturn
 
 P218.java: Moth Eradication
 ch
