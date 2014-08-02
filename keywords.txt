@@ -118,6 +118,9 @@ Compute permutations in alphabetical order, permutation handler, bandwidth, char
 P141.cpp: The Spot Game
 custom bitvector implementation for 2D board up to 64x64, operator[], operator<, mask bit, rotate x y
 
+P147.cpp: Dollars
+read double as 100*int, combinations of currency
+
 P151.cpp: Power Crisis
 simulation, walk in bool array
 
