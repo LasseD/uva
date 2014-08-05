@@ -181,3 +181,5 @@ sum = product calculation
 P11626.java: Convex Hull
 ch
 
+P11752.cpp: The Super Powers
+unsigned long long, overflow detection, powers, square powers
