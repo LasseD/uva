@@ -112,7 +112,9 @@ TODO WA
 P138.java: Street Numbers
 brute force
 
-<<<<<<< HEAD
+P139.cpp: Telephone Tangles
+printf string left justify, printf negative offset
+
 P140.cpp: Bandwidth
 Compute permutations in alphabetical order, permutation handler, bandwidth, char array, reverse char lookup, max, abs, getline to string, read line as string, printf of chars, printf of ints
 
@@ -124,6 +126,9 @@ operator<,<<,+,-,*,/, exact calculations, gcd, fraction calculations
 
 P144.cpp: Student Grants
 Simulation of queue
+
+P145.cpp: Gondwanaland Telecom
+sstream to tokenize string and int, constant int array defined
 
 P146.cpp: ID Codes
 next in lexicographic order
@@ -142,13 +147,6 @@ Simulation, graph walk, std::cin to std::string, parse ; : syntax
 
 P191.cpp: Intersection
 rectangle line intersection, line line intersection, colinear, rightturn
-=======
-P139.cpp: Telephone Tangles
-printf string left justify, printf negative offset
-
-P145.cpp: Gondwanaland Telecom
-sstream to tokenize string and int, constant int array defined
->>>>>>> 4b043f0bb929b6e1b627b2fb553e23844d8ff86e
 
 P218.java: Moth Eradication
 ch
