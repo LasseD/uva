@@ -104,6 +104,9 @@ printf string left justify, printf negative offset
 P145.cpp: Gondwanaland Telecom
 sstream to tokenize string and int, constant int array defined
 
+P148.cpp: Anagram Checker
+sstream(string) -> strings, alphabet counting, algorithm sort
+
 P218.java: Moth Eradication
 ch
 
