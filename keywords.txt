@@ -107,6 +107,9 @@ sstream to tokenize string and int, constant int array defined
 P148.cpp: Anagram Checker
 sstream(string) -> strings, alphabet counting, algorithm sort
 
+P156.cpp: Ananagrams
+apply tolower, sort letters in string
+
 P218.java: Moth Eradication
 ch
 
