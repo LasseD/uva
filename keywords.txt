@@ -92,7 +92,7 @@ P130.cpp: Roman Roulette
 ad hoc, simulation
 
 P131.cpp: The Psychic Poker Player
-<< ostream on std::pair, byte mapping
+<< ostream on std::pair, byte mapping, card typedefs, read cards
 
 P132.cpp: Bumpy Objects
 Convex hull, CH, rightturn, leftturn, colinear, point above line, 
@@ -141,6 +141,9 @@ simulation, walk in bool array
 
 P160.cpp: Factors and Factorials
 factorial prime factorization, aligned printf, primes up to 100, define 
+
+P170.cpp: Clock Patience
+suit -> int mapping, simulation, card game, read cards
 
 P173.cpp: Network Wars
 Simulation, graph walk, std::cin to std::string, parse ; : syntax
