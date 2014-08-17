@@ -136,6 +136,9 @@ next in lexicographic order
 P147.cpp: Dollars
 read double as 100*int, combinations of currency
 
+P148.cpp: Anagram Checker
+sstream(string) -> strings, alphabet counting, algorithm sort
+
 P151.cpp: Power Crisis
 simulation, walk in bool array
 
