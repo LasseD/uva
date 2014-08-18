@@ -83,16 +83,30 @@ P127.cpp: "Accordian" Patience
 ostream << debugging, ad hoc
 
 P128.cpp: Software CRC
-Shift byte and mod rules, RSA 
+gets. printf width precision and prefix 0, warning about handling, Shift byte and mod rules, RSA 
 
 P129.cpp: Krypton Factor
-TODO - WEBSITE DOWN FOR SUBMISSION
-counting strings, no duplicate substrings, no aa, char* '\0' set.
+Duplicate detection in strings, counting strings, no duplicate substrings, no aa, char* '\0' set.
+
+P130.cpp: Roman Roulette
+ad hoc, simulation
+
+P131.cpp: The Psychic Poker Player
+<< ostream on std::pair, byte mapping, card typedefs, read cards
+
+P132.cpp: Bumpy Objects
+Convex hull, CH, rightturn, leftturn, colinear, point above line, 
+
+P133.cpp: The Dole Queue
+ad hoc, simulation, decimal printf 3 wide
+
+P134.cpp: Loglan-A Logical Language
+std::istringstream >> string, grammar parser, vowel, string find, npos
 
 P136.java: Ugly Numbers
 Precompute
 
-P137.cpp:
+P137.cpp: Polygons
 TODO WA
 
 P138.java: Street Numbers
@@ -101,14 +115,47 @@ brute force
 P139.cpp: Telephone Tangles
 printf string left justify, printf negative offset
 
+P140.cpp: Bandwidth
+Compute permutations in alphabetical order, permutation handler, bandwidth, char array, reverse char lookup, max, abs, getline to string, read line as string, printf of chars, printf of ints
+
+P141.cpp: The Spot Game
+custom bitvector implementation for 2D board up to 64x64, operator[], operator<, mask bit, rotate x y
+
+P143.cpp: Orchard Trees
+operator<,<<,+,-,*,/, exact calculations, gcd, fraction calculations
+
+P144.cpp: Student Grants
+Simulation of queue
+
 P145.cpp: Gondwanaland Telecom
 sstream to tokenize string and int, constant int array defined
+
+P146.cpp: ID Codes
+next in lexicographic order
+
+P147.cpp: Dollars
+read double as 100*int, combinations of currency
 
 P148.cpp: Anagram Checker
 sstream(string) -> strings, alphabet counting, algorithm sort
 
+P151.cpp: Power Crisis
+simulation, walk in bool array
+
 P156.cpp: Ananagrams
 apply tolower, sort letters in string
+
+P160.cpp: Factors and Factorials
+factorial prime factorization, aligned printf, primes up to 100, define 
+
+P170.cpp: Clock Patience
+suit -> int mapping, simulation, card game, read cards
+
+P173.cpp: Network Wars
+Simulation, graph walk, std::cin to std::string, parse ; : syntax
+
+P191.cpp: Intersection
+rectangle line intersection, line line intersection, colinear, rightturn
 
 P218.java: Moth Eradication
 ch
@@ -149,3 +196,5 @@ sum = product calculation
 P11626.java: Convex Hull
 ch
 
+P11752.cpp: The Super Powers
+unsigned long long, overflow detection, powers, square powers
