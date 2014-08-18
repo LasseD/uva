@@ -154,6 +154,9 @@ Simulation, graph walk, std::cin to std::string, parse ; : syntax
 P191.cpp: Intersection
 rectangle line intersection, line line intersection, colinear, rightturn
 
+P200.cpp: Rare Order
+topo sort, extending partial order to total order, lex compare
+
 P218.java: Moth Eradication
 ch
 
