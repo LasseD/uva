@@ -139,8 +139,14 @@ read double as 100*int, combinations of currency
 P148.cpp: Anagram Checker
 sstream(string) -> strings, alphabet counting, algorithm sort
 
+P149 Forests
+<< ostream on struct, angle using asin, interval scanning, interval checking
+
 P151.cpp: Power Crisis
 simulation, walk in bool array
+
+P156.cpp: Ananagrams
+apply tolower, sort letters in string
 
 P160.cpp: Factors and Factorials
 factorial prime factorization, aligned printf, primes up to 100, define 
@@ -150,6 +156,9 @@ suit -> int mapping, simulation, card game, read cards
 
 P173.cpp: Network Wars
 Simulation, graph walk, std::cin to std::string, parse ; : syntax
+
+P181.cpp: Hearts
+Switch case default
 
 P191.cpp: Intersection
 rectangle line intersection, line line intersection, colinear, rightturn
