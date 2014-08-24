@@ -151,6 +151,9 @@ apply tolower, sort letters in string
 P160.cpp: Factors and Factorials
 factorial prime factorization, aligned printf, primes up to 100, define 
 
+P165.cpp: Stamps
+Combinations of stamps, exponential time algorithm
+
 P170.cpp: Clock Patience
 suit -> int mapping, simulation, card game, read cards
 
