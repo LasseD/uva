@@ -163,6 +163,9 @@ Simulation, graph walk, std::cin to std::string, parse ; : syntax
 P181.cpp: Hearts
 Switch case default
 
+P190.cpp: Circle Through Tree Points
+tangents, intersection between lines - not line segments, nan avoidance, print char, circle equations
+
 P191.cpp: Intersection
 rectangle line intersection, line line intersection, colinear, rightturn
 
