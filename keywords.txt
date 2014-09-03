@@ -211,6 +211,9 @@ Area of pizza slize, area of circular segment
 P11236.java: Grocery store
 sum = product calculation
 
+P11332.cpp: Summing Digits
+%= 10 and /= 10 on int
+
 P11626.java: Convex Hull
 ch
 
