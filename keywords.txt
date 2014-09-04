@@ -175,6 +175,9 @@ Simulation, graph walk, std::cin to std::string, parse ; : syntax
 P181.cpp: Hearts
 Switch case default
 
+P184.cpp: Laser Lines
+colinear points, << ostream std::pair<int,int>, std::sort, allocate lookup arrays
+
 P191.cpp: Intersection
 rectangle line intersection, line line intersection, colinear, rightturn
 
