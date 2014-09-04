@@ -151,6 +151,9 @@ dist in 3D, quick sqrt lookup
 P153.cpp: Permalex
 factorial, prime factorization of factorials like 160 but as a function, factoral with division, count permutations, compute lexicographical order
 
+P154.cpp: Recycling
+ad hoc, algorithm sort on vector, simple comparison.
+
 P156.cpp: Ananagrams
 apply tolower, sort letters in string
 
