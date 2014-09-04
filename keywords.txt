@@ -154,6 +154,9 @@ factorial, prime factorization of factorials like 160 but as a function, factora
 P154.cpp: Recycling
 ad hoc, algorithm sort on vector, simple comparison.
 
+P155.cpp: All Squares
+ad hoc.
+
 P156.cpp: Ananagrams
 apply tolower, sort letters in string
 
