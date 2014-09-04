@@ -157,6 +157,9 @@ apply tolower, sort letters in string
 P160.cpp: Factors and Factorials
 factorial prime factorization, aligned printf, primes up to 100, define 
 
+P162.cpp: Beggar My Neighbour
+card game simulation. typedef pair -> SUIT VAL
+
 P170.cpp: Clock Patience
 suit -> int mapping, simulation, card game, read cards
 
