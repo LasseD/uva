@@ -151,14 +151,26 @@ dist in 3D, quick sqrt lookup
 P153.cpp: Permalex
 factorial, prime factorization of factorials like 160 but as a function, factoral with division, count permutations, compute lexicographical order
 
+P154.cpp: Recycling
+ad hoc, algorithm sort on vector, simple comparison.
+
+P155.cpp: All Squares
+ad hoc.
+
 P156.cpp: Ananagrams
 apply tolower, sort letters in string
 
 P160.cpp: Factors and Factorials
 factorial prime factorization, aligned printf, primes up to 100, define 
 
+P162.cpp: Beggar My Neighbour
+card game simulation. typedef pair -> SUIT VAL
+
 P165.cpp: Stamps
 Combinations of stamps, exponential time algorithm
+
+P167.cpp: The Sultan's Successors
+chess board queen cover, easy permutation handler usage of size 8, print chess board
 
 P170.cpp: Clock Patience
 suit -> int mapping, simulation, card game, read cards
@@ -168,6 +180,9 @@ Simulation, graph walk, std::cin to std::string, parse ; : syntax
 
 P181.cpp: Hearts
 Switch case default
+
+P184.cpp: Laser Lines
+colinear points, << ostream std::pair<int,int>, std::sort, allocate lookup arrays
 
 P190.cpp: Circle Through Tree Points
 tangents, intersection between lines - not line segments, nan avoidance, print char, circle equations
