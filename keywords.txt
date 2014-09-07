@@ -184,6 +184,9 @@ topo sort, extending partial order to total order, lex compare
 P218.java: Moth Eradication
 ch
 
+P231.cpp: Testing the CATCHER
+longestIncreasingSubsequence, Longest Increasing Subsequence
+
 P291.java: The House of Santa Claus
 string check
 

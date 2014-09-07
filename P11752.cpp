@@ -24,8 +24,6 @@ int main() {
   ll llMax = 0;
   --llMax;
   const ll lMax =          0xFFFFFFFF;
-  //const ll max = ((ll)0xFFFF)*0xFFFF*0xFFFF*0xFFFF;
-  //const ll sqrtMax = ((ll)0xFFFF)*0xFFFF;
 
   std::set<ll> sp;
   sp.insert(1);
@@ -43,11 +41,5 @@ int main() {
   for(std::set<ll>::const_iterator it = sp.begin(); it != sp.end(); ++it) {
     std::cout << *it << std::endl;
   }//*/ 
-  /*
-  std::cerr << "TOP of " << sp.size() << std::endl;  
-  std::cerr << *sp.rbegin() << std::endl;
-  std::cerr << "MAXES:" << std::endl;  
-  std::cerr << max << std::endl;
-  std::cerr << llMax << std::endl;//*/
   return 0;
 }
