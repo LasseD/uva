@@ -232,6 +232,9 @@ Ch, ch walk, ch bounding box turn
 P10432.java: Polygon Inside A Circle
 Area of pizza slize, area of circular segment
 
+P11069.cpp: A Graph Problem
+sequence from all maximal independent sets in flat graph
+
 P11236.java: Grocery store
 sum = product calculation
 
