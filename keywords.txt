@@ -244,6 +244,9 @@ sum = product calculation
 P11332.cpp: Summing Digits
 %= 10 and /= 10 on int
 
+P11547.cpp: Automatic Answer
+simple calculation
+
 P11626.java: Convex Hull
 ch
 
