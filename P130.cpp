@@ -15,16 +15,24 @@ int main() {
     }
     // calculate:
     while(maxI > 0) {
+      /*
+      for(int j = 0; j <= maxI; ++j) {
+	std::cerr << " ";
+	if(j == i) 
+	  std::cerr << "(";
+	std::cerr << men[j];
+	if(j == i) 
+	  std::cerr << ")";
+      }
+      std::cerr << std::endl;//*/
       // Kill:
       int toDieI = (i + k)%(1+maxI);
       // Walk to replacement:
       int toReplaceI = (toDieI+1)%(1+maxI);
-      for(int j = 0; j < k-1; ++j) {
-	toReplaceI++;
+      for(int j = 1; j < k; ++j) {
+	toReplaceI = (toReplaceI+1)%(1+maxI);
 	if(toReplaceI == toDieI)
-	  ++toReplaceI;
-	if(toReplaceI == maxI+1)
-	  toReplaceI = 0;
+	  toReplaceI = (toReplaceI+1)%(1+maxI);
       }
       //std::cerr << "Killing " << men[toDieI] << "@" << toDieI << " -> " << men[toReplaceI] << "@" << toReplaceI << std::endl;
       // Replace dead guy:

@@ -166,6 +166,9 @@ factorial prime factorization, aligned printf, primes up to 100, define
 P162.cpp: Beggar My Neighbour
 card game simulation. typedef pair -> SUIT VAL
 
+P165.cpp: Stamps
+Combinations of stamps, exponential time algorithm
+
 P167.cpp: The Sultan's Successors
 chess board queen cover, easy permutation handler usage of size 8, print chess board
 
@@ -181,11 +184,23 @@ Switch case default
 P184.cpp: Laser Lines
 colinear points, << ostream std::pair<int,int>, std::sort, allocate lookup arrays
 
+P190.cpp: Circle Through Tree Points
+tangents, intersection between lines - not line segments, nan avoidance, print char, circle equations
+
 P191.cpp: Intersection
 rectangle line intersection, line line intersection, colinear, rightturn
 
+P195.cpp Anagram
+Compute permutations in alphabetical order, permutation handler, std::sort with custom comparison
+
+P200.cpp: Rare Order
+topo sort, extending partial order to total order, lex compare
+
 P218.java: Moth Eradication
 ch
+
+P231.cpp: Testing the CATCHER
+longestIncreasingSubsequence, Longest Increasing Subsequence
 
 P291.java: The House of Santa Claus
 string check
@@ -219,6 +234,9 @@ Area of pizza slize, area of circular segment
 
 P11236.java: Grocery store
 sum = product calculation
+
+P11332.cpp: Summing Digits
+%= 10 and /= 10 on int
 
 P11547.cpp: Automatic Answer
 simple calculation
