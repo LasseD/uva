@@ -217,6 +217,9 @@ reuse computations
 P485.java: Pascal's Triangle of Death
 Brute force
 
+P490.cpp: Rotating Sequences
+get strings out of a matrix
+
 P681.java: Convex Hull Finding
 ch
 
