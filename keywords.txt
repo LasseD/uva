@@ -214,6 +214,9 @@ ch, ch contains point
 P386.java: Perfect Cubes
 reuse computations
 
+P439.cpp: Knight Moves
+Chess board knight move buildup
+
 P485.java: Pascal's Triangle of Death
 Brute force
 
@@ -237,6 +240,9 @@ angle check
 
 P10173.java: Smallest Bounding Rectangle
 Ch, ch walk, ch bounding box turn
+
+P10282.cpp: Babelfish
+std::map<std::string,std::string>, quick parse strings
 
 P10432.java: Polygon Inside A Circle
 Area of pizza slize, area of circular segment
