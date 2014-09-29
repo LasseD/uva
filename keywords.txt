@@ -220,6 +220,9 @@ Brute force
 P490.cpp: Rotating Sequences
 get strings out of a matrix
 
+P674.cpp: Coin Change
+Copy of P147 Dollars, atoi
+
 P681.java: Convex Hull Finding
 ch
 
