@@ -223,6 +223,9 @@ Chess board knight move buildup
 P485.java: Pascal's Triangle of Death
 Brute force
 
+P483.cpp: Word Scramble
+string parse, letter swapping
+
 P490.cpp: Rotating Sequences
 get strings out of a matrix
 
