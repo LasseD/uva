@@ -205,6 +205,9 @@ ch
 P231.cpp: Testing the CATCHER
 longestIncreasingSubsequence, Longest Increasing Subsequence
 
+P280.cpp: Vertex
+Graph unreachable, adjacency lists
+
 P291.java: The House of Santa Claus
 string check
 
@@ -261,6 +264,9 @@ P11332.cpp: Summing Digits
 
 P11547.cpp: Automatic Answer
 simple calculation
+
+P11608.cpp: No Problem
+Simple sum
 
 P11626.java: Convex Hull
 ch
