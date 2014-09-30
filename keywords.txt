@@ -241,6 +241,9 @@ Trivial score counting in string
 P10002.cpp: Center of Masses
 BEST, ch, ch center of mass
 
+P10041.cpp: Vito's Damily
+Trivial array sort, stream for sum
+
 P10055.cpp: Hashmat the Brave Warrior
 abs
 
@@ -267,6 +270,9 @@ sum = product calculation
 
 P11332.cpp: Summing Digits
 %= 10 and /= 10 on int
+
+P11389.cpp: The Bus Driver Problem
+Trivial sort twice, once with negative integers for rsort
 
 P11547.cpp: Automatic Answer
 simple calculation
