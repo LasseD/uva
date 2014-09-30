@@ -235,6 +235,9 @@ Copy of P147 Dollars, atoi
 P681.java: Convex Hull Finding
 ch
 
+P1585.cpp: Score
+Trivial score counting in string
+
 P10002.cpp: Center of Masses
 BEST, ch, ch center of mass
 
