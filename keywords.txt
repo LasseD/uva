@@ -256,6 +256,9 @@ Ch, ch walk, ch bounding box turn
 P10282.cpp: Babelfish
 std::map<std::string,std::string>, quick parse strings
 
+P10303.java: How Many Trees?
+Count types of binary trees, BigInteger
+
 P10432.java: Polygon Inside A Circle
 Area of pizza slize, area of circular segment
 
