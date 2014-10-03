@@ -285,3 +285,6 @@ ch
 
 P11752.cpp: The Super Powers
 unsigned long long, overflow detection, powers, square powers
+
+P12100.cpp: Printer Queue
+deque, std::sort on int, printer job simulation with priorities.
