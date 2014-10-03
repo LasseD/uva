@@ -250,7 +250,7 @@ abs
 P10078.java: The Art Gallery
 angle check
 
-P10098.cpp: Generatirn Fast
+P10098.cpp: Generating Fast, Sorted Permutation
 Copy of P195. Permutations in alphabetical (not lex) order, permutation handler,all permutations of strings
 
 P10173.java: Smallest Bounding Rectangle
@@ -282,6 +282,9 @@ P11332.cpp: Summing Digits
 
 P11389.cpp: The Bus Driver Problem
 Trivial sort twice, once with negative integers for rsort
+
+P11503.cpp: Virtual Friends
+Circle combine in social networks
 
 P11547.cpp: Automatic Answer
 simple calculation
