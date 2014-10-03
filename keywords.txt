@@ -250,6 +250,9 @@ abs
 P10078.java: The Art Gallery
 angle check
 
+P10098.cpp: Generatirn Fast
+Copy of P195. Permutations in alphabetical (not lex) order, permutation handler,all permutations of strings
+
 P10173.java: Smallest Bounding Rectangle
 Ch, ch walk, ch bounding box turn
 
