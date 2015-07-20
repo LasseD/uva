@@ -250,6 +250,9 @@ abs
 P10078.java: The Art Gallery
 angle check
 
+P10137.cpp: The Trip (Skiena)
+read and write ints with decimal place
+
 P10173.java: Smallest Bounding Rectangle
 Ch, ch walk, ch bounding box turn
 
