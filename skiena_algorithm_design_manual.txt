@@ -1,0 +1,64 @@
+CHAPTER 1: Introduction to Algorithm Design
+-------------------------------------------
+Basic intro.
+
+Programming Challenges:
+1-1. The 3n + 1 Problem - Programming Challenges 110101, UVA Judge 100. OK
+1-2. The Trip - Programming Challenges 110103, UVA Judge 10137. 
+1-3. Australian Voting - Programming Challenges 110108, UVA Judge 10142.
+
+CHAPTER 2: Algorithm Analysis
+-----------------------------
+O(...) = Upper bound
+OMEGA(...) = Lower bound
+Ø(...) = cn*tight bound
+
+n! >> 2^n
+
+Interview Problems
+2-43. 
+Given S, |S|=n. Pisk S', |S'|=k
+Problem: Fairly choose S'
+Solution: Like randomized quick-sort: Choose first number at random, swap.
+Single-sweep solution: Walk and pick with probability k/n
+If n is unknown: First pick all first k numbers, then random swap at each new number.
+
+2-44. SKIP: Ramdom failure at duplication server.
+
+2-45. SKIP: Expected assignment to tmp in normal min-find.
+
+2-46. 
+Problem: You have a 100-story building and a couple of marbles. You must identify the
+lowest floor for which a marble will break if you drop it from this floor. 
+- How fast can you find this floor if you are given an infinite supply of marbles? Binary search.
+- What if you have only two marbles? First exponential search, then linear in last frame.
+
+2-47. Old scale problem.
+
+2-48. Codewars scale problem with 8 balls and a "balance scale".
+
+2-49. SKIP Count ways to merge a set with 100 elements into one.
+
+2-50. SKIP Generate all Ramanujam numbers.
+
+2-51.
+6 pirates. $300
+Procedure: The senior pirate proposes a way to divide the money. Then the pirates vote. If the senior pirate gets at least half the votes he wins, and that division remains. If he doesn't, he is killed and then the next senior-most pirate gets a chance to do the division. 
+Problem: Now you have to tell what will happen and why (i.e., how many pirates survive and how the division is done)? All the pirates are intelligent and the first priority is to stay alive and the next priority is to get as much money as possible.
+Solution:
+Assume 1 pirate: Get all :) Results: $300
+Assume 2 pirates: First gets all because his vote causes him to win. Results: $300 $0
+Assume 3 pirates: Must make pirate 3 happy. Can give that pirat $1 for this. Result: $299, $0, $1
+Assume 4 pirates: Pirate 3 can be bought by $1, so result is: $299, $0, $1, $0
+Assume 5 pirates: Pirate 3 and 4 are bought by $1, so result is: $298, $0, $1, $1
+Assume 6 pirates: Pirate 3 and 4 are bought by $1, so result is: $298, $0, $1, $1, $0
+
+2-52.
+Problem: Reconsider the pirate problem above, where only one indivisible dollar is to be divided. Who gets the dollar and how many are killed?
+Solution: First pirate gives dollar to second senior member, lives, doesn't get money. Can't get money anyway.
+
+Programming Challenges
+2-1. Primary Arithmetic - Programming Challenges 110501, UVA Judge 10035.
+2-2. A Multiplication Game - Programming Challenges 110505, UVA Judge 847.
+2-3. Light, More Light - Programming Challenges 110701, UVA Judge 10110.
+
