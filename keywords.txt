@@ -241,6 +241,9 @@ Trivial score counting in string
 P10002.cpp: Center of Masses
 BEST, ch, ch center of mass
 
+P10035.cpp: Primary Arithmetic
+Trivial carry counting
+
 P10041.cpp: Vito's Damily
 Trivial array sort, stream for sum
 
