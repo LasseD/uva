@@ -4,8 +4,8 @@ Basic intro.
 
 Programming Challenges:
 1-1. The 3n + 1 Problem - Programming Challenges 110101, UVA Judge 100. OK
-1-2. The Trip - Programming Challenges 110103, UVA Judge 10137. 
-1-3. Australian Voting - Programming Challenges 110108, UVA Judge 10142.
+1-2. The Trip - Programming Challenges 110103, UVA Judge 10137. OK 
+1-3. Australian Voting - Programming Challenges 110108, UVA Judge 10142. OK
 
 CHAPTER 2: Algorithm Analysis
 -----------------------------
@@ -58,7 +58,122 @@ Problem: Reconsider the pirate problem above, where only one indivisible dollar 
 Solution: First pirate gives dollar to second senior member, lives, doesn't get money. Can't get money anyway.
 
 Programming Challenges
-2-1. Primary Arithmetic - Programming Challenges 110501, UVA Judge 10035.
-2-2. A Multiplication Game - Programming Challenges 110505, UVA Judge 847.
-2-3. Light, More Light - Programming Challenges 110701, UVA Judge 10110.
+2-1. Primary Arithmetic - Programming Challenges 110501, UVA Judge 10035. OK
+2-2. A Multiplication Game - Programming Challenges 110505, UVA Judge 847. 
+2-3. Light, More Light - Programming Challenges 110701, UVA Judge 10110. OK
 
+CHAPTER 3: Data Structures
+--------------------------
+Hard interview questions:
+Problem: Given unordered array X={X1...Xn} of n integers. 
+Find the array M={M1...Mn}, |M|=n where Mi = X1*X2*...Xi-1*Xi+1...Xn. You may not use division.
+Solution: Balanced binary tree with all sub-products. Use 2*logn for each number.
+
+Programming challenges:
+3-1. "Jolly Jumpers" - Programming Challenges 110201, UVA Judge 10038. OK
+3-2. "Crypt Kicker" - Programming Challenges 110204, UVA Judge 843.
+3-3. "Where's Waldorf?" - Programming Challenges 110302, UVA Judge 10010.
+3-4. "Crypt Kicker II" - Programming Challenges 110304, UVA Judge 850.
+
+CHAPTER 4: Sorting and Searching
+--------------------------------
+Heap: insert, extract-min. (Implement with bubble-up, bubble-down)
+One-sided binary search = exponential search.
+
+Hard interview problems:
+4-46. [6] You are given 12 coins. One of them is heavier or lighter than the rest. Identify
+this coin in just three weighings.
+PAN SCALE!
+1: Weight 1-4 VS 5-8: 
+- Same => in last portion. Simple. Weight against control group.
+- Not same => in either 1234 og 5678. Weight 23_56_ vs _4_7XX. 
+-- Same => 1 or 8.
+-- Both same: 237. Weight 27 vs XX: Same => 3, shift => 7, else 2.
+-- Change: 456. Weight 45 vs XX: Same => 6, shift => 4, else 5.
+
+Programming Challenges
+4-1. "Vito's Family" - Programming Challenges 110401, UVA Judge 10041. OK
+4-2. "Stacks of Flapjacks" - Programming Challenges 110402, UVA Judge 120. OK
+4-3. "Bridge" - Programming Challenges 110403, UVA Judge 10037.
+4-4. "ShoeMaker's Problem" - Programming Challenges 110405, UVA Judge 10026.
+4-5. "ShellSort" - Programming Challenges 110407, UVA Judge 10152.
+
+CHAPTER 5: Graph Traversal
+--------------------------
+Adjacency matrix vs Adjacency lists.
+BFS: Use dequeue for discovered nodes.
+DFS: Uses a stack.
+Topo Sort a DAG: DFS
+
+Programming Challenges
+5-2. "Playing with Wheels" - Programming Challenges 110902, UVA Judge 10067.
+5-3. "The Tourist Guide" - Programming Challenges 110903, UVA Judge 10099.
+5-4. "Edit Step Ladders" - Programming Challenges 110905, UVA Judge 10029.
+5-5. "Tower of Cubes" - Programming Challenges 110906, UVA Judge 10051.
+
+CHAPTER 6: Weighted Graph Algorithms
+------------------------------------
+Prim's MST algorithm: Greedy local best include.
+Kruskal's MST alg. (good on sparse graphs): Add min-edges iteratively.
+Union-Find: Structure: Tree with nodes having parent+size of sub-tree (for balancing in union-operation).
+Dijkstra's SP: Include min and relax all adjacent.
+Floyd-Warshall's all-pair SP: Adjacency matrix, iterate on edge count.
+
+Programming Challenges
+6-1. "Freckles" - Programming Challenges 111001, UVA Judge 10034.
+6-2. "Necklace" - Programming Challenges 111002, UVA Judge 10054.
+6-3. "Railroads" - Programming Challenges 111004, UVA Judge 10039.
+6-4. "Tourist Guide" - Programming Challenges 111006, UVA Judge 10199.
+6-5. "The Grand Dinner" - Programming Challenges 111007, UVA Judge 10249.
+
+CHAPTER 7: Combinatorial Search and Heuristic Methods
+-----------------------------------------------------
+Backtrack: Enumerate all paths/combinations, etc. (DFS in the backtrack tree). Extend partial solution.
+Simulated Annealing: Jump out of trap when hot (with high probability).
+
+Programming Challenges
+7-1. "Little Bishops" - Programming Challenges 110801, UVA Judge 861.
+7-2. "15-Puzzle Problem" - Programming Challenges 110802, UVA Judge 10181.
+7-3. "Tug of War" - Programming Challenges 110805, UVA Judge 10032.
+7-4. "Color Hash" - Programming Challenges 110807, UVA Judge 704.
+
+CHAPTER 8: Dynamic Programming
+------------------------------
+Needs element ordering.
+
+Programming Challenges
+8-1. "Is Bigger Smarter?" - Programming Challenges 111101, UVA Judge 10131.
+8-2. "Weights and Measures" - Programming Challenges 111103, UVA Judge 10154.
+8-3. "Unidirectional TSP" - Programming Challenges 111104, UVA Judge 116.
+8-4. "Cutting Sticks" - Programming Challenges 111105, UVA Judge 10003.
+8-5. "Ferry Loading" - Programming Challenges 111106, UVA Judge 10261.
+
+CHAPTER 9: Intractable Problems and Approximation Algorithms
+------------------------------------------------------------
+TODO!
++ ALL EXERCICES!
+
+
+
+Programming Challenges
+Geometry
+9-1. "The Monocycle" - Programming Challenges 111202, UVA Judge 10047.
+9-2. "Dog and Gopher" - Programming Challenges 10310, UVA Judge 111301.
+9-3. "Chocolate Chip Cookies" - Programming Challenges 111304, UVA Judge 10136.
+9-4. "Birthday Cake" - Programming Challenges 111305, UVA Judge 10167.
+Computational Geometry
+9-5. "Closest Pair Problem" - Programming Challenges 111402, UVA Judge 10245.
+9-6. "Chainsaw Massacre" - Programming Challenges 111403, UVA Judge 10043.
+9-7. "Hotter Colder" - Programming Challenges 111404, UVA Judge 10084.
+9-8. "Useless Tile Packers" - Programming Challenges 111405, UVA Judge 10065.
+
+CHAPTER 10: How to design algorithms
+------------------------------------
+Nice list of how to approach a problem.
+
+CHAPTER 11: A Catalog of Algorithmic Problems
+---------------------------------------------
+Into to rest.
+
+CHAPTER 12: Data Structures
+---------------------------
