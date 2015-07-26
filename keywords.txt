@@ -244,6 +244,9 @@ BEST, ch, ch center of mass
 P10035.cpp: Primary Arithmetic (Skiena)
 Trivial carry counting
 
+P10037.cpp: Bridge (Skiena)
+Pass the torch, sort
+
 P10038.cpp: Jolly Jumpers (Skiena)
 Sort array
 
