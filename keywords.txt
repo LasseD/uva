@@ -241,6 +241,15 @@ Trivial score counting in string
 P10002.cpp: Center of Masses
 BEST, ch, ch center of mass
 
+P10035.cpp: Primary Arithmetic (Skiena)
+Trivial carry counting
+
+P10037.cpp: Bridge (Skiena)
+Pass the torch, sort
+
+P10038.cpp: Jolly Jumpers (Skiena)
+Sort array
+
 P10041.cpp: Vito's Damily
 Trivial array sort, stream for sum
 
@@ -250,8 +259,19 @@ abs
 P10078.java: The Art Gallery
 angle check
 
+<<<<<<< HEAD
 P10098.cpp: Generating Fast, Sorted Permutation
 Copy of P195. Permutations in alphabetical (not lex) order, permutation handler,all permutations of strings
+=======
+P10110.cpp: Light, more light (Skiena)
+Prime factorization, count divisors
+
+P10137.cpp: The Trip (Skiena)
+read and write ints with decimal place
+
+P10142.cpp: Australian Voting System (Skiena)
+Simulation
+>>>>>>> 3c479cb9e7434aa7ceead377730d51423051ee7a
 
 P10173.java: Smallest Bounding Rectangle
 Ch, ch walk, ch bounding box turn
