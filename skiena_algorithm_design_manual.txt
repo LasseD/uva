@@ -71,7 +71,7 @@ Solution: Balanced binary tree with all sub-products. Use 2*logn for each number
 
 Programming challenges:
 3-1. "Jolly Jumpers" - Programming Challenges 110201, UVA Judge 10038. OK
-3-2. "Crypt Kicker" - Programming Challenges 110204, UVA Judge 843.
+3-2. "Crypt Kicker" - Programming Challenges 110204, UVA Judge 843. OK
 3-3. "Where's Waldorf?" - Programming Challenges 110302, UVA Judge 10010.
 3-4. "Crypt Kicker II" - Programming Challenges 110304, UVA Judge 850.
 
