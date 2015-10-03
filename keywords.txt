@@ -244,6 +244,9 @@ Trivial score counting in string
 P10002.cpp: Center of Masses
 BEST, ch, ch center of mass
 
+P10008.cpp: What's Cryptanalysis?
+sort pair, isprint for proper printable char detection
+
 P10035.cpp: Primary Arithmetic (Skiena)
 Trivial carry counting
 
