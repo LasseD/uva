@@ -235,6 +235,9 @@ Copy of P147 Dollars, atoi
 P681.java: Convex Hull Finding
 ch
 
+P843.cpp: Crypt Kicker
+Read lines, parse to int, parse to string, parse to tokens, substitution cipher.
+
 P1585.cpp: Score
 Trivial score counting in string
 
@@ -259,10 +262,9 @@ abs
 P10078.java: The Art Gallery
 angle check
 
-<<<<<<< HEAD
 P10098.cpp: Generating Fast, Sorted Permutation
 Copy of P195. Permutations in alphabetical (not lex) order, permutation handler,all permutations of strings
-=======
+
 P10110.cpp: Light, more light (Skiena)
 Prime factorization, count divisors
 
@@ -271,7 +273,6 @@ read and write ints with decimal place
 
 P10142.cpp: Australian Voting System (Skiena)
 Simulation
->>>>>>> 3c479cb9e7434aa7ceead377730d51423051ee7a
 
 P10173.java: Smallest Bounding Rectangle
 Ch, ch walk, ch bounding box turn
@@ -290,6 +291,9 @@ Maximum subarray sum, Kadane's algorithm, 1D
 
 P10783.cpp: Odd Sum
 Trivial number summing
+
+P10812.cpp: Beat the Spread!
+given s,d, find a,b where a+b=s, a-b=d
 
 P11069.cpp: A Graph Problem
 sequence from all maximal independent sets in flat graph

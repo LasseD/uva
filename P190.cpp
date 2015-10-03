@@ -25,8 +25,8 @@ double dist(Point p1, Point p2) {
   return std::sqrt(distSq(p1, p2));
 }
 
-// Returns 1 if the lines intersect, otherwise 0. In addition, if the lines 
-// intersect the intersection point may be stored in the floats i_x and i.Y.
+// Returns true if the lines intersect. 
+// If the lines intersect, the intersection point may be stored in i.
 bool getLineIntersection(Point p0, Point p1, Point p2, Point p3, Point &i) {
   Point s1, s2;
   s1.X = p1.X - p0.X;     
