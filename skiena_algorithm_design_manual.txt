@@ -107,7 +107,7 @@ Topo Sort a DAG: DFS
 
 Programming Challenges
 5-2. "Playing with Wheels" - Programming Challenges 110902, UVA Judge 10067.
-5-3. "The Tourist Guide" - Programming Challenges 110903, UVA Judge 10099.
+5-3. "The Tourist Guide" - Programming Challenges 110903, UVA Judge 10099. OK
 5-4. "Edit Step Ladders" - Programming Challenges 110905, UVA Judge 10029.
 5-5. "Tower of Cubes" - Programming Challenges 110906, UVA Judge 10051.
 

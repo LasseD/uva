@@ -271,6 +271,9 @@ angle check
 P10098.cpp: Generating Fast, Sorted Permutation
 Copy of P195. Permutations in alphabetical (not lex) order, permutation handler,all permutations of strings
 
+P10099.cpp: The Tourist Guide (Skiena)
+Modified Dijkstra for Widest path problem / the bottleneck shortest path problem. Dijkstra implementation can be re-used for other purposes.
+
 P10110.cpp: Light, more light (Skiena)
 Prime factorization, count divisors
 
