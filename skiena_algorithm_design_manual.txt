@@ -73,7 +73,7 @@ Programming challenges:
 3-1. "Jolly Jumpers" - Programming Challenges 110201, UVA Judge 10038. OK
 3-2. "Crypt Kicker" - Programming Challenges 110204, UVA Judge 843. OK
 3-3. "Where's Waldorf?" - Programming Challenges 110302, UVA Judge 10010.
-3-4. "Crypt Kicker II" - Programming Challenges 110304, UVA Judge 850.
+3-4. "Crypt Kicker II" - Programming Challenges 110304, UVA Judge 850. OK
 
 CHAPTER 4: Sorting and Searching
 --------------------------------
@@ -94,7 +94,7 @@ PAN SCALE!
 Programming Challenges
 4-1. "Vito's Family" - Programming Challenges 110401, UVA Judge 10041. OK
 4-2. "Stacks of Flapjacks" - Programming Challenges 110402, UVA Judge 120. OK
-4-3. "Bridge" - Programming Challenges 110403, UVA Judge 10037.
+4-3. "Bridge" - Programming Challenges 110403, UVA Judge 10037. OK
 4-4. "ShoeMaker's Problem" - Programming Challenges 110405, UVA Judge 10026.
 4-5. "ShellSort" - Programming Challenges 110407, UVA Judge 10152.
 
@@ -144,7 +144,7 @@ Needs element ordering.
 Programming Challenges
 8-1. "Is Bigger Smarter?" - Programming Challenges 111101, UVA Judge 10131.
 8-2. "Weights and Measures" - Programming Challenges 111103, UVA Judge 10154.
-8-3. "Unidirectional TSP" - Programming Challenges 111104, UVA Judge 116.
+8-3. "Unidirectional TSP" - Programming Challenges 111104, UVA Judge 116. OK
 8-4. "Cutting Sticks" - Programming Challenges 111105, UVA Judge 10003.
 8-5. "Ferry Loading" - Programming Challenges 111106, UVA Judge 10261.
 

@@ -1,4 +1,4 @@
-P100.java: The 3n + 1 problem
+P100.java: The 3n + 1 problem (Skiena)
 brute force
 
 P101.java: The Blocks Problem
@@ -46,7 +46,7 @@ ad hoc, grid, simulation, stepping, pinball, bumper
 P115.cpp Climbing Trees
 Use P115x, simple tree structure, ad hoc
 
-P116.cpp: Unidirectional TSP
+P116.cpp: Unidirectional TSP (Skiena)
 tsp, dp, lexicographical backtracking
 
 P117.cpp: The Postal Worker Rings Once
@@ -58,7 +58,7 @@ simulation
 P119.cpp: Greedy Gift Givers
 count in map
 
-P120.cpp: Stack of Flapjacks
+P120.cpp: Stack of Flapjacks (Skiena)
 array sort, greedy
 
 P121.cpp: Pipe Fitters
@@ -235,8 +235,11 @@ Copy of P147 Dollars, atoi
 P681.java: Convex Hull Finding
 ch
 
-P843.cpp: Crypt Kicker
+P843.cpp: Crypt Kicker (Skiena)
 Read lines, parse to int, parse to string, parse to tokens, substitution cipher.
+
+P850.cpp: Crypt Kicker II (Skiena)
+Substitution cipher
 
 P1585.cpp: Score
 Trivial score counting in string
@@ -256,7 +259,7 @@ Pass the torch, sort
 P10038.cpp: Jolly Jumpers (Skiena)
 Sort array
 
-P10041.cpp: Vito's Damily
+P10041.cpp: Vito's Damily (Skiena)
 Trivial array sort, stream for sum
 
 P10055.cpp: Hashmat the Brave Warrior
