@@ -265,6 +265,9 @@ Trivial array sort, stream for sum
 P10055.cpp: Hashmat the Brave Warrior
 abs
 
+P10071.cpp: Back to High School Physics
+distance after time computation
+
 P10078.java: The Art Gallery
 angle check
 
