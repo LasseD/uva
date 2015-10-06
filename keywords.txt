@@ -307,6 +307,9 @@ Trivial number summing
 P10812.cpp: Beat the Spread!
 given s,d, find a,b where a+b=s, a-b=d
 
+P10945.cpp: Mother Bear
+palindrome check, ignore case
+
 P11069.cpp: A Graph Problem
 sequence from all maximal independent sets in flat graph
 
