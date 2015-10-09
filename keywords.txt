@@ -367,5 +367,8 @@ deque, std::sort on int, printer job simulation with priorities.
 P12250.cpp: Language Detection
 Trivial string compare equals
 
+P12577.cpp: Hajj-e-Akbar
+Trivial string compare.
+
 P12952.cpp: Tri-du
 Trivial, two int parse.
