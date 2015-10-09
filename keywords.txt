@@ -363,3 +363,6 @@ The coca cola problem with borrowing.
 
 P12100.cpp: Printer Queue
 deque, std::sort on int, printer job simulation with priorities.
+
+P12250.cpp: Language Detection
+Trivial string compare equals
