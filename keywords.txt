@@ -298,6 +298,9 @@ std::map<std::string,std::string>, quick parse strings
 P10303.java: How Many Trees?
 Count types of binary trees, BigInteger
 
+P10340.cpp: All in All
+Implement "Contains substring", linear time.
+
 P10432.java: Polygon Inside A Circle
 Area of pizza slize, area of circular segment
 
