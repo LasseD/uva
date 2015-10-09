@@ -235,6 +235,9 @@ Copy of P147 Dollars, atoi
 P681.java: Convex Hull Finding
 ch
 
+P706.cpp: LCD Display
+Output as LCD display.
+
 P843.cpp: Crypt Kicker (Skiena)
 Read lines, parse to int, parse to string, parse to tokens, substitution cipher.
 
