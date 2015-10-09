@@ -229,6 +229,9 @@ string parse, letter swapping
 P490.cpp: Rotating Sequences
 get strings out of a matrix
 
+P673.cpp: Parentheses Balancing
+Using a stack to check parentheses.
+
 P674.cpp: Coin Change
 Copy of P147 Dollars, atoi
 
