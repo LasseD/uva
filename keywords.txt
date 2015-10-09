@@ -322,6 +322,9 @@ palindrome check, ignore case
 P11069.cpp: A Graph Problem
 sequence from all maximal independent sets in flat graph
 
+P11150.cpp: Cola
+The cola problem with full bottles.
+
 P11236.java: Grocery store
 sum = product calculation
 
@@ -348,6 +351,9 @@ ch
 
 P11752.cpp: The Super Powers
 unsigned long long, overflow detection, powers, square powers
+
+P11877.cpp: The Coca-Cola Store
+The coca cola problem with borrowing.
 
 P12100.cpp: Printer Queue
 deque, std::sort on int, printer job simulation with priorities.
