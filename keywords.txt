@@ -352,6 +352,9 @@ Simple sum
 P11626.java: Convex Hull
 ch
 
+P11727.cpp: Cost Cutting
+Trivial sort 3 numbers, output middle
+
 P11752.cpp: The Super Powers
 unsigned long long, overflow detection, powers, square powers
 
