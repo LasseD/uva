@@ -313,6 +313,9 @@ Trivial number summing
 P10812.cpp: Beat the Spread!
 given s,d, find a,b where a+b=s, a-b=d
 
+P10931.cpp: Parity
+Compute parity of int, display bits.
+
 P10945.cpp: Mother Bear
 palindrome check, ignore case
 
