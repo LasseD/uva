@@ -304,6 +304,9 @@ Count types of binary trees, BigInteger
 P10340.cpp: All in All
 Implement "Contains substring", linear time.
 
+P10370.cpp: Above Average
+Trivial average, printf with %.
+
 P10432.java: Polygon Inside A Circle
 Area of pizza slize, area of circular segment
 
