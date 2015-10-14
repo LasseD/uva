@@ -376,8 +376,11 @@ Trivial string compare equals
 P12577.cpp: Hajj-e-Akbar
 Trivial string compare.
 
+P12791.cpp: Lap
+Car race overlapping calculation, reead line as two ints.
+
 P12894.cpp: Perfect Flag
 Trivial dimensions check.
 
 P12952.cpp: Tri-du
-Trivial, two int parse.
+Trivial, read line as two ints.
