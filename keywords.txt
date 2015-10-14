@@ -346,6 +346,9 @@ Trivial min/max, round trip computation
 P11389.cpp: The Bus Driver Problem
 Trivial sort twice, once with negative integers for rsort
 
+P11496.cpp: Musical Loop
+Trivial count peaks
+
 P11503.cpp: Virtual Friends
 Circle combine in social networks
 
