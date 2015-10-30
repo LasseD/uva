@@ -367,6 +367,9 @@ Trivial sort 3 numbers, output middle
 P11752.cpp: The Super Powers
 unsigned long long, overflow detection, powers, square powers
 
+P11800.cpp: Determine the Shape
+Permutation handler on 4 ints, lines, points, linesCross, rightTurn, colinear, basic shape detection
+
 P11877.cpp: The Coca-Cola Store
 The coca cola problem with borrowing.
 
