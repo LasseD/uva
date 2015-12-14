@@ -229,6 +229,9 @@ string parse, letter swapping
 P490.cpp: Rotating Sequences
 get strings out of a matrix
 
+P567.cpp: Risk
+all pair shortes path
+
 P673.cpp: Parentheses Balancing
 Using a stack to check parentheses.
 
@@ -240,6 +243,9 @@ ch
 
 P706.cpp: LCD Display
 Output as LCD display.
+
+P725.cpp: Division
+Find all pairs abcde/fghij=N, PH<int>
 
 P843.cpp: Crypt Kicker (Skiena)
 Read lines, parse to int, parse to string, parse to tokens, substitution cipher.
