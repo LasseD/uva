@@ -379,6 +379,9 @@ Permutation handler on 4 ints, lines, points, linesCross, rightTurn, colinear, b
 P11877.cpp: The Coca-Cola Store
 The coca cola problem with borrowing.
 
+P11942.cpp: Lumberjack Sequencing
+Trivial all increment or all decrement.
+
 P12100.cpp: Printer Queue
 deque, std::sort on int, printer job simulation with priorities.
 
