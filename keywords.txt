@@ -399,3 +399,7 @@ Trivial dimensions check.
 
 P12952.cpp: Tri-du
 Trivial, read line as two ints.
+
+P13034.cpp: Solve Everything :-)
+Trivial 0 check.
+
