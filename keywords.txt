@@ -361,6 +361,9 @@ Circle combine in social networks
 P11547.cpp: Automatic Answer
 simple calculation
 
+P11586.cpp: Train Tracks
+Trivial read line as int, read chars in line.
+
 P11608.cpp: No Problem
 Simple sum
 
