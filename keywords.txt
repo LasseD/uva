@@ -346,6 +346,9 @@ sum = product calculation
 P11332.cpp: Summing Digits
 %= 10 and /= 10 on int
 
+P11349.cpp: Symmetric Matrix
+Trivial matrix check. Read both char and long long.
+
 P11364.cpp: Parking
 Trivial min/max, round trip computation
 
