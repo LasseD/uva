@@ -343,6 +343,9 @@ sequence from all maximal independent sets in flat graph
 P11150.cpp: Cola
 The cola problem with full bottles.
 
+P11172.cpp: Relational Operator
+Trivial.
+
 P11236.java: Grocery store
 sum = product calculation
 
