@@ -205,6 +205,9 @@ ch
 P231.cpp: Testing the CATCHER
 longestIncreasingSubsequence, Longest Increasing Subsequence
 
+P272 TEX Quotes
+Trivial std::cin.getline(line,len).
+
 P280.cpp: Vertex
 Graph unreachable, adjacency lists
 
