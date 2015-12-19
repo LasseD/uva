@@ -232,6 +232,9 @@ string parse, letter swapping
 P490.cpp: Rotating Sequences
 get strings out of a matrix
 
+P494.cpp: Kindergarden Counting Game
+Trivial wc for words isprint isalpha.
+
 P567.cpp: Risk
 all pair shortes path
 
@@ -306,6 +309,9 @@ Ch, ch walk, ch bounding box turn
 
 P10282.cpp: Babelfish
 std::map<std::string,std::string>, quick parse strings
+
+P10300.cpp: Ecological Premium
+Trivial.
 
 P10303.java: How Many Trees?
 Count types of binary trees, BigInteger
