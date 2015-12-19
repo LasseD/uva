@@ -364,6 +364,9 @@ Trivial sort twice, once with negative integers for rsort
 P11496.cpp: Musical Loop
 Trivial count peaks
 
+P11498.cpp: Division of Nlogonia
+Trivial
+
 P11503.cpp: Virtual Friends
 Circle combine in social networks
 
