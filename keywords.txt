@@ -214,6 +214,9 @@ Graph unreachable, adjacency lists
 P291.java: The House of Santa Claus
 string check
 
+P299.cpp: Train Swapping
+Trivial, dumb brute force counting.
+
 P361.java: Cops and Robbers
 ch, ch contains point
 
