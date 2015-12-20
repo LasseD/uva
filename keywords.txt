@@ -244,6 +244,9 @@ Trivial wc for words isprint isalpha.
 P567.cpp: Risk
 all pair shortes path
 
+P579.cpp: Clock Hands
+Easy angle between clock arms, no trigonometry.
+
 P591.cpp: Box of Bricks
 Trivial
 
