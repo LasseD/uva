@@ -310,6 +310,9 @@ Simulation
 P10173.java: Smallest Bounding Rectangle
 Ch, ch walk, ch bounding box turn
 
+P10189.cpp: Minesweeper
+Get line as two ints, count adjacent fields of matrix.
+
 P10282.cpp: Babelfish
 std::map<std::string,std::string>, quick parse strings
 
