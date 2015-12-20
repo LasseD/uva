@@ -226,6 +226,9 @@ Chess board knight move buildup
 P485.java: Pascal's Triangle of Death
 Brute force
 
+P488.cpp: Triangle Wave
+Trivial, but PDF is wrong. UVA contacted.
+
 P483.cpp: Word Scramble
 string parse, letter swapping
 
