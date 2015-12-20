@@ -238,6 +238,9 @@ Trivial wc for words isprint isalpha.
 P567.cpp: Risk
 all pair shortes path
 
+P591.cpp: Box of Bricks
+Trivial
+
 P673.cpp: Parentheses Balancing
 Using a stack to check parentheses.
 
