@@ -292,6 +292,9 @@ distance after time computation
 P10078.java: The Art Gallery
 angle check
 
+P10082.cpp: WERTYU
+Char substitution, use string to build substitution array.
+
 P10098.cpp: Generating Fast, Sorted Permutation
 Copy of P195. Permutations in alphabetical (not lex) order, permutation handler,all permutations of strings
 
