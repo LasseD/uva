@@ -346,6 +346,9 @@ Count types of binary trees, BigInteger
 P10340.cpp: All in All
 Implement "Contains substring", linear time.
 
+P10346.cpp: Peter's Smokes
+Coke problem reformulated.
+
 P10370.cpp: Above Average
 Trivial average, printf with %.
 
