@@ -220,6 +220,9 @@ Trivial, dumb brute force counting.
 P361.java: Cops and Robbers
 ch, ch contains point
 
+P382.cpp: Perfection
+Find divisors.
+
 P386.java: Perfect Cubes
 reuse computations
 
