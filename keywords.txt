@@ -226,6 +226,9 @@ Find divisors.
 P386.java: Perfect Cubes
 reuse computations
 
+P424.java: Integer Inquery
+BigInteger parse from string, add, ZERO.
+
 P439.cpp: Knight Moves
 Chess board knight move buildup
 
