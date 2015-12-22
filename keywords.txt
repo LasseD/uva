@@ -277,6 +277,9 @@ Trivial score counting in string
 P10002.cpp: Center of Masses
 BEST, ch, ch center of mass
 
+P10004.cpp: Bicoloring
+Simple graph traversal.
+
 P10008.cpp: What's Cryptanalysis?
 sort pair, isprint for proper printable char detection
 
@@ -303,6 +306,9 @@ distance after time computation
 
 P10078.java: The Art Gallery
 angle check
+
+P10079.cpp: Pizza Cutting
+Trivial circle slicing.
 
 P10082.cpp: WERTYU
 Char substitution, use string to build substitution array.
