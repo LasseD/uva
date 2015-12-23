@@ -232,6 +232,9 @@ Find divisors.
 P386.java: Perfect Cubes
 reuse computations
 
+P401.cpp: Palindromes
+Check palindrome, check mirrored palindrome.
+
 P424.java: Integer Inquery
 BigInteger parse from string, add, ZERO.
 
