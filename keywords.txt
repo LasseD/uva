@@ -361,6 +361,9 @@ Trivial.
 P10303.java: How Many Trees?
 Count types of binary trees, BigInteger
 
+P10327.cpp: Flip Sort
+Same as P299, but for arbritrary ints, duplicates.
+
 P10340.cpp: All in All
 Implement "Contains substring", linear time.
 
