@@ -220,6 +220,12 @@ Trivial, dumb brute force counting.
 P361.java: Cops and Robbers
 ch, ch contains point
 
+P369.cpp: Combinations
+N choose M, N choose K, Binomial coefficient.
+
+P374.cpp: Big Mod
+a^b mod c for big a, b.
+
 P382.cpp: Perfection
 Find divisors.
 
@@ -384,6 +390,9 @@ Compute parity of int, display bits.
 
 P10945.cpp: Mother Bear
 palindrome check, ignore case
+
+P10970.cpp: Big Chocolate
+Trivial, buffered. Read two positive ints from line.
 
 P11069.cpp: A Graph Problem
 sequence from all maximal independent sets in flat graph
