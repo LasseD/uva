@@ -448,6 +448,9 @@ Trivial sort 3 numbers, output middle
 P11752.cpp: The Super Powers
 unsigned long long, overflow detection, powers, square powers
 
+P11799.cpp: Horror Dash
+Trivial max.
+
 P11800.cpp: Determine the Shape
 Permutation handler on 4 ints, lines, points, linesCross, rightTurn, colinear, basic shape detection
 
