@@ -286,6 +286,9 @@ Copy of P147 Dollars, atoi
 P681.java: Convex Hull Finding
 ch
 
+P694.cpp: The Collatz Sequence
+Trivial algorithm simulation.
+
 P706.cpp: LCD Display
 Output as LCD display.
 
