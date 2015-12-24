@@ -445,6 +445,9 @@ Trivial.
 P11236.java: Grocery store
 sum = product calculation
 
+P11292.cpp: The Dragon of Loowater
+Sort and double list walk.
+
 P11332.cpp: Summing Digits
 %= 10 and /= 10 on int
 
