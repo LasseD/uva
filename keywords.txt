@@ -262,6 +262,9 @@ get strings out of a matrix
 P494.cpp: Kindergarden Counting Game
 Trivial wc for words isprint isalpha.
 
+P495.cpp: Fibonacci Freeze
+Fibonacci numbers up to 5000, BigInteger.
+
 P499.cpp: What's The Frequency
 Count letters in string, gets, isalpha, vector sort of pairs.
 
@@ -354,6 +357,9 @@ Copy of P195. Permutations in alphabetical (not lex) order, permutation handler,
 
 P10099.cpp: The Tourist Guide (Skiena)
 Modified Dijkstra for Widest path problem / the bottleneck shortest path problem. Dijkstra implementation can be re-used for other purposes.
+
+P10106.java: Product
+BigInteger multiply, read/write ints, read to end EOF.
 
 P10110.cpp: Light, more light (Skiena)
 Prime factorization, count divisors
