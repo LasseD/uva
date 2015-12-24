@@ -379,6 +379,9 @@ Trivial average, printf with %.
 P10432.java: Polygon Inside A Circle
 Area of pizza slize, area of circular segment
 
+P10469.cpp: To Carry or not to Carry
+Trivial XOR on ints.
+
 P10523.java: Very Easy !!!
 BigInteger add, multiply, cache.
 
