@@ -262,7 +262,7 @@ get strings out of a matrix
 P494.cpp: Kindergarden Counting Game
 Trivial wc for words isprint isalpha.
 
-P495.cpp: Fibonacci Freeze
+P495.java: Fibonacci Freeze
 Fibonacci numbers up to 5000, BigInteger.
 
 P499.cpp: What's The Frequency
@@ -489,6 +489,9 @@ Trivial max.
 
 P11800.cpp: Determine the Shape
 Permutation handler on 4 ints, lines, points, linesCross, rightTurn, colinear, basic shape detection
+
+P11854.cpp: Egypt
+Trivial pythagoras check.
 
 P11877.cpp: The Coca-Cola Store
 The coca cola problem with borrowing.
