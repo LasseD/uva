@@ -262,6 +262,9 @@ get strings out of a matrix
 P494.cpp: Kindergarden Counting Game
 Trivial wc for words isprint isalpha.
 
+P499.cpp: What's The Frequency
+Count letters in string, gets, isalpha, vector sort of pairs.
+
 P541.cpp: Error Correction
 Trivial bit counting of matrix.
 
