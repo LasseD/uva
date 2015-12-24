@@ -241,6 +241,9 @@ BigInteger parse from string, add, ZERO.
 P439.cpp: Knight Moves
 Chess board knight move buildup
 
+P445.cpp: Marvelous Mazes
+Trivial maze decoding.
+
 P485.java: Pascal's Triangle of Death
 Brute force
 
