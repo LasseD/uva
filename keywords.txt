@@ -286,6 +286,9 @@ Easy angle between clock arms, no trigonometry.
 P591.cpp: Box of Bricks
 Trivial
 
+P623.java: 500!
+BigInteger multiply by valueOf int, factorials up to 1000.
+
 P673.cpp: Parentheses Balancing
 Using a stack to check parentheses.
 
