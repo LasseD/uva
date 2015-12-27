@@ -406,6 +406,9 @@ Trivial average, printf with %.
 P10420.cpp: List of COnquests
 Read line as int, Read first word from line, map string to count.
 
+P10424.cpp: Love Calculator
+stdio.h gets. printf .2f for two decimals.
+
 P10432.java: Polygon Inside A Circle
 Area of pizza slize, area of circular segment
 
