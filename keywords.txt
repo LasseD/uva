@@ -367,6 +367,9 @@ Modified Dijkstra for Widest path problem / the bottleneck shortest path problem
 P10106.java: Product
 BigInteger multiply, read/write ints, read to end EOF.
 
+P10107.cpp: What is the Median
+Multiset - maintain median using two sets, rbegin, begin, iterators.
+
 P10110.cpp: Light, more light (Skiena)
 Prime factorization, count divisors
 
