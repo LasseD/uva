@@ -253,6 +253,9 @@ Trivial maze decoding.
 P458.cpp: The Decoder
 Character substitution. gets => '\0' to be checked. printf("%s\n", s);
 
+P476.cpp: Points in Figures: Rectangles
+std::cin >> char >> double, quick delta compare.
+
 P485.java: Pascal's Triangle of Death
 Brute force
 
