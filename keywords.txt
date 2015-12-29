@@ -307,6 +307,9 @@ Copy of P147 Dollars, atoi
 P681.java: Convex Hull Finding
 ch
 
+P686.cpp: Goldbach's Conjecture (II)
+Find primes up to 2^15 using already found primes.
+
 P694.cpp: The Collatz Sequence
 Trivial algorithm simulation.
 
