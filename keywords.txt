@@ -205,6 +205,9 @@ ch
 P231.cpp: Testing the CATCHER
 longestIncreasingSubsequence, Longest Increasing Subsequence
 
+P256.cpp: Quirksome Squares
+printf n wide with leading 0's.
+
 P272 TEX Quotes
 Trivial std::cin.getline(line,len).
 
