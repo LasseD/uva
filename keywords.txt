@@ -208,6 +208,9 @@ longestIncreasingSubsequence, Longest Increasing Subsequence
 P256.cpp: Quirksome Squares
 printf n wide with leading 0's.
 
+P264: Count the Cantor
+Triangle of fractions.
+
 P272 TEX Quotes
 Trivial std::cin.getline(line,len).
 
@@ -402,6 +405,9 @@ std::map<std::string,std::string>, quick parse strings
 
 P10300.cpp: Ecological Premium
 Trivial.
+
+P10302.cpp: Summation of Polynomials
+Sum 1^3 + ... + n^3. Include math to derive.
 
 P10303.java: How Many Trees?
 Count types of binary trees, BigInteger
