@@ -337,6 +337,9 @@ BEST, ch, ch center of mass
 P10004.cpp: Bicoloring
 Simple graph traversal.
 
+P10006.cpp: Carmichael Numbers
+Trivial after precomputation.
+
 P10008.cpp: What's Cryptanalysis?
 sort pair, isprint for proper printable char detection
 
