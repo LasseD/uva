@@ -286,6 +286,9 @@ Easy angle between clock arms, no trigonometry.
 P591.cpp: Box of Bricks
 Trivial
 
+P623.java: 500!
+BigInteger multiply by valueOf int, factorials up to 1000.
+
 P673.cpp: Parentheses Balancing
 Using a stack to check parentheses.
 
@@ -400,6 +403,12 @@ Coke problem reformulated.
 P10370.cpp: Above Average
 Trivial average, printf with %.
 
+P10420.cpp: List of COnquests
+Read line as int, Read first word from line, map string to count.
+
+P10424.cpp: Love Calculator
+stdio.h gets. printf .2f for two decimals.
+
 P10432.java: Polygon Inside A Circle
 Area of pizza slize, area of circular segment
 
@@ -420,6 +429,9 @@ Trivial number summing
 
 P10812.cpp: Beat the Spread!
 given s,d, find a,b where a+b=s, a-b=d
+
+P10921.cpp: Find the Telephone
+Char substitution, isprint, gets => '\0' but beware of \r\n on Win.
 
 P10931.cpp: Parity
 Compute parity of int, display bits.
@@ -529,3 +541,42 @@ Trivial, read line as two ints.
 P13034.cpp: Solve Everything :-)
 Trivial 0 check.
 
+--------------------------------------------------------------
+Matrix questions (since there are not enough of these in UVa):
+
+1)
+Given an n x n matrix A(i,j) of integers, find maximum value A(c,d) - A(a,b) over all choices of indexes such that both c > a and d > b.
+Required complexity: O(n^2)
+
+2)
+Given an NxM (N rows and M columns) integer matrix with non-negative values (0..MAX_INT inclusive). What is the maximum sum from going top left (0, 0) to bottom right (N-1, M-1) ? The condition is that when you're at point (p, q), you can only move to either right (p, q+1) or down (p+1, q).
+
+Expected time complexity O(N*M)
+Expected space complexity O(N+M)
+
+From the space complexity it looks like there is a DP solution, but I couldn't figure it out.
+
+3)
+"Min(Max elements rows) not less than Max(Min of columns)"
+can you tell me whether above statement ist true or false..
+if it true, then tell me solutoin.
+if it false, then tell me example
+
+4)
+Given an n-by-n matrix of 0's and 1's where all 1's in each row come before all 0's, find the most efficient way to return the row with the maximum number of 0's.
+
+5)
+given a number n... print a spiral matrix in O(1) space example if n=5 the op should be:
+
+25 24 23 22 21
+10 09 08 07 20
+11 02 01 06 19
+12 03 04 05 18
+13 14 15 16 17
+
+The question may appear trivial but its not...u hav to print in O(1) space
+
+6)
+given a matrix pxq
+You start from top left and have to reach the bottom right. Can only traverse right or bottom
+How many ways are there to reach at the bottom right?
