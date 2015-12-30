@@ -439,6 +439,9 @@ Trivial XOR on ints.
 P10523.java: Very Easy !!!
 BigInteger add, multiply, cache.
 
+P10550.cpp: Combination Lock
+Trivial simulate combination lock.
+
 P10684.cpp: The jackpot
 Maximum subarray sum, Kadane's algorithm, 1D
 
