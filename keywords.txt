@@ -244,6 +244,9 @@ reuse computations
 P401.cpp: Palindromes
 Check palindrome, check mirrored palindrome.
 
+P414.cpp: Machined Surfaces
+Read line as int, read line as char[].
+
 P424.java: Integer Inquery
 BigInteger parse from string, add, ZERO.
 
