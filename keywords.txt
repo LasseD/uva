@@ -418,6 +418,9 @@ Sum 1^3 + ... + n^3. Include math to derive.
 P10303.java: How Many Trees?
 Count types of binary trees, BigInteger
 
+P10305.cpp: Ordering Tasks
+Partial order. Extend to total order.
+
 P10327.cpp: Flip Sort
 Same as P299, but for arbritrary ints, duplicates.
 
