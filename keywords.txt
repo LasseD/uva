@@ -292,6 +292,9 @@ Trivial bit counting of matrix.
 P567.cpp: Risk
 all pair shortes path
 
+P568.cpp: Just the Facts
+Last digit of the first 10000 factorials. Assume all digits don't zero.
+
 P575.cpp: Skew Binary
 Trivial binary eval with last digit up to 2.
 
