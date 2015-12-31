@@ -496,6 +496,9 @@ The cola problem with full bottles.
 P11172.cpp: Relational Operator
 Trivial.
 
+P11185.cpp: Ternary
+Convert decimal int to ternary.
+
 P11236.java: Grocery store
 sum = product calculation
 
