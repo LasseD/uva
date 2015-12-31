@@ -334,6 +334,9 @@ Read lines, parse to int, parse to string, parse to tokens, substitution cipher.
 P850.cpp: Crypt Kicker II (Skiena)
 Substitution cipher
 
+P913.cpp: Joana and the Odd Numbers
+Count number of odds numbers written by Joana.
+
 P1585.cpp: Score
 Trivial score counting in string
 
