@@ -223,6 +223,9 @@ string check
 P299.cpp: Train Swapping
 Trivial, dumb brute force counting.
 
+P350.cpp: Pseudo-Random Numbers
+Find length of loop using Floyd's cycle finding algorithm.
+
 P357.cpp: Let Me Count The Ways
 Combinations of currency down to 1 cent. Up to 30000 cents.
 
