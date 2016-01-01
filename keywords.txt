@@ -298,6 +298,9 @@ all pair shortes path
 P568.cpp: Just the Facts
 Last digit of the first 10000 factorials. Assume all digits don't zero.
 
+P573.cpp: The Snail
+Trivial snail climb simulator.
+
 P575.cpp: Skew Binary
 Trivial binary eval with last digit up to 2.
 
