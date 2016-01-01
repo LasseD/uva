@@ -592,6 +592,9 @@ deque, std::sort on int, printer job simulation with priorities.
 P12250.cpp: Language Detection
 Trivial string compare equals
 
+P12372.cpp: Packing for Holiday
+Trivial.
+
 P12503.cpp: Robot Instructions
 std::cin to both ints and char arrays.
 
