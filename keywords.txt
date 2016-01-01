@@ -307,6 +307,9 @@ Easy angle between clock arms, no trigonometry.
 P591.cpp: Box of Bricks
 Trivial
 
+P621.cpp: Secret Research
+Trivial
+
 P623.java: 500!
 BigInteger multiply by valueOf int, factorials up to 1000.
 
