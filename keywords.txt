@@ -427,6 +427,9 @@ gets and read line as int.
 P10189.cpp: Minesweeper
 Get line as two ints, count adjacent fields of matrix.
 
+P10222.cpp: Decode the Mad man
+keyboard two left letter substitution, including case.
+
 P10260.cpp: Soundex
 Trivial letter substitution.
 
