@@ -292,6 +292,9 @@ Count letters in string, gets, isalpha, vector sort of pairs.
 P541.cpp: Error Correction
 Trivial bit counting of matrix.
 
+P543.cpp: Goldbach's Conjecture
+Generate primes using prime sieve.
+
 P567.cpp: Risk
 all pair shortes path
 
