@@ -310,6 +310,9 @@ Trivial binary eval with last digit up to 2.
 P579.cpp: Clock Hands
 Easy angle between clock arms, no trigonometry.
 
+P583.cpp: Prime Factors
+Uses prime sieve, nextPrime, factorize up to 2^32.
+
 P591.cpp: Box of Bricks
 Trivial
 
@@ -429,6 +432,9 @@ Get line as two ints, count adjacent fields of matrix.
 
 P10222.cpp: Decode the Mad man
 keyboard two left letter substitution, including case.
+
+P10235.cpp: Simply Emirp
+Uses prime sieve isPrime, reverse integer, check prime.
 
 P10260.cpp: Soundex
 Trivial letter substitution.
