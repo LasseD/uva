@@ -247,6 +247,9 @@ reuse computations
 P401.cpp: Palindromes
 Check palindrome, check mirrored palindrome.
 
+P406.cpp: Prime Cuts
+Uses prime sieve and lists primes.
+
 P414.cpp: Machined Surfaces
 Read line as int, read line as char[].
 
