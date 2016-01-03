@@ -454,6 +454,9 @@ Count types of binary trees, BigInteger
 P10305.cpp: Ordering Tasks
 Partial order. Extend to total order.
 
+P10323.cpp: Factorial! You Must be Kidding!!!
+Gotcha factorial definition. Please ignore.
+
 P10327.cpp: Flip Sort
 Same as P299, but for arbritrary ints, duplicates.
 
