@@ -283,6 +283,9 @@ string parse, letter swapping
 P490.cpp: Rotating Sequences
 get strings out of a matrix
 
+P492.cpp: Pig-Latin
+getchar, putchar for single character handling. printf("%c",c), scanf("%c") != EOF.
+
 P494.cpp: Kindergarden Counting Game
 Trivial wc for words isprint isalpha.
 
