@@ -235,6 +235,9 @@ ch, ch contains point
 P369.cpp: Combinations
 N choose M, N choose K, Binomial coefficient.
 
+P371.cpp: Ackermann Functions
+3n+1 problem, use array to pre-compute.
+
 P374.cpp: Big Mod
 a^b mod c for big a, b.
 
