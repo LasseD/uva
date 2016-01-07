@@ -409,6 +409,9 @@ Trivial simulation.
 P10055.cpp: Hashmat the Brave Warrior
 abs
 
+P10062.cpp: Tell me the frequencies!
+Count characters in lines.
+
 P10071.cpp: Back to High School Physics
 distance after time computation
 
