@@ -349,6 +349,9 @@ Trivial algorithm simulation.
 P706.cpp: LCD Display
 Output as LCD display.
 
+P713.cpp: Adding Reversed Numbers
+std::cin >> int and char[].
+
 P725.cpp: Division
 Find all pairs abcde/fghij=N, PH<int>
 
