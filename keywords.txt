@@ -397,6 +397,9 @@ Sort array
 P10041.cpp: Vito's Damily (Skiena)
 Trivial array sort, stream for sum
 
+P10050.cpp: Hartals
+Trivial simulation.
+
 P10055.cpp: Hashmat the Brave Warrior
 abs
 
