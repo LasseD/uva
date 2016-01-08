@@ -223,6 +223,9 @@ string check
 P299.cpp: Train Swapping
 Trivial, dumb brute force counting.
 
+P324.java: Factorial Frequencies
+Biginteger, factorials, count characters in string.
+
 P350.cpp: Pseudo-Random Numbers
 Find length of loop using Floyd's cycle finding algorithm.
 
