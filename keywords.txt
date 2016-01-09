@@ -265,6 +265,9 @@ BigInteger parse from string, add, ZERO.
 P439.cpp: Knight Moves
 Chess board knight move buildup
 
+P441.cpp: Lotto
+Ways to choose k elements of set of size n. No permutation handler.
+
 P445.cpp: Marvelous Mazes
 Trivial maze decoding.
 
