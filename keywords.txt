@@ -508,6 +508,9 @@ Trivial average, printf with %.
 P10394.cpp: Twin Primes
 Prime siv into bitset up to 20.000.000. Twin primes.
 
+P10405.cpp: Longest Common Subsequence
+Longest common subset problem. Dynamic programming.
+
 P10420.cpp: List of COnquests
 Read line as int, Read first word from line, map string to count.
 
