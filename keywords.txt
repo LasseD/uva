@@ -454,6 +454,9 @@ Multiset - maintain median using two sets, rbegin, begin, iterators.
 P10110.cpp: Light, more light (Skiena)
 Prime factorization, count divisors
 
+P10127.cpp: Ones
+Ad hoc add n until all ones.
+
 P10137.cpp: The Trip (Skiena)
 read and write ints with decimal place
 
