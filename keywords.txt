@@ -565,6 +565,9 @@ Char substitution, isprint, gets => '\0' but beware of \r\n on Win.
 P10924.cpp: Prime Words
 Uses isPrime from sieve algorithm. Warning: 1 is a prime here!
 
+P10929.java: You can say 11
+BigInteger multiply divide equals valueOf.
+
 P10931.cpp: Parity
 Compute parity of int, display bits.
 
