@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 
 /*
 1: Paskill: Prolog interpreter - destroy programs, don't re-enter self visited, ++ walk
@@ -9,7 +8,9 @@
 struct Node {
   char c;
   bool markP, markL;
-  std::vector<Node*> n;
+  Node* n[26];
+  bool neighbours[26];
+  unsigned int sizeN;
 };
 
 int main() {
@@ -17,18 +18,21 @@ int main() {
   for(char c = 'A'; c <= 'Z'; ++c)
     nodes[(int)c].c = c;
 
-  std::string line;
+  char line[260];
   while(true) {
-    getline(std::cin, line);
+    std::cin.getline(line, 260);
     if(line[0] == '#') {
       return 0;
     }
     //std::cerr << "Read: " << line << std::endl;
     // Clear graph:
     for(char c = 'A'; c <= 'Z'; ++c) {
-      nodes[(int)c].n.clear();
-      nodes[(int)c].markP = false;
-      nodes[(int)c].markL = false;
+      Node *nc = &nodes[(int)c];
+      nc->sizeN = 0;
+      nc->markP = false;
+      nc->markL = false;
+      for(int i = 0; i < 26; ++i)
+	nc->neighbours[i] = false;
     }
     // Construct graph:
     int i = 0;
@@ -39,8 +43,14 @@ int main() {
 	d = line[++i];
 	if(d == ';' || d == '.')
 	  break;
-	nodes[(int)c].n.push_back(&nodes[(int)d]);
-	nodes[(int)d].n.push_back(&nodes[(int)c]);	
+	Node *nc = &nodes[(int)c];
+	if(nc->neighbours[d-'A'])
+	  continue;
+	Node *nd = &nodes[(int)d];	
+	nc->n[nc->sizeN++] = nd;
+	nd->n[nd->sizeN++] = nc;
+	nc->neighbours[d-'A'] = true;
+	nd->neighbours[c-'A'] = true;
       }
       if(d == '.')
 	break;
@@ -67,8 +77,8 @@ int main() {
 	// move paskill:
 	char min = (char)127;
 	char add = (char)127;
-	for(std::vector<Node*>::const_iterator it = nodes[(int)paskill].n.begin(); it != nodes[(int)paskill].n.end(); ++it) {
-	  Node *n = *it;
+	for(unsigned int it = 0; it < nodes[(int)paskill].sizeN; ++it) {
+	  Node *n = nodes[(int)paskill].n[it];
 	  if(n->markL || n->markP)
 	    continue;
 	  //std::cerr << "Pakill neighbour " << n->c << std::endl;
@@ -94,8 +104,8 @@ int main() {
 	// move lisper:
 	char max = 0;
 	char sub = 0;
-	for(std::vector<Node*>::const_iterator it = nodes[(int)lisper].n.begin(); it != nodes[(int)lisper].n.end(); ++it) {
-	  Node *n = *it;
+	for(unsigned int it = 0; it < nodes[(int)lisper].sizeN; ++it) {
+	  Node *n = nodes[(int)lisper].n[it];
 	  if(n->markL)
 	    continue;
 	  if(n->c > max)

@@ -11,7 +11,7 @@ public:
     for(int i = 0; i < PRIME_LEN; ++i)
       primes[i] = true;
     // Sieve primes:
-    for(int i = 0; 333*i < PRIME_LEN; ++i) {
+    for(int i = 0; i*i < PRIME_LEN; ++i) {
       if(!primes[i])
 	continue;
       // Mark all uneven multiples as non-prime:
