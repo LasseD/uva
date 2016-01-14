@@ -421,6 +421,9 @@ abs
 P10062.cpp: Tell me the frequencies!
 Count characters in lines.
 
+P10066.cpp: The Twin Towers
+Longest common subsequence.
+
 P10071.cpp: Back to High School Physics
 distance after time computation
 
@@ -468,6 +471,9 @@ keyboard two left letter substitution, including case.
 
 P10235.cpp: Simply Emirp
 Uses prime sieve isPrime, reverse integer, check prime.
+
+P10252.cpp: Common Permutation
+Count letters in string, gets.
 
 P10260.cpp: Soundex
 Trivial letter substitution.
