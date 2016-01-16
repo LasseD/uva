@@ -577,6 +577,9 @@ palindrome check, ignore case
 P10970.cpp: Big Chocolate
 Trivial, buffered. Read two positive ints from line.
 
+P11000.cpp: Bee
+Trivial.
+
 P11044.cpp: Searching for Nessy
 Trivial multiplication.
 
