@@ -472,6 +472,9 @@ gets and read line as int.
 P10189.cpp: Minesweeper
 Get line as two ints, count adjacent fields of matrix.
 
+P10192.cpp: Vacation
+Longest common sub sequence.
+
 P10222.cpp: Decode the Mad man
 keyboard two left letter substitution, including case.
 
@@ -523,7 +526,7 @@ Prime siv into bitset up to 20.000.000. Twin primes.
 P10405.cpp: Longest Common Subsequence
 Longest common subset problem. Dynamic programming.
 
-P10420.cpp: List of COnquests
+P10420.cpp: List of Conquests
 Read line as int, Read first word from line, map string to count.
 
 P10424.cpp: Love Calculator
