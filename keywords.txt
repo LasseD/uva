@@ -550,6 +550,9 @@ BigInteger add, multiply, cache.
 P10550.cpp: Combination Lock
 Trivial simulate combination lock.
 
+P10591.cpp: Happy Number
+Square sum of number. Cache numbers.
+
 P10684.cpp: The jackpot
 Maximum subarray sum, Kadane's algorithm, 1D
 
@@ -636,6 +639,9 @@ Trivial
 
 P11503.cpp: Virtual Friends
 Circle combine in social networks
+
+P11530.cpp: SMS Typing
+Trivial.
 
 P11547.cpp: Automatic Answer
 simple calculation
