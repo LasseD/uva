@@ -280,6 +280,9 @@ std::cin >> char >> double, quick delta compare.
 P477.cpp: Points in Figures: Rectangles and Circles
 std::cin >> char >> double, quick delta compare, point in rectangle, point in circle.
 
+P483.cpp: Word Scramble
+string parse, letter swapping
+
 P484.cpp: The Department of Redundancy Department
 Count duplicates and preserve order using two vectors and a map.
 
@@ -289,8 +292,8 @@ Brute force
 P488.cpp: Triangle Wave
 Trivial, but PDF is wrong. UVA contacted.
 
-P483.cpp: Word Scramble
-string parse, letter swapping
+P489.cpp: Hangman Judge
+Read line as signed int. Count letters in string. gets.
 
 P490.cpp: Rotating Sequences
 get strings out of a matrix
