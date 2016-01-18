@@ -562,6 +562,9 @@ Maximum subarray sum, Kadane's algorithm, 1D
 P10696.cpp: f91
 Trivial
 
+P10699.cpp: Count the factors
+Prime sieve. bitset. isPrime, nextPrime.
+
 P10783.cpp: Odd Sum
 Trivial number summing
 
