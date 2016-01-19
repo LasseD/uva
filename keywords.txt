@@ -283,6 +283,9 @@ std::cin >> char >> double, quick delta compare.
 P477.cpp: Points in Figures: Rectangles and Circles
 std::cin >> char >> double, quick delta compare, point in rectangle, point in circle.
 
+P483.cpp: Word Scramble
+string parse, letter swapping
+
 P484.cpp: The Department of Redundancy Department
 Count duplicates and preserve order using two vectors and a map.
 
@@ -292,8 +295,8 @@ Brute force
 P488.cpp: Triangle Wave
 Trivial, but PDF is wrong. UVA contacted.
 
-P483.cpp: Word Scramble
-string parse, letter swapping
+P489.cpp: Hangman Judge
+Read line as signed int. Count letters in string. gets.
 
 P490.cpp: Rotating Sequences
 get strings out of a matrix
@@ -457,6 +460,12 @@ Multiset - maintain median using two sets, rbegin, begin, iterators.
 P10110.cpp: Light, more light (Skiena)
 Prime factorization, count divisors
 
+P10127.cpp: Ones
+Ad hoc add n until all ones.
+
+P10130.cpp: SuperSale
+Packing problem with price and weight. Maximize price for a given weight. No duplicate items.
+
 P10137.cpp: The Trip (Skiena)
 read and write ints with decimal place
 
@@ -471,6 +480,9 @@ gets and read line as int.
 
 P10189.cpp: Minesweeper
 Get line as two ints, count adjacent fields of matrix.
+
+P10192.cpp: Vacation
+Longest common sub sequence.
 
 P10222.cpp: Decode the Mad man
 keyboard two left letter substitution, including case.
@@ -523,7 +535,7 @@ Prime siv into bitset up to 20.000.000. Twin primes.
 P10405.cpp: Longest Common Subsequence
 Longest common subset problem. Dynamic programming.
 
-P10420.cpp: List of COnquests
+P10420.cpp: List of Conquests
 Read line as int, Read first word from line, map string to count.
 
 P10424.cpp: Love Calculator
@@ -538,17 +550,26 @@ Trivial XOR on ints.
 P10474.cpp: Where is the Marble?
 Sort array of ints, new/delete[].
 
+P10499.cpp: The Land of Justice
+Area of circle, area of sphere.
+
 P10523.java: Very Easy !!!
 BigInteger add, multiply, cache.
 
 P10550.cpp: Combination Lock
 Trivial simulate combination lock.
 
+P10591.cpp: Happy Number
+Square sum of number. Cache numbers.
+
 P10684.cpp: The jackpot
 Maximum subarray sum, Kadane's algorithm, 1D
 
 P10696.cpp: f91
 Trivial
+
+P10699.cpp: Count the factors
+Prime sieve. bitset. isPrime, nextPrime.
 
 P10783.cpp: Odd Sum
 Trivial number summing
@@ -562,6 +583,9 @@ Char substitution, isprint, gets => '\0' but beware of \r\n on Win.
 P10924.cpp: Prime Words
 Uses isPrime from sieve algorithm. Warning: 1 is a prime here!
 
+P10929.java: You can say 11
+BigInteger multiply divide equals valueOf.
+
 P10931.cpp: Parity
 Compute parity of int, display bits.
 
@@ -570,6 +594,9 @@ palindrome check, ignore case
 
 P10970.cpp: Big Chocolate
 Trivial, buffered. Read two positive ints from line.
+
+P11000.cpp: Bee
+Trivial.
 
 P11044.cpp: Searching for Nessy
 Trivial multiplication.
@@ -625,6 +652,9 @@ Trivial
 P11503.cpp: Virtual Friends
 Circle combine in social networks
 
+P11530.cpp: SMS Typing
+Trivial.
+
 P11547.cpp: Automatic Answer
 simple calculation
 
@@ -664,11 +694,17 @@ Trivial.
 P11854.cpp: Egypt
 Trivial pythagoras check.
 
+P11875.cpp: Brick Game
+Trivial.
+
 P11877.cpp: The Coca-Cola Store
 The coca cola problem with borrowing.
 
 P11942.cpp: Lumberjack Sequencing
 Trivial all increment or all decrement.
+
+P11984.cpp: A Change in Therman Unit
+Convert Fahrenheit to Celcius and back.
 
 P12100.cpp: Printer Queue
 deque, std::sort on int, printer job simulation with priorities.
