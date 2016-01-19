@@ -469,6 +469,9 @@ read and write ints with decimal place
 P10142.cpp: Australian Voting System (Skiena)
 Simulation
 
+P10168.cpp: Summation of Four Primes
+Prime sieve. Goldbach's conjecture.
+
 P10173.java: Smallest Bounding Rectangle
 Ch, ch walk, ch bounding box turn
 
