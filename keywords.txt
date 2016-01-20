@@ -310,6 +310,9 @@ Fibonacci numbers up to 5000, BigInteger.
 P499.cpp: What's The Frequency
 Count letters in string, gets, isalpha, vector sort of pairs.
 
+P530.cpp: Binomial Showdown
+Binomial as smaller product. n|k = n|n-k.
+
 P541.cpp: Error Correction
 Trivial bit counting of matrix.
 
