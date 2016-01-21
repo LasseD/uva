@@ -262,6 +262,9 @@ Read line as int, read line as char[].
 P424.java: Integer Inquery
 BigInteger parse from string, add, ZERO.
 
+P438.cpp: The Circumference of the Circle
+tangents, intersection between lines, nan avoidance, radius and circomference of circle through 3 points.
+
 P439.cpp: Knight Moves
 Chess board knight move buildup
 
