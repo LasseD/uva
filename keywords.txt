@@ -499,6 +499,9 @@ Get line as two ints, count adjacent fields of matrix.
 P10192.cpp: Vacation
 Longest common sub sequence.
 
+P10220.java: I Love Big Numbers !
+BigInteger multiply by valueOf int, factorials up to 1000, sum of ditis ins tring, String.toCharArray.
+
 P10222.cpp: Decode the Mad man
 keyboard two left letter substitution, including case.
 
