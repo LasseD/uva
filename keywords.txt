@@ -391,6 +391,9 @@ Fibonacci numbers up to 50.
 P913.cpp: Joana and the Odd Numbers
 Count number of odds numbers written by Joana.
 
+P1124.c: Celebrity jeopardy
+Trivial gets puts.
+
 P1585.cpp: Score
 Trivial score counting in string
 
