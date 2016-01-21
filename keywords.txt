@@ -742,6 +742,9 @@ std::cin >> int >> char[].
 P12372.cpp: Packing for Holiday
 Trivial.
 
+P12403.cpp: Save Setu
+Trivial.
+
 P12503.cpp: Robot Instructions
 std::cin to both ints and char arrays.
 
