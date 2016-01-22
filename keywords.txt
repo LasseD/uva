@@ -259,6 +259,9 @@ Uses prime sieve and lists primes.
 P414.cpp: Machined Surfaces
 Read line as int, read line as char[].
 
+P417: Word Index
+Dumb brute force.
+
 P424.java: Integer Inquery
 BigInteger parse from string, add, ZERO.
 
