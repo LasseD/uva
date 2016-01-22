@@ -454,6 +454,9 @@ Count characters in lines.
 P10066.cpp: The Twin Towers
 Longest common subsequence.
 
+P10070.java: Leap Year or Not Leap Year
+BigInteger, multiply, divide, divides.
+
 P10071.cpp: Back to High School Physics
 distance after time computation
 
@@ -623,7 +626,7 @@ P10924.cpp: Prime Words
 Uses isPrime from sieve algorithm. Warning: 1 is a prime here!
 
 P10929.java: You can say 11
-BigInteger multiply divide equals valueOf.
+BigInteger, multiply, divide, equals, valueOf.
 
 P10931.cpp: Parity
 Compute parity of int, display bits.
