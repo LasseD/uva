@@ -571,6 +571,9 @@ Area of pizza slize, area of circular segment
 P10469.cpp: To Carry or not to Carry
 Trivial XOR on ints.
 
+P10473.cpp: Simple Base Conversion
+Parse string with hex and decimal ints. Print as hex and unsigned long.
+
 P10474.cpp: Where is the Marble?
 Sort array of ints, new/delete[].
 
