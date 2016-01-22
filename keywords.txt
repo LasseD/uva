@@ -271,6 +271,9 @@ Chess board knight move buildup
 P441.cpp: Lotto
 Ways to choose k elements of set of size n. No permutation handler.
 
+P443.cpp: Humble Numbers
+Humble number generation: Generate numbers with given prime factors.
+
 P445.cpp: Marvelous Mazes
 Trivial maze decoding.
 
