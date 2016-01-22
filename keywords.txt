@@ -274,6 +274,9 @@ Ways to choose k elements of set of size n. No permutation handler.
 P445.cpp: Marvelous Mazes
 Trivial maze decoding.
 
+P446.cpp: Kibbles "n" Bits "n" Bits "n" Bits
+ANSI C scanf fom int, hex, and string, print binary.
+
 P458.cpp: The Decoder
 Character substitution. gets => '\0' to be checked. printf("%s\n", s);
 
