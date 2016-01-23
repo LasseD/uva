@@ -271,6 +271,9 @@ tangents, intersection between lines, nan avoidance, radius and circomference of
 P439.cpp: Knight Moves
 Chess board knight move buildup
 
+P440.cpp: Eeny Meeny Moo
+Precompute.
+
 P441.cpp: Lotto
 Ways to choose k elements of set of size n. No permutation handler.
 
