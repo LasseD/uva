@@ -646,6 +646,9 @@ Trivial.
 P11044.cpp: Searching for Nessy
 Trivial multiplication.
 
+P11057.cpp: Exact Sum
+Trivial sort and traverse.
+
 P11069.cpp: A Graph Problem
 sequence from all maximal independent sets in flat graph
 
