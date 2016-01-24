@@ -226,6 +226,12 @@ Trivial, dumb brute force counting.
 P324.java: Factorial Frequencies
 Biginteger, factorials, count characters in string.
 
+P344.cpp: Roman Digititis
+Comput roman digits up to 100.
+
+P349.cpp: Graph Connectivity
+Count connected components.
+
 P350.cpp: Pseudo-Random Numbers
 Find length of loop using Floyd's cycle finding algorithm.
 
@@ -288,9 +294,6 @@ ANSI C scanf fom int, hex, and string, print binary.
 
 P458.cpp: The Decoder
 Character substitution. gets => '\0' to be checked. printf("%s\n", s);
-
-P349.cpp: Graph Connectivity
-Count connected components.
 
 P476.cpp: Points in Figures: Rectangles
 std::cin >> char >> double, quick delta compare.
