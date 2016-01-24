@@ -442,6 +442,9 @@ Interpret int as hex, reverse decimal int, count bits.
 P10026.cpp: Shoemaker's Problem
 Sort by time/fine.
 
+P10034.cpp: Freckles
+Minimum spanning tree of points in plane.
+
 P10035.cpp: Primary Arithmetic (Skiena)
 Trivial carry counting
 
