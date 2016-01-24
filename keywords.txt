@@ -439,6 +439,9 @@ palindrome check for int, int to digit array.
 P10019.cpp: Funny Encryption Method
 Interpret int as hex, reverse decimal int, count bits.
 
+P10026.cpp: Shoemaker's Problem
+Sort by time/fine.
+
 P10035.cpp: Primary Arithmetic (Skiena)
 Trivial carry counting
 
