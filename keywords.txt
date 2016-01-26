@@ -433,6 +433,9 @@ Trivial after precomputation.
 P10008.cpp: What's Cryptanalysis?
 sort pair, isprint for proper printable char detection
 
+P10010.cpp: Where's Waldorf
+General trie construction and queries.
+
 P10013.cpp: Super long sums
 Read digits to shorts.
 
