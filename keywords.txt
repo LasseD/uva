@@ -676,6 +676,9 @@ Trivial.
 P11185.cpp: Ternary
 Convert decimal int to ternary.
 
+P11192.cpp: Group Reverse
+gets, swap chars in string.
+
 P11236.java: Grocery store
 sum = product calculation
 
