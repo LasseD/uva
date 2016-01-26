@@ -226,6 +226,12 @@ Trivial, dumb brute force counting.
 P324.java: Factorial Frequencies
 Biginteger, factorials, count characters in string.
 
+P344.cpp: Roman Digititis
+Comput roman digits up to 100.
+
+P349.cpp: Graph Connectivity
+Count connected components.
+
 P350.cpp: Pseudo-Random Numbers
 Find length of loop using Floyd's cycle finding algorithm.
 
@@ -262,17 +268,32 @@ Uses prime sieve and lists primes.
 P414.cpp: Machined Surfaces
 Read line as int, read line as char[].
 
+P417: Word Index
+Dumb brute force.
+
 P424.java: Integer Inquery
 BigInteger parse from string, add, ZERO.
+
+P438.cpp: The Circumference of the Circle
+tangents, intersection between lines, nan avoidance, radius and circomference of circle through 3 points.
 
 P439.cpp: Knight Moves
 Chess board knight move buildup
 
+P440.cpp: Eeny Meeny Moo
+Precompute.
+
 P441.cpp: Lotto
 Ways to choose k elements of set of size n. No permutation handler.
 
+P443.cpp: Humble Numbers
+Humble number generation: Generate numbers with given prime factors.
+
 P445.cpp: Marvelous Mazes
 Trivial maze decoding.
+
+P446.cpp: Kibbles "n" Bits "n" Bits "n" Bits
+ANSI C scanf fom int, hex, and string, print binary.
 
 P458.cpp: The Decoder
 Character substitution. gets => '\0' to be checked. printf("%s\n", s);
@@ -313,6 +334,12 @@ Fibonacci numbers up to 5000, BigInteger.
 P499.cpp: What's The Frequency
 Count letters in string, gets, isalpha, vector sort of pairs.
 
+P514.cpp: Rails
+Trivial stack and vector.
+
+P530.cpp: Binomial Showdown
+Binomial as smaller product. n|k = n|n-k.
+
 P541.cpp: Error Correction
 Trivial bit counting of matrix.
 
@@ -348,6 +375,9 @@ Trivial
 
 P623.java: 500!
 BigInteger multiply by valueOf int, factorials up to 1000.
+
+P640.c: Self Numbers
+bool array in ANSI c.
 
 P673.cpp: Parentheses Balancing
 Using a stack to check parentheses.
@@ -385,6 +415,9 @@ Fibonacci numbers up to 50.
 P913.cpp: Joana and the Odd Numbers
 Count number of odds numbers written by Joana.
 
+P1124.c: Celebrity jeopardy
+Trivial gets puts.
+
 P1585.cpp: Score
 Trivial score counting in string
 
@@ -409,6 +442,12 @@ palindrome check for int, int to digit array.
 P10019.cpp: Funny Encryption Method
 Interpret int as hex, reverse decimal int, count bits.
 
+P10026.cpp: Shoemaker's Problem
+Sort by time/fine.
+
+P10034.cpp: Freckles
+Minimum spanning tree of points in plane.
+
 P10035.cpp: Primary Arithmetic (Skiena)
 Trivial carry counting
 
@@ -432,6 +471,9 @@ Count characters in lines.
 
 P10066.cpp: The Twin Towers
 Longest common subsequence.
+
+P10070.java: Leap Year or Not Leap Year
+BigInteger, multiply, divide, divides.
 
 P10071.cpp: Back to High School Physics
 distance after time computation
@@ -472,6 +514,12 @@ read and write ints with decimal place
 P10142.cpp: Australian Voting System (Skiena)
 Simulation
 
+P10161.cpp: Ant on a Chessboard
+Trivial. sqrt.
+
+P10168.cpp: Summation of Four Primes
+Prime sieve. Goldbach's conjecture.
+
 P10173.java: Smallest Bounding Rectangle
 Ch, ch walk, ch bounding box turn
 
@@ -483,6 +531,9 @@ Get line as two ints, count adjacent fields of matrix.
 
 P10192.cpp: Vacation
 Longest common sub sequence.
+
+P10220.java: I Love Big Numbers !
+BigInteger multiply by valueOf int, factorials up to 1000, sum of ditis ins tring, String.toCharArray.
 
 P10222.cpp: Decode the Mad man
 keyboard two left letter substitution, including case.
@@ -547,6 +598,9 @@ Area of pizza slize, area of circular segment
 P10469.cpp: To Carry or not to Carry
 Trivial XOR on ints.
 
+P10473.cpp: Simple Base Conversion
+Parse string with hex and decimal ints. Print as hex and unsigned long.
+
 P10474.cpp: Where is the Marble?
 Sort array of ints, new/delete[].
 
@@ -561,6 +615,9 @@ Trivial simulate combination lock.
 
 P10591.cpp: Happy Number
 Square sum of number. Cache numbers.
+
+P10608.cpp: Friends
+Connected components.
 
 P10684.cpp: The jackpot
 Maximum subarray sum, Kadane's algorithm, 1D
@@ -577,6 +634,9 @@ Trivial number summing
 P10812.cpp: Beat the Spread!
 given s,d, find a,b where a+b=s, a-b=d
 
+P10815.cpp: Andy's First Dictionary
+Apply tolower.
+
 P10921.cpp: Find the Telephone
 Char substitution, isprint, gets => '\0' but beware of \r\n on Win.
 
@@ -584,7 +644,7 @@ P10924.cpp: Prime Words
 Uses isPrime from sieve algorithm. Warning: 1 is a prime here!
 
 P10929.java: You can say 11
-BigInteger multiply divide equals valueOf.
+BigInteger, multiply, divide, equals, valueOf.
 
 P10931.cpp: Parity
 Compute parity of int, display bits.
@@ -600,6 +660,9 @@ Trivial.
 
 P11044.cpp: Searching for Nessy
 Trivial multiplication.
+
+P11057.cpp: Exact Sum
+Trivial sort and traverse.
 
 P11069.cpp: A Graph Problem
 sequence from all maximal independent sets in flat graph
@@ -706,6 +769,9 @@ Trivial all increment or all decrement.
 P11984.cpp: A Change in Therman Unit
 Convert Fahrenheit to Celcius and back.
 
+P12015.cpp: Google is Feeling Lucky
+Trivial.
+
 P12100.cpp: Printer Queue
 deque, std::sort on int, printer job simulation with priorities.
 
@@ -716,6 +782,9 @@ P12289.cpp: One-Two-Three
 std::cin >> int >> char[].
 
 P12372.cpp: Packing for Holiday
+Trivial.
+
+P12403.cpp: Save Setu
 Trivial.
 
 P12503.cpp: Robot Instructions
