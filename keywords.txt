@@ -223,6 +223,9 @@ string check
 P299.cpp: Train Swapping
 Trivial, dumb brute force counting.
 
+P305.cpp: Joseph
+Precompute.
+
 P324.java: Factorial Frequencies
 Biginteger, factorials, count characters in string.
 
