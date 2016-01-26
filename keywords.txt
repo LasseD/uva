@@ -610,6 +610,9 @@ BigInteger add, multiply, cache.
 P10550.cpp: Combination Lock
 Trivial simulate combination lock.
 
+P10579.java: Fibonacci Numbers
+Fibonacci numbers up to 5000. BigInteger. Caching.
+
 P10591.cpp: Happy Number
 Square sum of number. Cache numbers.
 
