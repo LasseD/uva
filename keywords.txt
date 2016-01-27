@@ -424,6 +424,9 @@ Fibonacci numbers up to 50.
 P913.cpp: Joana and the Odd Numbers
 Count number of odds numbers written by Joana.
 
+P993.cpp: Product of digits
+GIven N, find number where N is product of digits of number.
+
 P1124.c: Celebrity jeopardy
 Trivial gets puts.
 
