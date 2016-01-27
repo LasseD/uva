@@ -340,6 +340,9 @@ Count letters in string, gets, isalpha, vector sort of pairs.
 P514.cpp: Rails
 Trivial stack and vector.
 
+P516.cpp: Prime Land
+Prime sieve, nextPrime, isPrime, prevPrime, prime factorization top down. Read all ints on line using gets.
+
 P524.cpp: Prime Ring Problem
 Permutation handler with custom size. All primes up to 32.
 
