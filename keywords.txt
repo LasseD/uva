@@ -223,6 +223,9 @@ string check
 P299.cpp: Train Swapping
 Trivial, dumb brute force counting.
 
+P305.cpp: Joseph
+Precompute.
+
 P324.java: Factorial Frequencies
 Biginteger, factorials, count characters in string.
 
@@ -619,6 +622,9 @@ BigInteger add, multiply, cache.
 P10550.cpp: Combination Lock
 Trivial simulate combination lock.
 
+P10579.java: Fibonacci Numbers
+Fibonacci numbers up to 5000. BigInteger. Caching.
+
 P10591.cpp: Happy Number
 Square sum of number. Cache numbers.
 
@@ -681,6 +687,9 @@ Trivial.
 
 P11185.cpp: Ternary
 Convert decimal int to ternary.
+
+P11192.cpp: Group Reverse
+gets, swap chars in string.
 
 P11236.java: Grocery store
 sum = product calculation
