@@ -418,6 +418,9 @@ Read lines, parse to int, parse to string, parse to tokens, substitution cipher.
 P850.cpp: Crypt Kicker II (Skiena)
 Substitution cipher
 
+P897.cpp: Anagrammatic Primes
+Prime sieve, bitset and permutation handler of variable size on ints.
+
 P900.cpp: Brick Wall Patterns
 Fibonacci numbers up to 50.
 
