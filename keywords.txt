@@ -730,6 +730,9 @@ Sort and double list walk.
 P11332.cpp: Summing Digits
 %= 10 and /= 10 on int
 
+P11340.cpp: Newspaper
+Read int from various places in string, read unsigned char (extended ascii up to 255)
+
 P11349.cpp: Symmetric Matrix
 Trivial matrix check. Read both char and long long.
 
