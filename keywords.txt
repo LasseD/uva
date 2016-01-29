@@ -652,6 +652,9 @@ Apply tolower.
 P10921.cpp: Find the Telephone
 Char substitution, isprint, gets => '\0' but beware of \r\n on Win.
 
+P10922.cpp: 2 the 9s
+Is long number multiple of 9 by fast recursive sum.
+
 P10924.cpp: Prime Words
 Uses isPrime from sieve algorithm. Warning: 1 is a prime here!
 
