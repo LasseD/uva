@@ -649,6 +649,9 @@ given s,d, find a,b where a+b=s, a-b=d
 P10815.cpp: Andy's First Dictionary
 Apply tolower.
 
+P10878.cpp: Decode the tape
+Binary decode chars.
+
 P10921.cpp: Find the Telephone
 Char substitution, isprint, gets => '\0' but beware of \r\n on Win.
 
