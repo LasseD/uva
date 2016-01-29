@@ -436,6 +436,9 @@ GIven N, find number where N is product of digits of number.
 P1124.c: Celebrity jeopardy
 Trivial gets puts.
 
+P1225.cpp: Digit Counting
+Cache counted digits.
+
 P1585.cpp: Score
 Trivial score counting in string
 
@@ -658,14 +661,23 @@ Prime sieve. bitset. isPrime, nextPrime.
 P10783.cpp: Odd Sum
 Trivial number summing
 
+P10789.cpp: Prime Frequency
+Prime sieve into bool array, isPrime.
+
 P10812.cpp: Beat the Spread!
 given s,d, find a,b where a+b=s, a-b=d
 
 P10815.cpp: Andy's First Dictionary
 Apply tolower.
 
+P10878.cpp: Decode the tape
+Binary decode chars.
+
 P10921.cpp: Find the Telephone
 Char substitution, isprint, gets => '\0' but beware of \r\n on Win.
+
+P10922.cpp: 2 the 9s
+Is long number multiple of 9 by fast recursive sum.
 
 P10924.cpp: Prime Words
 Uses isPrime from sieve algorithm. Warning: 1 is a prime here!
@@ -765,6 +777,12 @@ ch
 
 P11636.cpp: Hello World!
 Trivial counting.
+
+P11677.cpp: Alarm Clock
+Time diff.
+
+P11689.cpp: Soda Surpler
+Coca cola problem with variable cost.
 
 P11727.cpp: Cost Cutting
 Trivial sort 3 numbers, output middle
