@@ -421,6 +421,9 @@ Count number of odds numbers written by Joana.
 P1124.c: Celebrity jeopardy
 Trivial gets puts.
 
+P1225.cpp: Digit Counting
+Cache counted digits.
+
 P1585.cpp: Score
 Trivial score counting in string
 
