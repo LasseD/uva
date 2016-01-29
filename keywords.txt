@@ -646,6 +646,9 @@ Prime sieve. bitset. isPrime, nextPrime.
 P10783.cpp: Odd Sum
 Trivial number summing
 
+P10789.cpp: Prime Frequency
+Prime sieve into bool array, isPrime.
+
 P10812.cpp: Beat the Spread!
 given s,d, find a,b where a+b=s, a-b=d
 
