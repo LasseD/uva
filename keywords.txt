@@ -754,6 +754,9 @@ ch
 P11636.cpp: Hello World!
 Trivial counting.
 
+P11689.cpp: Soda Surpler
+Coca cola problem with variable cost.
+
 P11727.cpp: Cost Cutting
 Trivial sort 3 numbers, output middle
 
