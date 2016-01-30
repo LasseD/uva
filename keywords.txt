@@ -805,6 +805,9 @@ unsigned long long, overflow detection, powers, square powers
 P11764.cpp: Jumping Mario
 Trivial count increasing and decreasing.
 
+P11777.cpp: Automate the Grades
+Trivial.
+
 P11799.cpp: Horror Dash
 Trivial max.
 
