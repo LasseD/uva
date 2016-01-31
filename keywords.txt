@@ -841,6 +841,9 @@ Trivial.
 P12100.cpp: Printer Queue
 deque, std::sort on int, printer job simulation with priorities.
 
+P12149.cpp: Feynman
+Trivial.
+
 P12250.cpp: Language Detection
 Trivial string compare equals
 
