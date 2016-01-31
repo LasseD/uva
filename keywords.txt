@@ -763,6 +763,9 @@ Trivial matrix check. Read both char and long long.
 P11364.cpp: Parking
 Trivial min/max, round trip computation
 
+P11388.cpp: GCD LCM
+gcd, lcm, thoughts about connection between these in comments of code.
+
 P11389.cpp: The Bus Driver Problem
 Trivial sort twice, once with negative integers for rsort
 
