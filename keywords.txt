@@ -742,6 +742,9 @@ Convert decimal int to ternary.
 P11192.cpp: Group Reverse
 gets, swap chars in string.
 
+P11219.cpp: How old are you?
+Date comparison. Warning: Description of too old is vague.
+
 P11236.java: Grocery store
 sum = product calculation
 
