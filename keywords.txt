@@ -646,6 +646,9 @@ Area of circle, area of sphere.
 P10523.java: Very Easy !!!
 BigInteger add, multiply, cache.
 
+P10530.cpp: Guessing Game
+Match guesses with binary search.
+
 P10550.cpp: Combination Lock
 Trivial simulate combination lock.
 
