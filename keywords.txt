@@ -313,6 +313,9 @@ std::cin >> char >> double, quick delta compare.
 P477.cpp: Points in Figures: Rectangles and Circles
 std::cin >> char >> double, quick delta compare, point in rectangle, point in circle.
 
+P482.cpp: Permutation Arrays
+std::cin to read line as std::string, std::stringstream to read ints and strings from string (As in StringTokenizer).
+
 P483.cpp: Word Scramble
 string parse, letter swapping
 
