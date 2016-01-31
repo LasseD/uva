@@ -637,6 +637,9 @@ stdio.h gets. printf .2f for two decimals.
 P10432.java: Polygon Inside A Circle
 Area of pizza slize, area of circular segment
 
+P10450.cpp: World Cup Noise
+Trivial.
+
 P10469.cpp: To Carry or not to Carry
 Trivial XOR on ints.
 
