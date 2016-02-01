@@ -367,6 +367,9 @@ Trivial bit counting of matrix.
 P543.cpp: Goldbach's Conjecture
 Generate primes using prime sieve.
 
+P562.cpp: Dividing coins
+Dynamic programming to select best subset with sum less than given amount.
+
 P567.cpp: Risk
 all pair shortes path
 
