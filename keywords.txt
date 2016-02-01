@@ -457,6 +457,9 @@ Trivial score counting in string
 P1644.cpp: Prime Gap
 Prime sieve, bitset, nextPrime, prevPrime, isPrime, prime walk.
 
+P10000.cpp: Longest Paths
+Longest path in graph. All edge weights 1.
+
 P10002.cpp: Center of Masses
 BEST, ch, ch center of mass
 
