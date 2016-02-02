@@ -517,6 +517,9 @@ Sort array
 P10041.cpp: Vito's Damily (Skiena)
 Trivial array sort, stream for sum
 
+P10048.cpp: Audiophobia
+All pair shortest path with MAX relaxation function. Floyd-Warshall.
+
 P10050.cpp: Hartals
 Trivial simulation.
 
