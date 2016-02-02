@@ -265,6 +265,9 @@ Find divisors.
 P386.java: Perfect Cubes
 reuse computations
 
+P392.cpp: Polynomial Showdown
+Format a polynomial for printing.
+
 P401.cpp: Palindromes
 Check palindrome, check mirrored palindrome.
 
