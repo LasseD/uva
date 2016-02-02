@@ -439,6 +439,9 @@ std::cin >> int and char[].
 P725.cpp: Division
 Find all pairs abcde/fghij=N, PH<int>
 
+P729.cpp: The Hamming Distance Problem
+Print all n choose k combinations of binary ints with x ones.
+
 P843.cpp: Crypt Kicker (Skiena)
 Read lines, parse to int, parse to string, parse to tokens, substitution cipher.
 
