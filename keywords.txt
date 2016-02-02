@@ -889,6 +889,9 @@ Trivial.
 P12250.cpp: Language Detection
 Trivial string compare equals
 
+P12279.cpp: Emoogle Balance
+Trivial.
+
 P12289.cpp: One-Two-Three
 std::cin >> int >> char[].
 
