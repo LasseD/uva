@@ -631,6 +631,9 @@ Gotcha factorial definition. Please ignore.
 P10327.cpp: Flip Sort
 Same as P299, but for arbritrary ints, duplicates.
 
+P10338.cpp: Mischievous Children
+Count permutations of letters of string. Sort letters in string.
+
 P10340.cpp: All in All
 Implement "Contains substring", linear time.
 
