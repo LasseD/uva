@@ -586,6 +586,9 @@ Prime sieve. Goldbach's conjecture.
 P10173.java: Smallest Bounding Rectangle
 Ch, ch walk, ch bounding box turn
 
+P10183.java: How Many Fibs?
+BigInteger cache fibonacci numbers. Slow iterative traversal is fast enough.
+
 P10188.cpp: Automated Judge Script
 gets and read line as int.
 
