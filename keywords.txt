@@ -610,6 +610,9 @@ Uses prime sieve isPrime, reverse integer, check prime.
 P10252.cpp: Common Permutation
 Count letters in string, gets.
 
+P10258.cpp: Contest Scoreboard
+C++11 tuple usage.
+
 P10260.cpp: Soundex
 Trivial letter substitution.
 
