@@ -484,6 +484,9 @@ Longest path in graph. All edge weights 1.
 P10002.cpp: Center of Masses
 BEST, ch, ch center of mass
 
+P10003.cpp: Cutting Sticks
+Computing all sub solutions. Brute force dynamic programming.
+
 P10004.cpp: Bicoloring
 Simple graph traversal.
 
