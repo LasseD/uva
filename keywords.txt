@@ -814,6 +814,9 @@ Trivial sort twice, once with negative integers for rsort
 P11417.cpp: GCD
 GCD.
 
+P11455.cpp: Behold my quadrangle
+Trivial square/rectangle/none sides validity.
+
 P11461.cpp: Square Numbers
 cmath sqrt
 
