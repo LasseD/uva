@@ -232,6 +232,9 @@ Biginteger, factorials, count characters in string.
 P336.cpp: A Node Too Far
 All pair shortest path in arbitrary graph. Floyd-Warshall.
 
+P340.cpp: Master-Mind Hints
+Compute master mind game score.
+
 P344.cpp: Roman Digititis
 Comput roman digits up to 100.
 
