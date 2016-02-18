@@ -706,6 +706,9 @@ Parse string with hex and decimal ints. Print as hex and unsigned long.
 P10474.cpp: Where is the Marble?
 Sort array of ints, new/delete[].
 
+P10487.cpp: Closest Sums
+Sum of two ints in array that is closest to target.
+
 P10499.cpp: The Land of Justice
 Area of circle, area of sphere.
 
