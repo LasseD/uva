@@ -655,6 +655,9 @@ Gotcha factorial definition. Please ignore.
 P10327.cpp: Flip Sort
 Same as P299, but for arbritrary ints, duplicates.
 
+P10334.java Ray Through Glasses
+Fibonacci numbers up to 1000. BigInteger. Caching.
+
 P10336.cpp: Rank the Languages
 Region find in grid. Read line as int, read line as two ints, union-find.
 
