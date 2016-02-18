@@ -775,6 +775,9 @@ Trivial.
 P10945.cpp: Mother Bear
 palindrome check, ignore case
 
+P10954.cpp: Add All
+Repeatedly sum smallest two ints from multiset.
+
 P10970.cpp: Big Chocolate
 Trivial, buffered. Read two positive ints from line.
 
