@@ -652,6 +652,9 @@ Find character shifts in string. read line as unsigned int. read line as two uns
 P10305.cpp: Ordering Tasks
 Partial order. Extend to total order.
 
+P10310.cpp: Dog and Gopher
+stringstream read as string, copy to double.
+
 P10323.cpp: Factorial! You Must be Kidding!!!
 Gotcha factorial definition. Please ignore.
 
