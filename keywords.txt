@@ -622,6 +622,9 @@ BigInteger multiply by valueOf int, factorials up to 1000, sum of ditis ins trin
 P10222.cpp: Decode the Mad man
 keyboard two left letter substitution, including case.
 
+P10226.cpp: Hardwood Species
+Count strings, std::string to printf.
+
 P10235.cpp: Simply Emirp
 Uses prime sieve isPrime, reverse integer, check prime.
 
