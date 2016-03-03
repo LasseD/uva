@@ -793,6 +793,9 @@ Repeatedly sum smallest two ints from multiset.
 P10970.cpp: Big Chocolate
 Trivial, buffered. Read two positive ints from line.
 
+P10986.cpp: Sending email
+DIjkstra for shortest path, actual dijkstra!
+
 P11000.cpp: Bee
 Trivial.
 
