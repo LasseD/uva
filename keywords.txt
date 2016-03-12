@@ -409,6 +409,9 @@ Uses prime sieve, nextPrime, factorize up to 2^32.
 P591.cpp: Box of Bricks
 Trivial
 
+P594.cpp: One Little, Two Little, Three Little Endians
+Little to big endian conversion.
+
 P621.cpp: Secret Research
 Trivial
 
@@ -732,6 +735,9 @@ Trivial simulate combination lock.
 
 P10579.java: Fibonacci Numbers
 Fibonacci numbers up to 5000. BigInteger. Caching.
+
+P10583.cpp: Ubiquitous Religions
+Union find, real union find including tree compression in find.
 
 P10591.cpp: Happy Number
 Square sum of number. Cache numbers.
