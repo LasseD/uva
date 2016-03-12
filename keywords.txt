@@ -553,6 +553,9 @@ Count characters in lines.
 P10066.cpp: The Twin Towers
 Longest common subsequence.
 
+P10067.cpp: Playing with Wheels
+FIFO queue usage.
+
 P10070.java: Leap Year or Not Leap Year
 BigInteger, multiply, divide, divides.
 
