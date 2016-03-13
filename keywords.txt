@@ -283,6 +283,9 @@ Check palindrome, check mirrored palindrome.
 P406.cpp: Prime Cuts
 Uses prime sieve and lists primes.
 
+P412.cpp: Pi
+GCD on int.
+
 P414.cpp: Machined Surfaces
 Read line as int, read line as char[].
 
@@ -306,6 +309,9 @@ Ways to choose k elements of set of size n. No permutation handler.
 
 P443.cpp: Humble Numbers
 Humble number generation: Generate numbers with given prime factors.
+
+P444.cpp: Encoder and Decoder
+<algorithm> reverse on char*
 
 P445.cpp: Marvelous Mazes
 Trivial maze decoding.
