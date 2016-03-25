@@ -220,6 +220,9 @@ Graph unreachable, adjacency lists
 P291.java: The House of Santa Claus
 string check
 
+P294.cpp: Divisors
+Prime sieve on bitset, prevPrime, nextPrime, numberOfDivisors, isPrime, number with most divisors.
+
 P299.cpp: Train Swapping
 Trivial, dumb brute force counting.
 
