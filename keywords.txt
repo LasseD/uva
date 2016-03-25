@@ -436,6 +436,9 @@ Find all pairs abcde/fghij=N, PH<int>
 P843.cpp: Crypt Kicker (Skiena)
 Read lines, parse to int, parse to string, parse to tokens, substitution cipher.
 
+P846.cpp: Steps
+Step latter computation.
+
 P850.cpp: Crypt Kicker II (Skiena)
 Substitution cipher
 
