@@ -17,7 +17,7 @@ n! >> 2^n
 
 Interview Problems
 2-43. 
-Given S, |S|=n. Pisk S', |S'|=k
+Given S, |S|=n. Pick S', |S'|=k
 Problem: Fairly choose S'
 Solution: Like randomized quick-sort: Choose first number at random, swap.
 Single-sweep solution: Walk and pick with probability k/n
