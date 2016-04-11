@@ -235,6 +235,9 @@ Biginteger, factorials, count characters in string.
 P336.cpp: A Node Too Far
 All pair shortest path in arbitrary graph. Floyd-Warshall.
 
+P340.cpp: Master-Mind Hints
+Compute master mind game score.
+
 P344.cpp: Roman Digititis
 Comput roman digits up to 100.
 
@@ -267,6 +270,15 @@ Find divisors.
 
 P386.java: Perfect Cubes
 reuse computations
+
+P389.cpp: Basically Speaking
+Convert in to any base, std::cin >> std::hex input read (can take both with and without 0x first)
+
+P392.cpp: Polynomial Showdown
+Format a polynomial for printing.
+
+P400.cpp: Unix ls
+read int and string.
 
 P401.cpp: Palindromes
 Check palindrome, check mirrored palindrome.
@@ -364,6 +376,9 @@ Permutation handler with custom size. All primes up to 32.
 P530.cpp: Binomial Showdown
 Binomial as smaller product. n|k = n|n-k.
 
+P537.cpp: Artificial Intelligence?
+Parse double from char*.
+
 P541.cpp: Error Correction
 Trivial bit counting of matrix.
 
@@ -397,11 +412,17 @@ Uses prime sieve, nextPrime, factorize up to 2^32.
 P591.cpp: Box of Bricks
 Trivial
 
+P594.cpp: One Little, Two Little, Three Little Endians
+Little to big endian conversion.
+
 P621.cpp: Secret Research
 Trivial
 
 P623.java: 500!
 BigInteger multiply by valueOf int, factorials up to 1000.
+
+P624.cpp: CD
+Dynamic programming to select best subset with sum less than given amount. Backtrack.
 
 P640.c: Self Numbers
 bool array in ANSI c.
@@ -432,6 +453,12 @@ std::cin >> int and char[].
 
 P725.cpp: Division
 Find all pairs abcde/fghij=N, PH<int>
+
+P729.cpp: The Hamming Distance Problem
+Print all n choose k combinations of binary ints with x ones.
+
+P793.cpp: Network Connections
+die(), dumb union-find, paranoid parsing.
 
 P843.cpp: Crypt Kicker (Skiena)
 Read lines, parse to int, parse to string, parse to tokens, substitution cipher.
@@ -475,6 +502,9 @@ Longest path in graph. All edge weights 1.
 P10002.cpp: Center of Masses
 BEST, ch, ch center of mass
 
+P10003.cpp: Cutting Sticks
+Computing all sub solutions. Brute force dynamic programming.
+
 P10004.cpp: Bicoloring
 Simple graph traversal.
 
@@ -514,6 +544,9 @@ Sort array
 P10041.cpp: Vito's Damily (Skiena)
 Trivial array sort, stream for sum
 
+P10048.cpp: Audiophobia
+All pair shortest path with MAX relaxation function. Floyd-Warshall.
+
 P10050.cpp: Hartals
 Trivial simulation.
 
@@ -525,6 +558,9 @@ Count characters in lines.
 
 P10066.cpp: The Twin Towers
 Longest common subsequence.
+
+P10067.cpp: Playing with Wheels
+FIFO queue usage.
 
 P10070.java: Leap Year or Not Leap Year
 BigInteger, multiply, divide, divides.
@@ -577,6 +613,9 @@ Prime sieve. Goldbach's conjecture.
 P10173.java: Smallest Bounding Rectangle
 Ch, ch walk, ch bounding box turn
 
+P10183.java: How Many Fibs?
+BigInteger cache fibonacci numbers. Slow iterative traversal is fast enough.
+
 P10188.cpp: Automated Judge Script
 gets and read line as int.
 
@@ -586,17 +625,26 @@ Get line as two ints, count adjacent fields of matrix.
 P10192.cpp: Vacation
 Longest common sub sequence.
 
+P10193.cpp: All You Need Is Love
+Read line as binary, read line as unsigned long, GCD.
+
 P10220.java: I Love Big Numbers !
 BigInteger multiply by valueOf int, factorials up to 1000, sum of ditis ins tring, String.toCharArray.
 
 P10222.cpp: Decode the Mad man
 keyboard two left letter substitution, including case.
 
+P10226.cpp: Hardwood Species
+Count strings, std::string to printf.
+
 P10235.cpp: Simply Emirp
 Uses prime sieve isPrime, reverse integer, check prime.
 
 P10252.cpp: Common Permutation
 Count letters in string, gets.
+
+P10258.cpp: Contest Scoreboard
+C++11 tuple usage.
 
 P10260.cpp: Soundex
 Trivial letter substitution.
@@ -619,11 +667,23 @@ Find character shifts in string. read line as unsigned int. read line as two uns
 P10305.cpp: Ordering Tasks
 Partial order. Extend to total order.
 
+P10310.cpp: Dog and Gopher
+stringstream read as string, copy to double.
+
 P10323.cpp: Factorial! You Must be Kidding!!!
 Gotcha factorial definition. Please ignore.
 
 P10327.cpp: Flip Sort
 Same as P299, but for arbritrary ints, duplicates.
+
+P10334.java Ray Through Glasses
+Fibonacci numbers up to 1000. BigInteger. Caching.
+
+P10336.cpp: Rank the Languages
+Region find in grid. Read line as int, read line as two ints, union-find.
+
+P10338.cpp: Mischievous Children
+Count permutations of letters of string. Sort letters in string.
 
 P10340.cpp: All in All
 Implement "Contains substring", linear time.
@@ -642,6 +702,9 @@ Prime sieve into bitset up to 20.000.000. Twin primes.
 
 P10405.cpp: Longest Common Subsequence
 Longest common subset problem. Dynamic programming.
+
+P10409.cpp: Die Game
+Die turn simulation.
 
 P10420.cpp: List of Conquests
 Read line as int, Read first word from line, map string to count.
@@ -664,6 +727,9 @@ Parse string with hex and decimal ints. Print as hex and unsigned long.
 P10474.cpp: Where is the Marble?
 Sort array of ints, new/delete[].
 
+P10487.cpp: Closest Sums
+Sum of two ints in array that is closest to target.
+
 P10499.cpp: The Land of Justice
 Area of circle, area of sphere.
 
@@ -679,11 +745,17 @@ Trivial simulate combination lock.
 P10579.java: Fibonacci Numbers
 Fibonacci numbers up to 5000. BigInteger. Caching.
 
+P10583.cpp: Ubiquitous Religions
+Union find, real union find including tree compression in find.
+
 P10591.cpp: Happy Number
 Square sum of number. Cache numbers.
 
 P10608.cpp: Friends
 Connected components.
+
+P10611.cpp: The Playboy Chimp
+Upper bound, lower bound binary searches.
 
 P10684.cpp: The jackpot
 Maximum subarray sum, Kadane's algorithm, 1D
@@ -696,6 +768,9 @@ Prime sieve. bitset. isPrime, nextPrime.
 
 P10783.cpp: Odd Sum
 Trivial number summing
+
+P10784.cpp: Diagonal
+Number of diagonals in n-gon.
 
 P10789.cpp: Prime Frequency
 Prime sieve into bool array, isPrime.
@@ -730,8 +805,14 @@ Trivial.
 P10945.cpp: Mother Bear
 palindrome check, ignore case
 
+P10954.cpp: Add All
+Repeatedly sum smallest two ints from multiset.
+
 P10970.cpp: Big Chocolate
 Trivial, buffered. Read two positive ints from line.
+
+P10986.cpp: Sending email
+DIjkstra for shortest path, actual dijkstra!
 
 P11000.cpp: Bee
 Trivial.
@@ -787,6 +868,9 @@ Trivial sort twice, once with negative integers for rsort
 P11417.cpp: GCD
 GCD.
 
+P11455.cpp: Behold my quadrangle
+Trivial square/rectangle/none sides validity.
+
 P11461.cpp: Square Numbers
 cmath sqrt
 
@@ -832,6 +916,9 @@ Time diff.
 P11689.cpp: Soda Surpler
 Coca cola problem with variable cost.
 
+P11715.cpp: Car
+Basic velocity and acceleration formulas.
+
 P11727.cpp: Cost Cutting
 Trivial sort 3 numbers, output middle
 
@@ -862,6 +949,9 @@ Trivial.
 P11877.cpp: The Coca-Cola Store
 The coca cola problem with borrowing.
 
+P11936.cpp: The Lazy Lumberjacks
+Trivial.
+
 P11942.cpp: Lumberjack Sequencing
 Trivial all increment or all decrement.
 
@@ -879,6 +969,9 @@ Trivial.
 
 P12250.cpp: Language Detection
 Trivial string compare equals
+
+P12279.cpp: Emoogle Balance
+Trivial.
 
 P12289.cpp: One-Two-Three
 std::cin >> int >> char[].
