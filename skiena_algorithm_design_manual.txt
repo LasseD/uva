@@ -72,7 +72,7 @@ Solution: Balanced binary tree with all sub-products. Use 2*logn for each number
 Programming challenges:
 3-1. "Jolly Jumpers" - Programming Challenges 110201, UVA Judge 10038. OK
 3-2. "Crypt Kicker" - Programming Challenges 110204, UVA Judge 843. OK
-3-3. "Where's Waldorf?" - Programming Challenges 110302, UVA Judge 10010.
+3-3. "Where's Waldorf?" - Programming Challenges 110302, UVA Judge 10010. OK
 3-4. "Crypt Kicker II" - Programming Challenges 110304, UVA Judge 850. OK
 
 CHAPTER 4: Sorting and Searching
@@ -95,7 +95,7 @@ Programming Challenges
 4-1. "Vito's Family" - Programming Challenges 110401, UVA Judge 10041. OK
 4-2. "Stacks of Flapjacks" - Programming Challenges 110402, UVA Judge 120. OK
 4-3. "Bridge" - Programming Challenges 110403, UVA Judge 10037. OK
-4-4. "ShoeMaker's Problem" - Programming Challenges 110405, UVA Judge 10026.
+4-4. "ShoeMaker's Problem" - Programming Challenges 110405, UVA Judge 10026. OK
 4-5. "ShellSort" - Programming Challenges 110407, UVA Judge 10152.
 
 CHAPTER 5: Graph Traversal
@@ -120,7 +120,7 @@ Dijkstra's SP: Include min and relax all adjacent.
 Floyd-Warshall's all-pair SP: Adjacency matrix, iterate on edge count.
 
 Programming Challenges
-6-1. "Freckles" - Programming Challenges 111001, UVA Judge 10034.
+6-1. "Freckles" - Programming Challenges 111001, UVA Judge 10034. OK
 6-2. "Necklace" - Programming Challenges 111002, UVA Judge 10054.
 6-3. "Railroads" - Programming Challenges 111004, UVA Judge 10039.
 6-4. "Tourist Guide" - Programming Challenges 111006, UVA Judge 10199.
@@ -145,7 +145,7 @@ Programming Challenges
 8-1. "Is Bigger Smarter?" - Programming Challenges 111101, UVA Judge 10131.
 8-2. "Weights and Measures" - Programming Challenges 111103, UVA Judge 10154.
 8-3. "Unidirectional TSP" - Programming Challenges 111104, UVA Judge 116. OK
-8-4. "Cutting Sticks" - Programming Challenges 111105, UVA Judge 10003.
+8-4. "Cutting Sticks" - Programming Challenges 111105, UVA Judge 10003. OK
 8-5. "Ferry Loading" - Programming Challenges 111106, UVA Judge 10261.
 
 CHAPTER 9: Intractable Problems and Approximation Algorithms
@@ -158,8 +158,8 @@ TODO!
 Programming Challenges
 Geometry
 9-1. "The Monocycle" - Programming Challenges 111202, UVA Judge 10047.
-9-2. "Dog and Gopher" - Programming Challenges 10310, UVA Judge 111301.
-9-3. "Chocolate Chip Cookies" - Programming Challenges 111304, UVA Judge 10136.
+9-2. "Dog and Gopher" - Programming Challenges 10310. OK
+9-3. "Chocolate Chip Cookies" - Programming Challenges 111304, UVA Judge 10136. 
 9-4. "Birthday Cake" - Programming Challenges 111305, UVA Judge 10167.
 Computational Geometry
 9-5. "Closest Pair Problem" - Programming Challenges 111402, UVA Judge 10245.

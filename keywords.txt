@@ -466,6 +466,9 @@ die(), dumb union-find, paranoid parsing.
 P843.cpp: Crypt Kicker (Skiena)
 Read lines, parse to int, parse to string, parse to tokens, substitution cipher.
 
+P847.cpp: A Multiplication Game
+Game simulation.
+
 P850.cpp: Crypt Kicker II (Skiena)
 Substitution cipher
 
