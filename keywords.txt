@@ -220,6 +220,9 @@ Graph unreachable, adjacency lists
 P291.java: The House of Santa Claus
 string check
 
+P294.cpp: Divisors
+Prime sieve on bitset, prevPrime, nextPrime, numberOfDivisors, isPrime, number with most divisors.
+
 P299.cpp: Train Swapping
 Trivial, dumb brute force counting.
 
@@ -465,6 +468,9 @@ die(), dumb union-find, paranoid parsing.
 
 P843.cpp: Crypt Kicker (Skiena)
 Read lines, parse to int, parse to string, parse to tokens, substitution cipher.
+
+P846.cpp: Steps
+Step latter computation.
 
 P847.cpp: A Multiplication Game
 Game simulation.
