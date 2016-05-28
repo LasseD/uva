@@ -421,6 +421,9 @@ Trivial
 P594.cpp: One Little, Two Little, Three Little Endians
 Little to big endian conversion.
 
+P612.cpp: DNA Sorting
+read ints and strings as char* to std::string, count inversions.
+
 P621.cpp: Secret Research
 Trivial
 
