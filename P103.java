@@ -13,21 +13,17 @@ public class P103 {
     	String line;
     	while(null != (line = rd.readLine())) {
     		if(line.trim().isEmpty())
-    			return;
+    			continue;
     		Scanner s = new Scanner(line);
     		int numBoxes = s.nextInt();
     		Box[] boxes = new Box[numBoxes];
     		int numDims = s.nextInt();
-    		if(numBoxes == 0) {
-    			System.out.println("0");
-    			continue;
-    		}
     		for(int i = 0; i < numBoxes; ++i) {
     			line = rd.readLine();
         		s = new Scanner(line);
         		int[] dims = new int[numDims];
         		for(int j = 0; j < numDims; ++j) {
-            		dims[j] = s.nextInt();
+			    dims[j] = s.nextInt();
         		}
         		boxes[i] = new Box(dims, i+1);        		
     		}
@@ -41,13 +37,13 @@ public class P103 {
     		for(int i = 0; i < numBoxes; ++i) {
     			numNestings[i] = 1; // At least the box itself
     			nestsFrom[i] = -1;
-				for(int j = 0; j < i; ++j) {
-					if(boxes[j].fitsIn(boxes[i])) {
-    					int nesting = 1 + numNestings[j];
-    					if(nesting > numNestings[i]) {
-    						numNestings[i] = nesting;
-    						nestsFrom[i] = j;
-    					}
+			for(int j = 0; j < i; ++j) {
+				if(boxes[j].fitsIn(boxes[i])) {
+				    int nesting = 1 + numNestings[j];
+				    if(nesting > numNestings[i]) {
+					numNestings[i] = nesting;
+					nestsFrom[i] = j;
+				    }
     				}
     			}
     			if(numNestings[i] > numNestings[boxWithMaxNesting]) {
@@ -99,7 +95,7 @@ public class P103 {
     			else if(dims[i] < other.dims[i])
     				return -1;
     		}
-    		return 0;
+    		return index < other.index ? -1 : 1;
     	}
     }
 }

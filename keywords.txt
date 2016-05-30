@@ -8,7 +8,7 @@ P102.java: Ecological Bin Packing
 reverse search
 
 P103.java: Stacking Boxes
-brute force
+Longest increasing subsequence. O(n^2) algorithm fast enough. Warning: Test input with blank lines in judge!
 
 P104.java: Arbitrage
 Floyd-Warshall
