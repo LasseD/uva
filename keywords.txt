@@ -469,6 +469,9 @@ Print all n choose k combinations of binary ints with x ones.
 P793.cpp: Network Connections
 die(), dumb union-find, paranoid parsing.
 
+P820.cpp: Internet Bandwidth
+Edmonds-Karp max flow algorithm: BFS. Residual flow graph.
+
 P843.cpp: Crypt Kicker (Skiena)
 Read lines, parse to int, parse to string, parse to tokens, substitution cipher.
 
