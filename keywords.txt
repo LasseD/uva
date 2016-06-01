@@ -643,6 +643,9 @@ Ch, ch walk, ch bounding box turn
 P10183.java: How Many Fibs?
 BigInteger cache fibonacci numbers. Slow iterative traversal is fast enough.
 
+P10196.cpp: Check The Check
+Check game simulation.
+
 P10188.cpp: Automated Judge Script
 gets and read line as int.
 
