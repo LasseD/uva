@@ -286,6 +286,9 @@ Check palindrome, check mirrored palindrome.
 P406.cpp: Prime Cuts
 Uses prime sieve and lists primes.
 
+P408.cpp: Uniform Generator
+Trivial simulation.
+
 P412.cpp: Pi
 GCD on int.
 
