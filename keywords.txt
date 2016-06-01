@@ -397,6 +397,9 @@ Trivial bit counting of matrix.
 P543.cpp: Goldbach's Conjecture
 Generate primes using prime sieve.
 
+P558.cpp: Wormholes
+Bellman-Ford to detect negative weight cycles. int limits max value.
+
 P562.cpp: Dividing coins
 Dynamic programming to select best subset with sum less than given amount.
 
