@@ -661,6 +661,9 @@ Longest common sub sequence.
 P10193.cpp: All You Need Is Love
 Read line as binary, read line as unsigned long, GCD.
 
+P10209.cpp: Is This Integration?
+Area of isosceles traingle is a^2/2*sinA.
+
 P10220.java: I Love Big Numbers !
 BigInteger multiply by valueOf int, factorials up to 1000, sum of ditis ins tring, String.toCharArray.
 
