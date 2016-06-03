@@ -418,6 +418,9 @@ Union find on 100 x 100 grid. Read line as two ints.
 P573.cpp: The Snail
 Trivial snail climb simulator.
 
+P574.cpp: Sum It Up
+Simple permutation run.
+
 P575.cpp: Skew Binary
 Trivial binary eval with last digit up to 2.
 
