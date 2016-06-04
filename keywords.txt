@@ -649,6 +649,9 @@ Ch, ch walk, ch bounding box turn
 P10183.java: How Many Fibs?
 BigInteger cache fibonacci numbers. Slow iterative traversal is fast enough.
 
+P10195.cpp: The Knights Of The Round Table
+Inscribed circle in triangle given by edge lengths.
+
 P10196.cpp: Check The Check
 Check game simulation.
 
