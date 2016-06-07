@@ -487,6 +487,9 @@ die(), dumb union-find, paranoid parsing.
 P820.cpp: Internet Bandwidth
 Edmonds-Karp max flow algorithm: BFS. Residual flow graph.
 
+P834.cpp: Continued Frations
+Transform rational number to continued fraction. Simple math.
+
 P843.cpp: Crypt Kicker (Skiena)
 Read lines, parse to int, parse to string, parse to tokens, substitution cipher.
 
