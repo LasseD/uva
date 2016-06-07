@@ -787,6 +787,9 @@ BigInteger add, multiply, cache.
 P10530.cpp: Guessing Game
 Match guesses with binary search.
 
+P10533.cpp: Digit Primes
+Prime sieve, isprime and isDigitPrime
+
 P10550.cpp: Combination Lock
 Trivial simulate combination lock.
 
