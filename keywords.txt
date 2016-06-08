@@ -616,6 +616,9 @@ Copy of P195. Permutations in alphabetical (not lex) order, permutation handler,
 P10099.cpp: The Tourist Guide (Skiena)
 Modified Dijkstra for Widest path problem / the bottleneck shortest path problem. Dijkstra implementation can be re-used for other purposes.
 
+P10104.cpp: Euclid Problem
+Simulate GCD as if by hand. Solve AX+BY = D where D = GCD(A,B).
+
 P10106.java: Product
 BigInteger multiply, read/write ints, read to end EOF.
 
