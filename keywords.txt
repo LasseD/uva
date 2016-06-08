@@ -766,6 +766,9 @@ Area of pizza slize, area of circular segment
 P10450.cpp: World Cup Noise
 Trivial.
 
+P10465.cpp: Homer Simpson
+Brute force packing 2 sizes of element. Minimize spillage, maximize packages.
+
 P10469.cpp: To Carry or not to Carry
 Trivial XOR on ints.
 
