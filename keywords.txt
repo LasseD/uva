@@ -391,6 +391,9 @@ Binomial as smaller product. n|k = n|n-k.
 P532.cpp: Dungeon Master
 BFS in 3D matrix. Vector3 implementation, operator==.
 
+P536.cpp: Tree Recovery
+Find post order traversal given inorder and preorder.
+
 P537.cpp: Artificial Intelligence?
 Parse double from char*.
 
