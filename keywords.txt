@@ -16,8 +16,8 @@ Floyd-Warshall
 P105.java: The Skyline Problem
 skyline
 
-P106.java: Fermat vs Pythagoras
-TODO
+P106.cpp: Fermat vs Pythagoras
+Generate all primitive and non-primitive pythagorean tripples by the formula (a,b,c) = k*(m^2-n^2, 2nm, m^2+n^2), GCD(n,m)=1, k=1,2,...
 
 P107.java: The Cat in the Hat
 quick pow
