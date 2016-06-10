@@ -229,6 +229,9 @@ Trivial, dumb brute force counting.
 P305.cpp: Joseph
 Precompute.
 
+P315.cpp: Network
+DFS, find critical nodes in graph, Edge-list presentation, std::stringstream line to ints
+
 P324.java: Factorial Frequencies
 Biginteger, factorials, count characters in string.
 
