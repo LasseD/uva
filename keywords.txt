@@ -292,6 +292,9 @@ Uses prime sieve and lists primes.
 P408.cpp: Uniform Generator
 Trivial simulation.
 
+P409.cpp: Excuses, Excuses!
+replace_if to transform chars in string
+
 P412.cpp: Pi
 GCD on int.
 
