@@ -319,6 +319,9 @@ Precompute.
 P441.cpp: Lotto
 Ways to choose k elements of set of size n. No permutation handler.
 
+P442.cpp: Matrix Chain Multiplication
+Parse parenthesis expression and compute from resulting tree. Matrix multiplication elementary opretaion counting.
+
 P443.cpp: Humble Numbers
 Humble number generation: Generate numbers with given prime factors.
 
