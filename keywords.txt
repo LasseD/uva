@@ -244,6 +244,9 @@ Compute master mind game score.
 P344.cpp: Roman Digititis
 Comput roman digits up to 100.
 
+P348.cpp: Optimal Array Multiplication Sequence
+Exhaustive search ways to order multiplications.
+
 P349.cpp: Graph Connectivity
 Count connected components.
 
