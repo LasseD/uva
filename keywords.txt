@@ -502,6 +502,9 @@ die(), dumb union-find, paranoid parsing.
 P820.cpp: Internet Bandwidth
 Edmonds-Karp max flow algorithm: BFS. Residual flow graph.
 
+P821.cpp: Page Hopping
+All pair shortest paths in directed graph.
+
 P834.cpp: Continued Frations
 Transform rational number to continued fraction. Simple math.
 
