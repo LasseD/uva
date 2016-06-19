@@ -352,6 +352,9 @@ std::cin >> char >> double, quick delta compare.
 P477.cpp: Points in Figures: Rectangles and Circles
 std::cin >> char >> double, quick delta compare, point in rectangle, point in circle.
 
+P478.cpp: Points in Figures: Rectangles, Circles, Triangles
+rightTurn and colinear for doubles, check point in triangle.
+
 P481.cpp: What Goes Up
 Longest increasing subsequence. nlogn algorithm. Both strongly increasing and simply increasing (with duplicates)
 
@@ -890,7 +893,7 @@ P10970.cpp: Big Chocolate
 Trivial, buffered. Read two positive ints from line.
 
 P10986.cpp: Sending email
-DIjkstra for shortest path, actual dijkstra!
+Dijkstra for shortest path, actual dijkstra!
 
 P11000.cpp: Bee
 Trivial.
