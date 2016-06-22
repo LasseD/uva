@@ -667,6 +667,9 @@ read and write ints with decimal place
 P10142.cpp: Australian Voting System (Skiena)
 Simulation
 
+P10152.cpp: ShellSort
+Find inversions/climbs to top of stack for sorting.
+
 P10161.cpp: Ant on a Chessboard
 Trivial. sqrt.
 
