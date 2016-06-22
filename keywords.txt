@@ -583,6 +583,9 @@ palindrome check for int, int to digit array.
 P10019.cpp: Funny Encryption Method
 Interpret int as hex, reverse decimal int, count bits.
 
+P10023.java: Square root
+BigInteger square root
+
 P10026.cpp: Shoemaker's Problem
 Sort by time/fine.
 
