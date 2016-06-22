@@ -583,6 +583,9 @@ Interpret int as hex, reverse decimal int, count bits.
 P10026.cpp: Shoemaker's Problem
 Sort by time/fine.
 
+P10033.cpp: Interpreter
+Simulate RAM operations. Read any number of ints from lines.
+
 P10034.cpp: Freckles
 Minimum spanning tree of points in plane.
 
