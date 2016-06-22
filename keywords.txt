@@ -856,6 +856,9 @@ Trivial number summing
 P10784.cpp: Diagonal
 Number of diagonals in n-gon.
 
+P10785.cpp: The Mad Numerologist
+Generate strings from formula and sort alternating letters.
+
 P10789.cpp: Prime Frequency
 Prime sieve into bool array, isPrime.
 
