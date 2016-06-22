@@ -544,6 +544,9 @@ Trivial gets puts.
 P1225.cpp: Digit Counting
 Cache counted digits.
 
+P1312.cpp: Cricket Field
+Largest area search by random 2D-KD-partiotioning. Random permutation.
+
 P1585.cpp: Score
 Trivial score counting in string
 
