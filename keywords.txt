@@ -937,6 +937,9 @@ sequence from all maximal independent sets in flat graph
 P11110.cpp: Equidivisions
 Connected components in grid.
 
+P11137.cpp: Ingenuous Cubrency
+Combinations of currency. Better documented than other implementations here.
+
 P11150.cpp: Cola
 The cola problem with full bottles.
 
