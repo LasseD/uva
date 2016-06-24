@@ -406,6 +406,9 @@ Binomial as smaller product. n|k = n|n-k.
 P532.cpp: Dungeon Master
 BFS in 3D matrix. Vector3 implementation, operator==.
 
+P534.cpp: Frogger
+Minimax shortest path in Euclidean space. (frog jumps from stone to stone)
+
 P536.cpp: Tree Recovery
 Find post order traversal given inorder and preorder.
 
