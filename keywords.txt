@@ -502,6 +502,9 @@ Find all pairs abcde/fghij=N, PH<int>
 P729.cpp: The Hamming Distance Problem
 Print all n choose k combinations of binary ints with x ones.
 
+P755.cpp: 487--3279
+Convert phone numbers from string to ints. Mapping of characters.
+
 P793.cpp: Network Connections
 die(), dumb union-find, paranoid parsing.
 
