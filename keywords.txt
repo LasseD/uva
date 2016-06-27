@@ -736,6 +736,9 @@ Count strings, std::string to printf.
 P10235.cpp: Simply Emirp
 Uses prime sieve isPrime, reverse integer, check prime.
 
+P10245.cpp: The Closest Pair Problem
+Closest pair in Euclidean space.
+
 P10252.cpp: Common Permutation
 Count letters in string, gets.
 
