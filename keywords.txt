@@ -796,6 +796,9 @@ Implement "Contains substring", linear time.
 P10341.cpp: Solve It
 Root finding.
 
+P10344.cpp: 23 out of 5
+Simple use of permutation handler to find arithmetic expression.
+
 P10346.cpp: Peter's Smokes
 Coke problem reformulated.
 
