@@ -1027,6 +1027,9 @@ Circle combine in social networks
 P11530.cpp: SMS Typing
 Trivial.
 
+P11541.cpp: Decoding
+Decode run length encoded strings.
+
 P11547.cpp: Automatic Answer
 simple calculation
 
