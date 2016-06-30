@@ -394,6 +394,9 @@ Fibonacci numbers up to 5000, BigInteger.
 P499.cpp: What's The Frequency
 Count letters in string, gets, isalpha, vector sort of pairs.
 
+P507.cpp: Jill Rides Again
+Maximum subarray problem using Kadane's algorithm (max sub array)
+
 P514.cpp: Rails
 Trivial stack and vector.
 
@@ -1095,6 +1098,12 @@ Trivial all increment or all decrement.
 
 P11984.cpp: A Change in Therman Unit
 Convert Fahrenheit to Celcius and back.
+
+P11988.cpp: Broken Keyboard (a.k.a. Beiju Text)
+Trivial.
+
+P11995.cpp: I Can Guess the Data Structure!
+queue, stack, priority queue.
 
 P12015.cpp: Google is Feeling Lucky
 Trivial.
