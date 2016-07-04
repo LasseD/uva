@@ -604,6 +604,9 @@ BigInteger square root
 P10026.cpp: Shoemaker's Problem
 Sort by time/fine.
 
+P10032.cpp: Tug of War
+NP-complete solved using bit manip. Find sub-set with n/2 elements and max sum less than limit.
+
 P10033.cpp: Interpreter
 Simulate RAM operations. Read any number of ints from lines.
 
@@ -708,6 +711,9 @@ Ch, ch walk, ch bounding box turn
 
 P10183.java: How Many Fibs?
 BigInteger cache fibonacci numbers. Slow iterative traversal is fast enough.
+
+P10191.cpp: Longest Nap
+Trivial. Define String, stringstream, getline to strings and ints. GOOD TO COPY FROM!
 
 P10195.cpp: The Knights Of The Round Table
 Inscribed circle in triangle given by edge lengths.
