@@ -1027,6 +1027,9 @@ cmath sqrt
 P11462.cpp: Age Sort
 Radix sort ints 1 - 100.
 
+P11475.cpp: Extend to Palindrome
+Knuth Morris Pratt algorithm where search string is reverse of input.
+
 P11479.cpp: Is this the easiest problem?
 Triangle categorization. Sort 3 sides for easy categorization.
 
