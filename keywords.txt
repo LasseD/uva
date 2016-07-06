@@ -769,6 +769,9 @@ std::map<std::string,std::string>, quick parse strings
 P10295.cpp: Hay Points
 getline(std::cin, s), stringstream, parse strings and ints from lines. die().
 
+P10298.cpp: Power Strings
+Find longest period in string.
+
 P10300.cpp: Ecological Premium
 Trivial.
 
