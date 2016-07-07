@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdio.h>
+#include <cstring>
 
 #define LEN 510000
 
@@ -60,9 +61,7 @@ unsigned int eval(long n, unsigned int *a) {
 
 int main() {
   unsigned int a[LEN];
-  for(long i = 2; i < LEN; ++i) {
-    a[i] = 0;
-  }
+  memset(a, 0, sizeof(a));
   a[1] = 3;
   long L, H;
   while(readInts(L, H)) {
