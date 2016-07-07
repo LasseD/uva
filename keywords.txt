@@ -391,6 +391,9 @@ Trivial wc for words isprint isalpha.
 P495.java: Fibonacci Freeze
 Fibonacci numbers up to 5000, BigInteger.
 
+P496.cpp: Simply Subsets
+Trivial.
+
 P499.cpp: What's The Frequency
 Count letters in string, gets, isalpha, vector sort of pairs.
 
