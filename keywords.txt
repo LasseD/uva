@@ -1075,6 +1075,9 @@ Time diff.
 P11689.cpp: Soda Surpler
 Coca cola problem with variable cost.
 
+P11713.cpp: Abstract Names
+Trivial.
+
 P11715.cpp: Car
 Basic velocity and acceleration formulas.
 
