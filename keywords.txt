@@ -907,6 +907,9 @@ Trivial
 P10699.cpp: Count the factors
 Prime sieve. bitset. isPrime, nextPrime.
 
+P10773.cpp: Back to Intermediate Math
+Trivial.
+
 P10783.cpp: Odd Sum
 Trivial number summing
 
