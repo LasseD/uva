@@ -859,6 +859,9 @@ Parse string with hex and decimal ints. Print as hex and unsigned long.
 P10474.cpp: Where is the Marble?
 Sort array of ints, new/delete[].
 
+P10475.cpp: Help the Leaders
+Print all sorted permutations.
+
 P10487.cpp: Closest Sums
 Sum of two ints in array that is closest to target.
 
