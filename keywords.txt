@@ -197,7 +197,7 @@ P191.cpp: Intersection
 rectangle line intersection, line line intersection, colinear, rightturn
 
 P195.cpp Anagram
-Compute permutations in alphabetical order, permutation handler, std::sort with custom comparison
+Compute permutations in alphabetical order, permutation handler, std::sort with custom comparison comparator
 
 P200.cpp: Rare Order
 topo sort, extending partial order to total order, lex compare
@@ -655,6 +655,9 @@ BigInteger, multiply, divide, divides.
 P10071.cpp: Back to High School Physics
 distance after time computation
 
+P10074.cpp: Take the Land
+Max area in grid by using "up-rays" and n^3 algorithm.
+
 P10077.cpp: The Stern-Brocot Number System
 Trivial.
 
@@ -930,6 +933,9 @@ Apply tolower.
 
 P10878.cpp: Decode the tape
 Binary decode chars.
+
+P10905.cpp: Children't Game
+Custom comparator.
 
 P10920.cpp: Spiral Tap
 Spiral index to x,y-coordinates.
