@@ -1126,6 +1126,9 @@ Trivial.
 P11854.cpp: Egypt
 Trivial pythagoras check.
 
+P11857.cpp: Driving Range
+Minimax path (Copy from Bond). Connectivity and all pairs minimax path.
+
 P11875.cpp: Brick Game
 Trivial.
 
