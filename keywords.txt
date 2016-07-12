@@ -517,6 +517,9 @@ Print all n choose k combinations of binary ints with x ones.
 P755.cpp: 487--3279
 Convert phone numbers from string to ints. Mapping of characters.
 
+P784.cpp: Maze Exploration
+gets and puts to paint maze.
+
 P793.cpp: Network Connections
 die(), dumb union-find, paranoid parsing.
 
