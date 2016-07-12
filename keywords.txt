@@ -1099,6 +1099,9 @@ Trivial.
 P11715.cpp: Car
 Basic velocity and acceleration formulas.
 
+P11716.cpp: Digital Fortress
+Trivial string permutation.
+
 P11723.cpp: Numbering Roads
 Trivial.
 
