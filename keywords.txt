@@ -1006,6 +1006,9 @@ Combinations of currency. Better documented than other implementations here.
 P11150.cpp: Cola
 The cola problem with full bottles.
 
+P11152.cpp: Colourful Flowers
+Semiperimeter, inradius, circumradius of triangle with inscribed and outer circles. M_PI. pi.
+
 P11172.cpp: Relational Operator
 Trivial.
 
