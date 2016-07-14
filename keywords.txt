@@ -1195,6 +1195,9 @@ std::cin to both ints and char arrays.
 P12577.cpp: Hajj-e-Akbar
 Trivial string compare.
 
+P12578.cpp: 10:6:2
+Trivial areas. M_PI
+
 P12791.cpp: Lap
 Car race overlapping calculation, reead line as two ints.
 
