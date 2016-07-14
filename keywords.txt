@@ -781,6 +781,9 @@ Trivial letter substitution.
 P10282.cpp: Babelfish
 std::map<std::string,std::string>, quick parse strings
 
+P10285.cpp: Longest Run on a Snowboard
+Easy incremental improvement on full grid.
+
 P10295.cpp: Hay Points
 getline(std::cin, s), stringstream, parse strings and ints from lines. die().
 
