@@ -514,6 +514,9 @@ Find all pairs abcde/fghij=N, PH<int>
 P729.cpp: The Hamming Distance Problem
 Print all n choose k combinations of binary ints with x ones.
 
+P748.java: Exponentiation
+Java biginteger, move dot to given position in float output.
+
 P755.cpp: 487--3279
 Convert phone numbers from string to ints. Mapping of characters.
 
