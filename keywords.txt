@@ -484,6 +484,9 @@ Dynamic programming to select best subset with sum less than given amount. Backt
 P640.c: Self Numbers
 bool array in ANSI c.
 
+P644.cpp: Immediate Decodability
+Binary suffix tree construction to be used for prefix-checks. Simple.
+
 P661.cpp: Blowing Fuses
 Trivial simulation.
 
