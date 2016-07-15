@@ -457,6 +457,9 @@ Simple permutation run.
 P575.cpp: Skew Binary
 Trivial binary eval with last digit up to 2.
 
+P576.cpp: Haiku Review
+Trivial.
+
 P579.cpp: Clock Hands
 Easy angle between clock arms, no trigonometry.
 
@@ -1122,6 +1125,9 @@ Trivial.
 
 P11727.cpp: Cost Cutting
 Trivial sort 3 numbers, output middle
+
+P11729.cpp: Commando War
+Simple job sorting.
 
 P11752.cpp: The Super Powers
 unsigned long long, overflow detection, powers, square powers
