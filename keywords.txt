@@ -394,6 +394,9 @@ Fibonacci numbers up to 5000, BigInteger.
 P496.cpp: Simply Subsets
 Trivial.
 
+P497.cpp: Strategic Defence Initiative
+Longest increasing subsequence, parse input using atoi on gets lines.
+
 P499.cpp: What's The Frequency
 Count letters in string, gets, isalpha, vector sort of pairs.
 
