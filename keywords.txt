@@ -415,6 +415,9 @@ Permutation handler with custom size. All primes up to 32.
 P530.cpp: Binomial Showdown
 Binomial as smaller product. n|k = n|n-k.
 
+P531.cpp: Compromise
+Longest common subsequence with strings and backtracking.
+
 P532.cpp: Dungeon Master
 BFS in 3D matrix. Vector3 implementation, operator==.
 
@@ -522,6 +525,9 @@ Find all pairs abcde/fghij=N, PH<int>
 
 P729.cpp: The Hamming Distance Problem
 Print all n choose k combinations of binary ints with x ones.
+
+P741.cpp: Burrows Wheeler Decoder
+Burrows Wheeler decoding, custom prefix-append strings with operator <.
 
 P748.java: Exponentiation
 Java biginteger, move dot to given position in float output.
