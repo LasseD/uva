@@ -1189,6 +1189,9 @@ queue, stack, priority queue.
 P12015.cpp: Google is Feeling Lucky
 Trivial.
 
+P12087.cpp: Collecting Marbles
+Sum-arrays.
+
 P12100.cpp: Printer Queue
 deque, std::sort on int, printer job simulation with priorities.
 
