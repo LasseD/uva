@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 long get(int x, int y, long *querySumDown, long *querySumUp, long *querySumLeft, long *querySumRight) {
-  //std::cerr << "(" << x << "," << y << ")=" << querySumDown[y+1] <<"+"<< querySumUp[y-1] <<"+"<< querySumLeft[x-1] <<"+"<< querySumRight[x+1] << "=" << (querySumDown[y+1] + querySumUp[y-1] + querySumLeft[x-1] + querySumRight[x+1]) << std::endl;
   return querySumDown[y+1] + querySumUp[y-1] + querySumLeft[x-1] + querySumRight[x+1];
 }
 
@@ -25,7 +24,6 @@ void writeInt(long n, char *w, int &idx) {
     copy/=10;
   }
   for(int i = 0; i < len; ++i) {
-    //std::cerr << (char)('0'+(n%10)) << std::endl;
     w[idx+len-i-1] = '0'+(n%10);
     n/=10;
   }
@@ -49,7 +47,6 @@ int main() {
   char testCaseStr[13] = "Test Case X:";
   char outStr[39];
   for(int cas = 1; cas <= T; ++cas) {
-    //printf("Test Case %d:\n", cas);
     testCaseStr[10] = '0'+cas;
     puts(testCaseStr);
     gets(w); idx = 0;
@@ -103,71 +100,54 @@ int main() {
       // Preprocess querySums:
       long pop = 0;
       querySumLeft[x1-1] = 0;
-      for(int xx = x1; xx <= x2; ++xx) {
+      for(int xx = x1; xx < x2; ++xx) {
 	long add = colSums[y2*C+xx]-colSums[(y1-1)*C+xx];
 	pop += add;
 	querySumLeft[xx] = querySumLeft[xx-1] + pop;
-	//std::cerr << "Left " << xx << ": " << querySumLeft[xx] << std::endl;
       }
       pop = 0;
       querySumUp[y1-1] = 0;
-      for(int yy = y1; yy <= y2; ++yy) {
+      for(int yy = y1; yy < y2; ++yy) {
 	long add = rowSums[yy*C+x2]-rowSums[yy*C+x1-1];	
 	pop += add;
 	querySumUp[yy] = querySumUp[yy-1] + pop;
-	//std::cerr << "Up " << yy << ": " << querySumUp[yy] << std::endl;
       }
       pop = 0;
       querySumRight[x2+1] = 0;
-      for(int xx = x2; xx >= x1; --xx) {
+      for(int xx = x2; xx > x1; --xx) {
 	long add = colSums[y2*C+xx]-colSums[(y1-1)*C+xx];
 	pop += add;
 	querySumRight[xx] = querySumRight[xx+1] + pop;
-	//std::cerr << "Right " << xx << ": " << querySumRight[xx] << std::endl;
       }
       pop = 0;
       querySumDown[y2+1] = 0;
-      for(int yy = y2; yy >= y1; --yy) {
+      for(int yy = y2; yy > y1; --yy) {
 	long add = rowSums[yy*C+x2]-rowSums[yy*C+x1-1];
 	pop += add;
 	querySumDown[yy] = querySumDown[yy+1] + pop;
-	//std::cerr << "Down " << yy << ": " << querySumDown[yy] << std::endl;
       }
 	
       // Walk to best in grid:
       int bestX = x1;
       int bestY = y1;
-      long best = get(x1, y1, querySumDown, querySumUp, querySumLeft, querySumRight);
-      bool improved = true;
-      while(improved) {
-	improved = false;
-	if(bestY < y2) {
-	  long candidate = get(bestX, bestY+1, querySumDown, querySumUp, querySumLeft, querySumRight);
-	  if(candidate < best) {
-	    ++bestY;
-	    best = candidate;
-	    improved = true;
-	    continue;
-	  }
-	}
-	if(bestX < x2) {
-	  long candidate = get(bestX+1, bestY, querySumDown, querySumUp, querySumLeft, querySumRight);
-	  if(candidate < best) {
-	    ++bestX;
-	    best = candidate;
-	    improved = true;
-	  }
-	}	
+      long best = get(x1, y1, querySumDown, querySumUp, querySumLeft, querySumRight), candidate;
+      while(bestY < y2 && (candidate = get(bestX, bestY+1, querySumDown, querySumUp, querySumLeft, querySumRight)) < best) {
+	++bestY;
+	best = candidate;
       }
-      idx = 0;      
+      while(bestX < x2 && (candidate = get(bestX+1, bestY, querySumDown, querySumUp, querySumLeft, querySumRight)) < best) {
+	++bestX;
+	best = candidate;
+      }
+      
+      // Output quickly:
+      idx = 0;
       writeInt(i, outStr, idx);
       outStr[idx++] = ' ';
       writeInt(best, outStr, idx);
       outStr[idx++] = '\0';
       puts(outStr);
-      //printf("%d %li\n", i, best);//std::cout << i << " " << best << std::endl;
     }
-
-    puts("");
+    puts(""); // new line
   }
 }
