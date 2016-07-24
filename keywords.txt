@@ -202,6 +202,9 @@ Compute permutations in alphabetical order, permutation handler, std::sort with 
 P200.cpp: Rare Order
 topo sort, extending partial order to total order, lex compare
 
+P216.cpp: Getting in Line
+Permutation handler of variable size - try all.
+
 P218.java: Moth Eradication
 ch
 
