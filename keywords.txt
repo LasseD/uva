@@ -1150,6 +1150,9 @@ Trivial sort 3 numbers, output middle
 P11729.cpp: Commando War
 Simple job sorting.
 
+P11743.cpp: Credit Check
+Trivial credit card digit summation check.
+
 P11752.cpp: The Super Powers
 unsigned long long, overflow detection, powers, square powers
 
