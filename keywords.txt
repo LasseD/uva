@@ -277,6 +277,9 @@ P371.cpp: Ackermann Functions
 P374.cpp: Big Mod
 a^b mod c for big a, b.
 
+P378.cpp: Intersecting Lines
+Overlapping lines, check lines cross and compute intersection point.
+
 P382.cpp: Perfection
 Find divisors.
 
