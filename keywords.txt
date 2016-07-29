@@ -211,6 +211,9 @@ ch
 P231.cpp: Testing the CATCHER
 longestIncreasingSubsequence, Longest Increasing Subsequence
 
+P253.cpp: Cube painting
+Rotate colored cube.
+
 P256.cpp: Quirksome Squares
 printf n wide with leading 0's.
 
