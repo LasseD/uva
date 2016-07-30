@@ -709,6 +709,9 @@ Modified Dijkstra for Widest path problem / the bottleneck shortest path problem
 P10104.cpp: Euclid Problem
 Simulate GCD as if by hand. Solve AX+BY = D where D = GCD(A,B).
 
+P10105.cpp: Polynomial Coefficient
+Compute coefficient in expansion of polynomial (x1+...xk)^n. Binomial, Factorial, Multinomial theorem, binomial with Multiindices.
+
 P10106.java: Product
 BigInteger multiply, read/write ints, read to end EOF.
 
