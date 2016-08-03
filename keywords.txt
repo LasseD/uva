@@ -514,6 +514,9 @@ Using a stack to check parentheses.
 P674.cpp: Coin Change
 Copy of P147 Dollars, atoi
 
+P679.cpp: Dropping Balls
+Binary tree insertion simulation. Compute children indices in binary tree.
+
 P681.java: Convex Hull Finding
 ch
 
