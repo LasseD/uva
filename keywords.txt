@@ -1171,6 +1171,9 @@ Trivial count increasing and decreasing.
 P11777.cpp: Automate the Grades
 Trivial.
 
+P11784.cpp: Escape
+Simulate walks in rectangle. Easy.
+
 P11799.cpp: Horror Dash
 Trivial max.
 
