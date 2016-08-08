@@ -757,6 +757,9 @@ Ch, ch walk, ch bounding box turn
 P10183.java: How Many Fibs?
 BigInteger cache fibonacci numbers. Slow iterative traversal is fast enough.
 
+P10190.cpp: Divide, But Not Quite Conquer!
+Trivial.
+
 P10191.cpp: Longest Nap
 Trivial. Define String, stringstream, getline to strings and ints. GOOD TO COPY FROM!
 
