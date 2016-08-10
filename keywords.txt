@@ -922,6 +922,9 @@ BigInteger, split line on white space (\\s+).
 P10499.cpp: The Land of Justice
 Area of circle, area of sphere.
 
+P10515.cpp: Power et al.
+Compute last digit of m^n.
+
 P10523.java: Very Easy !!!
 BigInteger add, multiply, cache.
 
