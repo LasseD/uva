@@ -1225,6 +1225,9 @@ Convert Fahrenheit to Celcius and back.
 P11988.cpp: Broken Keyboard (a.k.a. Beiju Text)
 Trivial.
 
+P11991.cpp: Easy Problem from Rujia Liu?
+Index of occurence of duplicate x of number y in array.
+
 P11995.cpp: I Can Guess the Data Structure!
 queue, stack, priority queue.
 
