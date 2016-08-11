@@ -358,6 +358,9 @@ Character substitution. gets => '\0' to be checked. printf("%s\n", s);
 P465.cpp: Overflow
 Signed in overflow detection.
 
+P469.cpp: Wetlands of Florida
+Connected region in grid.
+
 P476.cpp: Points in Figures: Rectangles
 std::cin >> char >> double, quick delta compare.
 
@@ -922,6 +925,9 @@ BigInteger, split line on white space (\\s+).
 P10499.cpp: The Land of Justice
 Area of circle, area of sphere.
 
+P10515.cpp: Power et al.
+Compute last digit of m^n.
+
 P10523.java: Very Easy !!!
 BigInteger add, multiply, cache.
 
@@ -1218,6 +1224,9 @@ Convert Fahrenheit to Celcius and back.
 
 P11988.cpp: Broken Keyboard (a.k.a. Beiju Text)
 Trivial.
+
+P11991.cpp: Easy Problem from Rujia Liu?
+Index of occurence of duplicate x of number y in array.
 
 P11995.cpp: I Can Guess the Data Structure!
 queue, stack, priority queue.
