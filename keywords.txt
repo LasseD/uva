@@ -1213,6 +1213,9 @@ The coca cola problem with borrowing.
 P11879.java: Multiple of 17
 BigInteger divides check.
 
+P11900.cpp: Boiled Eggs
+Trivial.
+
 P11936.cpp: The Lazy Lumberjacks
 Trivial.
 
