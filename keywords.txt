@@ -1219,6 +1219,9 @@ BigInteger divides check.
 P11900.cpp: Boiled Eggs
 Trivial.
 
+P11934.cpp: Magic Formula
+Trivial.
+
 P11936.cpp: The Lazy Lumberjacks
 Trivial.
 
