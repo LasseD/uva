@@ -796,6 +796,9 @@ Print percentage with last digit correction.
 P10209.cpp: Is This Integration?
 Area of isosceles traingle is a^2/2*sinA.
 
+P10219.cpp: Find the ways !
+log base 10 of binomial coefficient log10(n choose k)
+
 P10220.java: I Love Big Numbers !
 BigInteger multiply by valueOf int, factorials up to 1000, sum of ditis ins tring, String.toCharArray.
 
