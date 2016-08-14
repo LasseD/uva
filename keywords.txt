@@ -250,6 +250,9 @@ All pair shortest path in arbitrary graph. Floyd-Warshall.
 P340.cpp: Master-Mind Hints
 Compute master mind game score.
 
+P343.cpp: What Base is This?
+Convert string int in base 2-36 to int. Poorly defined min. base.
+
 P344.cpp: Roman Digititis
 Comput roman digits up to 100.
 
