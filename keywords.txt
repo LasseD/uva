@@ -268,6 +268,9 @@ Find length of loop using Floyd's cycle finding algorithm.
 P352.cpp: The Seasonal War
 Read line as int. Union find.
 
+P355.cpp: The Bases Are Loaded
+Convert int to any base, std::cin >> std::hex input read, read and write TOUPPER std::cin and std::cout.
+
 P357.cpp: Let Me Count The Ways
 Combinations of currency down to 1 cent. Up to 30000 cents.
 
@@ -293,7 +296,7 @@ P386.java: Perfect Cubes
 reuse computations
 
 P389.cpp: Basically Speaking
-Convert in to any base, std::cin >> std::hex input read (can take both with and without 0x first)
+Convert int to any base, std::cin >> std::hex input read (can take both with and without 0x first)
 
 P392.cpp: Polynomial Showdown
 Format a polynomial for printing.
@@ -601,6 +604,9 @@ GIven N, find number where N is product of digits of number.
 P1124.c: Celebrity jeopardy
 Trivial gets puts.
 
+P1210.cpp: Sum of Consecutive Prime Numbers
+Prime sieve. Find consecutive primes that sum to given number.
+
 P1225.cpp: Digit Counting
 Cache counted digits.
 
@@ -777,6 +783,9 @@ Inscribed circle in triangle given by edge lengths.
 
 P10196.cpp: Check The Check
 Check game simulation.
+
+P10198.java: Counting
+BigInteger add.
 
 P10188.cpp: Automated Judge Script
 gets and read line as int.
