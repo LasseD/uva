@@ -784,6 +784,9 @@ Inscribed circle in triangle given by edge lengths.
 P10196.cpp: Check The Check
 Check game simulation.
 
+P10198.java: Counting
+BigInteger add.
+
 P10188.cpp: Automated Judge Script
 gets and read line as int.
 
