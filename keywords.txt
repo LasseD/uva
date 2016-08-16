@@ -196,6 +196,9 @@ tangents, intersection between lines - not line segments, nan avoidance, print c
 P191.cpp: Intersection
 rectangle line intersection, line line intersection, colinear, rightturn
 
+P193.cpp: Graph Coloring
+Heuristic by Brian Fry.
+
 P195.cpp Anagram
 Compute permutations in alphabetical order, permutation handler, std::sort with custom comparison comparator
 
