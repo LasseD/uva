@@ -1093,6 +1093,9 @@ gets, swap chars in string.
 P11219.cpp: How old are you?
 Date comparison. Warning: Description of too old is vague.
 
+P11221.cpp: Magic square palindromes.
+Check isSquareNumber, find square root.
+
 P11236.java: Grocery store
 sum = product calculation
 
