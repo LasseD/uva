@@ -220,6 +220,9 @@ Rotate colored cube.
 P256.cpp: Quirksome Squares
 printf n wide with leading 0's.
 
+P260.cpp: Il Gioco dell'X 
+Find path across grid.
+
 P264: Count the Cantor
 Triangle of fractions.
 
