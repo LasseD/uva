@@ -1177,6 +1177,9 @@ Simple sum
 P11626.java: Convex Hull
 ch
 
+P11631.cpp: Dark roads
+MST in undirected graph using union-find. Like Bond, but without weights in union-find (simpler).
+
 P11636.cpp: Hello World!
 Trivial counting.
 
