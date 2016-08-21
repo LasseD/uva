@@ -1237,6 +1237,9 @@ Permutation handler on 4 ints, lines, points, linesCross, rightTurn, colinear, b
 P11805.cpp: Bafana Bafana
 Trivial.
 
+P11849.cpp: CD
+Trivial.
+
 P11854.cpp: Egypt
 Trivial pythagoras check.
 
