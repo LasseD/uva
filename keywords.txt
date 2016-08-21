@@ -238,6 +238,9 @@ string check
 P294.cpp: Divisors
 Prime sieve on bitset, prevPrime, nextPrime, numberOfDivisors, isPrime, number with most divisors.
 
+P297.cpp: Quadtrees
+Parse prefix notation of quadtrees.
+
 P299.cpp: Train Swapping
 Trivial, dumb brute force counting.
 
