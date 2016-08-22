@@ -107,7 +107,7 @@ P136.java: Ugly Numbers
 Precompute
 
 P137.cpp: Polygons
-TODO WA
+Sweep line algorithm with linear sweep line step handling. Compute polygon area of convex and non-convex polygons.
 
 P138.java: Street Numbers
 brute force
