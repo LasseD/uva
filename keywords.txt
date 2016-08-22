@@ -1183,6 +1183,9 @@ Trivial read line as int, read chars in line.
 P11608.cpp: No Problem
 Simple sum
 
+P11614.cpp: Etruscan Warriors Never Play Chess
+Binary, exponential search.
+
 P11626.java: Convex Hull
 ch
 
