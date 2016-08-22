@@ -760,6 +760,9 @@ Longest increasing subsequence - brute for solution (elephant weight,iq)
 P10137.cpp: The Trip (Skiena)
 read and write ints with decimal place
 
+P10141.cpp: Request for Proposal
+gets and scanf to read from input. strcpy for string copy. puts and printf for output.
+
 P10142.cpp: Australian Voting System (Skiena)
 Simulation
 
