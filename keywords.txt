@@ -1009,6 +1009,9 @@ Trivial
 P10699.cpp: Count the factors
 Prime sieve. bitset. isPrime, nextPrime.
 
+P10714.cpp: Ants
+Trivial.
+
 P10763.cpp: Foreigh Exchange
 Find if all pairs (a,b) in a set have a matching (b,a).
 
