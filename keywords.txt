@@ -1135,6 +1135,9 @@ Minimax path in graph using union-find, limits MAX, minimize height of UF struct
 P11364.cpp: Parking
 Trivial min/max, round trip computation
 
+P11369.cpp: Shopaholic
+Trivial. Good base for in/sort/out.
+
 P11388.cpp: GCD LCM
 gcd, lcm, thoughts about connection between these in comments of code.
 
