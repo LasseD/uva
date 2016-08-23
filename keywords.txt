@@ -1327,6 +1327,9 @@ Trivial.
 P12468.cpp: Zapping
 Trivial.
 
+P12502.cpp: Three Families
+Trivial.
+
 P12503.cpp: Robot Instructions
 std::cin to both ints and char arrays.
 
