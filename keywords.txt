@@ -847,6 +847,9 @@ C++11 tuple usage.
 P10260.cpp: Soundex
 Trivial letter substitution.
 
+P10267.cpp: Graphical Editor
+Paint region in grid.
+
 P10276.cpp: Hanoi Tower Troubles Again!
 isSquareNumber().
 
