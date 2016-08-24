@@ -661,6 +661,9 @@ palindrome check for int, int to digit array.
 P10019.cpp: Funny Encryption Method
 Interpret int as hex, reverse decimal int, count bits.
 
+P10020.cpp: Minimal coverage
+Cover interval with subset of intervals.
+
 P10023.java: Square root
 BigInteger square root
 
