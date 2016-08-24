@@ -805,6 +805,9 @@ Trivial.
 P10191.cpp: Longest Nap
 Trivial. Define String, stringstream, getline to strings and ints. GOOD TO COPY FROM!
 
+P10194.cpp: Football (aka Soccer)
+Parse extended ascii characters and detect those that isprint should detect. scanf and gets together.
+
 P10195.cpp: The Knights Of The Round Table
 Inscribed circle in triangle given by edge lengths.
 
