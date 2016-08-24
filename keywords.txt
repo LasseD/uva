@@ -1192,6 +1192,9 @@ simple calculation
 P11559.cpp: Event Planning
 Trivial.
 
+P11577.cpp: Letter Frequency
+scanf(%d\n") and gets to read input.
+
 P11586.cpp: Train Tracks
 Trivial read line as int, read chars in line.
 
