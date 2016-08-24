@@ -1075,6 +1075,9 @@ Compute parity of int, display bits.
 P10935.cpp: Throwing cards away I
 Trivial.
 
+P10940.cpp: Throwing cards away II
+Simulate reverse card movement.
+
 P10945.cpp: Mother Bear
 palindrome check, ignore case
 
