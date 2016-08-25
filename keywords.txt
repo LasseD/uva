@@ -370,6 +370,9 @@ ANSI C scanf fom int, hex, and string, print binary.
 P455.cpp: Periodic Strings
 Read int from char[], gets.
 
+P457.cpp: Linear Cellular Automata
+puts("") for new line and puts for everything else as well.
+
 P458.cpp: The Decoder
 Character substitution. gets => '\0' to be checked. printf("%s\n", s);
 
