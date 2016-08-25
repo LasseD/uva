@@ -1054,6 +1054,9 @@ Apply tolower.
 P10878.cpp: Decode the tape
 Binary decode chars.
 
+P10879.cpp: Code Refactoring
+Prime sieve on bitset. Extended next prime. Factorizing.
+
 P10905.cpp: Children't Game
 Custom comparator.
 
