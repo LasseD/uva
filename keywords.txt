@@ -808,6 +808,9 @@ Trivial.
 P10191.cpp: Longest Nap
 Trivial. Define String, stringstream, getline to strings and ints. GOOD TO COPY FROM!
 
+P10194.cpp: Football (aka Soccer)
+Parse extended ascii characters and detect those that isprint should detect. scanf and gets together.
+
 P10195.cpp: The Knights Of The Round Table
 Inscribed circle in triangle given by edge lengths.
 
@@ -1054,6 +1057,9 @@ Apply tolower.
 P10878.cpp: Decode the tape
 Binary decode chars.
 
+P10879.cpp: Code Refactoring
+Prime sieve on bitset. Extended next prime. Factorizing.
+
 P10905.cpp: Children't Game
 Custom comparator.
 
@@ -1077,6 +1083,9 @@ Compute parity of int, display bits.
 
 P10935.cpp: Throwing cards away I
 Trivial.
+
+P10940.cpp: Throwing cards away II
+Simulate reverse card movement.
 
 P10945.cpp: Mother Bear
 palindrome check, ignore case
@@ -1268,6 +1277,9 @@ P11800.cpp: Determine the Shape
 Permutation handler on 4 ints, lines, points, linesCross, rightTurn, colinear, basic shape detection
 
 P11805.cpp: Bafana Bafana
+Trivial.
+
+P11827.cpp: Maximum GCD
 Trivial.
 
 P11849.cpp: CD
