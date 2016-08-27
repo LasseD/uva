@@ -1183,6 +1183,9 @@ Trivial sort twice, once with negative integers for rsort
 P11417.cpp: GCD
 GCD.
 
+P11450.cpp: Wedding shopping
+small amount of possible prices => "dynamic programming" bool maintenance.
+
 P11455.cpp: Behold my quadrangle
 Trivial square/rectangle/none sides validity.
 
