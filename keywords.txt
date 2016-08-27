@@ -430,6 +430,9 @@ Trivial.
 P497.cpp: Strategic Defence Initiative
 Longest increasing subsequence, parse input using atoi on gets lines.
 
+P498.cpp: Polly the Polynomial
+Read lines as strings and use stringstream to get ints from lines.
+
 P499.cpp: What's The Frequency
 Count letters in string, gets, isalpha, vector sort of pairs.
 
