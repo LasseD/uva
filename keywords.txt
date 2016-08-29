@@ -835,6 +835,9 @@ Read line as binary, read line as unsigned long, GCD.
 P10200.cpp: Prime Time
 Print percentage with last digit correction.
 
+P10205.cpp: Stack 'em Up
+Use scanf, gets and atoi to read ints from lines, lines with only one int, detect empty lines. operator << on pairs to write card names.
+
 P10209.cpp: Is This Integration?
 Area of isosceles traingle is a^2/2*sinA.
 
