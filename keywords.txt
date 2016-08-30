@@ -1102,6 +1102,9 @@ Repeatedly sum smallest two ints from multiset.
 P10970.cpp: Big Chocolate
 Trivial, buffered. Read two positive ints from line.
 
+P10976.cpp: Fractions Again?!
+Prime sieve. Find all numbers that divide k (and k^2). Find all fractions 1/k=1/x+1/y.
+
 P10986.cpp: Sending email
 Dijkstra for shortest path, actual dijkstra!
 
