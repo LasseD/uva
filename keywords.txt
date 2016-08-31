@@ -1015,6 +1015,9 @@ Connected components.
 P10611.cpp: The Playboy Chimp
 Upper bound, lower bound binary searches.
 
+P10633.cpp: Rare Easy Problem
+Find N given N-M where M = N/10.
+
 P10647.cpp: Optimal House Placement
 Parabola min of f(x)=ax^2+bx+c is -b/2a) when a is positive.
 
