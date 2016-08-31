@@ -847,6 +847,9 @@ log base 10 of binomial coefficient log10(n choose k)
 P10220.java: I Love Big Numbers !
 BigInteger multiply by valueOf int, factorials up to 1000, sum of ditis ins tring, String.toCharArray.
 
+P10221.cpp: Satellites
+Compute chrod and angle of rotation around a circle. 
+
 P10222.cpp: Decode the Mad man
 keyboard two left letter substitution, including case.
 
