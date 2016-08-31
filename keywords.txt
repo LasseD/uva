@@ -838,6 +838,9 @@ Read line as binary, read line as unsigned long, GCD.
 P10200.cpp: Prime Time
 Print percentage with last digit correction.
 
+P10205.cpp: Stack 'em Up
+Use scanf, gets and atoi to read ints from lines, lines with only one int, detect empty lines. operator << on pairs to write card names.
+
 P10209.cpp: Is This Integration?
 Area of isosceles traingle is a^2/2*sinA.
 
@@ -846,6 +849,9 @@ log base 10 of binomial coefficient log10(n choose k)
 
 P10220.java: I Love Big Numbers !
 BigInteger multiply by valueOf int, factorials up to 1000, sum of ditis ins tring, String.toCharArray.
+
+P10221.cpp: Satellites
+Compute chrod and angle of rotation around a circle. 
 
 P10222.cpp: Decode the Mad man
 keyboard two left letter substitution, including case.
@@ -1015,6 +1021,9 @@ Connected components.
 P10611.cpp: The Playboy Chimp
 Upper bound, lower bound binary searches.
 
+P10633.cpp: Rare Easy Problem
+Find N given N-M where M = N/10.
+
 P10647.cpp: Optimal House Placement
 Parabola min of f(x)=ax^2+bx+c is -b/2a) when a is positive.
 
@@ -1104,6 +1113,9 @@ Repeatedly sum smallest two ints from multiset.
 
 P10970.cpp: Big Chocolate
 Trivial, buffered. Read two positive ints from line.
+
+P10976.cpp: Fractions Again?!
+Prime sieve. Find all numbers that divide k (and k^2). Find all fractions 1/k=1/x+1/y.
 
 P10986.cpp: Sending email
 Dijkstra for shortest path, actual dijkstra!
