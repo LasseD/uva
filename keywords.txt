@@ -1195,6 +1195,9 @@ Trivial sort twice, once with negative integers for rsort
 P11417.cpp: GCD
 GCD.
 
+P11428.cpp: Cubes
+Find x, y, where N=x^3-y^3. Greedy OK because x^3 grows by 3n^2
+
 P11450.cpp: Wedding shopping
 small amount of possible prices => "dynamic programming" bool maintenance.
 
