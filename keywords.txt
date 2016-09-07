@@ -862,6 +862,9 @@ keyboard two left letter substitution, including case.
 P10226.cpp: Hardwood Species
 Count strings, std::string to printf.
 
+P10229.cpp: Modular Fibonacci
+Detect cycles in fib chain when having a mod 2^N.
+
 P10235.cpp: Simply Emirp
 Uses prime sieve isPrime, reverse integer, check prime.
 
