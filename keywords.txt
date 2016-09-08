@@ -1276,6 +1276,9 @@ MST in undirected graph using union-find. Like Bond, but without weights in unio
 P11636.cpp: Hello World!
 Trivial counting.
 
+P11650.cpp: Mirror Clock
+Compute mirrored time of analogue clock.
+
 P11661.cpp: Burger Time?
 getchar and scanf to read ints and long lines.
 
