@@ -1057,6 +1057,9 @@ Trivial
 P10699.cpp: Count the factors
 Prime sieve. bitset. isPrime, nextPrime.
 
+P10700.cpp: Camel trading
+Try all parenthesis placements.
+
 P10714.cpp: Ants
 Trivial.
 
