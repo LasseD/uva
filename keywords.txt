@@ -1108,6 +1108,9 @@ Trivial.
 P10940.cpp: Throwing cards away II
 Simulate reverse card movement.
 
+P10943.cpp: How do you add?
+Ways to add K integers to sum N.
+
 P10945.cpp: Mother Bear
 palindrome check, ignore case
 
