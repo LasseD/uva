@@ -772,6 +772,9 @@ Multiset - maintain median using two sets, rbegin, begin, iterators.
 P10110.cpp: Light, more light (Skiena)
 Prime factorization, count divisors
 
+P10116.cpp: Robot Motion
+Walk through grid of arrows.
+
 P10125.cpp: Sumsets
 Find max d in set where a+b+c=d are elements in set.
 
