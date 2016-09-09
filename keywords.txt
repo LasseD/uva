@@ -874,6 +874,9 @@ Detect cycles in fib chain when having a mod 2^N.
 P10235.cpp: Simply Emirp
 Uses prime sieve isPrime, reverse integer, check prime.
 
+P10242.cpp: Fourth Point !!
+Trivial.
+
 P10245.cpp: The Closest Pair Problem
 Closest pair in Euclidean space.
 
