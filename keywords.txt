@@ -892,6 +892,9 @@ Paint region in grid.
 P10276.cpp: Hanoi Tower Troubles Again!
 isSquareNumber().
 
+P10281.cpp: Average Speed
+Trivial.
+
 P10282.cpp: Babelfish
 std::map<std::string,std::string>, quick parse strings
 
@@ -1059,6 +1062,9 @@ Prime sieve. bitset. isPrime, nextPrime.
 
 P10700.cpp: Camel trading
 Try all parenthesis placements.
+
+P10703.cpp: Free spots
+Find empty cells in grid by handling line by line.
 
 P10714.cpp: Ants
 Trivial.
