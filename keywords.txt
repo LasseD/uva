@@ -277,6 +277,9 @@ Find length of loop using Floyd's cycle finding algorithm.
 P352.cpp: The Seasonal War
 Read line as int. Union find.
 
+P353.cpp: Pesky Palindromes
+Find all palindromes in string.
+
 P355.cpp: The Bases Are Loaded
 Convert int to any base, std::cin >> std::hex input read, read and write TOUPPER std::cin and std::cout.
 
