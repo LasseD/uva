@@ -775,6 +775,9 @@ Multiset - maintain median using two sets, rbegin, begin, iterators.
 P10110.cpp: Light, more light (Skiena)
 Prime factorization, count divisors
 
+P10115.cpp: Automatic Editing
+Replace occurences of string in string.
+
 P10116.cpp: Robot Motion
 Walk through grid of arrows.
 
@@ -957,6 +960,9 @@ Simple use of permutation handler to find arithmetic expression.
 
 P10346.cpp: Peter's Smokes
 Coke problem reformulated.
+
+P10347.cpp: Medians
+Compute area of triangle given the medians. Special case for negative area.
 
 P10361.cpp: Automatic Poetry
 Use '\0' to divide and rearrange strings for output. gets.
