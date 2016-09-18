@@ -577,6 +577,9 @@ Find all pairs abcde/fghij=N, PH<int>
 P729.cpp: The Hamming Distance Problem
 Print all n choose k combinations of binary ints with x ones.
 
+P739.cpp: Soundex Indexing
+Convert strings to soundex codes.
+
 P741.cpp: Burrows Wheeler Decoder
 Burrows Wheeler decoding, custom prefix-append strings with operator <.
 
