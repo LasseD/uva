@@ -23,23 +23,13 @@ public:
 	primes[notAPrimeI] = false;
       }
     }
-    /*
-    // Debugging:
-    int numPrimes = 1;
-    for(int i = 0; i < PRIME_LEN; ++i) {
-      if(primes[i])
-	++numPrimes;
-    }
-    std::cerr << numPrimes << " primes found." << std::endl;//*/
   }
   
   int nextPrime(int n) const {
     int ni = n/2;
     while(!primes[ni])  {
       ++ni;    
-    }
-    //std::cerr << "Returning next prime(" << n << "): " << (1+(ni+1)*2) << std::endl;
-    
+    }    
     return 1+(ni+1)*2;
   }
 };
