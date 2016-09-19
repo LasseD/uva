@@ -1207,6 +1207,9 @@ Check isSquareNumber, find square root.
 P11236.java: Grocery store
 sum = product calculation
 
+P11244.cpp: Counting Stars
+gets and scanf to retrieve grid of stars.
+
 P11292.cpp: The Dragon of Loowater
 Sort and double list walk.
 
