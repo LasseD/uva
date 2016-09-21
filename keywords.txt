@@ -223,6 +223,9 @@ printf n wide with leading 0's.
 P260.cpp: Il Gioco dell'X 
 Find path across grid.
 
+P263.cpp: Number Chains
+Sort digits in number in constant time. Flip long.
+
 P264: Count the Cantor
 Triangle of fractions.
 
