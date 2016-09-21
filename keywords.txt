@@ -709,6 +709,9 @@ Minimum spanning tree of points in plane.
 P10035.cpp: Primary Arithmetic (Skiena)
 Trivial carry counting
 
+P10036.cpp: Divisibility
+Arrange + and - in sequence to find if any sum is divisible with K.
+
 P10037.cpp: Bridge (Skiena)
 Pass the torch, sort
 
