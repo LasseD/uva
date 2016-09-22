@@ -343,6 +343,9 @@ Dumb brute force.
 P424.java: Integer Inquery
 BigInteger parse from string, add, ZERO.
 
+P429.cpp: Word Transformation
+Find word path where steps on path have edit distance 1 (one letter changes).
+
 P437.cpp: The Tower of Babylon
 Maximal Cube stacking by improving in rounds.
 
