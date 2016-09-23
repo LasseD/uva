@@ -688,6 +688,9 @@ General trie construction and queries.
 P10013.cpp: Super long sums
 Read digits to shorts.
 
+P10014.cpp: Simple calculations
+Binary search after double.
+
 P10018.cpp: Reverse and Add
 palindrome check for int, int to digit array.
 
