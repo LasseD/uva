@@ -1081,6 +1081,9 @@ Trivial, but poorly described. Subset not required to be continuous.
 P10664.cpp: Luggage
 Suitcase packing: Can they be packed in two cars so weight is equal. Max sum weight = 200.
 
+P10673.cpp: Play with Floor and Ceil
+Trivial find p, q so x = p*floor(x/k) + q*ceil(x/k)
+
 P10678.cpp: The Grazing Cow
 Area of ellipse from distance between centers=D and r1+r2=L.
 
