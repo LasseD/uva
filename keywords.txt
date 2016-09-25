@@ -229,7 +229,10 @@ Sort digits in number in constant time. Flip long.
 P264: Count the Cantor
 Triangle of fractions.
 
-P272 TEX Quotes
+P271.cpp: Simply Syntax
+Trivial string run.
+
+P272.cpp TEX Quotes
 Trivial std::cin.getline(line,len).
 
 P280.cpp: Vertex
