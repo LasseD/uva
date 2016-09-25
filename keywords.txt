@@ -1468,6 +1468,9 @@ Trivial.
 P12503.cpp: Robot Instructions
 std::cin to both ints and char arrays.
 
+P12554.cpp: A Special "Happy Birthday" Song!!!
+Constant string array in c++.
+
 P12577.cpp: Hajj-e-Akbar
 Trivial string compare.
 
