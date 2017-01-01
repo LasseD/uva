@@ -934,6 +934,9 @@ std::map<std::string,std::string>, quick parse strings
 P10285.cpp: Longest Run on a Snowboard
 Easy incremental improvement on full grid.
 
+P10286.cpp: Trouble with a Pentagon
+Compute maximal square side length inside a pentagon. M_PI simple.
+
 P10295.cpp: Hay Points
 getline(std::cin, s), stringstream, parse strings and ints from lines. die().
 
