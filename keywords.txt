@@ -739,6 +739,9 @@ Trivial array sort, stream for sum
 P10042.cpp: Smith Numbers
 Prime sieve, isPrime up to 10^9, isSmithNumber, sum digits in numbers.
 
+P10044.java: Erdos Numbers
+Computing co author dist from Erdos. Sets and maps.
+
 P10048.cpp: Audiophobia
 All pair shortest path with MAX relaxation function. Floyd-Warshall.
 
