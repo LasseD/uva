@@ -232,8 +232,11 @@ Triangle of fractions.
 P271.cpp: Simply Syntax
 Trivial string run.
 
-P272.cpp TEX Quotes
+P272.cpp: TEX Quotes
 Trivial std::cin.getline(line,len).
+
+P278.cpp: Chess
+Count maximal placement of knights, rooks, queens and kings on chess board. 
 
 P280.cpp: Vertex
 Graph unreachable, adjacency lists
