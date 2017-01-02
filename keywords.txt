@@ -820,6 +820,9 @@ Packing problem with price and weight. Maximize price for a given weight. No dup
 P10131.cpp: Is bigger Smarter?
 Longest increasing subsequence - brute for solution (elephant weight,iq)
 
+P10132.java: File Fragmentation
+Match pairs of strings so they all concat to the same solution.
+
 P10137.cpp: The Trip (Skiena)
 read and write ints with decimal place
 
