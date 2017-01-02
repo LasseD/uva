@@ -319,6 +319,9 @@ Convert int to any base, std::cin >> std::hex input read (can take both with and
 P392.cpp: Polynomial Showdown
 Format a polynomial for printing.
 
+P394.cpp: Mapmaker
+Easy read strings and ints.
+
 P400.cpp: Unix ls
 read int and string.
 

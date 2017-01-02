@@ -78,6 +78,7 @@ build/
 *.log
 *.scc
 *.exe
+*.class
 *a.txt
 *b.txt
 *c.txt
