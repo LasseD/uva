@@ -1009,6 +1009,9 @@ Compute area of triangle given the medians. Special case for negative area.
 P10361.cpp: Automatic Poetry
 Use '\0' to divide and rearrange strings for output. gets.
 
+P10363.cpp: Tic Tac Toe
+Analyze if configuration is valid for game.
+
 P10369.cpp: Arctic Network
 Proper Union Find (UF) with path compression. Computing trees in forest.
 
