@@ -1120,6 +1120,9 @@ Trivial find p, q so x = p*floor(x/k) + q*ceil(x/k)
 P10678.cpp: The Grazing Cow
 Area of ellipse from distance between centers=D and r1+r2=L.
 
+P10684.cpp: The decadary watch
+Convert hh:mm::ss:cc time into decimal time.
+
 P10684.cpp: The jackpot
 Maximum subarray sum, Kadane's algorithm, 1D
 
