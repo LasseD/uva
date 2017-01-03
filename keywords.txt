@@ -1258,6 +1258,9 @@ Date comparison. Warning: Description of too old is vague.
 P11221.cpp: Magic square palindromes.
 Check isSquareNumber, find square root.
 
+P11223.java: O: dah, dah, dah!
+Decode morse code.
+
 P11236.java: Grocery store
 sum = product calculation
 
