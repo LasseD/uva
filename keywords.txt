@@ -583,6 +583,9 @@ Find primes up to 2^15 using already found primes.
 P694.cpp: The Collatz Sequence
 Trivial algorithm simulation.
 
+P696.cpp: How May Knights
+Placement of knights on a chess board. Notice: Board size down to 0!
+
 P706.cpp: LCD Display
 Output as LCD display.
 
