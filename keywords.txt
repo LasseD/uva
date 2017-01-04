@@ -1084,6 +1084,9 @@ Compute last digit of m^n.
 P10523.java: Very Easy !!!
 BigInteger add, multiply, cache.
 
+P10528.java: Major Scales
+Read and split lines (\\S+).
+
 P10530.cpp: Guessing Game
 Match guesses with binary search.
 
