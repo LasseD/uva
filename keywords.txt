@@ -272,7 +272,7 @@ P343.cpp: What Base is This?
 Convert string int in base 2-36 to int. Poorly defined min. base.
 
 P344.cpp: Roman Digititis
-Comput roman digits up to 100.
+Compute roman digits up to 100.
 
 P348.cpp: Optimal Array Multiplication Sequence
 Exhaustive search ways to order multiplications.
@@ -627,6 +627,9 @@ Transform rational number to continued fraction. Simple math.
 
 P836.cpp: Largest Submatrix
 Copy upray area finding.
+
+P837.cpp: Light and Transparencies
+Sort and printf.
 
 P843.cpp: Crypt Kicker (Skiena)
 Read lines, parse to int, parse to string, parse to tokens, substitution cipher.
@@ -1353,6 +1356,9 @@ Simple sum
 
 P11614.cpp: Etruscan Warriors Never Play Chess
 Binary, exponential search.
+
+P11616.cpp: Roman Numerals
+Convert to and from roman.
 
 P11626.java: Convex Hull
 ch
