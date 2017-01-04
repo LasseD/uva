@@ -1183,6 +1183,9 @@ Prime sieve on bitset. Extended next prime. Factorizing.
 P10905.cpp: Children't Game
 Custom comparator.
 
+P10911.cpp: Forming Quiz Teams
+Permutation handler to find optimal pairing.
+
 P10920.cpp: Spiral Tap
 Spiral index to x,y-coordinates.
 
