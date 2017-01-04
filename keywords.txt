@@ -859,6 +859,9 @@ Binary search in constantly increasing sequence.
 P10173.java: Smallest Bounding Rectangle
 Ch, ch walk, ch bounding box turn
 
+P10182.cpp: Bee Maja
+Find coordinates from spiral walk on hexagonal grid.
+
 P10183.java: How Many Fibs?
 BigInteger cache fibonacci numbers. Slow iterative traversal is fast enough.
 
