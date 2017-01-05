@@ -1015,6 +1015,9 @@ Coke problem reformulated.
 P10347.cpp: Medians
 Compute area of triangle given the medians. Special case for negative area.
 
+P10360.cpp: Rat Attack
+Sums in matrix. memset for ints.
+
 P10361.cpp: Automatic Poetry
 Use '\0' to divide and rearrange strings for output. gets.
 
