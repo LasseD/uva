@@ -1150,6 +1150,9 @@ Find empty cells in grid by handling line by line.
 P10714.cpp: Ants
 Trivial.
 
+P10717.cpp: Mint
+GCD, LCM.
+
 P10763.cpp: Foreigh Exchange
 Find if all pairs (a,b) in a set have a matching (b,a).
 
