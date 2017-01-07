@@ -928,6 +928,9 @@ Uses prime sieve isPrime, reverse integer, check prime.
 P10242.cpp: Fourth Point !!
 Trivial.
 
+P10243.cpp: Fire! Fire!! Fire!!!
+Minimal edge coverage in graph.
+
 P10245.cpp: The Closest Pair Problem
 Closest pair in Euclidean space.
 
