@@ -484,6 +484,9 @@ Find post order traversal given inorder and preorder.
 P537.cpp: Artificial Intelligence?
 Parse double from char*.
 
+P539.cpp: The Settlers of Catan
+Longest path in graph where each edge may be visited once.
+
 P540.cpp: Team Queue
 deque, maintain deque's.
 
@@ -662,7 +665,7 @@ P941.cpp: Permutations
 Find given permutation of string such as index 2 for aab is baa, fac.
 
 P993.cpp: Product of digits
-GIven N, find number where N is product of digits of number.
+Given N, find number where N is product of digits of number.
 
 P1124.c: Celebrity jeopardy
 Trivial gets puts.
