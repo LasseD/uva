@@ -841,6 +841,9 @@ Match pairs of strings so they all concat to the same solution.
 P10137.cpp: The Trip (Skiena)
 read and write ints with decimal place
 
+P10139.cpp: Factovisors
+Uses prime sieve, nextPrime, factorize up to 2^32, find if m divides n!.
+
 P10141.cpp: Request for Proposal
 gets and scanf to read from input. strcpy for string copy. puts and printf for output.
 
