@@ -979,6 +979,9 @@ getline(std::cin, s), stringstream, parse strings and ints from lines. die().
 P10298.cpp: Power Strings
 Find longest period in string.
 
+P10299.cpp: Relatives
+Compute number of relatively prime numbers below n = Euler's totient function.
+
 P10300.cpp: Ecological Premium
 Trivial.
 
