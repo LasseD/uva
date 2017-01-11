@@ -724,6 +724,9 @@ Cover interval with subset of intervals.
 P10023.java: Square root
 BigInteger square root
 
+P10025.cpp: The ? 1 ? 2 ? ... ? n = k problem
+Solve the 1 + 2 + 3 summation problem with + and - so sum is equal to k.
+
 P10026.cpp: Shoemaker's Problem
 Sort by time/fine.
 
@@ -914,7 +917,7 @@ P10219.cpp: Find the ways !
 log base 10 of binomial coefficient log10(n choose k)
 
 P10220.java: I Love Big Numbers !
-BigInteger multiply by valueOf int, factorials up to 1000, sum of ditis ins tring, String.toCharArray.
+BigInteger multiply by valueOf int, factorials up to 1000, sum of digits in string, String.toCharArray.
 
 P10221.cpp: Satellites
 Compute chrod and angle of rotation around a circle. 
