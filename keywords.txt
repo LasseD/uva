@@ -682,6 +682,9 @@ Largest area search by random 2D-KD-partiotioning. Random permutation.
 P1585.cpp: Score
 Trivial score counting in string
 
+P1586.cpp: Molar Mass
+Count atoms when written on formula such as C2H3HO3.
+
 P1644.cpp: Prime Gap
 Prime sieve, bitset, nextPrime, prevPrime, isPrime, prime walk.
 
