@@ -1192,6 +1192,9 @@ Generate strings from formula and sort alternating letters.
 P10789.cpp: Prime Frequency
 Prime sieve into bool array, isPrime.
 
+P10810.cpp: Ultra-Quicksort
+Count inversions by constructing a binary tree with elements maintaining the sizes of subtrees.
+
 P10812.cpp: Beat the Spread!
 given s,d, find a,b where a+b=s, a-b=d
 
