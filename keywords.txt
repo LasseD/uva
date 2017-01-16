@@ -598,6 +598,9 @@ std::cin >> int and char[].
 P725.cpp: Division
 Find all pairs abcde/fghij=N, PH<int>
 
+P727.cpp: Equation
+Dijkstra's Shunting yard algorithm. Infix to postfix conversion of math expressions.
+
 P729.cpp: The Hamming Distance Problem
 Print all n choose k combinations of binary ints with x ones.
 
