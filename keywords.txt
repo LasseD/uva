@@ -1231,6 +1231,9 @@ Is long number multiple of 9 by fast recursive sum.
 P10924.cpp: Prime Words
 Uses isPrime from sieve algorithm. Warning: 1 is a prime here!
 
+P10928.java: My Dear Neighbours
+Trivial.
+
 P10929.java: You can say 11
 BigInteger, multiply, divide, equals, valueOf.
 
