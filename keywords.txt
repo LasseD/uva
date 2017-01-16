@@ -775,6 +775,9 @@ abs
 P10062.cpp: Tell me the frequencies!
 Count characters in lines.
 
+P10065.cpp: Useless Tile Packers
+CH (Graham's scan) and general polygon area computation.
+
 P10066.cpp: The Twin Towers
 Longest common subsequence.
 
