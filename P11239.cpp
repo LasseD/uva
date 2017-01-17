@@ -6,11 +6,6 @@
 
 using namespace std;
 
-void add(map<string,int> &m, const string &name, const int a) {
-  map<string,int>::iterator it = m.find(name);
-  it->second += a;
-}
-
 int main() {
   string line;
   while(true) { // cases
