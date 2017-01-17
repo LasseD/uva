@@ -1078,6 +1078,9 @@ stdio.h gets. printf .2f for two decimals.
 P10432.java: Polygon Inside A Circle
 Area of pizza slize, area of circular segment
 
+P10440.cpp: Ferry Loading II
+Simulate ferry that can wait until optimal amount of cars onboard.
+
 P10450.cpp: World Cup Noise
 Trivial.
 
