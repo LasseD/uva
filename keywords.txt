@@ -1324,6 +1324,9 @@ Decode morse code.
 P11236.java: Grocery store
 sum = product calculation
 
+P11239.cpp: Open Source
+Use set and map to find users enrolled on courses. getline(cin, string);
+
 P11244.cpp: Counting Stars
 gets and scanf to retrieve grid of stars.
 
