@@ -1282,6 +1282,9 @@ Small modification of Ferry Loading III
 P11044.cpp: Searching for Nessy
 Trivial multiplication.
 
+P11054.cpp: Wine trading in Gergovia
+Trivial.
+
 P11057.cpp: Exact Sum
 Trivial sort and traverse.
 
