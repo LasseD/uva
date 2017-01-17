@@ -1276,6 +1276,9 @@ Dijkstra for shortest path, actual dijkstra!
 P11000.cpp: Bee
 Trivial.
 
+P11034.cpp: Ferry Loading IV
+Small modification of Ferry Loading III
+
 P11044.cpp: Searching for Nessy
 Trivial multiplication.
 
