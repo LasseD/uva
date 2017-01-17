@@ -11,10 +11,11 @@ using namespace std;
 int main() {
   string line, ingredient, recipe;
   getline(cin, line);
-  int numberOfBinders = stoi(line);
+  int numberOfBinders = atoi(line.c_str());
   for(int cas = 0; cas < numberOfBinders; ++cas) {
     getline(cin, line);
-    cout << uppercase << line << nouppercase << endl;
+    transform(line.begin(), line.end(), line.begin(), ::toupper);
+    cout << line << endl;
     getline(cin, line);
     stringstream ss1;
     ss1 << line;
@@ -29,13 +30,13 @@ int main() {
       prices[ingredient] = price;
     }
 
-    pair<int,string> ret = new pair<int,string>[n];
+    pair<int,string> *ret = new pair<int,string>[n];
 
     for(int i = 0; i < n; ++i) {
       getline(cin, recipe);
       ret[i] = pair<int,string>(0, recipe);
       getline(cin, line);
-      int numberOfIngredients = stoi(line);
+      int numberOfIngredients = atoi(line.c_str());
       for(int j = 0; j < numberOfIngredients; ++j) {
 	getline(cin, line);
 	stringstream ss2;
@@ -51,7 +52,7 @@ int main() {
       if(ret[i].first > b)
 	break;
       any = true;
-      cout << ret[i].second; << endl;
+      cout << ret[i].second << endl;
     }
     if(!any)
       cout << "Too expensive!" << endl;
