@@ -1294,6 +1294,9 @@ sequence from all maximal independent sets in flat graph
 P11110.cpp: Equidivisions
 Connected components in grid.
 
+P11136.cpp: Hoax or what
+use counter to make duplicate events in set unique (rather than using multisets).
+
 P11137.cpp: Ingenuous Cubrency
 Combinations of currency. Better documented than other implementations here.
 
