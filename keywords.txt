@@ -1156,6 +1156,9 @@ Trivial, but poorly described. Subset not required to be continuous.
 P10664.cpp: Luggage
 Suitcase packing: Can they be packed in two cars so weight is equal. Max sum weight = 200.
 
+P10667.cpp: Largest Block
+Use upray code to compute largest 2D free rectangle.
+
 P10670.cpp: Work Reduction
 read ints and strings with splitting on chars.
 
