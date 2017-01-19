@@ -1156,6 +1156,9 @@ Trivial, but poorly described. Subset not required to be continuous.
 P10664.cpp: Luggage
 Suitcase packing: Can they be packed in two cars so weight is equal. Max sum weight = 200.
 
+P10670.cpp: Work Reduction
+read ints and strings with splitting on chars.
+
 P10673.cpp: Play with Floor and Ceil
 Trivial find p, q so x = p*floor(x/k) + q*ceil(x/k)
 

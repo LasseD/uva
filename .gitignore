@@ -82,6 +82,7 @@ build/
 *a.txt
 *b.txt
 *c.txt
+tmp.cpp
 
 # Visual C++ cache files
 ipch/
