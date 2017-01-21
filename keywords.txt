@@ -616,6 +616,9 @@ Java biginteger, move dot to given position in float output.
 P755.cpp: 487--3279
 Convert phone numbers from string to ints. Mapping of characters.
 
+P762.cpp: We Ship Cheap
+Dijkstra for unit weight edge graph.
+
 P784.cpp: Maze Exploration
 gets and puts to paint maze.
 
