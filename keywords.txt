@@ -1219,6 +1219,9 @@ given s,d, find a,b where a+b=s, a-b=d
 P10815.cpp: Andy's First Dictionary
 Apply tolower.
 
+P10827.cpp: Maximum sum on a torus
+Maximum sum rectangle on matrix for all widths and heights.
+
 P10878.cpp: Decode the tape
 Binary decode chars.
 
