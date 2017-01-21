@@ -12,6 +12,7 @@
 #include <string>
 #include <sstream>
 #include <cstring>
+#include <limits>
 
 using namespace std;
 

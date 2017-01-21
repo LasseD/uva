@@ -1588,6 +1588,9 @@ Trivial.
 P12403.cpp: Save Setu
 Trivial.
 
+P12405.cpp: Scarecrow
+Trivial.
+
 P12468.cpp: Zapping
 Trivial.
 
