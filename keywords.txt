@@ -1273,6 +1273,9 @@ Ways to add K integers to sum N.
 P10945.cpp: Mother Bear
 palindrome check, ignore case
 
+P10946.cpp: You want what filled?
+Connected component finding in 2D grid.
+
 P10948.cpp: The primary problem
 Find two primes that sum to N. Prime sieve, extended nextPrime and isPrime.
 
