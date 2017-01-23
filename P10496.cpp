@@ -23,15 +23,15 @@ struct PermutationHandler {
   }
 };
 
-int dist(Point &a, Point &b) {
+int dist(const Point &a, const Point &b) {
   return ABS(a.XX-b.XX) + ABS(a.YY-b.YY);
 }
 
 void compute(const int i, const int N, const Point start, Point const * const positions, int * const perm, const int pathLength, int &bestPathLength, PermutationHandler &ph) {
   if(i == N) {
-    pathLength += dist(positions[perm[N-1]], start);
-    if(bestPathLength > pathLength) {
-      bestPathLength = pathLength;
+    int L = pathLength + dist(positions[perm[N-1]], start);
+    if(bestPathLength > L) {
+      bestPathLength = L;
     }
     return;
   }
@@ -71,8 +71,7 @@ int main() {
     PermutationHandler ph(n);
     int best = 999999;
     compute(0, n, start, positions, perm, 0, best, ph);
-    printf("The shortest path has length %d\n", bestScore);
-
+    printf("The shortest path has length %d\n", best);
   }
   return 0;
 }

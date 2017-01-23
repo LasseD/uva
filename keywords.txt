@@ -1111,6 +1111,9 @@ Probability of wining car in game show.
 P10494.java: If We Were a Child Again
 BigInteger, split line on white space (\\s+).
 
+P10496.cpp: Collecting Beepers
+Permutation Handler of variable size to find TSB of link length up to 10.
+
 P10499.cpp: The Land of Justice
 Area of circle, area of sphere.
 
