@@ -18,6 +18,7 @@ using namespace std;
 
 #define MIN(a,b) ((a) < (b) ? (a) : (b))
 #define MAX(a,b) ((b) < (a) ? (a) : (b))
+#define ABS(a) ((a) < 0 ? -(a) : (a))
 
 #define FORCAS int cases; cin >> cases; for(int cas = 0; cas < cases; ++cas)
 #define FORI(N) for(int i = 0; i < (N); ++i)
@@ -52,3 +53,5 @@ typedef PD Point2D;
 #define YY second
 #define P1 first
 #define P2 second
+
+void die() {int *a = NULL; a[3] = 2;}
