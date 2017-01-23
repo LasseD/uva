@@ -1055,7 +1055,7 @@ P10363.cpp: Tic Tac Toe
 Analyze if configuration is valid for game.
 
 P10369.cpp: Arctic Network
-Proper Union Find (UF) with path compression. Computing trees in forest.
+Proper Union Find (UF) with path compression. Computing trees in forest. union-find.
 
 P10370.cpp: Above Average
 Trivial average, printf with %.
@@ -1344,6 +1344,9 @@ Check isSquareNumber, find square root.
 
 P11223.java: O: dah, dah, dah!
 Decode morse code.
+
+P11233.cpp: Deli Deli
+scanf and gets for strings or char*.
 
 P11236.java: Grocery store
 sum = product calculation
