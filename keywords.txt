@@ -775,6 +775,9 @@ All pair shortest path with MAX relaxation function. Floyd-Warshall.
 P10050.cpp: Hartals
 Trivial simulation.
 
+P10054.cpp: The Necklace
+Connect links to form a full chain. Double linked list.
+
 P10055.cpp: Hashmat the Brave Warrior
 abs
 
