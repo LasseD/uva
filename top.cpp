@@ -13,6 +13,8 @@
 #include <sstream>
 #include <cstring>
 #include <limits>
+#define _USE_MATH_DEFINES
+#include <cmath>
 
 using namespace std;
 

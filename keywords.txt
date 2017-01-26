@@ -991,6 +991,9 @@ Compute maximal square side length inside a pentagon. M_PI simple.
 P10295.cpp: Hay Points
 getline(std::cin, s), stringstream, parse strings and ints from lines. die().
 
+P10297.cpp: Beavergnaw
+Area of cone is PI*r^2*h/3.
+
 P10298.cpp: Power Strings
 Find longest period in string.
 
