@@ -1168,6 +1168,9 @@ Parabola min of f(x)=ax^2+bx+c is -b/2a) when a is positive.
 P10656.cpp: Maximum Sum (II)
 Trivial, but poorly described. Subset not required to be continuous.
 
+P10662.cpp: The Wedding
+Trivial.
+
 P10664.cpp: Luggage
 Suitcase packing: Can they be packed in two cars so weight is equal. Max sum weight = 200.
 
