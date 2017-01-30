@@ -1435,6 +1435,9 @@ Trivial
 P11503.cpp: Virtual Friends
 Circle combine in social networks
 
+P11504.cpp: Dominos
+Topo sort (topological sorting) in non-acyclic graph using Cormen/Tarjan.
+
 P11530.cpp: SMS Typing
 Trivial.
 
