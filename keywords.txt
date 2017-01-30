@@ -1447,6 +1447,9 @@ Circle combine in social networks
 P11504.cpp: Dominos
 Topo sort (topological sorting) in non-acyclic graph using Cormen/Tarjan.
 
+P11518.cpp: Dominos 2
+Use P11504 to compute dominos that fall.
+
 P11530.cpp: SMS Typing
 Trivial.
 
