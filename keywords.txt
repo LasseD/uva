@@ -1531,6 +1531,9 @@ Trivial max.
 P11800.cpp: Determine the Shape
 Permutation handler on 4 ints, lines, points, linesCross, rightTurn, colinear, basic shape detection
 
+P11804.cpp: Argentina
+Trivial.
+
 P11805.cpp: Bafana Bafana
 Trivial.
 
