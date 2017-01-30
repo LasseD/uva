@@ -33,6 +33,7 @@ using namespace std;
 #define FORUK(N) for(unsigned int k = 0; k < (N); ++k)
 #define FORUX(N) for(unsigned int x = 0; x < (N); ++x)
 #define FORUY(N) for(unsigned int y = 0; y < (N); ++y)
+#define FORIT(T, N) for(T::const_iterator it = N.begin(); it != N.end(); ++it)
 
 typedef unsigned long long ULL;
 typedef long long LL;

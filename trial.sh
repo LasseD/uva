@@ -31,9 +31,15 @@ do
 ./$gen > in.txt
 ./$p1 < in.txt > out1.txt
 ./$p2 < in.txt > out2.txt
-if cmp ou1.txt out2.txt >/dev/null 2>&1
+
+ret=`cmp out1.txt out2.txt`
+
+if [ "$ret" != "" ]
 then
-  echo "Found something!"
+  echo "Found something! $ret"
+  diff out1.txt out2.txt
+  cmp out1.txt out2.txt
+
   exit 2
 fi
 done
