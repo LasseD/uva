@@ -337,6 +337,9 @@ Trivial simulation.
 P409.cpp: Excuses, Excuses!
 replace_if to transform chars in string
 
+P410.cpp: Station Balance
+Trivial.
+
 P412.cpp: Pi
 GCD on int.
 
