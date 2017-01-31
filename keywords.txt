@@ -721,6 +721,9 @@ Trivial after precomputation.
 P10008.cpp: What's Cryptanalysis?
 sort pair, isprint for proper printable char detection
 
+P10009.cpp: All Roads Lead Where?
+Find LCA in rooted tree.
+
 P10010.cpp: Where's Waldorf
 General trie construction and queries.
 
