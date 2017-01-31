@@ -1171,6 +1171,9 @@ Find N given N-M where M = N/10.
 P10647.cpp: Optimal House Placement
 Parabola min of f(x)=ax^2+bx+c is -b/2a) when a is positive.
 
+P10653.cpp: Bombs! NO they are Mines!!
+Shortest path in grid with obstacles (mines). Ignore the "box" code. It doesn't work.
+
 P10656.cpp: Maximum Sum (II)
 Trivial, but poorly described. Subset not required to be continuous.
 
