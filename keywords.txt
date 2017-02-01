@@ -601,6 +601,9 @@ Output as LCD display.
 P713.cpp: Adding Reversed Numbers
 std::cin >> int and char[].
 
+P714.cpp: Copying Books
+Binary search.
+
 P725.cpp: Division
 Find all pairs abcde/fghij=N, PH<int>
 
