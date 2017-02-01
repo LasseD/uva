@@ -556,6 +556,9 @@ BigInteger multiply by valueOf int, factorials up to 1000.
 P624.cpp: CD
 Dynamic programming to select best subset with sum less than given amount. Backtrack.
 
+P628.cpp: Passwords
+Trivial.
+
 P637.cpp: Booklet Printing
 Trivial page order.
 
