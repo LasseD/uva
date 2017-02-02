@@ -1279,6 +1279,9 @@ Simulate ferry travelling between coasts. Cars line up in queues.
 P10905.cpp: Children't Game
 Custom comparator.
 
+P10908.cpp: Largest Square
+Iterate around in grid.
+
 P10911.cpp: Forming Quiz Teams
 Permutation handler to find optimal pairing.
 
