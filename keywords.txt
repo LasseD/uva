@@ -895,6 +895,9 @@ Simulation
 P10152.cpp: ShellSort
 Find inversions/climbs to top of stack for sorting.
 
+P10158.cpp: War
+Use union-find to maintain friends and enemies.
+
 P10161.cpp: Ant on a Chessboard
 Trivial. sqrt.
 
