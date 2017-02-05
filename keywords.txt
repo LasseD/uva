@@ -691,6 +691,9 @@ Prime sieve, extended nextPrime, extended prevPrime, isPrime, gaps between prime
 P920.cpp: Sunny Mountains
 Length of part of vector.
 
+P924.cpp: Spreading The News
+BFS by wave simulation.
+
 P941.cpp: Permutations
 Find given permutation of string such as index 2 for aab is baa, fac.
 
