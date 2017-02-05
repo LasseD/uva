@@ -1342,6 +1342,9 @@ Find two primes that sum to N. Prime sieve, extended nextPrime and isPrime.
 P10954.cpp: Add All
 Repeatedly sum smallest two ints from multiset.
 
+P10959.cpp: The Party, Part I
+BFS numbering.
+
 P10970.cpp: Big Chocolate
 Trivial, buffered. Read two positive ints from line.
 
