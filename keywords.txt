@@ -853,6 +853,9 @@ Modified Dijkstra for Widest path problem / the bottleneck shortest path problem
 P10101.cpp: Bangla Numbers
 printf("%llu") for unsigned long long.
 
+P10102.cpp: The path in the colored field
+Trivial because number of 1's and 3's are low... but not stated. :(
+
 P10104.cpp: Euclid Problem
 Simulate GCD as if by hand. Solve AX+BY = D where D = GCD(A,B).
 
