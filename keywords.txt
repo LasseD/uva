@@ -697,6 +697,9 @@ BFS by wave simulation.
 P941.cpp: Permutations
 Find given permutation of string such as index 2 for aab is baa, fac.
 
+P990.cpp: Diving for Gold
+Dynamic Programming to decide which treasures to bring home (classical 0/1 knapsack)
+
 P993.cpp: Product of digits
 Given N, find number where N is product of digits of number.
 
