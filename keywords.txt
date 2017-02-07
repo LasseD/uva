@@ -1198,6 +1198,9 @@ Fibonacci numbers up to 5000. BigInteger. Caching.
 P10583.cpp: Ubiquitous Religions
 Bad union find.
 
+P10589.cpp: Area
+Trivial.
+
 P10591.cpp: Happy Number
 Square sum of number. Cache numbers.
 
