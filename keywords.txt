@@ -751,6 +751,9 @@ Find LCA in rooted tree.
 P10010.cpp: Where's Waldorf
 General trie construction and queries.
 
+P10012.cpp: How Big Is It?
+Permutation handler of variable size with constructor data. Optimal circle packing.
+
 P10013.cpp: Super long sums
 Read digits to shorts.
 
