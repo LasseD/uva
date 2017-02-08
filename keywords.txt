@@ -1546,6 +1546,9 @@ Binary, exponential search.
 P11616.cpp: Roman Numerals
 Convert to and from roman.
 
+P11624.cpp: Fire!
+Simulate both fire growth and escape route from 2D grid walk.
+
 P11626.java: Convex Hull
 ch
 
