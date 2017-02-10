@@ -1,139 +1,111 @@
-typedef vector<Point> Polygon;
-typedef pair<Point,Point> Line;
+typedef pair<Point2D,double> Circle;
+#define CENTER first
+#define RADIUS second
 
-ostream& operator<<(ostream& os, const Point &obj) {
-  os << "(" << obj.first << "," << obj.second << ")";
-  return os;
+bool colinear(const Point &A, const Point &B, const Point &C) {
+  return (B.XX-A.XX)*(C.YY-A.YY) - (B.YY-A.YY)*(C.XX-A.XX) == 0;
 }
-ostream& operator<<(ostream& os, const Polygon &obj) {
-  os << "[ ";
-  for(Polygon::const_iterator it = obj.begin(); it != obj.end(); ++it) {
-    os << *it << " ";
+double dist(const Point2D &p, const Point &q) {
+  double dx = p.XX-(double)q.XX;
+  double dy = p.YY-(double)q.YY;
+  return sqrt(dx*dx + dy*dy);
+}
+double dist(const Point &p, const Point &q) {
+  return dist(Point2D(p.XX,p.YY), q);
+}
+
+// http://stackoverflow.com/questions/4103405/what-is-the-algorithm-for-finding-the-center-of-a-circle-from-three-points
+Circle buildFrom3(Point A, Point B, Point C) {
+  if(colinear(A, B, C))
+    die();
+  if(A.XX == B.XX)
+    swap(B, C); // now A.XX != B.XX, because not co-linear.
+  if(B.XX == C.XX) {
+    swap(A, B); // Now B.XX != C.XX and A.XX != B.XX
   }
-  os << "]";
-  return os;
+  if(B.YY == A.YY) {
+    swap(A, C); // Now aSlope will not be 0.
+  }
+  if(B.XX == A.XX)
+    die();
+  if(B.XX == C.XX)
+    die();
+  if(B.YY == A.YY)
+    die();
+
+  double yDelta_a = B.YY - A.YY;
+  double xDelta_a = B.XX - A.XX;
+  double yDelta_b = C.YY - B.YY;
+  double xDelta_b = C.XX - B.XX;
+  
+  Point2D center;
+  
+  double aSlope = yDelta_a/xDelta_a;
+  double bSlope = yDelta_b/xDelta_b;
+  center.XX = (aSlope*bSlope*(A.YY - C.YY) + bSlope*(A.XX + B.XX)
+	       - aSlope*(B.XX+C.XX) )/(2.0* (bSlope-aSlope) );
+  center.YY = -1.0*(center.XX - (A.XX+B.XX)/2.0)/aSlope + (A.YY+B.YY)/2.0;
+  
+  return Circle(center, dist(center, A));
+}
+
+Circle buildFrom2(const Point &p, const Point &q) {
+  Point2D center((p.XX+q.XX)/2.0, (p.YY+q.YY)/2.0);
+  return Circle(center, dist(center, p));
+}
+
+Circle buildEnclosingCircle(vector<Point> &Q) {
+  if(Q.size() == 1) {
+    Point2D center(Q[0].XX, Q[0].YY);
+    return Circle(center, 0);
+  }
+  if(Q.size() == 2) {
+    return buildFrom2(Q[0], Q[1]);
+  }
+  if(Q.size() == 3) {
+    if(colinear(Q[0], Q[1], Q[2])) {
+      if(dist(Q[0],Q[1]) > dist(Q[1],Q[2])) {
+	if(dist(Q[0],Q[1]) > dist(Q[0],Q[2]))
+	  return buildFrom2(Q[0], Q[1]);
+	else
+	  return buildFrom2(Q[0], Q[2]);
+      }
+      else {
+	if(dist(Q[2],Q[1]) > dist(Q[0],Q[2]))
+	  return buildFrom2(Q[2], Q[1]);
+	else
+	  return buildFrom2(Q[0], Q[2]);
+      }
+    }
+
+    return buildFrom3(Q[0], Q[1], Q[2]);
+  }
+  return Circle(Point2D(0,0),0);
+}
+
+bool inCircle(const Circle &c, const Point &p) {
+  return dist(c.CENTER, p) <= c.RADIUS + 1e-9;
 }
 
 /*
- * Convex hull represented bYY a list of points in clockwise order.
+Processes points of S in a random order. Maintaining set P of processed points and the smallest circle c that encloses the union of P and Q. At each step, it tests whether the next point r to be processed belongs to c; if not, the algorithm replaces c by the result of a recursive call on (P,Q+r).
  */
-bool rightTurn(const Point &lineStart, const Point &lineEnd, const Point &p) {
-  return (lineEnd.XX-lineStart.XX)*(p.YY-lineStart.YY) - (lineEnd.YY-lineStart.YY)*(p.XX-lineStart.XX) < 0;
-}
-bool leftTurn(const Point &lineStart, const Point &lineEnd, const Point &p) {
-  return (lineEnd.XX-lineStart.XX)*(p.YY-lineStart.YY) - (lineEnd.YY-lineStart.YY)*(p.XX-lineStart.XX) > 0;
-}
-bool colinear(const Point &lineStart, const Point &lineEnd, const Point &p) {
-  return (lineEnd.XX-lineStart.XX)*(p.YY-lineStart.YY) - (lineEnd.YY-lineStart.YY)*(p.XX-lineStart.XX) == 0;
-}
-Point flipY(const Point &b) {
-  return Point(b.XX, -b.YY);
-}
-struct ConvexHull {
-  Point *points;
-  int size;
-			   		
-  Polygon upperHull(const Point &left, const Point &right, Polygon &between) {
-    between.push_back(right);
-    
-    Polygon out;
-    out.push_back(left);
-    Point lastPeek = right;
-    for(Polygon::const_iterator it = between.begin(); it != between.end(); ++it) {
-      if(it->XX == lastPeek.XX) {
-	if(it->YY < lastPeek.YY) {
-	  continue;
-	}
-	else {
-	  lastPeek = out.back();
-	  out.pop_back();					
-	}
-      }
-      
-      while(!out.empty() && !rightTurn(out.back(), lastPeek, *it)) {
-	lastPeek = out.back();
-	out.pop_back();
-      }
-      out.push_back(lastPeek);
-      lastPeek = *it;
+Circle EmoWelzlSmallestEnclosure(vector<Point> &S, vector<Point> &Q) {
+  Circle c = buildEnclosingCircle(Q);
+
+  if(Q.size() == 3)
+    return c;
+  vector<Point> P;
+  FORIT(vector<Point>, S) {
+    Point r = *it;
+    if(!inCircle(c, r)) {
+      vector<Point> Q2(Q);
+      Q2.push_back(r);
+      c = EmoWelzlSmallestEnclosure(P, Q2);
     }
-    // Fix rightmost point as it should be handled differently:
-    out.push_back(lastPeek);
-    if(out.back() == right) {
-      out.pop_back();
-    }
-    return out;
+    P.push_back(r);
   }
-
-  ConvexHull(const Polygon &scatteredPoints) {
-    const int numPoints = scatteredPoints.size();
-    Polygon copy(scatteredPoints);
-    // Sort input by x (lex):
-    sort(&copy[0], &copy[numPoints]);
-
-    // Find left and rightmost points:
-    Point leftMost = copy[0];
-    Point rightMost = copy[numPoints-1];
-
-    //Split points in upper and lower:
-    Polygon upperPoints;
-    Polygon lowerPoints;
-    for(int i = 1; i < numPoints-1; ++i) {			
-      Point p = copy[i];
-      if(colinear(leftMost, rightMost, p)) {
-	continue;
-      }
-      if(leftTurn(leftMost, rightMost, p)) {
-	upperPoints.push_back(p);
-      }
-      else {
-	lowerPoints.push_back(flipY(p));
-      }
-    }
-
-    upperPoints = upperHull(leftMost, rightMost, upperPoints);
-    lowerPoints = upperHull(flipY(leftMost), flipY(rightMost), lowerPoints);
-    
-    //Make points of hull:
-    int actualNumPoints = size = upperPoints.size() + lowerPoints.size();
-    points = new Point[actualNumPoints];
-    int i = 0;
-    for(Polygon::const_iterator it = upperPoints.begin(); it != upperPoints.end(); ++it) {
-      points[i++] = *it;
-    }		
-    points[i] = rightMost;
-    i = actualNumPoints;
-    for(Polygon::const_iterator it = lowerPoints.begin(); it != lowerPoints.end(); ++it) {
-      i--;
-      if(i != actualNumPoints-1)
-	points[i+1] = flipY(*it);
-    }
-  }
-
-  Point2D getCenterMass() {
-    long sumX = 0;
-    long sumY = 0;
-    long area = 0;
-    FORUI(points.size()) {
-      Point &p0 = points[i];
-      Point &p1 = points[i+1];
-
-      long triangleArea = (p0.XX * p1.YY) - (p1.XX * p0.YY);
-
-      sumX += (p0.XX + p1.XX) * triangleArea;
-      sumY += (p0.YY + p1.YY) * triangleArea;
-      area += triangleArea;
-    }
-    return Point2D(sumX / 6.0 / area, sumY / 6.0 / area);
-  }
-};
-ostream& operator<<(ostream& os, const ConvexHull &obj) {
-  os << "{ ";
-  for(int i = 0; i < obj.size; ++i) {
-    os << obj.points[i] << " ";
-  }
-  os << "}";
-  return os;
+  return c;
 }
 
 int main() {
@@ -142,39 +114,25 @@ int main() {
     cin >> N;
     if(N == 0)
       return 0;
-    Polygon poly;
+    vector<Point> poly;
     FORI(N) {
       Point p;
       cin >> p.XX >> p.YY;
       poly.push_back(p);
     }
+    std::srand(std::time(0));
+    random_shuffle(poly.begin(), poly.end());
     double R; cin >> R;
 
-    if(N == 1) {
-      cout << "The polygon can be packed in the circle." << endl;
-      continue;
-    }
-    if(N == 2) {
-      double dx = poly[0].XX-ch.poly[1].XX;
-      double dy = poly[0].YY-ch.poly[1].YY;
-      if(2*R >= sqrt(dx*dx+dy*dy))
-	cout << "The polygon can be packed in the circle." << endl;
-      else
-	cout << "There is no way of packing that polygon." << endl;
-      continue;
-    }
+    vector<Point> Q;
+    Circle c = EmoWelzlSmallestEnclosure(poly, Q);
+    
+    /*cerr << "Center: " << c.CENTER.XX << ", " << c.CENTER.YY << ", R=" << R << ", poly r=" << c.RADIUS << endl;//*/
+    //printf("%.8lf\n", c.RADIUS);
 
-    // Compute CH:
-    ConvexHull ch(poly);
-
-    Point2D centerMass = ch.getCenterMass();
-    double dx = centerMass.XX-ch.points[0].XX;
-    double dy = centerMass.YY-ch.points[0].YY;
-    if(R >= sqrt(dx*dx+dy*dy))
+    if(R >= c.RADIUS)
       cout << "The polygon can be packed in the circle." << endl;
     else
-      cout << "There is no way of packing that polygon." << endl;
-
-    delete[] ch.points;
+      cout << "There is no way of packing that polygon." << endl;//*/
   }
 }	

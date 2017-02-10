@@ -739,6 +739,9 @@ Computing all sub solutions. Brute force dynamic programming.
 P10004.cpp: Bicoloring
 Simple graph traversal.
 
+P10005.cpp: Packing Polygons
+Emo Welzl algorithm for smallest enclosure of point set. Circle through two points. Outer circle of triangles.
+
 P10006.cpp: Carmichael Numbers
 Trivial after precomputation.
 
