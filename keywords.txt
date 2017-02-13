@@ -1138,6 +1138,9 @@ Die turn simulation.
 P10420.cpp: List of Conquests
 Read line as int, Read first word from line, map string to count.
 
+P10422.cpp: Knights in FEN
+Moving knights on a 5x5 chess board. encode and decode configurations.
+
 P10424.cpp: Love Calculator
 stdio.h gets. printf .2f for two decimals.
 
