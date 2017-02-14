@@ -271,6 +271,9 @@ All pair shortest path in arbitrary graph. Floyd-Warshall.
 P340.cpp: Master-Mind Hints
 Compute master mind game score.
 
+P341.cpp: Non-Stop Travel
+Dijkstra shortest path with backtracking for path. Actual Dijkstra. Modern.
+
 P343.cpp: What Base is This?
 Convert string int in base 2-36 to int. Poorly defined min. base.
 
@@ -860,7 +863,7 @@ P10098.cpp: Generating Fast, Sorted Permutation
 Copy of P195. Permutations in alphabetical (not lex) order, permutation handler,all permutations of strings
 
 P10099.cpp: The Tourist Guide (Skiena)
-Modified Dijkstra for Widest path problem / the bottleneck shortest path problem. Dijkstra implementation can be re-used for other purposes.
+Modified Dijkstra for Widest path problem / the bottleneck shortest path problem.
 
 P10101.cpp: Bangla Numbers
 printf("%llu") for unsigned long long.
@@ -1382,7 +1385,7 @@ P10976.cpp: Fractions Again?!
 Prime sieve. Find all numbers that divide k (and k^2). Find all fractions 1/k=1/x+1/y.
 
 P10986.cpp: Sending email
-Dijkstra for shortest path, actual dijkstra!
+Dijkstra for shortest path.
 
 P11000.cpp: Bee
 Trivial.
