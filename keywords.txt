@@ -1030,6 +1030,9 @@ Paint region in grid.
 P10276.cpp: Hanoi Tower Troubles Again!
 isSquareNumber().
 
+P10278.cpp: Fire Station
+DIjkstra shortest path for multiple sources for largest path. Actual Dijkstra.
+
 P10281.cpp: Average Speed
 Trivial.
 
