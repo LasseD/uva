@@ -700,6 +700,9 @@ Length of part of vector.
 P924.cpp: Spreading The News
 BFS by wave simulation.
 
+P929.cpp: Number Maze
+Dijkstra's shortest path (real Dijkstra) in grid of numbers.
+
 P941.cpp: Permutations
 Find given permutation of string such as index 2 for aab is baa, fac.
 
