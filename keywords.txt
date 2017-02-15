@@ -1540,6 +1540,9 @@ Topo sort (topological sorting) in non-acyclic graph using Cormen/Tarjan.
 P11057.cpp: Bender B. Rodríguez Problem
 Trivial.
 
+P11513.cpp: 9 Puzzle
+Compute all solutions for 9 puzzle and store in map.
+
 P11518.cpp: Dominos 2
 Use P11504 to compute dominos that fall.
 
