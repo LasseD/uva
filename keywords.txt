@@ -1399,6 +1399,9 @@ Dijkstra for shortest path.
 P11000.cpp: Bee
 Trivial.
 
+P11015.cpp: 05-2 Rendezvous
+Dijkstra shortest path to all destinations.
+
 P11034.cpp: Ferry Loading IV
 Small modification of Ferry Loading III
 
