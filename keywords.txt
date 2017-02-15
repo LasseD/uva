@@ -272,7 +272,7 @@ P340.cpp: Master-Mind Hints
 Compute master mind game score.
 
 P341.cpp: Non-Stop Travel
-Dijkstra shortest path with backtracking for path. Actual Dijkstra. Modern.
+Dijkstra shortest path with backtracking for path. Dijkstra. Modern.
 
 P343.cpp: What Base is This?
 Convert string int in base 2-36 to int. Poorly defined min. base.
@@ -704,7 +704,7 @@ P928.cpp: Eternal Truths
 Grid walk with up to three types of visits for each cell. 
 
 P929.cpp: Number Maze
-Dijkstra's shortest path (real Dijkstra) in grid of numbers.
+Dijkstra's shortest path in grid of numbers.
 
 P941.cpp: Permutations
 Find given permutation of string such as index 2 for aab is baa, fac.
@@ -1037,7 +1037,7 @@ P10276.cpp: Hanoi Tower Troubles Again!
 isSquareNumber().
 
 P10278.cpp: Fire Station
-DIjkstra shortest path for multiple sources for largest path. Actual Dijkstra.
+Dijkstra shortest path for multiple sources for largest path.
 
 P10281.cpp: Average Speed
 Trivial.
@@ -1516,6 +1516,9 @@ cmath sqrt
 P11462.cpp: Age Sort
 Radix sort ints 1 - 100.
 
+P11463.cpp: Commandos
+Dijkstra shortest path to all nodes. Modern.
+
 P11475.cpp: Extend to Palindrome
 Knuth Morris Pratt algorithm where search string is reverse of input.
 
@@ -1583,7 +1586,7 @@ P11631.cpp: Dark roads
 MST in undirected graph using union-find. Like Bond, but without weights in union-find (simpler).
 
 P11635.cpp: Hotel booking
-Use dijkstra multiple times from waves of hotels (sources).
+Use Dijkstra multiple times from waves of hotels (sources).
 
 P11636.cpp: Hello World!
 Trivial counting.
