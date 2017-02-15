@@ -1417,6 +1417,9 @@ Maximum product of continuous sub-array of ints.
 P11069.cpp: A Graph Problem
 sequence from all maximal independent sets in flat graph
 
+P11080.cpp: Place the Guards
+Simple graph coloring.
+
 P11110.cpp: Equidivisions
 Connected components in grid.
 
