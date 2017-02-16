@@ -205,6 +205,9 @@ Compute permutations in alphabetical order, permutation handler, std::sort with 
 P200.cpp: Rare Order
 topo sort, extending partial order to total order, lex compare
 
+P201.cpp: Squares
+Trivial.
+
 P202.cpp: Repeating Decimals
 Find cycle in primary school division.
 
