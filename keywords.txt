@@ -1459,6 +1459,9 @@ Convert decimal int to ternary.
 P11192.cpp: Group Reverse
 gets, swap chars in string.
 
+P11207.cpp: The easiest way
+Trivial.
+
 P11219.cpp: How old are you?
 Date comparison. Warning: Description of too old is vague.
 
