@@ -637,6 +637,9 @@ Dijkstra's Shunting yard algorithm. Infix to postfix conversion of math expressi
 P729.cpp: The Hamming Distance Problem
 Print all n choose k combinations of binary ints with x ones.
 
+P737.cpp: Gleaming the Cubes
+Rectilinear integer cube intersecion.
+
 P739.cpp: Soundex Indexing
 Convert strings to soundex codes.
 
