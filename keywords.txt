@@ -1219,6 +1219,9 @@ Prime sieve, isprime and isDigitPrime
 P10550.cpp: Combination Lock
 Trivial simulate combination lock.
 
+P10566.cpp: Crossed Ladders
+Binary search for double.
+
 P10579.java: Fibonacci Numbers
 Fibonacci numbers up to 5000. BigInteger. Caching.
 
