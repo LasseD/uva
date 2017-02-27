@@ -1492,6 +1492,9 @@ Trivial.
 P11244.cpp: Counting Stars
 gets and scanf to retrieve grid of stars.
 
+P11286.cpp: Conformity
+Encode five numbers in ULL, Update values in map using non-const pointer.
+
 P11292.cpp: The Dragon of Loowater
 Sort and double list walk.
 
