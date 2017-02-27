@@ -833,7 +833,10 @@ P10054.cpp: The Necklace
 Connect links to form a full chain. Double linked list.
 
 P10055.cpp: Hashmat the Brave Warrior
-abs
+abs.
+
+P10056.cpp: What is the Probability?
+pow.
 
 P10062.cpp: Tell me the frequencies!
 Count characters in lines.
