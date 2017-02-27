@@ -1564,6 +1564,9 @@ Topo sort (topological sorting) in non-acyclic graph using Cormen/Tarjan.
 P11057.cpp: Bender B. Rodríguez Problem
 Trivial.
 
+P11512.cpp: GATTACA
+Suffix array construction. LCP in suffix array. Longest common prefix between adjacent entries of suffix array.
+
 P11513.cpp: 9 Puzzle
 Compute all solutions for 9 puzzle and store in map.
 
