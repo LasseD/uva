@@ -217,6 +217,9 @@ Permutation handler of variable size - try all.
 P218.java: Moth Eradication
 ch
 
+P227.cpp: Puzzle
+5 x 5 push puzzle. getline(cin,line);
+
 P231.cpp: Testing the CATCHER
 longestIncreasingSubsequence, Longest Increasing Subsequence
 
