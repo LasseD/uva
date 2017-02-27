@@ -619,6 +619,9 @@ Trivial algorithm simulation.
 P696.cpp: How May Knights
 Placement of knights on a chess board. Notice: Board size down to 0!
 
+P699.cpp: The Falling Leaves
+Build, traverse and delete binary tree.
+
 P706.cpp: LCD Display
 Output as LCD display.
 
