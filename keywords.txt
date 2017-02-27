@@ -1756,6 +1756,9 @@ Trivial.
 P12468.cpp: Zapping
 Trivial.
 
+P12478.cpp: Hardest Problem Ever (Easy)
+Trivial.
+
 P12502.cpp: Three Families
 Trivial.
 
