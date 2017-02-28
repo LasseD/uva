@@ -902,7 +902,10 @@ P10107.cpp: What is the Median
 Multiset - maintain median using two sets, rbegin, begin, iterators.
 
 P10110.cpp: Light, more light (Skiena)
-Prime factorization, count divisors
+Prime factorization, count divisors.
+
+P10114.cpp: Loansome Car Buyer
+Depreciation vs residual loan.
 
 P10115.cpp: Automatic Editing
 Replace occurences of string in string.
