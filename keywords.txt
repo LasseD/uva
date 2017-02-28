@@ -1306,6 +1306,9 @@ Prime sieve. bitset. isPrime, nextPrime.
 P10700.cpp: Camel trading
 Try all parenthesis placements.
 
+P10701.cpp: Pre, in and post
+Copy of P536.
+
 P10703.cpp: Free spots
 Find empty cells in grid by handling line by line.
 
