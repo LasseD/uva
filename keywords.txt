@@ -1417,6 +1417,9 @@ Repeatedly sum smallest two ints from multiset.
 P10959.cpp: The Party, Part I
 BFS numbering.
 
+P10963.cpp: The Swallowing Ground
+Trivial.
+
 P10970.cpp: Big Chocolate
 Trivial, buffered. Read two positive ints from line.
 
