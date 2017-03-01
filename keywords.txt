@@ -1021,6 +1021,9 @@ Compute chrod and angle of rotation around a circle.
 P10222.cpp: Decode the Mad man
 keyboard two left letter substitution, including case.
 
+P10223.cpp: How many nodes ?
+Catalan numbers = Number of distinct binary trees.
+
 P10226.cpp: Hardwood Species
 Count strings, std::string to printf.
 
@@ -1455,6 +1458,9 @@ sequence from all maximal independent sets in flat graph
 
 P11080.cpp: Place the Guards
 Simple graph coloring.
+
+P11094.cpp: Continents
+Flood fill.
 
 P11110.cpp: Equidivisions
 Connected components in grid.
