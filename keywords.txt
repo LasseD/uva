@@ -1294,6 +1294,9 @@ Trivial find p, q so x = p*floor(x/k) + q*ceil(x/k)
 P10678.cpp: The Grazing Cow
 Area of ellipse from distance between centers=D and r1+r2=L.
 
+P10679.cpp: I Love Strings!!
+Suffix array search for substring contains. Remember to delete[] P!
+
 P10684.cpp: The decadary watch
 Convert hh:mm::ss:cc time into decimal time.
 
@@ -1476,6 +1479,9 @@ Combinations of currency. Better documented than other implementations here.
 
 P11150.cpp: Cola
 The cola problem with full bottles.
+
+P11151.cpp: Longest Palindrome
+Dynamic programming for edit distance palindrome.
 
 P11152.cpp: Colourful Flowers
 Semiperimeter, inradius, circumradius of triangle with inscribed and outer circles. M_PI. pi.
