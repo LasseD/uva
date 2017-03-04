@@ -856,6 +856,9 @@ Longest common subsequence.
 P10067.cpp: Playing with Wheels
 FIFO queue usage.
 
+P10069.java: Distinct Subsequences
+Java BigInteger, number of ways X is a subsequence of Y.
+
 P10070.java: Leap Year or Not Leap Year
 BigInteger, multiply, divide, divides.
 
