@@ -1,151 +1,144 @@
-#include <iostream>
-#include <stdio.h>
-
-#define NUM_CHILDREN ('z'-'A'+1)
+struct Entry { 
+  int nr[2], p; 
+};
+bool cmp(struct Entry a, struct Entry b) { 
+  return a.nr[0] == b.nr[0] ? (a.nr[1] < b.nr[1]) : (a.nr[0] < b.nr[0]); 
+}
+std::ostream& operator<<(std::ostream& os, const Entry& e) {
+  if(e.nr[0] >= 0)
+    os << (char)(e.nr[0]+'A');
+  else
+    os << e.nr[0];
+  os << "/";
+  if(e.nr[1] >= 0)
+    os << (char)(e.nr[1]+'A');
+  else
+    os << e.nr[1];
+  os << "/" << e.p;
+  return os;
+}
 
 /*
-See:
-http://stackoverflow.com/questions/9452701/ukkonens-suffix-tree-algorithm-in-plain-english
-http://pastie.org/5925809
+Suffix array in last row of P.
  */
+int* computeSuffixArray(const string &A, int &step) {
+  int N = (int)A.size();
 
-struct SuffixTreeNode {
-  char const *c;
-  int len;
-  SuffixTreeNode *children[NUM_CHILDREN];
-
-  void reset() {
-    for(int i = 0; i < NUM_CHILDREN; ++i)
-      children[i] = NULL;
-  }
-
-  void print() const {
-    for(int i = 0; i < len; ++i)
-      std::cerr << c[i];
-    std::cerr<< " [";
-    for(int i = 0; i < NUM_CHILDREN; ++i) {
-      if(children[i] != NULL)
-	std::cerr << (char)('A'+i);
+  int MAXLG = 4;
+  {
+    int maxN = 2;
+    while(maxN <= N) {
+      ++MAXLG;
+      maxN <<= 1;
     }
-    std::cerr<< "]";
   }
-};
+  int *P = new int[MAXLG*N]; // index level*N + i
+  Entry *L = new Entry[N];
 
-class SuffixTree {
-  SuffixTreeNode *nodes;
-  int size;
+  FORI(N) {
+    P[i] = (int)A[i]-'A'; // Initially ordered P[0*N+i] by characters.
+  }
   
-public:
-  void print() const {
-    std::cerr << "Size: " << size << " SuffixTree nodes: " << std::endl;
-    for(int i = 0; i < size; ++i) {
-      std::cerr << " " << i << ": ";
-      nodes[i].print();
-      std::cerr << std::endl;
+  step = 1;
+  for(int cnt = 1; (cnt >> 1) < N; step++, cnt <<= 1) { 
+    // Update L:
+    FORI(N) {
+      L[i].nr[0] = P[(step-1)*N+i]; 
+      L[i].nr[1] = i + cnt < N ? P[(step-1)*N + i + cnt] : -1; 
+      L[i].p = i; 
     }
-  }
+    //cerr << "Step " << step << " P=";
 
-  void addString(char const * const S, int len) {
-    SuffixTreeNode *t = &nodes[0];
-    int ti = 0;
-    for(int Si = 0; Si < len; ++Si, ++ti) {
-      if(ti == t->len) {
-	// Find next t:
-	if(t->children[S[Si]-'A'] == NULL) {
-	  nodes[size].reset();
-	  nodes[size].len = len-Si;
-	  nodes[size].c = &S[Si];
-	  t->children[S[Si]-'A'] = &nodes[size];
-	  ++size;
-	  return;
-	}
-	t = t->children[S[Si]-'A'];
-	ti = 0;	// t updated!
-      }
-
-      char tc = t->c[ti];
-      if(tc != S[Si]) { // Split t:
-	// Construct new suffix node and update t:
-	for(int i = 0; i < NUM_CHILDREN; ++i) {
-	  nodes[size].children[i] = t->children[i];
-	  t->children[i] = NULL;
-	}
-	t->children[tc-'A'] = &nodes[size];
-	nodes[size].len = t->len - ti;
-	t->len = ti;
-	nodes[size].c = &t->c[ti];
-	++size;
-	
-	// Construct new node for rest of S:
-	t->children[S[Si]-'A'] = &nodes[size];
-	nodes[size].reset();
-	nodes[size].c = &S[Si];
-	nodes[size].len = len-Si;	
-	++size;
-	return;
-      }
+    sort(L, L+N, cmp); // STL sort can be replaced with bucket sort.
+    FORI(N) {
+      if(i > 0 && L[i].nr[0] == L[i-1].nr[0] && L[i].nr[1] == L[i-1].nr[1])
+	P[step*N + L[i].p] = P[step*N + L[i-1].p];
+      else
+	P[step*N + L[i].p] = i; 
     }
-  }
+  } 
+  //cerr << "Suffix array constructed started A=" << A << ", N=" << N << ", MAXLG=" << MAXLG << ", N=" << N << endl;
 
-  void reset(char const * const S, int len) {
-    nodes[0].reset();
-    nodes[0].len = 0;
-    nodes[0].c = NULL;
-    size = 1;
+  delete[] L;
 
-    for(int i = 0; len-i >= 1; ++i) {
-      addString(&S[i], len-i);
-      /*std::cerr << "After adding " << &S[i] << ": " << std::endl;
-      print();//*/
-    }    
-  }
+  return P;
+} 
 
-  SuffixTree() {
-    nodes = new SuffixTreeNode[10009];
+int cmpPrefix(int startS, string &S, string &T) {
+  //cerr << T << " vs " << S.substr(startS) << endl;
+  FORUI(T.size()) {
+    int j = i+startS;
+    if(j >= (int)S.size())
+      return -1;
+    if(S[j] == T[i])
+      continue;
+    if(S[j] < T[i])
+      return -1;
+    return 1;
   }
-  ~SuffixTree() {
-    delete[] nodes;
-  }
-
-  bool contains(char const * const T) const { 
-    SuffixTreeNode const * t = nodes;
-    int ti = 0;
-    char c;
-    for(int i = 0; isalpha(c = T[i]); ++i, ++ti) {
-      if(ti >= t->len) {
-	t = t->children[c-'A'];
-	if(t == NULL)
-	  return false;
-	ti = 0;
-      }
-      if(T[i] != t->c[ti])
-	return false;
-    }
-    return true;
-  }
-};
+  return 0;
+}
 
 int main() {
-  int k, q;
-  std::string S, T;
-  SuffixTree t;
+  char c, cS[100004], cT[1004];
+  int cases;
+  scanf("%d", &cases);
+  getchar(); // newline
+  for(int cas = 0; cas < cases; ++cas) {
+    int q, step; 
+    
+    int x = 0;
+    for(; isalpha(c = getchar()); ++x)
+      cS[x] = c;
+    cS[x] = '\0';
+    //gets(cS);
+    string S(cS);
+    scanf("%d", &q);
+    getchar(); // new line
+    //cerr << "S='" << S << "'" << endl;
 
-  std::cin >> k;
-  for(int cas = 0; cas < k; ++cas) {
-    std::cin >> S;
-    int len = 0;
-    while(isalpha(S[len]))
-      ++len;
+    int N = (int)S.size();
+    int* P = computeSuffixArray(S, step);
+    int* sortedIndices = new int[N];
+    FORI(N)
+      sortedIndices[P[(step-1)*N+i]] = i;
+    
+    /*
+    cerr << "Sorted suffix indices of " << S << ": ";
+    FORI(N)
+      cerr << " " << sortedIndices[i];
+    cerr << endl;//*/
 
-    t.reset(S.c_str(), len);
-    std::cin >> q;
-    for(int i = 0; i < q; ++i) {
-      std::cin >> T;
-      if(t.contains(T.c_str()))
-	std::cout << "y" << std::endl;
+    FORI(q) {
+      for(x = 0; isalpha(c = getchar()); ++x)
+	cT[x] = c;
+      cT[x] = '\0';
+      //gets(cT);
+      string T(cT);
+      //cerr << "T='" << T << "'" << endl;
+      
+      int min = 0;
+      int max = N;
+      while(min < max-1) {
+	int mid = (min+max)/2;
+	int c = cmpPrefix(sortedIndices[mid], S, T);
+	if(c == 0) {
+	  min = mid;
+	  break;
+	}
+	else if(c < 0)
+	  min = mid;
+	else
+	  max = mid;
+      } // while min < max
+
+      if(cmpPrefix(min >= N ? 0 : sortedIndices[min], S, T) == 0)
+	cout << "y" << endl;
       else
-	std::cout << "n" << std::endl;
-    }
+	cout << "n" << endl;
+    } // for q
+    delete[] P;
+    delete[] sortedIndices;
   }
   return 0;
 }
