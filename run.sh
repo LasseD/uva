@@ -33,16 +33,16 @@ fi
 
 if [ $timeA -lt $timeCPP ]
 then
-  echo "Compiling $cppFile ..."
+  echo "Compiling $cppFile ..." 1>&2
   cat top.cpp P$1.cpp > tmp.cpp
   g++ -Wall tmp.cpp -o $exeFile
   if [ $? -ne 0 ]
   then
-    echo "Compile error. Stop."
+    echo "Compile error. Stop." 1>&2
     exit 3
   fi
   cat tmp.cpp > /dev/clipboard
 fi
 
-echo "Running ./$exeFile < $testFile"
+echo "Running ./$exeFile < $testFile" 1>&2
 ./$exeFile < $testFile

@@ -1,6 +1,6 @@
 // IO:
 #include <iostream>
-#include <cstdio>
+#include <stdio.h>
 // Data structures:
 #include <set>
 #include <map>

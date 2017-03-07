@@ -217,6 +217,9 @@ Permutation handler of variable size - try all.
 P218.java: Moth Eradication
 ch
 
+P227.cpp: Puzzle
+5 x 5 push puzzle. getline(cin,line);
+
 P231.cpp: Testing the CATCHER
 longestIncreasingSubsequence, Longest Increasing Subsequence
 
@@ -619,6 +622,9 @@ Trivial algorithm simulation.
 P696.cpp: How May Knights
 Placement of knights on a chess board. Notice: Board size down to 0!
 
+P699.cpp: The Falling Leaves
+Build, traverse and delete binary tree.
+
 P706.cpp: LCD Display
 Output as LCD display.
 
@@ -839,7 +845,10 @@ P10054.cpp: The Necklace
 Connect links to form a full chain. Double linked list.
 
 P10055.cpp: Hashmat the Brave Warrior
-abs
+abs.
+
+P10056.cpp: What is the Probability?
+pow.
 
 P10062.cpp: Tell me the frequencies!
 Count characters in lines.
@@ -899,7 +908,10 @@ P10107.cpp: What is the Median
 Multiset - maintain median using two sets, rbegin, begin, iterators.
 
 P10110.cpp: Light, more light (Skiena)
-Prime factorization, count divisors
+Prime factorization, count divisors.
+
+P10114.cpp: Loansome Car Buyer
+Depreciation vs residual loan.
 
 P10115.cpp: Automatic Editing
 Replace occurences of string in string.
@@ -954,6 +966,9 @@ Binary search in constantly increasing sequence.
 
 P10173.java: Smallest Bounding Rectangle
 Ch, ch walk, ch bounding box turn
+
+P10179.cpp: Irreducable Basic Fractions
+Euler's Phi function fixed for N=1: Phi(1)=1.
 
 P10182.cpp: Bee Maja
 Find coordinates from spiral walk on hexagonal grid.
@@ -1011,6 +1026,9 @@ Compute chrod and angle of rotation around a circle.
 
 P10222.cpp: Decode the Mad man
 keyboard two left letter substitution, including case.
+
+P10223.cpp: How many nodes ?
+Catalan numbers = Number of distinct binary trees.
 
 P10226.cpp: Hardwood Species
 Count strings, std::string to printf.
@@ -1225,6 +1243,9 @@ Prime sieve, isprime and isDigitPrime
 P10550.cpp: Combination Lock
 Trivial simulate combination lock.
 
+P10566.cpp: Crossed Ladders
+Binary search for double.
+
 P10579.java: Fibonacci Numbers
 Fibonacci numbers up to 5000. BigInteger. Caching.
 
@@ -1279,6 +1300,9 @@ Trivial find p, q so x = p*floor(x/k) + q*ceil(x/k)
 P10678.cpp: The Grazing Cow
 Area of ellipse from distance between centers=D and r1+r2=L.
 
+P10679.cpp: I Love Strings!!
+Suffix array search for substring contains. Remember to delete[] P!
+
 P10684.cpp: The decadary watch
 Convert hh:mm::ss:cc time into decimal time.
 
@@ -1293,6 +1317,9 @@ Prime sieve. bitset. isPrime, nextPrime.
 
 P10700.cpp: Camel trading
 Try all parenthesis placements.
+
+P10701.cpp: Pre, in and post
+Copy of P536.
 
 P10703.cpp: Free spots
 Find empty cells in grid by handling line by line.
@@ -1399,6 +1426,9 @@ Repeatedly sum smallest two ints from multiset.
 P10959.cpp: The Party, Part I
 BFS numbering.
 
+P10963.cpp: The Swallowing Ground
+Trivial.
+
 P10970.cpp: Big Chocolate
 Trivial, buffered. Read two positive ints from line.
 
@@ -1441,6 +1471,9 @@ sequence from all maximal independent sets in flat graph
 P11080.cpp: Place the Guards
 Simple graph coloring.
 
+P11094.cpp: Continents
+Flood fill.
+
 P11110.cpp: Equidivisions
 Connected components in grid.
 
@@ -1452,6 +1485,9 @@ Combinations of currency. Better documented than other implementations here.
 
 P11150.cpp: Cola
 The cola problem with full bottles.
+
+P11151.cpp: Longest Palindrome
+Dynamic programming for edit distance palindrome.
 
 P11152.cpp: Colourful Flowers
 Semiperimeter, inradius, circumradius of triangle with inscribed and outer circles. M_PI. pi.
@@ -1491,6 +1527,9 @@ Trivial.
 
 P11244.cpp: Counting Stars
 gets and scanf to retrieve grid of stars.
+
+P11286.cpp: Conformity
+Encode five numbers in ULL, Update values in map using non-const pointer.
 
 P11292.cpp: The Dragon of Loowater
 Sort and double list walk.
@@ -1566,6 +1605,9 @@ Topo sort (topological sorting) in non-acyclic graph using Cormen/Tarjan.
 
 P11057.cpp: Bender B. Rodríguez Problem
 Trivial.
+
+P11512.cpp: GATTACA
+Suffix array construction. LCP in suffix array. Longest common prefix between adjacent entries of suffix array.
 
 P11513.cpp: 9 Puzzle
 Compute all solutions for 9 puzzle and store in map.
@@ -1754,6 +1796,9 @@ P12405.cpp: Scarecrow
 Trivial.
 
 P12468.cpp: Zapping
+Trivial.
+
+P12478.cpp: Hardest Problem Ever (Easy)
 Trivial.
 
 P12502.cpp: Three Families
