@@ -967,6 +967,9 @@ Binary search in constantly increasing sequence.
 P10173.java: Smallest Bounding Rectangle
 Ch, ch walk, ch bounding box turn
 
+P10176.cpp: Ocean Deep! - Make it shallow!!
+Division of binary number to check if a number divides it.
+
 P10179.cpp: Irreducable Basic Fractions
 Euler's Phi function fixed for N=1: Phi(1)=1.
 
