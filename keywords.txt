@@ -1165,6 +1165,9 @@ Trivial average, printf with %.
 P10387.cpp: Biliard
 Trivial.
 
+P10392.cpp: Factoring Large Numbers
+Bitset (bitvector) prime sieve, nextPrime, factorize large primes.
+
 P10394.cpp: Twin Primes
 Prime sieve into bitset up to 20.000.000. Twin primes.
 
