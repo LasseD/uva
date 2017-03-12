@@ -598,6 +598,9 @@ Sort letters in string, find words with rearranged letters.
 P644.cpp: Immediate Decodability
 Binary suffix tree construction to be used for prefix-checks. Simple.
 
+P657.cpp: The die is cast
+Flood fill with two level filling.
+
 P661.cpp: Blowing Fuses
 Trivial simulation.
 
@@ -862,6 +865,9 @@ Longest common subsequence.
 P10067.cpp: Playing with Wheels
 FIFO queue usage.
 
+P10069.java: Distinct Subsequences
+Java BigInteger, number of ways X is a subsequence of Y.
+
 P10070.java: Leap Year or Not Leap Year
 BigInteger, multiply, divide, divides.
 
@@ -936,6 +942,9 @@ Match pairs of strings so they all concat to the same solution.
 
 P10137.cpp: The Trip (Skiena)
 read and write ints with decimal place
+
+P10138.cpp: CDVII
+Highway toll calculation. Easy.
 
 P10139.cpp: Factovisors
 Uses prime sieve, nextPrime, factorize up to 2^32, find if m divides n!.
@@ -1164,6 +1173,9 @@ Trivial average, printf with %.
 
 P10387.cpp: Biliard
 Trivial.
+
+P10392.cpp: Factoring Large Numbers
+Bitset (bitvector) prime sieve, nextPrime, factorize large primes.
 
 P10394.cpp: Twin Primes
 Prime sieve into bitset up to 20.000.000. Twin primes.
