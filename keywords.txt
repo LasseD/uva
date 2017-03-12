@@ -553,6 +553,9 @@ Easy angle between clock arms, no trigonometry.
 P583.cpp: Prime Factors
 Uses prime sieve, nextPrime, factorize up to 2^32.
 
+P587.cpp: There's treasure everywhere!
+Trivial.
+
 P590.cpp: Always on the run
 Flight graph walk. DP.
 
