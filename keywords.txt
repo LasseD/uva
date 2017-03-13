@@ -1717,6 +1717,9 @@ Compare two string with spaces in one of them. scanf and gets.
 P11743.cpp: Credit Check
 Trivial credit card digit summation check.
 
+P11747.cpp: Heavy Cycle Edges
+Simple use of proper union find to detect cycles.
+
 P11752.cpp: The Super Powers
 unsigned long long, overflow detection, powers, square powers
 
