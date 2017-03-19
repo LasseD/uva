@@ -1187,7 +1187,7 @@ P10394.cpp: Twin Primes
 Prime sieve into bitset up to 20.000.000. Twin primes.
 
 P10397.cpp: Connect the Campus
-Connect forrest to tree by using union-find.
+Connect forrest to tree by using union-find. (no path compression)
 
 P10405.cpp: Longest Common Subsequence
 Longest common subset problem. Dynamic programming.
@@ -1692,6 +1692,9 @@ Time diff.
 
 P11689.cpp: Soda Surpler
 Coca cola problem with variable cost.
+
+P11710.cpp: Expensive Subway
+Proper union-find where graph is build by adding edges sorted by weight.
 
 P11713.cpp: Abstract Names
 Trivial.
