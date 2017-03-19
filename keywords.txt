@@ -1537,6 +1537,9 @@ Check isSquareNumber, find square root.
 P11223.java: O: dah, dah, dah!
 Decode morse code.
 
+P11228.cpp: Transportation system.
+Union-find with path compression to link cities in coordinate system after euclidean dist.
+
 P11233.cpp: Deli Deli
 scanf and gets for strings or char*.
 
