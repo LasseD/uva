@@ -1372,6 +1372,9 @@ Generate strings from formula and sort alternating letters.
 P10789.cpp: Prime Frequency
 Prime sieve into bool array, isPrime.
 
+P10790.cpp: How Many Points of Intersection?
+Count intersetions of lines between nodes in full bipartite matching.
+
 P10803.cpp: Thunder Mountain
 All Pair Shortest Path (Floyd-Warshall) in 2D space.
 
