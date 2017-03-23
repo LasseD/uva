@@ -265,6 +265,9 @@ Trivial, dumb brute force counting.
 P305.cpp: Joseph
 Precompute.
 
+P311.cpp: Packets
+Pack squares 1x1 to 6x6 on 6x6 pallets.
+
 P315.cpp: Network
 DFS, find critical nodes in graph, Edge-list presentation, std::stringstream line to ints
 
