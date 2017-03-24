@@ -1585,6 +1585,9 @@ Trivial matrix check. Read both char and long long.
 P11354.cpp: Bond
 Minimax path in graph using union-find, limits MAX, minimize height of UF structure.
 
+P11362.cpp: Phone List
+Trivial.
+
 P11364.cpp: Parking
 Trivial min/max, round trip computation
 
