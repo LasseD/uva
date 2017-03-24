@@ -1618,6 +1618,9 @@ Radix sort ints 1 - 100.
 P11463.cpp: Commandos
 Dijkstra shortest path to all nodes. Modern.
 
+P11470.cpp: Square Sums
+Trivial.
+
 P11475.cpp: Extend to Palindrome
 Knuth Morris Pratt algorithm where search string is reverse of input.
 
