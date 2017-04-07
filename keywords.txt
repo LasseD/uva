@@ -235,8 +235,11 @@ Find path across grid.
 P263.cpp: Number Chains
 Sort digits in number in constant time. Flip long.
 
-P264: Count the Cantor
+P264.cpp: Count the Cantor
 Triangle of fractions.
+
+P270.cpp: Lining Up
+Find max number of points that lie on a line. std::map value add line ++m[x].
 
 P271.cpp: Simply Syntax
 Trivial string run.
