@@ -667,6 +667,9 @@ Burrows Wheeler decoding, custom prefix-append strings with operator <.
 P748.java: Exponentiation
 Java biginteger, move dot to given position in float output.
 
+P750.cpp: 8 Queens Chess Problem
+Flip and rotate chess board with queens.
+
 P755.cpp: 487--3279
 Convert phone numbers from string to ints. Mapping of characters.
 
