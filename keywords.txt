@@ -682,6 +682,9 @@ gets and puts to paint maze.
 P793.cpp: Network Connections
 Paranoid parsing.
 
+P796.cpp: Critical Links
+DFS to find edges that are not part of cycles.
+
 P820.cpp: Internet Bandwidth
 Edmonds-Karp max flow algorithm: BFS. Residual flow graph.
 
