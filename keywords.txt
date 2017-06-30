@@ -1366,6 +1366,9 @@ Try all parenthesis placements.
 P10701.cpp: Pre, in and post
 Copy of P536.
 
+P10702.cpp: Travelling Salesman
+Floyd-Warshall to compute best profit.
+
 P10703.cpp: Free spots
 Find empty cells in grid by handling line by line.
 
