@@ -1367,7 +1367,7 @@ P10701.cpp: Pre, in and post
 Copy of P536.
 
 P10702.cpp: Travelling Salesman
-Floyd-Warshall to compute best profit.
+Floyd-Warshall to compute best profit. Optimized to obtain 0.000.
 
 P10703.cpp: Free spots
 Find empty cells in grid by handling line by line.
@@ -1895,6 +1895,13 @@ P13034.cpp: Solve Everything :-)
 Trivial 0 check.
 
 --------------------------------------------------------------
+Hackerrank:
+
+Pbattleship1p: Battleship 1 Player
+Compute most likely square occupied by a given battleship.
+
+
+--------------------------------------------------------------
 Matrix questions (since there are not enough of these in UVa):
 
 1)
@@ -1933,3 +1940,4 @@ The question may appear trivial but its not...u hav to print in O(1) space
 given a matrix pxq
 You start from top left and have to reach the bottom right. Can only traverse right or bottom
 How many ways are there to reach at the bottom right?
+
