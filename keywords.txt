@@ -1717,6 +1717,9 @@ Trivial sort 3 numbers, output middle
 P11729.cpp: Commando War
 Simple job sorting.
 
+P11733.cpp: Airports
+Union-find with path compression to compute minimal cost network.
+
 P11734.cpp: Big Number of Teams will Solve This
 Compare two string with spaces in one of them. scanf and gets.
 
