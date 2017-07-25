@@ -235,8 +235,11 @@ Find path across grid.
 P263.cpp: Number Chains
 Sort digits in number in constant time. Flip long.
 
-P264: Count the Cantor
+P264.cpp: Count the Cantor
 Triangle of fractions.
+
+P270.cpp: Lining Up
+Find max number of points that lie on a line. std::map value add line ++m[x].
 
 P271.cpp: Simply Syntax
 Trivial string run.
@@ -264,6 +267,9 @@ Trivial, dumb brute force counting.
 
 P305.cpp: Joseph
 Precompute.
+
+P311.cpp: Packets
+Pack squares 1x1 to 6x6 on 6x6 pallets.
 
 P315.cpp: Network
 DFS, find critical nodes in graph, Edge-list presentation, std::stringstream line to ints
@@ -661,6 +667,9 @@ Burrows Wheeler decoding, custom prefix-append strings with operator <.
 P748.java: Exponentiation
 Java biginteger, move dot to given position in float output.
 
+P750.cpp: 8 Queens Chess Problem
+Flip and rotate chess board with queens.
+
 P755.cpp: 487--3279
 Convert phone numbers from string to ints. Mapping of characters.
 
@@ -671,7 +680,10 @@ P784.cpp: Maze Exploration
 gets and puts to paint maze.
 
 P793.cpp: Network Connections
-die(), dumb union-find, paranoid parsing.
+Paranoid parsing.
+
+P796.cpp: Critical Links
+DFS to find edges that are not part of cycles.
 
 P820.cpp: Internet Bandwidth
 Edmonds-Karp max flow algorithm: BFS. Residual flow graph.
@@ -687,6 +699,9 @@ Copy upray area finding.
 
 P837.cpp: Light and Transparencies
 Sort and printf.
+
+P839.cpp: Not so Mobile
+Trivial.
 
 P843.cpp: Crypt Kicker (Skiena)
 Read lines, parse to int, parse to string, parse to tokens, substitution cipher.
@@ -711,6 +726,9 @@ Fibonacci numbers up to 50.
 
 P902.cpp: Password Search
 Encode 10 chars in 64 bit ULL for quick search.
+
+P908.cpp: Re-connecting Computer Sites
+Proper Union-find, union find, uf. sort and connect edges to MST. Modern.
 
 P913.cpp: Joana and the Odd Numbers
 Count number of odds numbers written by Joana.
@@ -1075,6 +1093,9 @@ C++11 tuple usage.
 P10260.cpp: Soundex
 Trivial letter substitution.
 
+P10263.cpp: Railway
+Distance and closest point between line segment and point. operator overloading for vectors/point2d for +, - and scaling. Dot product.
+
 P10267.cpp: Graphical Editor
 Paint region in grid.
 
@@ -1170,6 +1191,9 @@ Use '\0' to divide and rearrange strings for output. gets.
 
 P10363.cpp: Tic Tac Toe
 Analyze if configuration is valid for game.
+
+P10364.cpp: Square
+N choose K iteration through list. Use bool array to find balanced selection.
 
 P10369.cpp: Arctic Network
 Proper Union Find (UF) with path compression. Computing trees in forest. union-find.
@@ -1342,6 +1366,9 @@ Try all parenthesis placements.
 P10701.cpp: Pre, in and post
 Copy of P536.
 
+P10702.cpp: Travelling Salesman
+Floyd-Warshall to compute best profit. Optimized to obtain 0.000.
+
 P10703.cpp: Free spots
 Find empty cells in grid by handling line by line.
 
@@ -1368,6 +1395,9 @@ Generate strings from formula and sort alternating letters.
 
 P10789.cpp: Prime Frequency
 Prime sieve into bool array, isPrime.
+
+P10790.cpp: How Many Points of Intersection?
+Count intersetions of lines between nodes in full bipartite matching.
 
 P10803.cpp: Thunder Mountain
 All Pair Shortest Path (Floyd-Warshall) in 2D space.
@@ -1576,6 +1606,9 @@ Trivial matrix check. Read both char and long long.
 P11354.cpp: Bond
 Minimax path in graph using union-find, limits MAX, minimize height of UF structure.
 
+P11362.cpp: Phone List
+Trivial.
+
 P11364.cpp: Parking
 Trivial min/max, round trip computation
 
@@ -1608,6 +1641,9 @@ Radix sort ints 1 - 100.
 
 P11463.cpp: Commandos
 Dijkstra shortest path to all nodes. Modern.
+
+P11470.cpp: Square Sums
+Trivial.
 
 P11475.cpp: Extend to Palindrome
 Knuth Morris Pratt algorithm where search string is reverse of input.
@@ -1868,6 +1904,13 @@ P13034.cpp: Solve Everything :-)
 Trivial 0 check.
 
 --------------------------------------------------------------
+Hackerrank:
+
+Pbattleship1p: Battleship 1 Player
+Compute most likely square occupied by a given battleship.
+
+
+--------------------------------------------------------------
 Matrix questions (since there are not enough of these in UVa):
 
 1)
@@ -1906,3 +1949,4 @@ The question may appear trivial but its not...u hav to print in O(1) space
 given a matrix pxq
 You start from top left and have to reach the bottom right. Can only traverse right or bottom
 How many ways are there to reach at the bottom right?
+

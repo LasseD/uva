@@ -1,0 +1,49 @@
+TODO: Create ads_recommendation.csv from user x cat pairs in user_messages_test.csv
+
+Step 1: Check out the data.
+
+user_data.csv
+
+This file contains 2.143.889 rows with information for 12.365 unique users. 
+Some of the columns are not documented correctly in the problem setting, or there is significant amounts of data missing:
+
+    "event_time": This is a real time stamp down to seconds rather than the stated milliseconds.
+
+    "channel": I choose to ignore this data due to time constraints.
+
+    "origin": This column can contain the following values: "browse", "browse_search", "home", "notification_center", "search", "push", "drawer" "" (the empty string) and "deeplink". While the meaning of most of these can be guessed, it should really be documented better.
+
+    "images_count": While it makes sense not to show ads without images (research say they do porly), I have chosen to ignore this parameter.
+
+    "ad_impressions", "ad_views" and "ad_messages". These columns are sparsely documented, so I have chosen to simply add their values for any further processing.
+
+
+ads_data.csv
+
+This file contains a wonderful amount of useful data. However. I only have a couple of hours on my hands, so I'm going to completely ignore this file.
+
+
+user_messages.csv
+
+I'm going to use this file to get suggestions for categories. It contains 10348 lines with users in 10 categories. 
+
+
+Attempt 1: Trivial category matching: 0.73 points
+
+Here I simply repeated the first entry for a given category in "user_messages.csv" while completely ignoring the user. This is obviously a poorly performing algorithm, but serves as a good starting point to see if the file is formatted correctly.
+
+
+Attempt 2: Nearest user matching: 3.76 points
+
+Instead of taking the first user and copying their data from "user_messages.csv", the one with the closest distance is chosen.
+
+
+Attempt 3: Last viewed:
+
+Simply show the (up to 10) last viewed ads by the user. They might not have bought these items, so perhaps they want to see them again.
+Notice that 1635 rows were for users which are not in user_data.csv and their recommendations are thus empty.
+
+
+README.txt:
+
+ g++ -Wall oxl.cpp -o oxl.exe && time ./oxl.exe
