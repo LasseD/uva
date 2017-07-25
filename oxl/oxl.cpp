@@ -5,6 +5,9 @@
 #include <fstream>
 #include <sstream>
 #include <set>
+#include <algorithm>
+#include <string> 
+#include <cstring>
 
 #define ORIGIN_BROWSE_SEARCH 0
 #define ORIGIN_BROWSE 1
@@ -15,6 +18,8 @@
 #define ORIGIN_DRAWER 6
 #define ORIGIN_UNKNOWN 7
 #define ORIGIN_DEEPLINK 8
+
+#define EARLY_BREAK 20000
 
 using namespace std;
 
@@ -44,6 +49,41 @@ struct Serving {
   vector<int> addIDs;
 };
 
+struct Ad {
+  int adID, sellerID, price;
+  long creationTime;
+  vector<string> keywords; // No description, no source, title -> keywords
+  PD position;
+  bool enabled;
+};
+
+struct Category {
+  map<int,Ad> adMap; // id -> ad
+};
+
+void getKeywords(string &line, vector<string> kw) {
+  transform(line.begin(), line.end(), line.begin(), ::tolower);
+  char w[1000];
+  int j = 0;
+  for(unsigned int i = 0; i < line.size(); ++i) {
+    char c = line[i];
+    if((c >= '0'&& c <= '9') || (c >= 'a'&& c <= 'z') || (c < 0)) {
+      w[j++] = c;
+    }
+    else {
+      if(j > 3) {
+	w[j++] = '\0';
+	kw.push_back(string(w));
+      }
+      j = 0;
+    }
+  }
+  if(j > 3) {
+    w[j++] = '\0';
+    kw.push_back(string(w));
+  }
+}
+
 void readUserDataCsv(map<int,User*> &userMap) {
   string line;
 
@@ -54,6 +94,12 @@ void readUserDataCsv(map<int,User*> &userMap) {
 
   getline(file, line); // Header
   while(getline(file, line, ',')) {
+    if(lines % 1000 == 0)
+      cerr << ":";
+    #ifdef EARLY_BREAK
+    if(lines > EARLY_BREAK)
+      break;
+    #endif
     ++lines;
     // Read time:
     // Timestamp of type "2017-06-30 12:34:56"
@@ -65,7 +111,6 @@ void readUserDataCsv(map<int,User*> &userMap) {
     time = 24*time + hour;
     time = 60*time + minute;
     time = 60*time + second;
-    //cerr << "Read time " << month <<", "<< day<<", "<< hour<<", "<< minute<<", "<< second << endl;
     // Read user id:
     getline(file, line, ',');
     int id;
@@ -243,12 +288,138 @@ void addPreviouslySeenAds(int cat, int user, map<int,User*> &userMap, vector<int
   }
 }
 
+void readAdsDataCsv(Category *cats, int const * const categoryMap, map<int,int> &adToCat, map<string,vector<int> > &keyWordMap) {
+  cerr << "Reading ads_data.csv" << endl;
+  string line;
+
+  ifstream file;
+  file.open("ads_data.csv");
+
+  int lines = 0;
+
+  getline(file, line); // Header line
+
+  while(getline(file, line, ',')) {
+    if(lines % 1000 == 0)
+      cerr << ".";
+    #ifdef EARLY_BREAK
+    if(lines > EARLY_BREAK)
+      break;
+    #endif
+    ++lines;
+    // Read adID, cat, seller:
+    int adID, cat, sellerID;
+    sscanf(&(line.c_str()[1]), "%d", &adID);
+    getline(file, line, ',');
+    sscanf(&(line.c_str()[1]), "%d", &cat);
+    getline(file, line, ',');
+    sscanf(&(line.c_str()[1]), "%d", &sellerID);
+
+    // Read time:
+    // Timestamp of type "2017-06-30 12:34:56"
+    //                   0 2 4 6 8  12  16  18
+    int year, month, day, hour, minute, second;
+    getline(file, line, ',');
+    sscanf(&(line.c_str()[1]), "%d-%d-%d %d:%d:%d", &year, &month, &day, &hour, &minute, &second);
+
+    long time = year;
+    time = time*366 + month;
+    time = time*32 + day;
+    time = 24*time + hour;
+    time = 60*time + minute;
+    time = 60*time + second;
+    //cerr << "Read time " << month <<", "<< day<<", "<< hour<<", "<< minute<<", "<< second << endl;
+
+    // Read title
+    getline(file, line, '"');
+    string title;
+    getline(file, title, '"');
+    getline(file, line, ',');
+
+    string desc;
+    // Ignore description
+    do {
+      desc = line;
+      getline(file, line, ',');
+      getline(file, line, '"');
+    }
+    while(!line.empty());
+
+    // Price
+    getline(file, line, ',');
+    int price;
+    sscanf(line.c_str(), "%d", &price);
+
+    // User position:
+    double lat, lon;
+    getline(file, line, ',');
+    sscanf(&(line.c_str()[1]), "%lf", &lat);    
+    getline(file, line, ',');
+    sscanf(&(line.c_str()[1]), "%lf", &lon);    
+    
+    // Ignore source
+    getline(file, line, ',');
+    
+    // Enabled
+    getline(file, line);
+    bool enabled = line[1] == '1';
+
+    adToCat[adID] = cat;
+    if(cat < 0 || cat > 900)
+      cerr << "Unknown category: " << cat << ", title " << title << ", line " << lines << ", desc: " << desc << ", adID=" << adID << endl;
+    int catID = categoryMap[cat];
+    if(catID == -1)
+      cerr << "Unknown category: " << cat << endl;
+    Category &category = cats[catID];
+    Ad ad;
+    ad.adID = adID;
+    ad.sellerID = sellerID;
+    ad.price = price;
+    ad.creationTime = time;
+    ad.position = PD(lat, lon);
+    ad.enabled = enabled;
+    getKeywords(title, ad.keywords);
+
+    // Update map<string,vector<int> > &keyWordMap:
+    for(unsigned int j = 0; j < ad.keywords.size(); ++j) {
+      string kw = ad.keywords[j];
+      if(keyWordMap.find(kw) == keyWordMap.end()) {
+	vector<int> empty;
+	keyWordMap[kw] = empty;
+      }
+      keyWordMap[kw].push_back(adID);
+    }
+
+    category.adMap[adID] = ad;
+
+  }
+  cout << lines << " lines read from ads_data.csv. " << endl;
+  file.close();  
+}
+
 int main() {
+  int categoryMap[890];
+  memset(categoryMap, -1, sizeof(categoryMap));
+  categoryMap[362] = 0; // Cars
+  categoryMap[800] = 1; // Electronics
+  categoryMap[806] = 2; // Kitchen
+  categoryMap[811] = 3; // Games
+  categoryMap[815] = 4; // Clothes and shoes
+  categoryMap[853] = 5; // Baby and toys
+  categoryMap[859] = 6; // Records
+  categoryMap[881] = 7; // Power supplies
+  categoryMap[887] = 8; // Etc.
+  categoryMap[888] = 9; // Male fashion
+
+  // Read ads_data.csv:
+  Category cats[11];
+  map<int,int> adToCat; // adID -> cat (800, 806, etc.)
+  map<string,vector<int> > keyWordMap;
+  readAdsDataCsv(cats, categoryMap, adToCat, keyWordMap);
+
   // Read user_data.csv for user map.
   map<int,User*> userMap;
   readUserDataCsv(userMap);
-
-  // Completely ignore ads_data.csv because I started this 3 days too late...
 
   // Read user_messages.csv for hints:
   map<int,vector<Serving*> > categoryHints;
@@ -278,8 +449,14 @@ int main() {
       
       vector<int> ads;
       //addAdsByNearbyPeople(cat, user, categoryHints, userMap, ads);
-      addPreviouslySeenAds(cat, user, userMap, ads);
+      //addPreviouslySeenAds(cat, user, userMap, ads);
 
+      /*
+	Find all views by user. => keyword list.
+	From keyword list: Find all unseen adds and count them.
+       */
+      set<string> kwSet;
+      
 
       bool first = true;
       for(unsigned int i = 0; i < ads.size(); ++i) {
