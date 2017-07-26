@@ -19,8 +19,6 @@
 #define ORIGIN_UNKNOWN 7
 #define ORIGIN_DEEPLINK 8
 
-//#define EARLY_BREAK 20000
-
 using namespace std;
 
 typedef pair<double,double> PD;
@@ -58,9 +56,20 @@ struct Ad {
   bool enabled;
 };
 
+std::ostream& operator<<(std::ostream& os, const Ad& a) {
+  for(vector<string>::const_iterator it = a.keywords.begin(); it != a.keywords.end(); ++it) {
+    cout << *it << " ";
+  }
+  os << " Ad ID " << a.adID << ", seller " << a.sellerID << ", Price " << a.price << " Created " << a.creationTime << ", at (" << a.position.first << "," << a.position.second << ")";
+  if(a.enabled)
+    os << " ENABLED";
+  else
+    os << " DISABLED";
+  return os;
+}
+
 struct Category {
-  map<int,Ad> adMap; // id -> ad
-  map<string,vector<int> > keyWordMap;
+  map<int,Ad*> adMap; // id -> ad
 };
 
 void getKeywords(string &line, vector<string> &kw) {
@@ -86,7 +95,7 @@ void getKeywords(string &line, vector<string> &kw) {
   }
 }
 
-void readUserDataCsv(map<int,User*> &userMap) {
+void readUserDataCsv(int userID, User* user) {
   string line;
 
   ifstream file;
@@ -96,13 +105,6 @@ void readUserDataCsv(map<int,User*> &userMap) {
 
   getline(file, line); // Header
   while(getline(file, line, ',')) {
-    if(lines % 1000 == 0)
-      cerr << ":";
-    #ifdef EARLY_BREAK
-    if(lines > EARLY_BREAK)
-      break;
-    #endif
-    ++lines;
     // Read time:
     // Timestamp of type "2017-06-30 12:34:56"
     //                   0 2 4 6 8  12  16  18
@@ -117,20 +119,32 @@ void readUserDataCsv(map<int,User*> &userMap) {
     getline(file, line, ',');
     int id;
     sscanf(&(line.c_str()[1]), "%d", &id);
-    //cerr << "User id " << id << endl;
+
+    if(id != userID) {
+      getline(file, line);
+      continue;
+    }
+    ++lines;
+    cout << "Date: 2017-" << month << "-" << day << " " << hour << ":" << minute << ":" << second;
+
     // event:
     getline(file, line, ',');
     bool isFirstMessage = line[1] == 'f';
-    //cerr << "First message: " << isFirstMessage << endl;
+    if(isFirstMessage)
+      cout << " First";
+    else
+      cout << " View";
+
     // Channel (ignore for now:
     getline(file, line, ',');
+    cout << " " << line;
     // User position:
     double lat, lon;
     getline(file, line, ',');
     sscanf(&(line.c_str()[1]), "%lf", &lat);    
     getline(file, line, ',');
     sscanf(&(line.c_str()[1]), "%lf", &lon);    
-    //cerr << "Position: " << lat << ", " << lon << endl;
+    cout << " (" << lat << "," << lon << ")";
 
     // Origin:
     getline(file, line, ',');
@@ -153,8 +167,8 @@ void readUserDataCsv(map<int,User*> &userMap) {
       origin = ORIGIN_UNKNOWN;
     else if(line == "\"deeplink\"")
       origin = ORIGIN_DEEPLINK;
-    else
-      cerr << "Unknown origin: " << line << endl;
+
+    cout << " " << line;
     
     // Rest of line:
     int adID;
@@ -171,20 +185,13 @@ void readUserDataCsv(map<int,User*> &userMap) {
     sscanf(&(line.c_str()[1]), "%f", &messages);    
     //cerr << "Rest: " << adId <<", "<< images<<", "<< impressions<<", "<< views<<", "<< messages << endl;
 
-    User *user;
-    if(userMap.find(id) == userMap.end()) {
-      user = new User;
-      userMap[id] = user;
-    }
-    else
-      user = userMap[id];
+    cout << " " << line << endl;
+
     user->lastPosition = PD(lat,lon);
-
     Impression impression(time, isFirstMessage, origin, adID, impressions+views+messages);
-
     user->impressions.push_back(impression);
   }
-  cout << lines << " lines read from user_data.csv. " << userMap.size() << " users." << endl;
+  cout << "TOTAL " << lines << " lines read from user_data.csv." << endl;
   file.close();
 }
 
@@ -300,7 +307,7 @@ void addPreviouslySeenAds(int cat, int user, map<int,User*> &userMap, vector<int
   }
 }
 
-void readAdsDataCsv(Category *cats, int const * const categoryMap, map<int,int> &adToCat) {
+void readAdsDataCsv(Category *cats, int const * const categoryMap, map<int,int> &adToCat, map<string,vector<int> > &keyWordMap) {
   cerr << "Reading ads_data.csv" << endl;
   string line;
 
@@ -340,7 +347,6 @@ void readAdsDataCsv(Category *cats, int const * const categoryMap, map<int,int> 
     time = 24*time + hour;
     time = 60*time + minute;
     time = 60*time + second;
-    //cerr << "Read time " << month <<", "<< day<<", "<< hour<<", "<< minute<<", "<< second << endl;
 
     // Read title
     getline(file, line, '"');
@@ -383,20 +389,19 @@ void readAdsDataCsv(Category *cats, int const * const categoryMap, map<int,int> 
     if(catID == -1)
       cerr << "Unknown category: " << cat << endl;
     Category &category = cats[catID];
-    Ad ad;
-    ad.adID = adID;
-    ad.sellerID = sellerID;
-    ad.price = price;
-    ad.creationTime = time;
-    ad.position = PD(lat, lon);
-    ad.enabled = enabled;
-    getKeywords(title, ad.keywords);
+    Ad *ad = new Ad;
+    ad->adID = adID;
+    ad->sellerID = sellerID;
+    ad->price = price;
+    ad->creationTime = time;
+    ad->position = PD(lat, lon);
+    ad->enabled = enabled;
+    getKeywords(title, ad->keywords);
 
     // Update map<string,vector<int> > &keyWordMap:
     if(enabled) {
-      map<string,vector<int> > &keyWordMap = category.keyWordMap;
-      for(unsigned int j = 0; j < ad.keywords.size(); ++j) {
-	string &kw = ad.keywords[j];
+      for(unsigned int j = 0; j < ad->keywords.size(); ++j) {
+	string &kw = ad->keywords[j];
 	if(keyWordMap.find(kw) == keyWordMap.end()) {
 	  vector<int> empty;
 	  keyWordMap[kw] = empty;
@@ -406,7 +411,6 @@ void readAdsDataCsv(Category *cats, int const * const categoryMap, map<int,int> 
     }
 
     category.adMap[adID] = ad;
-
   }
   cout << lines << " lines read from ads_data.csv. " << endl;
   file.close();  
@@ -429,26 +433,21 @@ void readAdsDataCsv(Category *cats, int const * const categoryMap, map<int,int> 
   PD position;
   bool enabled;
 
- Category::map<int,Ad> adMap; // id -> ad, , map<string,vector<int> > &keyWordMap
+ Category::map<int,Ad> adMap; // id -> ad
 */
-void addAdsWithMatchingKeywords(int cat, int user, map<int,User*> &userMap, 
-				Category *cats, int const * const categoryMap, map<int,int> &adToCat, 
-				vector<int> &ads) {
-  if(ads.size() >= 10)
-    return;
-
+void reportAdsWithMatchingKeywords(int cat, User *u, 
+				Category *cats, int const * const categoryMap, map<int,int> &adToCat, map<string,vector<int> > &keyWordMap) {
   // 0) Find all viewed ads so they don't accidentally get put into "ads":
+  cout << endl << "Viewed ads (those from user_data.csv):" << endl;
   set<int> viewedAds;
-  if(userMap.find(user) == userMap.end()) {
-    cerr << "User " << user << " is not present in user_data.csv and keywords can thus not be connected" << endl;
-    return;
-  }
-  User *u = userMap[user];
   vector<Impression> &impressions = u->impressions;
   for(vector<Impression>::const_iterator it = impressions.begin(); it != impressions.end(); ++it) {
     if(viewedAds.find(it->adID) != viewedAds.end())
       continue;
-    viewedAds.insert(it->adID);
+    viewedAds.insert(it->adID);    
+    int viewedCatID = adToCat[it->adID];
+    int viewedCatCnt = categoryMap[viewedCatID];
+    cout << *(cats[viewedCatCnt].adMap[it->adID]) << endl;
   }  
 
   // 1) Go through ads viewed by user in order to gather keyword sets
@@ -456,20 +455,20 @@ void addAdsWithMatchingKeywords(int cat, int user, map<int,User*> &userMap,
   for(set<int>::const_iterator it = viewedAds.begin(); it != viewedAds.end(); ++it) {
     int baseAdID = *it;
     if(adToCat.find(baseAdID) == adToCat.end()) {
-      cerr << "Unknown ad ID " << baseAdID << " seen by user " << user << endl;
+      cerr << "Unknown ad ID " << baseAdID << endl;
       continue;
     }
     int baseCatID = adToCat[baseAdID];
     int baseCatIndex = categoryMap[baseCatID];
     Category &baseCat = cats[baseCatIndex];
-    Ad &ad = baseCat.adMap[baseAdID];
+    Ad &ad = *(baseCat.adMap[baseAdID]);
     vector<string> &baseKeywords = ad.keywords;
 
     // 1.1) For each keyword set: Find related ads
     map<int,int> relatedAddedNow; // adID -> count seen for this keyword set
     for(vector<string>::const_iterator it2 = baseKeywords.begin(); it2 != baseKeywords.end(); ++it2) {
       const string &kw = *it2;
-      vector<int> &matches = baseCat.keyWordMap[kw];
+      vector<int> &matches = keyWordMap[kw];
       for(vector<int>::const_iterator it3 = matches.begin(); it3 != matches.end(); ++it3) {
 	if(viewedAds.find(*it3) != viewedAds.end()) {
 	  continue;
@@ -484,19 +483,29 @@ void addAdsWithMatchingKeywords(int cat, int user, map<int,User*> &userMap,
   }
 
   // 2: Add most highly scoring ads.
+  cout << "Highest scoring ads by keyword matching:" << endl;
   vector<PI> ret;
   for(map<int,int>::const_iterator it = relatedAds.begin(); it != relatedAds.end(); ++it) {
     ret.push_back(PI(-it->second, it->first));
   }
   sort(ret.begin(), ret.end());
+  int XX = 1;
   for(vector<PI>::const_iterator it = ret.begin(); it != ret.end(); ++it) {
-    ads.push_back(it->second);
-    if(ads.size() >= 10)
+    int catID = adToCat[it->second];
+    if(catID != cat)
+      continue;
+    int catIndex = categoryMap[catID];
+    Ad &ad = *(cats[catIndex].adMap[it->second]);
+    cout << XX << ": " << ad << endl;
+    if(30 == XX++)
       break;
   }
 }
 
 int main() {
+  cout << "Please type user ID and category, then press ENTER" << endl << endl;
+  int userID, cat; cin >> userID >> cat;
+
   int categoryMap[890];
   memset(categoryMap, -1, sizeof(categoryMap));
   categoryMap[362] = 0; // Cars
@@ -513,54 +522,17 @@ int main() {
   // Read ads_data.csv:
   Category cats[11];
   map<int,int> adToCat; // adID -> cat (800, 806, etc.)
-  readAdsDataCsv(cats, categoryMap, adToCat);
+  map<string,vector<int> > keyWordMap;
+  readAdsDataCsv(cats, categoryMap, adToCat, keyWordMap);
 
   // Read user_data.csv for user map.
   map<int,User*> userMap;
-  readUserDataCsv(userMap);
+  User *user = new User;
+  readUserDataCsv(userID, user);
 
-  // Read user_messages.csv for hints:
-  map<int,vector<Serving*> > categoryHints;
-  readUserMessagesTestCsv(categoryHints);
-  
-  // Read user_messages_test.csv for task at hand:
-  string line;
-  ifstream infile;
-  ofstream outfile;
-  infile.open("user_messages_test.csv");
-  outfile.open("ads_recommendation.csv");
-  outfile << "user_id,category_id,ads" << endl;
-  
-  getline(infile, line); // Header
+  reportAdsWithMatchingKeywords(cat, user, cats, categoryMap, adToCat, keyWordMap);
 
-  while(getline(infile, line)) {
-    // Read user id:
-    int user, cat;
-    sscanf(line.c_str(), "%d,%d", &user, &cat);
-    
-    if(categoryHints.find(cat) == categoryHints.end()) {
-      cerr << "Unknown category: " << cat << endl;
-      outfile << user << "," << cat << "\"[]\"" << endl;
-    }
-    else {
-      outfile << user << "," << cat << ",\"[";
-      
-      vector<int> ads;
-      addAdsWithMatchingKeywords(cat, user, userMap, cats, categoryMap, adToCat, ads);
-      addPreviouslySeenAds(cat, user, userMap, ads);
-      addAdsByNearbyPeople(cat, user, categoryHints, userMap, ads);
+  cout << "REPORT DONE FOR USER " << userID << ", CATEGORY " << cat << endl;
 
-      bool first = true;
-      for(unsigned int i = 0; i < ads.size() && i < 10; ++i) {
-	if(!first)
-	  outfile << ", ";
-	first = false;
-	outfile << ads[i];
-      }
-      outfile << "]\"" << endl;      
-    }    
-  }  
-
-  infile.close(); outfile.close();
   return 0;
 }
