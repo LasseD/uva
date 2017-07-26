@@ -183,9 +183,7 @@ void readUserDataCsv(int userID, User* user) {
     sscanf(&(line.c_str()[1]), "%f", &views);    
     getline(file, line);
     sscanf(&(line.c_str()[1]), "%f", &messages);    
-    //cerr << "Rest: " << adId <<", "<< images<<", "<< impressions<<", "<< views<<", "<< messages << endl;
-
-    cout << " " << line << endl;
+    cout << " Add ID: " << adID <<", image: "<< images<<", impressions: "<< impressions<<", views: "<< views<<", messages: "<< messages << endl;
 
     user->lastPosition = PD(lat,lon);
     Impression impression(time, isFirstMessage, origin, adID, impressions+views+messages);
