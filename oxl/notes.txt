@@ -47,3 +47,5 @@ Notice that 1635 rows were for users which are not in user_data.csv and their re
 README.txt:
 
  g++ -Wall oxl.cpp -o oxl.exe && time ./oxl.exe
+
+g++ -Wall user_stats.cpp -o user_stats.exe && ./user_stats.exe
