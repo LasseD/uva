@@ -42,6 +42,7 @@ struct Impression {
 
 struct User {
   PD lastPosition;
+  double maxViewDist;
   vector<Impression> impressions;
 };
 
@@ -86,7 +87,20 @@ void getKeywords(string &line, vector<string> &kw) {
   }
 }
 
-void readUserDataCsv(map<int,User*> &userMap) {
+double distSq(PD a, PD b) {
+  double dx = a.first-b.first;
+  double dy = a.second-b.second;
+  return dx*dx+dy*dy;
+}
+
+PD getAdPosition(int adID, Category *cats, int const * const categoryMap, map<int,int> &adToCat) {
+  if(adToCat.find(adID) == adToCat.end())
+    return PD(0,0);
+  Category &c = cats[categoryMap[adToCat[adID]]];
+  return c.adMap[adID].position;
+}
+
+void readUserDataCsv(map<int,User*> &userMap, Category *cats, int const * const categoryMap, map<int,int> &adToCat) {
   string line;
 
   ifstream file;
@@ -182,6 +196,11 @@ void readUserDataCsv(map<int,User*> &userMap) {
 
     Impression impression(time, isFirstMessage, origin, adID, impressions+views+messages);
 
+    // Update maxViewDist:
+    double dist = distSq(user->lastPosition, getAdPosition(adID, cats, categoryMap, adToCat));
+    if(dist > user->maxViewDist)
+      user->maxViewDist = dist;
+
     user->impressions.push_back(impression);
   }
   cout << lines << " lines read from user_data.csv. " << userMap.size() << " users." << endl;
@@ -233,12 +252,6 @@ void readUserMessagesTestCsv(map<int,vector<Serving*> > &categoryHints) {
   }
   cout << lines << " lines read from user_data.csv. " << categoryHints.size() << " categories." << endl;  
   file.close();
-}
-
-double distSq(PD a, PD b) {
-  double dx = a.first-b.first;
-  double dy = a.second-b.second;
-  return dx*dx+dy*dy;
 }
 
 double getLocationDiff(int u1, int u2, map<int,User*> &userMap) {
@@ -451,6 +464,13 @@ void addAdsWithMatchingKeywords(int cat, int user, map<int,User*> &userMap,
     viewedAds.insert(it->adID);
   }  
 
+  // 0.1) Find keyword map:
+  Category &c = cats[categoryMap[cat]];
+
+  // 0.2) Maintain distance map:
+  map<int,double> dists;
+  double maxDist = u->maxViewDist;
+
   // 1) Go through ads viewed by user in order to gather keyword sets
   map<int,int> relatedAds; // adID -> score
   for(set<int>::const_iterator it = viewedAds.begin(); it != viewedAds.end(); ++it) {
@@ -469,10 +489,14 @@ void addAdsWithMatchingKeywords(int cat, int user, map<int,User*> &userMap,
     map<int,int> relatedAddedNow; // adID -> count seen for this keyword set
     for(vector<string>::const_iterator it2 = baseKeywords.begin(); it2 != baseKeywords.end(); ++it2) {
       const string &kw = *it2;
-      vector<int> &matches = baseCat.keyWordMap[kw];
+      vector<int> &matches = c.keyWordMap[kw];
       for(vector<int>::const_iterator it3 = matches.begin(); it3 != matches.end(); ++it3) {
 	if(viewedAds.find(*it3) != viewedAds.end()) {
 	  continue;
+	}
+	if(dists.find(*it3) == dists.end()) {
+	  // Add ad dist to dists:
+	  dists[*it3] = distSq(u->lastPosition, ad.position);
 	}
 	relatedAddedNow[*it3]++;
       }
@@ -489,8 +513,12 @@ void addAdsWithMatchingKeywords(int cat, int user, map<int,User*> &userMap,
     ret.push_back(PI(-it->second, it->first));
   }
   sort(ret.begin(), ret.end());
+  bool first = true;
   for(vector<PI>::const_iterator it = ret.begin(); it != ret.end(); ++it) {
-    ads.push_back(it->second);
+    if(first || dists[it->second] <= maxDist)
+      ads.push_back(it->second);
+
+    first = false;
     if(ads.size() >= 10)
       break;
   }
@@ -517,7 +545,7 @@ int main() {
 
   // Read user_data.csv for user map.
   map<int,User*> userMap;
-  readUserDataCsv(userMap);
+  readUserDataCsv(userMap, cats, categoryMap, adToCat);
 
   // Read user_messages.csv for hints:
   map<int,vector<Serving*> > categoryHints;
@@ -547,8 +575,8 @@ int main() {
       
       vector<int> ads;
       addAdsWithMatchingKeywords(cat, user, userMap, cats, categoryMap, adToCat, ads);
-      addPreviouslySeenAds(cat, user, userMap, ads);
-      addAdsByNearbyPeople(cat, user, categoryHints, userMap, ads);
+      //addPreviouslySeenAds(cat, user, userMap, ads);
+      //addAdsByNearbyPeople(cat, user, categoryHints, userMap, ads);
 
       bool first = true;
       for(unsigned int i = 0; i < ads.size() && i < 10; ++i) {
