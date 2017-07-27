@@ -104,7 +104,7 @@ void report(int userID, int catID, Category *cats, int const * const categoryMap
   ofstream os;
   file.open("user_data.csv");
   stringstream ss;
-  ss << userID << "_" << catID << ".oxlinfo";
+  ss << "oxlinfo/" << userID << "_" << catID << ".oxlinfo";
   os.open(ss.str().c_str());
 
   os << "Reporting for user " << userID << " and category " << catID << endl << endl;
@@ -132,8 +132,6 @@ void report(int userID, int catID, Category *cats, int const * const categoryMap
   getline(file, line); // Header
   while(getline(file, line, ',')) {
     ++allLines;
-    if(allLines % 1000 == 0)
-      cout << ".";
     // Read time:
     // Timestamp of type "2017-06-30 12:34:56"
     //                   0 2 4 6 8  12  16  18
@@ -195,10 +193,11 @@ void report(int userID, int catID, Category *cats, int const * const categoryMap
     sscanf(&(line.c_str()[1]), "%f", &messages);    
     os << " Add ID: " << adID <<", image: "<< images<<", impressions: "<< impressions<<", views: "<< views<<", messages: "<< messages << endl;    
 
-    int catCnt = categoryMap[adToCat[adID]];
+    int catID = adToCat[adID];
+    int catCnt = categoryMap[catID];
     Category &cat = cats[catCnt];
     Ad *ad = cat.adMap[adID];
-    os << " " << *ad << endl;
+    os << " Category " << catID << " " << *ad << endl;
   }
   os << "TOTAL " << lines << " lines read from user_data.csv." << endl;
   file.close();
@@ -326,6 +325,11 @@ int main() {
   map<int,int> adToCat; // adID -> cat (800, 806, etc.)
   readAdsDataCsv(cats, categoryMap, adToCat);
 
+  for(map<PI,vector<int> >::const_iterator it = fromOxl.begin(); it != fromOxl.end(); ++it) {
+    report(it->first.first, it->first.second, cats, categoryMap, adToCat, fromOxl);
+  }
+
+  /*
   while(true) {
     cout << "Please type user ID and category, then press ENTER" << endl << endl;
     int userID, cat; cin >> userID >> cat;
@@ -335,6 +339,6 @@ int main() {
     report(userID, cat, cats, categoryMap, adToCat, fromOxl);
     
     cout << "REPORT DONE FOR USER " << userID << ", CATEGORY " << cat << " DONE!" << endl << endl;
-  }
+  }*/
   return 0;
 }

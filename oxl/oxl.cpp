@@ -54,17 +54,27 @@ struct Serving {
 struct Ad {
   int adID, sellerID, price;
   long creationTime;
-  vector<string> keywords; // No description, no source, title -> keywords
+  string title;
+  vector<int> keywords; // No description, no source, title -> keywords
   PD position;
   bool enabled;
 };
 
 struct Category {
   map<int,Ad> adMap; // id -> ad
-  map<string,vector<int> > keyWordMap;
+  map<int,vector<int> > keyWordMap;
 };
 
-void getKeywords(string &line, vector<string> &kw) {
+// Taken from Java:
+int hashCode(char *s, int size) {
+  int h = 0;
+  for (int i = 0; i < size; i++) {
+    h = 31 * h + s[i];
+  }
+  return h;
+}
+
+void getKeywords(string &line, vector<int> &kw) {
   transform(line.begin(), line.end(), line.begin(), ::tolower);
   char w[1000];
   int j = 0;
@@ -76,14 +86,14 @@ void getKeywords(string &line, vector<string> &kw) {
     else {
       if(j > 3) {
 	w[j++] = '\0';
-	kw.push_back(string(w));
+	kw.push_back(hashCode(w, j));
       }
       j = 0;
     }
   }
   if(j > 3) {
     w[j++] = '\0';
-    kw.push_back(string(w));
+    kw.push_back(hashCode(w, j));
   }
 }
 
@@ -405,11 +415,11 @@ void readAdsDataCsv(Category *cats, int const * const categoryMap, map<int,int> 
     ad.enabled = enabled;
     getKeywords(title, ad.keywords);
 
-    // Update map<string,vector<int> > &keyWordMap:
+    // Update map<int,vector<int> > &keyWordMap:
     if(enabled) {
-      map<string,vector<int> > &keyWordMap = category.keyWordMap;
+      map<int,vector<int> > &keyWordMap = category.keyWordMap;
       for(unsigned int j = 0; j < ad.keywords.size(); ++j) {
-	string &kw = ad.keywords[j];
+	int &kw = ad.keywords[j];
 	if(keyWordMap.find(kw) == keyWordMap.end()) {
 	  vector<int> empty;
 	  keyWordMap[kw] = empty;
@@ -438,11 +448,11 @@ void readAdsDataCsv(Category *cats, int const * const categoryMap, map<int,int> 
  Ad::
   int adID, sellerID, price;
   long creationTime;
-  vector<string> keywords; // No description, no source, title -> keywords
+  vector<int> keywords; // No description, no source, title -> keywords
   PD position;
   bool enabled;
 
- Category::map<int,Ad> adMap; // id -> ad, , map<string,vector<int> > &keyWordMap
+ Category::map<int,Ad> adMap; // id -> ad, , map<int,vector<int> > &keyWordMap
 */
 void addAdsWithMatchingKeywords(int cat, int user, map<int,User*> &userMap, 
 				Category *cats, int const * const categoryMap, map<int,int> &adToCat, 
@@ -483,12 +493,12 @@ void addAdsWithMatchingKeywords(int cat, int user, map<int,User*> &userMap,
     int baseCatIndex = categoryMap[baseCatID];
     Category &baseCat = cats[baseCatIndex];
     Ad &ad = baseCat.adMap[baseAdID];
-    vector<string> &baseKeywords = ad.keywords;
+    vector<int> &baseKeywords = ad.keywords;
 
     // 1.1) For each keyword set: Find related ads
     map<int,int> relatedAddedNow; // adID -> count seen for this keyword set
-    for(vector<string>::const_iterator it2 = baseKeywords.begin(); it2 != baseKeywords.end(); ++it2) {
-      const string &kw = *it2;
+    for(vector<int>::const_iterator it2 = baseKeywords.begin(); it2 != baseKeywords.end(); ++it2) {
+      int kw = *it2;
       vector<int> &matches = c.keyWordMap[kw];
       for(vector<int>::const_iterator it3 = matches.begin(); it3 != matches.end(); ++it3) {
 	if(viewedAds.find(*it3) != viewedAds.end()) {
@@ -575,8 +585,8 @@ int main() {
       
       vector<int> ads;
       addAdsWithMatchingKeywords(cat, user, userMap, cats, categoryMap, adToCat, ads);
-      //addPreviouslySeenAds(cat, user, userMap, ads);
-      //addAdsByNearbyPeople(cat, user, categoryHints, userMap, ads);
+      addPreviouslySeenAds(cat, user, userMap, ads);
+      addAdsByNearbyPeople(cat, user, categoryHints, userMap, ads);
 
       bool first = true;
       for(unsigned int i = 0; i < ads.size() && i < 10; ++i) {
