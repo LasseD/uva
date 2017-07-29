@@ -19,7 +19,7 @@
 #define ORIGIN_UNKNOWN 7
 #define ORIGIN_DEEPLINK 8
 
-//#define EARLY_BREAK 20000
+//#define EARLY_BREAK 10000
 
 using namespace std;
 
@@ -44,11 +44,7 @@ struct User {
   PD lastPosition;
   double maxViewDist;
   vector<Impression> impressions;
-};
-
-struct Serving {
-  int user;
-  vector<int> addIDs;
+  vector<int> recommendations;
 };
 
 struct Ad {
@@ -63,6 +59,19 @@ struct Ad {
 struct Category {
   map<int,Ad> adMap; // id -> ad
   map<int,vector<int> > keyWordMap;
+  vector<PI> adToRecommendations;
+  map<int,int> adRecommendationsCounts; // For top ten ads 
+  vector<int> topTenAds;
+
+  void setTopAds() {
+    vector<PI> scoreToAd;
+    for(map<int,int>::const_iterator it = adRecommendationsCounts.begin(); it != adRecommendationsCounts.end(); ++it) {
+      scoreToAd.push_back(PI(-it->second, it->first));
+    }
+    sort(scoreToAd.begin(), scoreToAd.end());
+    for(unsigned int i = 0; i < scoreToAd.size(); ++i)
+      topTenAds.push_back(scoreToAd[i].second);
+  }
 };
 
 // Taken from Java:
@@ -110,7 +119,7 @@ PD getAdPosition(int adID, Category *cats, int const * const categoryMap, map<in
   return c.adMap[adID].position;
 }
 
-void readUserDataCsv(map<int,User*> &userMap, Category *cats, int const * const categoryMap, map<int,int> &adToCat) {
+void readUserDataCsv(map<int,User*> &userMap, vector<PI> &alsoViewed, Category *cats, int const * const categoryMap, map<int,int> &adToCat) {
   string line;
 
   ifstream file;
@@ -118,9 +127,10 @@ void readUserDataCsv(map<int,User*> &userMap, Category *cats, int const * const 
 
   int lines = 0;
 
+  int prevAdID = -1;
   getline(file, line); // Header
   while(getline(file, line, ',')) {
-    if(lines % 1000 == 0)
+    if(lines % 10000 == 0)
       cerr << ":";
     #ifdef EARLY_BREAK
     if(lines > EARLY_BREAK)
@@ -195,6 +205,14 @@ void readUserDataCsv(map<int,User*> &userMap, Category *cats, int const * const 
     sscanf(&(line.c_str()[1]), "%f", &messages);    
     //cerr << "Rest: " << adId <<", "<< images<<", "<< impressions<<", "<< views<<", "<< messages << endl;
 
+    // Update alsoViewed:
+    if(prevAdID != -1 && prevAdID != adID) {
+      alsoViewed.push_back(PI(prevAdID, adID));
+      alsoViewed.push_back(PI(adID, prevAdID));
+    }
+    prevAdID = adID;
+
+    // Update last position:
     User *user;
     if(userMap.find(id) == userMap.end()) {
       user = new User;
@@ -206,61 +224,82 @@ void readUserDataCsv(map<int,User*> &userMap, Category *cats, int const * const 
 
     Impression impression(time, isFirstMessage, origin, adID, impressions+views+messages);
 
-    // Update maxViewDist:
-    double dist = distSq(user->lastPosition, getAdPosition(adID, cats, categoryMap, adToCat));
-    if(dist > user->maxViewDist)
-      user->maxViewDist = dist;
-
     user->impressions.push_back(impression);
   }
+
+  // Find maxViewDist for all users:
+  cerr << "Finding max dist view for all users." << endl;
+  for(map<int,User*>::iterator it = userMap.begin(); it != userMap.end(); ++it) {
+    User *user = it->second;
+    PD userPos = user->lastPosition;
+    user->maxViewDist = 0;
+    int cnt = 0;
+    for(vector<Impression>::const_iterator it2 = user->impressions.begin(); it2 != user->impressions.end() && ++cnt <= 5; ++it2) {
+      double dist = distSq(userPos, getAdPosition(it2->adID, cats, categoryMap, adToCat));
+      if(dist > user->maxViewDist)
+	user->maxViewDist = dist;
+    }
+  }
+
+  sort(alsoViewed.begin(), alsoViewed.end());
   cout << lines << " lines read from user_data.csv. " << userMap.size() << " users." << endl;
   file.close();
 }
 
-void readUserMessagesTestCsv(map<int,vector<Serving*> > &categoryHints) {
-  string line;
-
+void readUserMessagesCsv(map<int,User*> &userMap, Category *cats, int const * const categoryMap) {
   ifstream file;
   file.open("user_messages.csv");
 
   int lines = 0;
 
+  string line;
   getline(file, line); // Header
   while(getline(file, line, ',')) {
     ++lines;
+    if(lines%1000 == 0)
+      cerr << ",";
     // Read user id:
     int user;
     sscanf(line.c_str(), "%d", &user);
+    if(userMap.find(user) == userMap.end()) {
+      getline(file, line); // Rest of line.      
+      continue;
+    }
+
     // Read category id:
     getline(file, line, ',');
     int cat;
     sscanf(line.c_str(), "%d", &cat);
-    //cerr << "User id " << user << ", Category " << cat << endl;
     // Ads:
     getline(file, line, '[');
     getline(file, line);
     stringstream ss; ss << line;
-    int adID;
-    vector<int> ads;
-    while(ss >> adID) {
-      ss >> line; // ","
-      ads.push_back(adID);
+
+    User *u = userMap[user];
+    vector<Impression> &impressions = u->impressions;
+
+    int recommendedAdID;
+    while(ss >> recommendedAdID) {
+      Category &category = cats[categoryMap[cat]];
+      for(vector<Impression>::const_iterator it = impressions.begin(); it != impressions.end(); ++it) {
+	category.adToRecommendations.push_back(PI(it->adID, recommendedAdID));
+      }
+      u->recommendations.push_back(recommendedAdID);
+
+      category.adRecommendationsCounts[recommendedAdID]++;
+
+      ss >> line; // ","      
       //cerr << " " << adID << endl;
     }
-
-    if(categoryHints.find(cat) == categoryHints.end()) {
-      vector<Serving*> sx;
-      categoryHints.insert(make_pair(cat, sx));
-    }
-    
-    vector<Serving*> &servings = categoryHints[cat];
-
-    Serving *serving = new Serving;
-    serving->user = user;
-    serving->addIDs = ads;
-    servings.push_back(serving);
   }
-  cout << lines << " lines read from user_data.csv. " << categoryHints.size() << " categories." << endl;  
+
+  cerr << "Setting top recommended ads!" << endl;
+  for(int i = 0; i < 10; ++i) {
+    cats[i].setTopAds();
+    sort(cats[i].adToRecommendations.begin(), cats[i].adToRecommendations.end());
+  }
+
+  cout << lines << " lines read from user_messages.csv." << endl;  
   file.close();
 }
 
@@ -274,56 +313,143 @@ double getLocationDiff(int u1, int u2, map<int,User*> &userMap) {
   return distSq(user1->lastPosition, user2->lastPosition);
 }
 
-void addAdsByNearbyPeople(int cat, int user, map<int,vector<Serving*> > &categoryHints, map<int,User*> &userMap, vector<int> &ads) {
-  if(ads.size() >= 10)
+void addPreviouslySeenAds(unsigned int MAX, int cat, int user, map<int,User*> &userMap, map<int,int> &adToCat, set<int> &enabledAds, vector<int> &ads) {
+  if(ads.size() >= MAX)
     return;
-
-  vector<Serving*> servings = categoryHints[cat];
-  vector<Serving*>::const_iterator it = servings.begin();
-  Serving *bestServing = *it;
-  double bestDist = getLocationDiff(user, bestServing->user, userMap);
-  ++it;
-  for(; it != servings.end(); ++it) {	
-    Serving *serving = *it;
-    double dist = getLocationDiff(user, serving->user, userMap);
-    if(dist < bestDist) {
-      bestDist = dist;
-      bestServing = serving;
-    }
-  }
-  for(vector<int>::const_iterator it = bestServing->addIDs.begin(); it != bestServing->addIDs.end(); ++it) {
-    ads.push_back(*it);
-    if(ads.size() >= 10)
-      return;
-  }
-}
-
-void addPreviouslySeenAds(int cat, int user, map<int,User*> &userMap, vector<int> &ads) {
-  if(ads.size() >= 10)
-    return;
-
-  set<int> seen;
-  if(userMap.find(user) == userMap.end()) {
-    cout << "Unknown user: " << user << endl;
-    return;
-  }
 
   User *u = userMap[user];
   vector<Impression> &impressions = u->impressions;
   
+  set<int> seen;
   for(vector<Impression>::reverse_iterator it = impressions.rbegin(); it != impressions.rend(); ++it) {	
     Impression &i = *it;
     int a = i.adID;
+    if(adToCat[a] != cat)
+      continue; // Wrong category.
     if(seen.find(a) != seen.end())
       continue; // Already added
+    if(enabledAds.find(a) == enabledAds.end())
+      continue;
     ads.push_back(a);
     seen.insert(a);
+    if(ads.size() >= MAX)
+      break;
+  }
+}
+
+void addTopForCategory(int user, int cat, map<int,User*> &userMap, Category *cats, int *categoryMap, map<int,int> &adToCat, vector<int> &ads) {
+  vector<int> &TT = cats[categoryMap[cat]].topTenAds;
+  
+  User *u = NULL;
+  if(user != -1)
+    u = userMap[user];
+
+  set<int> seen;
+  for(vector<int>::const_iterator it = ads.begin(); it != ads.end(); ++it)
+    seen.insert(*it);
+  for(vector<int>::const_iterator it = TT.begin(); it != TT.end(); ++it) {
+    int aa = *it;
+    if(seen.find(aa) != seen.end())
+      continue;
+    if(u != NULL && distSq(u->lastPosition, getAdPosition(aa, cats, categoryMap, adToCat)) > u->maxViewDist)
+      continue;
+    ads.push_back(aa);
+    seen.insert(aa);
     if(ads.size() >= 10)
       break;
   }
 }
 
-void readAdsDataCsv(Category *cats, int const * const categoryMap, map<int,int> &adToCat) {
+/*
+ If user A has seen ad X and is served Y, then B seeing X should also get Y 
+*/
+void addSimilarlyRecommendedAds(unsigned int MAX, int cat, int user, map<int,User*> &userMap, Category *cats, int *categoryMap, map<int,int> &adToCat, vector<int> &ads) {
+  if(ads.size() >= MAX)
+    return;
+
+  User *u = userMap[user];
+  vector<Impression> &impressions = u->impressions; // Already seen impressions.
+
+  // Find ads which have been recommended based on what we have seen:
+  map<int,int> recommendationHits;
+
+  Category &c = cats[categoryMap[cat]];
+  
+  set<int> seen;
+  //int xx = 0;
+  for(vector<Impression>::reverse_iterator it = impressions.rbegin(); it != impressions.rend(); ++it) {	
+    Impression &i = *it;
+    int a = i.adID;
+    if(seen.find(a) != seen.end())
+      continue; // Already added
+    seen.insert(a);
+
+    // Find all recommended for this ad:
+    vector<PI>::const_iterator it2 = lower_bound(c.adToRecommendations.begin(), c.adToRecommendations.end(), PI(a,-1));
+    while(it2 != c.adToRecommendations.end() && it2->first == a) {
+      int aa = it2->second;
+      if(distSq(u->lastPosition, getAdPosition(aa, cats, categoryMap, adToCat)) <= u->maxViewDist)
+	recommendationHits[aa]++;
+      ++it2;
+    }
+  }
+
+  // Take top:
+  vector<PI> scoreToAd;
+  for(map<int,int>::const_iterator it = recommendationHits.begin(); it != recommendationHits.end(); ++it) {
+    scoreToAd.push_back(PI(-it->second, it->first));
+  }
+  sort(scoreToAd.begin(), scoreToAd.end());
+  for(vector<PI>::const_iterator it = scoreToAd.begin(); ads.size() < MAX && it != scoreToAd.end(); ++it)
+    ads.push_back(it->second);
+}
+
+void addAlsoViewed(unsigned int MAX, int cat, int user, vector<PI> &alsoViewed, map<int,User*> &userMap, Category *cats, int *categoryMap, map<int,int> &adToCat, set<int> &enabledAds, vector<int> &ads) {
+  if(ads.size() >= MAX)
+    return;
+
+  User *u = userMap[user];
+  vector<Impression> &impressions = u->impressions; // Already seen impressions.
+
+  // Find ads which have been recommended based on what we have seen:
+  map<int,int> recommendationHits;
+
+  set<int> seen;
+  //int xx = 0;
+  for(vector<Impression>::reverse_iterator it = impressions.rbegin(); it != impressions.rend(); ++it) {	
+    Impression &i = *it;
+    int a = i.adID;
+    if(seen.find(a) != seen.end())
+      continue; // Already added
+    seen.insert(a);
+
+    // Find all recommended for this ad:
+    vector<PI>::const_iterator it2 = lower_bound(alsoViewed.begin(), alsoViewed.end(), PI(a,-1));
+    while(it2 != alsoViewed.end() && it2->first == a) {
+      int aa = it2->second;
+      ++it2;
+      if(adToCat[aa] != cat)
+	continue;
+      if(enabledAds.find(aa) == enabledAds.end())
+	continue;
+      if(distSq(u->lastPosition, getAdPosition(aa, cats, categoryMap, adToCat)) > u->maxViewDist)
+	continue;
+
+      recommendationHits[aa]++;
+    }
+  }
+
+  // Take top:
+  vector<PI> scoreToAd;
+  for(map<int,int>::const_iterator it = recommendationHits.begin(); it != recommendationHits.end(); ++it) {
+    scoreToAd.push_back(PI(-it->second, it->first));
+  }
+  sort(scoreToAd.begin(), scoreToAd.end());
+  for(vector<PI>::const_iterator it = scoreToAd.begin(); ads.size() < MAX && it != scoreToAd.end(); ++it)
+    ads.push_back(it->second);
+}
+
+void readAdsDataCsv(Category *cats, int const * const categoryMap, map<int,int> &adToCat, set<int> &enabledAds) {
   cerr << "Reading ads_data.csv" << endl;
   string line;
 
@@ -335,7 +461,7 @@ void readAdsDataCsv(Category *cats, int const * const categoryMap, map<int,int> 
   getline(file, line); // Header line
 
   while(getline(file, line, ',')) {
-    if(lines % 1000 == 0)
+    if(lines % 10000 == 0)
       cerr << ".";
     #ifdef EARLY_BREAK
     if(lines > EARLY_BREAK)
@@ -398,6 +524,8 @@ void readAdsDataCsv(Category *cats, int const * const categoryMap, map<int,int> 
     // Enabled
     getline(file, line);
     bool enabled = line[1] == '1';
+    if(enabled)
+      enabledAds.insert(adID);
 
     adToCat[adID] = cat;
     if(cat < 0 || cat > 900)
@@ -461,12 +589,8 @@ void addAdsWithMatchingKeywords(int cat, int user, map<int,User*> &userMap,
     return;
 
   // 0) Find all viewed ads so they don't accidentally get put into "ads":
-  set<int> viewedAds;
-  if(userMap.find(user) == userMap.end()) {
-    cerr << "User " << user << " is not present in user_data.csv and keywords can thus not be connected" << endl;
-    return;
-  }
   User *u = userMap[user];
+  set<int> viewedAds;
   vector<Impression> &impressions = u->impressions;
   for(vector<Impression>::const_iterator it = impressions.begin(); it != impressions.end(); ++it) {
     if(viewedAds.find(it->adID) != viewedAds.end())
@@ -549,17 +673,18 @@ int main() {
   categoryMap[888] = 9; // Male fashion
 
   // Read ads_data.csv:
-  Category cats[11];
+  Category cats[10];
   map<int,int> adToCat; // adID -> cat (800, 806, etc.)
-  readAdsDataCsv(cats, categoryMap, adToCat);
+  set<int> enabledAds;
+  readAdsDataCsv(cats, categoryMap, adToCat, enabledAds);
 
   // Read user_data.csv for user map.
   map<int,User*> userMap;
-  readUserDataCsv(userMap, cats, categoryMap, adToCat);
+  vector<PI> alsoViewed; // ad -> also viewed ad
+  readUserDataCsv(userMap, alsoViewed, cats, categoryMap, adToCat);
 
   // Read user_messages.csv for hints:
-  map<int,vector<Serving*> > categoryHints;
-  readUserMessagesTestCsv(categoryHints);
+  readUserMessagesCsv(userMap, cats, categoryMap);
   
   // Read user_messages_test.csv for task at hand:
   string line;
@@ -569,34 +694,41 @@ int main() {
   outfile.open("ads_recommendation.csv");
   outfile << "user_id,category_id,ads" << endl;
   
+  cerr << "Starting to handle user_messages_test.csv" << endl;
   getline(infile, line); // Header
-
+  int cnt = 0;
   while(getline(infile, line)) {
+    if(cnt++ % 100 == 0)
+      cerr << ";";
     // Read user id:
     int user, cat;
     sscanf(line.c_str(), "%d,%d", &user, &cat);
     
-    if(categoryHints.find(cat) == categoryHints.end()) {
-      cerr << "Unknown category: " << cat << endl;
-      outfile << user << "," << cat << "\"[]\"" << endl;
+    outfile << user << "," << cat << ",\"[";
+      
+    vector<int> ads;
+    if(userMap.find(user) == userMap.end()) {
+      // Unknown user!
+      addTopForCategory(-1, cat, userMap, cats, categoryMap, adToCat, ads); // This gives 9 easy points :)
     }
     else {
-      outfile << user << "," << cat << ",\"[";
-      
-      vector<int> ads;
       addAdsWithMatchingKeywords(cat, user, userMap, cats, categoryMap, adToCat, ads);
-      addPreviouslySeenAds(cat, user, userMap, ads);
-      addAdsByNearbyPeople(cat, user, categoryHints, userMap, ads);
+      addAlsoViewed(2, cat, user, alsoViewed, userMap, cats, categoryMap, adToCat, enabledAds, ads);
+      addSimilarlyRecommendedAds(4, cat, user, userMap, cats, categoryMap, adToCat, ads);
+      addPreviouslySeenAds(10, cat, user, userMap, adToCat, enabledAds, ads);
 
-      bool first = true;
-      for(unsigned int i = 0; i < ads.size() && i < 10; ++i) {
-	if(!first)
-	  outfile << ", ";
-	first = false;
-	outfile << ads[i];
-      }
-      outfile << "]\"" << endl;      
-    }    
+      // Fill with top 10:
+      addTopForCategory(user, cat, userMap, cats, categoryMap, adToCat, ads);
+    }
+    
+    bool first = true;
+    for(unsigned int i = 0; i < ads.size() && i < 10; ++i) {
+      if(!first)
+	outfile << ", ";
+      first = false;
+      outfile << ads[i];
+    }
+    outfile << "]\"" << endl;      
   }  
 
   infile.close(); outfile.close();

@@ -1,5 +1,11 @@
 TODO: Create ads_recommendation.csv from user x cat pairs in user_messages_test.csv
 
+Terminology:
+
+Recommendation: Ad that has been recommended for a specific user and category in user_messages.csv
+Impression: Ad viewed by a user according to user_data.csv
+
+
 Step 1: Check out the data.
 
 user_data.csv
@@ -28,24 +34,31 @@ user_messages.csv
 I'm going to use this file to get suggestions for categories. It contains 10348 lines with users in 10 categories. 
 
 
-Attempt 1: Trivial category matching: 0.73 points
+Attempt 1: Trivial category matching: 5.45 points
 
 Here I simply repeated the first entry for a given category in "user_messages.csv" while completely ignoring the user. This is obviously a poorly performing algorithm, but serves as a good starting point to see if the file is formatted correctly.
 
 
-Attempt 2: Nearest user matching: 3.76 points
+Attempt 2: Nearest user matching: 28.28 points
 
 Instead of taking the first user and copying their data from "user_messages.csv", the one with the closest distance is chosen.
 
 
-Attempt 3: Last viewed:
+Attempt 3: Last viewed: 147.07
 
 Simply show the (up to 10) last viewed ads by the user. They might not have bought these items, so perhaps they want to see them again.
 Notice that 1635 rows were for users which are not in user_data.csv and their recommendations are thus empty.
 
+Attempt 4: Most recommended ads for unknown users: 9.79 points
+For users not seen in user_data.csv: Add most highly recommended ads in category. The predictor fails for these users, so these 9.79 points are easy to add to any other submission.
+
+
+
+
+
+1806476
 
 README.txt:
-
- g++ -Wall oxl.cpp -o oxl.exe && time ./oxl.exe
-
-g++ -Wall user_stats.cpp -o user_stats.exe && ./user_stats.exe
+g++ -Wall -o2 oxl.cpp -o oxl.exe && time ./oxl.exe
+g++ -Wall -o2 user_stats.cpp -o user_stats.exe && ./user_stats.exe
+g++ -Wall -o2 stats.cpp -o stats.exe && ./stats.exe

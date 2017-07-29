@@ -152,7 +152,7 @@ void report(int userID, int catID, Category *cats, int const * const categoryMap
       continue;
     }
     ++lines;
-    os << "Date: 2017-" << month << "-" << day << " " << hour << ":" << minute << ":" << second;
+    os << endl << "Date: 2017-" << month << "-" << day << " " << hour << ":" << minute << ":" << second;
 
     // event:
     getline(file, line, ',');
