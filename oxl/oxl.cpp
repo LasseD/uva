@@ -38,6 +38,9 @@ struct Impression {
   Impression() : time(-1), isFirstMessage(false), origin(-1), adID(-1), interactions(-1) {}
   Impression(const Impression &o) : time(o.time), isFirstMessage(o.isFirstMessage), origin(o.origin), adID(o.adID), interactions(o.interactions) {}
   Impression(long time, bool isFirstMessage, int origin, int adID, int interactions) : time(time), isFirstMessage(isFirstMessage), origin(origin), adID(adID), interactions(interactions) {}
+  bool operator<(const Impression &b) const {
+    return time < b.time;
+  }
 };
 
 struct User {
@@ -127,7 +130,7 @@ void readUserDataCsv(map<int,User*> &userMap, vector<PI> &alsoViewed, Category *
 
   int lines = 0;
 
-  int prevAdID = -1;
+  int prevAdID = -1, prevprevAdID = -1;
   getline(file, line); // Header
   while(getline(file, line, ',')) {
     if(lines % 10000 == 0)
@@ -210,7 +213,14 @@ void readUserDataCsv(map<int,User*> &userMap, vector<PI> &alsoViewed, Category *
       alsoViewed.push_back(PI(prevAdID, adID));
       alsoViewed.push_back(PI(adID, prevAdID));
     }
-    prevAdID = adID;
+    if(prevprevAdID != -1 && prevprevAdID != adID) {
+      alsoViewed.push_back(PI(prevprevAdID, adID));
+      alsoViewed.push_back(PI(adID, prevprevAdID));
+    }
+    if(prevAdID != adID) {
+      prevAdID = adID;
+      prevprevAdID = prevAdID;
+    }
 
     // Update last position:
     User *user;
@@ -231,10 +241,15 @@ void readUserDataCsv(map<int,User*> &userMap, vector<PI> &alsoViewed, Category *
   cerr << "Finding max dist view for all users." << endl;
   for(map<int,User*>::iterator it = userMap.begin(); it != userMap.end(); ++it) {
     User *user = it->second;
+
+    // Sort impressions by date:
+    sort(user->impressions.begin(), user->impressions.end());
+
+    // Find maximal allowed dist for ads by considering the last 5 impressions:
     PD userPos = user->lastPosition;
     user->maxViewDist = 0;
     int cnt = 0;
-    for(vector<Impression>::const_iterator it2 = user->impressions.begin(); it2 != user->impressions.end() && ++cnt <= 5; ++it2) {
+    for(vector<Impression>::reverse_iterator it2 = user->impressions.rbegin(); it2 != user->impressions.rend() && ++cnt <= 5; ++it2) {
       double dist = distSq(userPos, getAdPosition(it2->adID, cats, categoryMap, adToCat));
       if(dist > user->maxViewDist)
 	user->maxViewDist = dist;
@@ -376,8 +391,8 @@ void addSimilarlyRecommendedAds(unsigned int MAX, int cat, int user, map<int,Use
   Category &c = cats[categoryMap[cat]];
   
   set<int> seen;
-  //int xx = 0;
-  for(vector<Impression>::reverse_iterator it = impressions.rbegin(); it != impressions.rend(); ++it) {	
+  int xx = 0;
+  for(vector<Impression>::reverse_iterator it = impressions.rbegin(); it != impressions.rend() && ++xx < 5; ++it) {	
     Impression &i = *it;
     int a = i.adID;
     if(seen.find(a) != seen.end())
@@ -709,16 +724,16 @@ int main() {
     vector<int> ads;
     if(userMap.find(user) == userMap.end()) {
       // Unknown user!
-      addTopForCategory(-1, cat, userMap, cats, categoryMap, adToCat, ads); // This gives 9 easy points :)
+      //addTopForCategory(-1, cat, userMap, cats, categoryMap, adToCat, ads); // This gives 9 easy points :)
     }
     else {
       addAdsWithMatchingKeywords(cat, user, userMap, cats, categoryMap, adToCat, ads);
-      addAlsoViewed(2, cat, user, alsoViewed, userMap, cats, categoryMap, adToCat, enabledAds, ads);
-      addSimilarlyRecommendedAds(4, cat, user, userMap, cats, categoryMap, adToCat, ads);
-      addPreviouslySeenAds(10, cat, user, userMap, adToCat, enabledAds, ads);
+      //addAlsoViewed(2, cat, user, alsoViewed, userMap, cats, categoryMap, adToCat, enabledAds, ads);
+      //addSimilarlyRecommendedAds(10, cat, user, userMap, cats, categoryMap, adToCat, ads);
+      //addPreviouslySeenAds(10, cat, user, userMap, adToCat, enabledAds, ads);
 
       // Fill with top 10:
-      addTopForCategory(user, cat, userMap, cats, categoryMap, adToCat, ads);
+      //addTopForCategory(user, cat, userMap, cats, categoryMap, adToCat, ads);
     }
     
     bool first = true;

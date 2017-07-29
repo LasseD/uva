@@ -26,7 +26,7 @@ Some of the columns are not documented correctly in the problem setting, or ther
 
 ads_data.csv
 
-This file contains a wonderful amount of useful data. However. I only have a couple of hours on my hands, so I'm going to completely ignore this file.
+This file contains data for 645.168 ads. 
 
 
 user_messages.csv
