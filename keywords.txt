@@ -1399,6 +1399,9 @@ Prime sieve into bool array, isPrime.
 P10790.cpp: How Many Points of Intersection?
 Count intersetions of lines between nodes in full bipartite matching.
 
+P10801.cpp: Lift Hopping
+Dijkstra (modern) for tiny [5][100] graph.
+
 P10803.cpp: Thunder Mountain
 All Pair Shortest Path (Floyd-Warshall) in 2D space.
 
