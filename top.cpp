@@ -60,3 +60,5 @@ typedef PD Point2D;
 #define P2 second
 
 void die() {int *a = NULL; a[3] = 2;}
+
+void dieSlowly() {while(true)cerr << "NOO!";}
