@@ -973,6 +973,9 @@ Highway toll calculation. Easy.
 P10139.cpp: Factovisors
 Uses prime sieve, nextPrime, factorize up to 2^32, find if m divides n!.
 
+P10140.cpp: Prime Distance
+Prime sieve on high prime interval.
+
 P10141.cpp: Request for Proposal
 gets and scanf to read from input. strcpy for string copy. puts and printf for output.
 
