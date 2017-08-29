@@ -1222,6 +1222,9 @@ Prime sieve into bitset up to 20.000.000. Twin primes.
 P10397.cpp: Connect the Campus
 Connect forrest to tree by using union-find. (no path compression)
 
+P10404.cpp: Batchet's Game
+Simulation of turn based picking stones from table.
+
 P10405.cpp: Longest Common Subsequence
 Longest common subset problem. Dynamic programming.
 
