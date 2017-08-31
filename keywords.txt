@@ -203,7 +203,7 @@ P195.cpp Anagram
 Compute permutations in alphabetical order, permutation handler, std::sort with custom comparison comparator
 
 P200.cpp: Rare Order
-topo sort, extending partial order to total order, lex compare
+Topo sort, extending partial order to total order, lex compare
 
 P201.cpp: Squares
 Trivial.
@@ -372,6 +372,9 @@ Read line as int, read line as char[].
 
 P417: Word Index
 Dumb brute force.
+
+P423.cpp: MPI Maelstrom
+Dijkstra for max of all possible destinations (not just one destination)
 
 P424.java: Integer Inquery
 BigInteger parse from string, add, ZERO.
