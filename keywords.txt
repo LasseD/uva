@@ -1303,6 +1303,9 @@ Match guesses with binary search.
 P10533.cpp: Digit Primes
 Prime sieve, isprime and isDigitPrime
 
+P10534.cpp: Wavio Sequence
+Longest Incresing Subsequence (LIS) where current element has to be included.
+
 P10550.cpp: Combination Lock
 Trivial simulate combination lock.
 
