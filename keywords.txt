@@ -1816,6 +1816,9 @@ Trivial.
 P11849.cpp: CD
 Trivial.
 
+P11850.cpp: Alaska
+Trivial.
+
 P11854.cpp: Egypt
 Trivial pythagoras check.
 
