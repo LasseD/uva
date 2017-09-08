@@ -1543,6 +1543,9 @@ Intersection between lines given formulas of type ax+bx=c
 P11069.cpp: A Graph Problem
 sequence from all maximal independent sets in flat graph
 
+P11078.cpp: Open Credit System
+Trivial.
+
 P11080.cpp: Place the Guards
 Simple graph coloring.
 
