@@ -1828,6 +1828,9 @@ Trivial.
 P11877.cpp: The Coca-Cola Store
 The coca cola problem with borrowing.
 
+P11878.cpp: Homework Checker
+cin.getline for simle line parsing.
+
 P11879.java: Multiple of 17
 BigInteger divides check.
 
@@ -1887,6 +1890,9 @@ Trivial.
 
 P12405.cpp: Scarecrow
 Trivial.
+
+P12459.java: Bee's ancestors
+BigInteger Fibonacci.
 
 P12468.cpp: Zapping
 Trivial.
