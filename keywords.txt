@@ -1846,6 +1846,9 @@ BigInteger divides check.
 P11900.cpp: Boiled Eggs
 Trivial.
 
+P11933.cpp: Splitting Numbers
+Check lowest bit using "1 == (1 & x)".
+
 P11934.cpp: Magic Formula
 Trivial.
 
