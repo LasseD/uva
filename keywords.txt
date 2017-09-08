@@ -223,6 +223,9 @@ P227.cpp: Puzzle
 P231.cpp: Testing the CATCHER
 longestIncreasingSubsequence, Longest Increasing Subsequence
 
+P232.cpp: Crossword Answers
+Build matrix of strings from cin.
+
 P247.cpp: Calling Circles
 Find cliques in graph by iteratively expanding a->b & b->c => a->c
 
