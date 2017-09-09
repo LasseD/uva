@@ -811,6 +811,9 @@ Emo Welzl algorithm for smallest enclosure of point set. Circle through two poin
 P10006.cpp: Carmichael Numbers
 Trivial after precomputation.
 
+P10007.java: Count the Trees
+Compute Catalan numbers (Number of binary trees)
+
 P10008.cpp: What's Cryptanalysis?
 sort pair, isprint for proper printable char detection
 
