@@ -1270,6 +1270,9 @@ Trivial.
 P10451.java: Ancient Village Sports
 Inner and outer radius of a regular N-gon (regular polygon).
 
+P10452.cpp: Marcus, help!
+Trivial simulation.
+
 P10465.cpp: Homer Simpson
 Brute force packing 2 sizes of element. Minimize spillage, maximize packages.
 
