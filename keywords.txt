@@ -1831,6 +1831,9 @@ Trivial.
 P11827.cpp: Maximum GCD
 Trivial.
 
+P11831.cpp: Sticker Collector Robots
+Walk in grid. Change grid during walk. Simple.
+
 P11849.cpp: CD
 Trivial.
 
