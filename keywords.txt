@@ -1633,6 +1633,9 @@ Sort and double list walk.
 P11308.cpp: Bankrupt Baker
 read lines of strings, integers, transform string toupper, atoi(s.c_str()).
 
+P11321.cpp: Sort! Sort!! and Sort!!!
+sort with custom comparator sort(a, a+N, cmp).
+
 P11332.cpp: Summing Digits
 %= 10 and /= 10 on int
 
