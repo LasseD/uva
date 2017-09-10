@@ -775,6 +775,9 @@ Given N, find number where N is product of digits of number.
 P1124.c: Celebrity jeopardy
 Trivial gets puts.
 
+P1203.cpp: Argus
+Maintain priority queue.
+
 P1210.cpp: Sum of Consecutive Prime Numbers
 Prime sieve. Find consecutive primes that sum to given number.
 
