@@ -1450,6 +1450,9 @@ Apply tolower.
 P10827.cpp: Maximum sum on a torus
 Maximum sum rectangle on matrix for all widths and heights.
 
+P10852.cpp: Less Prime
+Modern Prime Sieve on bitset, nextPrime, prevPrime, isPrime.
+
 P10878.cpp: Decode the tape
 Binary decode chars.
 
