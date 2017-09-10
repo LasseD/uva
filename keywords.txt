@@ -1543,6 +1543,9 @@ Dijkstra shortest path to all destinations.
 P11034.cpp: Ferry Loading IV
 Small modification of Ferry Loading III
 
+P11039.cpp: Building designing
+Trivial.
+
 P11044.cpp: Searching for Nessy
 Trivial multiplication.
 
