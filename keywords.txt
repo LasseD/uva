@@ -730,6 +730,9 @@ Game simulation.
 P850.cpp: Crypt Kicker II (Skiena)
 Substitution cipher
 
+P861.cpp: Little Bishops
+Precompute answer using slow try-all-possibilities algorithm.
+
 P872.cpp: Ordering
 Permutation handler of variable size (on vector of chars) which fulfills constraints on order.
 
