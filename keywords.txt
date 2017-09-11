@@ -1546,6 +1546,9 @@ Area of triangle using semiperimeter (side lengths).
 P11000.cpp: Bee
 Trivial.
 
+P11085.cpp: Back to the 8-Queens
+Use all solutions for 8 queen chess problem from P750 (remember x%10 in range [1..8]).
+
 P11015.cpp: 05-2 Rendezvous
 Dijkstra shortest path to all destinations.
 
