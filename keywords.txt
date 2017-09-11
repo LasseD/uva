@@ -1351,6 +1351,9 @@ Connected components.
 P10611.cpp: The Playboy Chimp
 Upper bound, lower bound binary searches.
 
+P10622.cpp: Perfect Pth Powers
+pow(N, 1.0/p) for N^1/p.
+
 P10633.cpp: Rare Easy Problem
 Find N given N-M where M = N/10.
 
