@@ -436,6 +436,9 @@ Signed in overflow detection.
 P469.cpp: Wetlands of Florida
 Connected region in grid.
 
+P474.cpp: Heads / Tails Probability
+Compute first 4 digits of 2^-N
+
 P476.cpp: Points in Figures: Rectangles
 std::cin >> char >> double, quick delta compare.
 
