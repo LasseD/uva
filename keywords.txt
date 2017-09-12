@@ -1258,6 +1258,9 @@ Simulation of turn based picking stones from table.
 P10405.cpp: Longest Common Subsequence
 Longest common subset problem. Dynamic programming.
 
+P10407.cpp: Simple division
+gcd on int. sort.
+
 P10409.cpp: Die Game
 Die turn simulation.
 
