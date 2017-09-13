@@ -1585,6 +1585,9 @@ Trivial sort and traverse.
 P11059.cpp: Maximum Product
 Maximum product of continuous sub-array of ints.
 
+P11063.cpp: B2-Sequence
+Trivial... but please read the description closely.
+
 P11068.cpp: An Easy Task
 Intersection between lines given formulas of type ax+bx=c
 
