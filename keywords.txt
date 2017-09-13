@@ -2002,6 +2002,9 @@ Trivial areas. M_PI
 P12602.cpp: Nice Licence Plates
 Trivial.
 
+P12626.cpp: I love pizza
+Trivial.
+
 P12646.cpp: Zero or One
 Trivial.
 
