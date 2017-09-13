@@ -1438,6 +1438,9 @@ Trivial.
 P10717.cpp: Mint
 GCD, LCM.
 
+P10721.cpp: Bar Codes
+Dynamic programming in 2 dimensions.
+
 P10763.cpp: Foreigh Exchange
 Find if all pairs (a,b) in a set have a matching (b,a).
 
