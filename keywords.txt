@@ -1936,6 +1936,9 @@ queue, stack, priority queue.
 P12015.cpp: Google is Feeling Lucky
 Trivial.
 
+P12032.cpp: The Monkey and the Ladder
+Simple linear walk while updating max jump.
+
 P12087.cpp: Collecting Marbles
 Sum-arrays.
 
