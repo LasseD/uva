@@ -1783,6 +1783,9 @@ simple calculation
 P11559.cpp: Event Planning
 Trivial.
 
+P11565.cpp: Simple Equations
+Second degree polynomial (axx+bx+c=0) solving.
+
 P11572.cpp: Unique Snowflakes
 Trivial.
 
