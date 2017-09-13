@@ -1306,7 +1306,7 @@ Print all sorted permutations.
 P10487.cpp: Closest Sums
 Sum of two ints in array that is closest to target.
 
-P10490.cpp: Mr. Azad and his Son
+P10490.cpp: Mr. Azad and his Son!!!!!
 Perfect numbers.
 
 P10491.cpp: Cows and Cars
@@ -1983,6 +1983,9 @@ Trivial string compare.
 
 P12578.cpp: 10:6:2
 Trivial areas. M_PI
+
+P12602.cpp: Nice Licence Plates
+Trivial.
 
 P12646.cpp: Zero or One
 Trivial.

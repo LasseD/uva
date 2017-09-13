@@ -1,5 +1,3 @@
-#include <iostream>
-
 #define PRIME_LEN 50000
 
 class PrimeHandler {
@@ -41,30 +39,30 @@ int main() {
 
   long long n;
   while(true) {
-    std::cin >> n;
+    cin >> n;
     if(n == 0)
       return 0;
-    std::cout << n << " =";
+    cout << n << " =";
     bool first = true;
     if(n < 0) {
-      std::cout << " -1";
+      cout << " -1";
       first = false;
       n = -n;
     }
     while(n % 2 == 0) {
       if(!first)
-	std::cout << " x";
+	cout << " x";
       first = false;
-      std::cout << " 2";
+      cout << " 2";
       n /= 2;
     }
     long long prime = 3;
     while(prime*prime <= n) {
       if(n % prime == 0) {
 	if(!first)
-	  std::cout << " x";
+	  cout << " x";
 	first = false;
-	std::cout << " " << prime;
+	cout << " " << prime;
 	n /= prime;
       }
       else {
@@ -73,9 +71,9 @@ int main() {
     }
     if(n > 1) {
       if(!first)
-	std::cout << " x";
-      std::cout << " " << n;
+	cout << " x";
+      cout << " " << n;
     }
-    std::cout << std::endl;
+    cout << endl;
   }
 }
