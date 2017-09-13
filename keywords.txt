@@ -676,6 +676,9 @@ Rectilinear integer cube intersecion.
 P739.cpp: Soundex Indexing
 Convert strings to soundex codes.
 
+P740.cpp: Baudot Data Communication Code
+Trivial.
+
 P741.cpp: Burrows Wheeler Decoder
 Burrows Wheeler decoding, custom prefix-append strings with operator <.
 
