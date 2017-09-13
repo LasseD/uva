@@ -1306,6 +1306,9 @@ Print all sorted permutations.
 P10487.cpp: Closest Sums
 Sum of two ints in array that is closest to target.
 
+P10490.cpp: Mr. Azad and his Son
+Perfect numbers.
+
 P10491.cpp: Cows and Cars
 Probability of wining car in game show.
 
