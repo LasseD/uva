@@ -7,6 +7,7 @@
 #include <vector>
 #include <queue>
 #include <stack>
+#include <bitset>
 // Functions:
 #include <algorithm>
 #include <string>

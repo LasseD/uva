@@ -1,6 +1,3 @@
-#include <iostream>
-#include <bitset>
-
 struct PermutationNode {
   PermutationNode *next;
   int val;  
@@ -25,7 +22,7 @@ struct PermutationHandler {
 
 #define PRIME_LEN 5000000
 class PrimeHandler {
-  std::bitset<PRIME_LEN> primes;
+  bitset<PRIME_LEN> primes;
 
 public:
   void init() {
@@ -81,7 +78,7 @@ public:
   }
 
   bool isAnagrammaticPrime(int n) {
-    //std::cerr << "Checking " << n << std::endl;
+    //cerr << "Checking " << n << endl;
     int digits = 0;
     int orig[8];
     int perm[8];
@@ -113,7 +110,7 @@ public:
     while(U <= L)
       U*=10;
     L = nextPrime(L);
-    //std::cerr << "Running " << L << " -> " << U << std::endl;
+    //cerr << "Running " << L << " -> " << U << endl;
 
     while(L < U) {
       if(isAnagrammaticPrime(L))
@@ -130,9 +127,9 @@ int main() {
 
   long L;
   while(true) {
-    std::cin >> L;
+    cin >> L;
     if(L == 0)
       return 0;
-    std::cout << ph.nextAnagrammaticPrime(L) << std::endl;      
+    cout << ph.nextAnagrammaticPrime(L) << endl;      
   }
 }

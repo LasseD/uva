@@ -1,4 +1,4 @@
-#define PRIME_LEN 50000
+#define PRIME_LEN 2000000
 
 class PrimeHandler {
   bool primes[PRIME_LEN];
@@ -37,43 +37,42 @@ int main() {
   PrimeHandler ph;
   ph.init();
 
-  long long n;
+  LL n;
   while(true) {
     cin >> n;
     if(n == 0)
       return 0;
-    cout << n << " =";
-    bool first = true;
+    //cerr << n << "->";
+
+    int factors = 0;
+
     if(n < 0) {
-      cout << " -1";
-      first = false;
       n = -n;
     }
-    while(n % 2 == 0) {
-      if(!first)
-	cout << " x";
-      first = false;
-      cout << " 2";
-      n /= 2;
+    LL L = -1; // Largest factor
+    if(n % 2 == 0) {
+      ++factors;
+      L = 2;
+      while(n % 2 == 0)
+	n /= 2;
     }
-    long long prime = 3;
+    LL prime = 3;
     while(prime*prime <= n) {
       if(n % prime == 0) {
-	if(!first)
-	  cout << " x";
-	first = false;
-	cout << " " << prime;
-	n /= prime;
+	++factors;
+	L = prime;
+	while(n % prime == 0)
+	  n /= prime;
       }
-      else {
-	prime = ph.nextPrime(prime);
-      }
+      prime = ph.nextPrime(prime);
     }
     if(n > 1) {
-      if(!first)
-	cout << " x";
-      cout << " " << n;
+      ++factors;
+      L = n;
     }
-    cout << endl;
+    if(L == -1 || factors <= 1)
+      cout << -1 << endl;
+    else
+      cout << L << endl;
   }
 }

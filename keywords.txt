@@ -223,6 +223,9 @@ P227.cpp: Puzzle
 P231.cpp: Testing the CATCHER
 longestIncreasingSubsequence, Longest Increasing Subsequence
 
+P232.cpp: Crossword Answers
+Build matrix of strings from cin.
+
 P247.cpp: Calling Circles
 Find cliques in graph by iteratively expanding a->b & b->c => a->c
 
@@ -433,6 +436,9 @@ Signed in overflow detection.
 P469.cpp: Wetlands of Florida
 Connected region in grid.
 
+P474.cpp: Heads / Tails Probability
+Compute first 4 digits of 2^-N
+
 P476.cpp: Points in Figures: Rectangles
 std::cin >> char >> double, quick delta compare.
 
@@ -531,6 +537,9 @@ Generate primes using prime sieve.
 
 P544.cpp: Heavy cargo
 Maximin path in graph using union-find, limits MAX, minimize height of UF structure. (Using minimax algorithm from "Bond" with negative weights)
+
+P555.cpp: Bridge Hands
+Encode and decode cards. Sort. Modern.
 
 P558.cpp: Wormholes
 Bellman-Ford to detect negative weight cycles. int limits max value.
@@ -667,6 +676,9 @@ Rectilinear integer cube intersecion.
 P739.cpp: Soundex Indexing
 Convert strings to soundex codes.
 
+P740.cpp: Baudot Data Communication Code
+Trivial.
+
 P741.cpp: Burrows Wheeler Decoder
 Burrows Wheeler decoding, custom prefix-append strings with operator <.
 
@@ -697,6 +709,9 @@ Edmonds-Karp max flow algorithm: BFS. Residual flow graph.
 P821.cpp: Page Hopping
 All pair shortest paths in directed graph.
 
+P825.cpp: Walking on the Safe Side
+scanf getchar and getline to read from stdin.
+
 P834.cpp: Continued Frations
 Transform rational number to continued fraction. Simple math.
 
@@ -720,6 +735,9 @@ Game simulation.
 
 P850.cpp: Crypt Kicker II (Skiena)
 Substitution cipher
+
+P861.cpp: Little Bishops
+Precompute answer using slow try-all-possibilities algorithm.
 
 P872.cpp: Ordering
 Permutation handler of variable size (on vector of chars) which fulfills constraints on order.
@@ -760,6 +778,9 @@ Dijkstra's shortest path in grid of numbers.
 P941.cpp: Permutations
 Find given permutation of string such as index 2 for aab is baa, fac.
 
+P948.cpp: Fibonaccimal Base
+Trivial cache fibonacci numbers[45];
+
 P990.cpp: Diving for Gold
 Dynamic Programming to decide which treasures to bring home (classical 0/1 knapsack)
 
@@ -769,11 +790,17 @@ Given N, find number where N is product of digits of number.
 P1124.c: Celebrity jeopardy
 Trivial gets puts.
 
+P1203.cpp: Argus
+Maintain priority queue.
+
 P1210.cpp: Sum of Consecutive Prime Numbers
 Prime sieve. Find consecutive primes that sum to given number.
 
 P1225.cpp: Digit Counting
 Cache counted digits.
+
+P1237.cpp: Expert Enough?
+lower_bound and iterate maps.
 
 P1312.cpp: Cricket Field
 Largest area search by random 2D-KD-partiotioning. Random permutation.
@@ -804,6 +831,9 @@ Emo Welzl algorithm for smallest enclosure of point set. Circle through two poin
 
 P10006.cpp: Carmichael Numbers
 Trivial after precomputation.
+
+P10007.java: Count the Trees
+Compute Catalan numbers (Number of binary trees)
 
 P10008.cpp: What's Cryptanalysis?
 sort pair, isprint for proper printable char detection
@@ -1234,6 +1264,9 @@ Simulation of turn based picking stones from table.
 P10405.cpp: Longest Common Subsequence
 Longest common subset problem. Dynamic programming.
 
+P10407.cpp: Simple division
+gcd on int. sort.
+
 P10409.cpp: Die Game
 Die turn simulation.
 
@@ -1258,6 +1291,9 @@ Trivial.
 P10451.java: Ancient Village Sports
 Inner and outer radius of a regular N-gon (regular polygon).
 
+P10452.cpp: Marcus, help!
+Trivial simulation.
+
 P10465.cpp: Homer Simpson
 Brute force packing 2 sizes of element. Minimize spillage, maximize packages.
 
@@ -1275,6 +1311,9 @@ Print all sorted permutations.
 
 P10487.cpp: Closest Sums
 Sum of two ints in array that is closest to target.
+
+P10490.cpp: Mr. Azad and his Son!!!!!
+Perfect numbers.
 
 P10491.cpp: Cows and Cars
 Probability of wining car in game show.
@@ -1333,8 +1372,14 @@ Connected components.
 P10611.cpp: The Playboy Chimp
 Upper bound, lower bound binary searches.
 
+P10622.cpp: Perfect Pth Powers
+pow(N, 1.0/p) for N^1/p.
+
 P10633.cpp: Rare Easy Problem
 Find N given N-M where M = N/10.
+
+P10642.cpp: Can You Solve It?
+Grid walk in "shells".
 
 P10647.cpp: Optimal House Placement
 Parabola min of f(x)=ax^2+bx+c is -b/2a) when a is positive.
@@ -1399,6 +1444,9 @@ Trivial.
 P10717.cpp: Mint
 GCD, LCM.
 
+P10721.cpp: Bar Codes
+Dynamic programming in 2 dimensions.
+
 P10763.cpp: Foreigh Exchange
 Find if all pairs (a,b) in a set have a matching (b,a).
 
@@ -1437,6 +1485,9 @@ Apply tolower.
 
 P10827.cpp: Maximum sum on a torus
 Maximum sum rectangle on matrix for all widths and heights.
+
+P10852.cpp: Less Prime
+Modern Prime Sieve on bitset, nextPrime, prevPrime, isPrime.
 
 P10878.cpp: Decode the tape
 Binary decode chars.
@@ -1522,11 +1573,17 @@ Area of triangle using semiperimeter (side lengths).
 P11000.cpp: Bee
 Trivial.
 
+P11085.cpp: Back to the 8-Queens
+Use all solutions for 8 queen chess problem from P750 (remember x%10 in range [1..8]).
+
 P11015.cpp: 05-2 Rendezvous
 Dijkstra shortest path to all destinations.
 
 P11034.cpp: Ferry Loading IV
 Small modification of Ferry Loading III
+
+P11039.cpp: Building designing
+Trivial.
 
 P11044.cpp: Searching for Nessy
 Trivial multiplication.
@@ -1540,11 +1597,17 @@ Trivial sort and traverse.
 P11059.cpp: Maximum Product
 Maximum product of continuous sub-array of ints.
 
+P11063.cpp: B2-Sequence
+Trivial... but please read the description closely.
+
 P11068.cpp: An Easy Task
 Intersection between lines given formulas of type ax+bx=c
 
 P11069.cpp: A Graph Problem
 sequence from all maximal independent sets in flat graph
+
+P11078.cpp: Open Credit System
+Trivial.
 
 P11080.cpp: Place the Guards
 Simple graph coloring.
@@ -1618,6 +1681,9 @@ Sort and double list walk.
 P11308.cpp: Bankrupt Baker
 read lines of strings, integers, transform string toupper, atoi(s.c_str()).
 
+P11321.cpp: Sort! Sort!! and Sort!!!
+sort with custom comparator sort(a, a+N, cmp).
+
 P11332.cpp: Summing Digits
 %= 10 and /= 10 on int
 
@@ -1645,6 +1711,9 @@ gcd, lcm, thoughts about connection between these in comments of code.
 P11389.cpp: The Bus Driver Problem
 Trivial sort twice, once with negative integers for rsort
 
+P11401.java (and .cpp): Triangle counting
+BigInteger cache build with add and valueOf. (But value fits in long, so c++ also works).
+
 P11417.cpp: GCD
 GCD.
 
@@ -1665,6 +1734,9 @@ Radix sort ints 1 - 100.
 
 P11463.cpp: Commandos
 Dijkstra shortest path to all nodes. Modern.
+
+P11466.cpp: Largest Prime Divisor
+Prime sieve bitset and factorize up to 14 digit numbers.
 
 P11470.cpp: Square Sums
 Trivial.
@@ -1712,6 +1784,12 @@ P11547.cpp: Automatic Answer
 simple calculation
 
 P11559.cpp: Event Planning
+Trivial.
+
+P11565.cpp: Simple Equations
+Second degree polynomial (axx+bx+c=0) solving.
+
+P11572.cpp: Unique Snowflakes
 Trivial.
 
 P11577.cpp: Letter Frequency
@@ -1816,7 +1894,13 @@ Trivial.
 P11827.cpp: Maximum GCD
 Trivial.
 
+P11831.cpp: Sticker Collector Robots
+Walk in grid. Change grid during walk. Simple.
+
 P11849.cpp: CD
+Trivial.
+
+P11850.cpp: Alaska
 Trivial.
 
 P11854.cpp: Egypt
@@ -1831,11 +1915,17 @@ Trivial.
 P11877.cpp: The Coca-Cola Store
 The coca cola problem with borrowing.
 
+P11878.cpp: Homework Checker
+cin.getline for simle line parsing.
+
 P11879.java: Multiple of 17
 BigInteger divides check.
 
 P11900.cpp: Boiled Eggs
 Trivial.
+
+P11933.cpp: Splitting Numbers
+Check lowest bit using "1 == (1 & x)".
 
 P11934.cpp: Magic Formula
 Trivial.
@@ -1845,6 +1935,9 @@ Trivial.
 
 P11942.cpp: Lumberjack Sequencing
 Trivial all increment or all decrement.
+
+P11953.cpp: Battleships
+Simple walk on grid.
 
 P11984.cpp: A Change in Therman Unit
 Convert Fahrenheit to Celcius and back.
@@ -1860,6 +1953,9 @@ queue, stack, priority queue.
 
 P12015.cpp: Google is Feeling Lucky
 Trivial.
+
+P12032.cpp: The Monkey and the Ladder
+Simple linear walk while updating max jump.
 
 P12087.cpp: Collecting Marbles
 Sum-arrays.
@@ -1891,6 +1987,9 @@ Trivial.
 P12405.cpp: Scarecrow
 Trivial.
 
+P12459.java: Bee's ancestors
+BigInteger Fibonacci.
+
 P12468.cpp: Zapping
 Trivial.
 
@@ -1911,6 +2010,12 @@ Trivial string compare.
 
 P12578.cpp: 10:6:2
 Trivial areas. M_PI
+
+P12602.cpp: Nice Licence Plates
+Trivial.
+
+P12626.cpp: I love pizza
+Trivial.
 
 P12646.cpp: Zero or One
 Trivial.

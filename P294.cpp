@@ -1,6 +1,3 @@
-#include <iostream>
-#include <bitset>
-
 #define PRIME_LEN 16000
 #define EVEN(a) (((a) & 1) == 0)
 #define ODD(a) (((a) & 1) == 1)
@@ -8,7 +5,7 @@
 typedef unsigned long ul;
 
 class PrimeHandler {
-  std::bitset<PRIME_LEN> primes;
+  bitset<PRIME_LEN> primes;
 
 public:
   void init() {
@@ -94,13 +91,13 @@ int main() {
   ph.init();
 
   ul N, U, L;
-  std::cin >> N;
+  cin >> N;
   for(ul cas = 0; cas < N; ++cas) {
-    std::cin >> U >> L;
+    cin >> U >> L;
     if(U < L)
-      std::swap(U,L);
+      swap(U,L);
     
     ul P = ph.withMostDivisors(L, U);
-    std::cout << "Between " << L << " and " << U << ", " << P << " has a maximum of " << ph.numberOfDivisors(P) << " divisors." << std::endl;
+    cout << "Between " << L << " and " << U << ", " << P << " has a maximum of " << ph.numberOfDivisors(P) << " divisors." << endl;
   }
 }
