@@ -1492,6 +1492,9 @@ Binary decode chars.
 P10879.cpp: Code Refactoring
 Prime sieve on bitset. Extended next prime. Factorizing.
 
+P10891.cpp: Game of Sum
+Try all possibilities of array game.
+
 P10901.cpp: Ferry Loading III
 Simulate ferry travelling between coasts. Cars line up in queues.
 
