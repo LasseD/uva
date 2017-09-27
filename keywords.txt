@@ -1768,6 +1768,9 @@ Suffix array construction. LCP in suffix array. Longest common prefix between ad
 P11513.cpp: 9 Puzzle
 Compute all solutions for 9 puzzle and store in map.
 
+P11517.cpp: Exact Change
+Use coins to cover amount. 
+
 P11518.cpp: Dominos 2
 Use P11504 to compute dominos that fall.
 
@@ -1893,6 +1896,9 @@ Trivial.
 
 P11831.cpp: Sticker Collector Robots
 Walk in grid. Change grid during walk. Simple.
+
+P11838.cpp: Come and Go
+Find out if directed graph is clique.
 
 P11849.cpp: CD
 Trivial.
