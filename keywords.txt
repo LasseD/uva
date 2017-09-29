@@ -1363,6 +1363,9 @@ Square sum of number. Cache numbers.
 P10596.cpp: Morning Walk
 Find if a graph has an Euler tour. Ignore unvisited nodes. Proper union-find.
 
+P10600.cpp: ACM Contest and Blackout
+Proper union-find for MST and next MST.
+
 P10608.cpp: Friends
 Connected components.
 
@@ -1817,7 +1820,7 @@ P11626.java: Convex Hull
 ch
 
 P11631.cpp: Dark roads
-MST in undirected graph using union-find. Like Bond, but without weights in union-find (simpler).
+MST in undirected graph using bad union-find. Like Bond, but without weights in union-find (simpler).
 
 P11635.cpp: Hotel booking
 Use Dijkstra multiple times from waves of hotels (sources).
