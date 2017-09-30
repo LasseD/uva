@@ -1837,6 +1837,9 @@ getchar and scanf to read ints and long lines.
 P11677.cpp: Alarm Clock
 Time diff.
 
+P11679.cpp: Sub-prime
+Can use methods to reduce cycles with positive reserves.
+
 P11689.cpp: Soda Surpler
 Coca cola problem with variable cost.
 

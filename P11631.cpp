@@ -1,10 +1,7 @@
-#include <iostream>
 #include <limits>
-#include <vector>
-#include <algorithm>
 
-typedef std::pair<int,int> Edge;
-typedef std::pair<int,Edge> WeightAndEdge;
+typedef PI Edge;
+typedef pair<int,Edge> WeightAndEdge;
 
 /*
 Union find: Iterate through edges by weight and union vertices.
@@ -47,7 +44,7 @@ int lca(const int c1, const int c2, int const * const tree, bool *visited) {
  */
 int main() {
   int N, M; // N vertices, M edges.
-  while(std::cin >> N >> M) {
+  while(cin >> N >> M) {
     if(N == 0 && M == 0)
       return 0;
     int *tree = new int[N];
@@ -59,17 +56,17 @@ int main() {
 
     long sumGraph = 0;
     // Read edges and build union-find tree:
-    std::vector<WeightAndEdge> v;
+    vector<WeightAndEdge> v;
     for(int i = 0; i < M; ++i) {
       int C1, C2, P;
-      std::cin >> C1 >> C2 >> P; // a->b, weight
+      cin >> C1 >> C2 >> P; // a->b, weight
       sumGraph += P;
       v.push_back(WeightAndEdge(P, Edge(C1,C2)));
     }
-    std::sort(v.begin(), v.end());
+    sort(v.begin(), v.end());
 
     int sumMST = 0;
-    for(std::vector<WeightAndEdge>::const_iterator it = v.begin(); it != v.end(); ++it) {
+    for(vector<WeightAndEdge>::const_iterator it = v.begin(); it != v.end(); ++it) {
       int C1 = it->second.first;
       int C2 = it->second.second;
       int P = it->first;
@@ -84,7 +81,7 @@ int main() {
 	sumMST += P;
       }
     }
-    std::cout << (sumGraph-sumMST) << std::endl;
+    cout << (sumGraph-sumMST) << endl;
     delete[] tree;
     delete[] visited;
   }
