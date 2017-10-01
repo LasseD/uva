@@ -172,6 +172,9 @@ card game simulation. typedef pair -> SUIT VAL
 P165.cpp: Stamps
 Combinations of stamps, exponential time algorithm
 
+P166.cpp: Making Change
+Minimize coins exhanged
+
 P167.cpp: The Sultan's Successors
 chess board queen cover, easy permutation handler usage of size 8, print chess board
 
