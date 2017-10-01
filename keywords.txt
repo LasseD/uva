@@ -955,6 +955,9 @@ Use Modified Ford-Fulkerson for Maximum Bipartite Matching: http://www.geeksforg
 P10082.cpp: WERTYU
 Char substitution, use string to build substitution array.
 
+P10093.cpp: An Easy Problem!
+Find divisibility with base-1
+
 P10098.cpp: Generating Fast, Sorted Permutation
 Copy of P195. Permutations in alphabetical (not lex) order, permutation handler,all permutations of strings
 
