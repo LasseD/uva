@@ -955,6 +955,9 @@ Use Modified Ford-Fulkerson for Maximum Bipartite Matching: http://www.geeksforg
 P10082.cpp: WERTYU
 Char substitution, use string to build substitution array.
 
+P10093.cpp: An Easy Problem!
+Find divisibility with base-1
+
 P10098.cpp: Generating Fast, Sorted Permutation
 Copy of P195. Permutations in alphabetical (not lex) order, permutation handler,all permutations of strings
 
@@ -1366,6 +1369,9 @@ Square sum of number. Cache numbers.
 P10596.cpp: Morning Walk
 Find if a graph has an Euler tour. Ignore unvisited nodes. Proper union-find.
 
+P10600.cpp: ACM Contest and Blackout
+Proper union-find for MST and next MST.
+
 P10608.cpp: Friends
 Connected components.
 
@@ -1494,6 +1500,9 @@ Binary decode chars.
 
 P10879.cpp: Code Refactoring
 Prime sieve on bitset. Extended next prime. Factorizing.
+
+P10891.cpp: Game of Sum
+Try all possibilities of array game.
 
 P10901.cpp: Ferry Loading III
 Simulate ferry travelling between coasts. Cars line up in queues.
@@ -1771,6 +1780,9 @@ Suffix array construction. LCP in suffix array. Longest common prefix between ad
 P11513.cpp: 9 Puzzle
 Compute all solutions for 9 puzzle and store in map.
 
+P11517.cpp: Exact Change
+Use coins to cover amount. 
+
 P11518.cpp: Dominos 2
 Use P11504 to compute dominos that fall.
 
@@ -1814,7 +1826,7 @@ P11626.java: Convex Hull
 ch
 
 P11631.cpp: Dark roads
-MST in undirected graph using union-find. Like Bond, but without weights in union-find (simpler).
+MST in undirected graph using bad union-find. Like Bond, but without weights in union-find (simpler).
 
 P11635.cpp: Hotel booking
 Use Dijkstra multiple times from waves of hotels (sources).
@@ -1830,6 +1842,9 @@ getchar and scanf to read ints and long lines.
 
 P11677.cpp: Alarm Clock
 Time diff.
+
+P11679.cpp: Sub-prime
+Can use methods to reduce cycles with positive reserves.
 
 P11689.cpp: Soda Surpler
 Coca cola problem with variable cost.
@@ -1896,6 +1911,9 @@ Trivial.
 
 P11831.cpp: Sticker Collector Robots
 Walk in grid. Change grid during walk. Simple.
+
+P11838.cpp: Come and Go
+Find out if directed graph is clique.
 
 P11849.cpp: CD
 Trivial.
