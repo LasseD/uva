@@ -1348,6 +1348,9 @@ Prime sieve, isprime and isDigitPrime
 P10534.cpp: Wavio Sequence
 Longest Incresing Subsequence (LIS) where current element has to be included.
 
+P10539.cpp: Almost Prime Numbers
+Prime sieve, nextPrime, isPrime, bitset can go to 10 000 000.
+
 P10550.cpp: Combination Lock
 Trivial simulate combination lock.
 
