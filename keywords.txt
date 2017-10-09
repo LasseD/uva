@@ -1078,6 +1078,9 @@ Check game simulation.
 P10198.java: Counting
 BigInteger add.
 
+P10199.cpp: TOurist Guide
+Detect if node is critical. O(n^2) to find all critical nodes.
+
 P10188.cpp: Automated Judge Script
 gets and read line as int.
 
