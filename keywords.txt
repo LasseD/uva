@@ -271,6 +271,9 @@ Parse prefix notation of quadtrees.
 P299.cpp: Train Swapping
 Trivial, dumb brute force counting.
 
+P300.cpp Maya Calendar
+Trivial.
+
 P305.cpp: Joseph
 Precompute.
 
