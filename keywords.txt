@@ -967,6 +967,9 @@ Copy of P195. Permutations in alphabetical (not lex) order, permutation handler,
 P10099.cpp: The Tourist Guide (Skiena)
 Modified Dijkstra for Widest path problem / the bottleneck shortest path problem.
 
+P10100.cpp: Longest Match
+Longest common subsequence. Hashcode of string to LL.
+
 P10101.cpp: Bangla Numbers
 printf("%llu") for unsigned long long.
 
