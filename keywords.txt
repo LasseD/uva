@@ -658,6 +658,9 @@ Build, traverse and delete binary tree.
 P706.cpp: LCD Display
 Output as LCD display.
 
+P712.cpp: S-Tree
+Simulate index of nodes on path down a full binary tree.
+
 P713.cpp: Adding Reversed Numbers
 std::cin >> int and char[].
 
