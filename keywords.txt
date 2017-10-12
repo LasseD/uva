@@ -1753,6 +1753,9 @@ small amount of possible prices => "dynamic programming" bool maintenance.
 P11455.cpp: Behold my quadrangle
 Trivial square/rectangle/none sides validity.
 
+P11456.cpp: Trainsorting
+LIS where you include last element.
+
 P11461.cpp: Square Numbers
 cmath sqrt
 
