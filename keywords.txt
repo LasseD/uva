@@ -2029,6 +2029,9 @@ Trivial.
 P12405.cpp: Scarecrow
 Trivial.
 
+P12455.cpp: Bars
+Coin sum problem: Can bars of given lengths sum to X?
+
 P12459.java: Bee's ancestors
 BigInteger Fibonacci.
 
