@@ -1372,6 +1372,9 @@ Trivial simulate combination lock.
 P10566.cpp: Crossed Ladders
 Binary search for double.
 
+P10573.cpp: Geometry Paradox
+Trivial.
+
 P10579.java: Fibonacci Numbers
 Fibonacci numbers up to 5000. BigInteger. Caching.
 
