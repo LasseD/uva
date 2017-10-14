@@ -1693,6 +1693,9 @@ Union-find with path compression to link cities in coordinate system after eucli
 P11233.cpp: Deli Deli
 scanf and gets for strings or char*.
 
+P11235.cpp: Frequent values
+Find most frequent value in interval. NO INTERVAL TREE!
+
 P11236.java: Grocery store
 sum = product calculation
 
