@@ -1,0 +1,10 @@
+4
+a b c d
+a 1
+import d, b, c
+b 2
+import d
+import c
+c 1
+import c
+d 0
