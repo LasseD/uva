@@ -2005,6 +2005,9 @@ Trivial.
 P12032.cpp: The Monkey and the Ladder
 Simple linear walk while updating max jump.
 
+P12086.cpp: Potentiometers
+Full binary tree construction and traversal for handling updates and range queries.
+
 P12087.cpp: Collecting Marbles
 Sum-arrays.
 
