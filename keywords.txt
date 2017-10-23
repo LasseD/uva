@@ -916,6 +916,9 @@ Computing co author dist from Erdos. Sets and maps.
 P10048.cpp: Audiophobia
 All pair shortest path with MAX relaxation function. Floyd-Warshall.
 
+P10049.cpp: Self-describing Sequence
+Compute Solomon Golomb's sequence.
+
 P10050.cpp: Hartals
 Trivial simulation.
 
