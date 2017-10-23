@@ -577,6 +577,9 @@ Trivial.
 P579.cpp: Clock Hands
 Easy angle between clock arms, no trigonometry.
 
+P580.java: Critical Mass
+Scanner nextInt(), BigInteger add, subtract.
+
 P583.cpp: Prime Factors
 Uses prime sieve, nextPrime, factorize up to 2^32.
 
@@ -1536,6 +1539,9 @@ Iterate around in grid.
 
 P10911.cpp: Forming Quiz Teams
 Permutation handler to find optimal pairing.
+
+P10919.cpp: Prerequisites?
+Trivial.
 
 P10920.cpp: Spiral Tap
 Spiral index to x,y-coordinates.
