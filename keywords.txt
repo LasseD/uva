@@ -1048,6 +1048,9 @@ gets and scanf to read from input. strcpy for string copy. puts and printf for o
 P10142.cpp: Australian Voting System (Skiena)
 Simulation
 
+P10147.cpp: Highways
+Proper union-find and planar MST construction.
+
 P10150.cpp: Doublets
 BFS on edit distance graph.
 
