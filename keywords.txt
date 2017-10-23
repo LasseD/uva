@@ -1993,6 +1993,9 @@ BigInteger divides check.
 P11900.cpp: Boiled Eggs
 Trivial.
 
+P11917.cpp: Do Your Own Homework
+Trivial.
+
 P11933.cpp: Splitting Numbers
 Check lowest bit using "1 == (1 & x)".
 

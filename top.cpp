@@ -37,6 +37,8 @@ using namespace std;
 #define FORUY(N) for(unsigned int y = 0; y < N; ++y)
 #define FORIT(T, N) for(T::const_iterator it = N.begin(); it != N.end(); ++it)
 #define FORIT2(T, N) for(T::const_iterator it2 = N.begin(); it2 != N.end(); ++it2)
+#define GI(N) int N; cin >> N;
+#define GS(N) string N; cin >> N;
 
 typedef unsigned long long ULL;
 typedef long long LL;
