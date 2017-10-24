@@ -799,6 +799,9 @@ Trivial cache fibonacci numbers[45];
 P990.cpp: Diving for Gold
 Dynamic Programming to decide which treasures to bring home (classical 0/1 knapsack)
 
+P991.cpp: Safe Salutations
+Combinations of non-crossing connections/pairing/matching on circle perimeter.
+
 P993.cpp: Product of digits
 Given N, find number where N is product of digits of number.
 
