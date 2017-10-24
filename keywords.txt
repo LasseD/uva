@@ -1342,6 +1342,9 @@ Print all sorted permutations.
 P10487.cpp: Closest Sums
 Sum of two ints in array that is closest to target.
 
+P10489.cpp: Boxes of Chocolates
+Trivial.
+
 P10490.cpp: Mr. Azad and his Son!!!!!
 Perfect numbers.
 
