@@ -1420,6 +1420,9 @@ pow(N, 1.0/p) for N^1/p.
 P10633.cpp: Rare Easy Problem
 Find N given N-M where M = N/10.
 
+P10635.cpp: Prince and Princess
+Length of LIS (Longest increasing subsequence) in O(nlogn).
+
 P10642.cpp: Can You Solve It?
 Grid walk in "shells".
 
