@@ -1540,6 +1540,9 @@ Try all possibilities of array game.
 P10901.cpp: Ferry Loading III
 Simulate ferry travelling between coasts. Cars line up in queues.
 
+P10903.cpp: Rock-Paper-Scissors Tournament
+Trivial.
+
 P10905.cpp: Children't Game
 Custom comparator.
 
