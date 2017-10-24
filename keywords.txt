@@ -1429,6 +1429,9 @@ Length of LIS (Longest increasing subsequence) in O(nlogn).
 P10642.cpp: Can You Solve It?
 Grid walk in "shells".
 
+P10646.cpp: What is the Card?
+Card game simulation.
+
 P10647.cpp: Optimal House Placement
 Parabola min of f(x)=ax^2+bx+c is -b/2a) when a is positive.
 
