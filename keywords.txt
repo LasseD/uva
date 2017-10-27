@@ -1186,6 +1186,9 @@ isSquareNumber().
 P10278.cpp: Fire Station
 Dijkstra shortest path for multiple sources for largest path.
 
+P10279.cpp: Mine Sweeper
+Compute Mine Sweeper board standing.
+
 P10281.cpp: Average Speed
 Trivial.
 
