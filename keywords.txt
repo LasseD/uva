@@ -1492,6 +1492,9 @@ Floyd-Warshall to compute best profit. Optimized to obtain 0.000.
 P10703.cpp: Free spots
 Find empty cells in grid by handling line by line.
 
+P10706.cpp: Number Sequence
+Find digit in sequence 1_12_123_1234_ ... (without '_').
+
 P10714.cpp: Ants
 Trivial.
 
