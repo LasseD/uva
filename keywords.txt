@@ -1066,6 +1066,9 @@ Use union-find to maintain friends and enemies.
 P10161.cpp: Ant on a Chessboard
 Trivial. sqrt.
 
+P10167.cpp: Birthday Cake
+atan2 for angle. Line (0,0)->(A,B) is Bx-Ay=0. Colinear and left turn.
+
 P10168.cpp: Summation of Four Primes
 Prime sieve. Goldbach's conjecture.
 
