@@ -469,6 +469,9 @@ Count duplicates and preserve order using two vectors and a map.
 P485.java: Pascal's Triangle of Death
 Brute force
 
+P486.cpp: English-Number Translator
+English number names to long.
+
 P488.cpp: Triangle Wave
 Trivial, but PDF is wrong. UVA contacted.
 
