@@ -1288,6 +1288,9 @@ Proper Union Find (UF) with path compression. Computing trees in forest. union-f
 P10370.cpp: Above Average
 Trivial average, printf with %.
 
+P10377.cpp: Maze Traversal
+Walk around a maze. Robot walk.
+
 P10387.cpp: Biliard
 Trivial.
 
