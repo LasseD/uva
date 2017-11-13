@@ -619,6 +619,9 @@ All pairs shortest paths with PREV backtracking to find shortest paths.
 P628.cpp: Passwords
 Trivial.
 
+P636.cpp: Squares
+Check if number is a square number (has an integer square root) using binary search.
+
 P637.cpp: Booklet Printing
 Trivial page order.
 

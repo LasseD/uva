@@ -1,4 +1,4 @@
-typedef pair<int,int> WeightAndVertex;
+typedef PI WeightAndVertex;
 
 #define INF numeric_limits<int>::max()
 
