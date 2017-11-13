@@ -2068,6 +2068,9 @@ queue, stack, priority queue.
 P12015.cpp: Google is Feeling Lucky
 Trivial.
 
+P12019.cpp: Doom's Day Algorithm
+Compute day of week in given non-leap year.
+
 P12032.cpp: The Monkey and the Ladder
 Simple linear walk while updating max jump.
 
