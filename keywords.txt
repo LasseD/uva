@@ -1078,6 +1078,9 @@ Prime sieve. Goldbach's conjecture.
 P10170.cpp: The Hotel with Infinite Rooms
 Binary search in constantly increasing sequence.
 
+P10171.cpp: Meeting Prof. Miguel...
+Dijkstra shortest path to all possible targets.
+
 P10173.java: Smallest Bounding Rectangle
 Ch, ch walk, ch bounding box turn
 
