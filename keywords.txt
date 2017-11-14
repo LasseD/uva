@@ -1252,6 +1252,9 @@ Gotcha factorial definition. Please ignore.
 P10327.cpp: Flip Sort
 Same as P299, but for arbritrary ints, duplicates.
 
+P10330.cpp: Power Transmission
+Edmonds–Karp algorithm to ensure quick termination O(VE^2) instead of flow-dependent Ford-Fulkerson. queue. numeric_limits<LL>::max(). Enhanced graph to consider flow restrictions on nodes.
+
 P10334.java Ray Through Glasses
 Fibonacci numbers up to 1000. BigInteger. Caching.
 
@@ -1864,7 +1867,7 @@ Circle combine in social networks
 P11504.cpp: Dominos
 Topo sort (topological sorting) in non-acyclic graph using Cormen/Tarjan.
 
-P11057.cpp: Bender B. Rodr�guez Problem
+P11057.cpp: Bender B. Rodríguez Problem
 Trivial.
 
 P11512.cpp: GATTACA
