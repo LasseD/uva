@@ -562,6 +562,9 @@ all pair shortes path
 P568.cpp: Just the Facts
 Last digit of the first 10000 factorials. Assume all digits don't zero.
 
+P571.cpp: Jugs
+Die Hard 3 jug simulation.
+
 P572.cpp: Oil Deposits
 Union find on 100 x 100 grid. Read line as two ints.
 
