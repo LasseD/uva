@@ -1525,6 +1525,9 @@ GCD, LCM.
 P10721.cpp: Bar Codes
 Dynamic programming in 2 dimensions.
 
+P10739.cpp: String to palindrome.
+Use DP to compute a palindrome out of any string. Only latest rows are necessary, though.
+
 P10763.cpp: Foreigh Exchange
 Find if all pairs (a,b) in a set have a matching (b,a).
 
