@@ -1948,6 +1948,9 @@ Time diff.
 P11679.cpp: Sub-prime
 Can use methods to reduce cycles with positive reserves.
 
+P11687.cpp: Digits
+atoi(s.c_str())
+
 P11689.cpp: Soda Surpler
 Coca cola problem with variable cost.
 
