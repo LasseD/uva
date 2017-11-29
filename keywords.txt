@@ -1306,6 +1306,9 @@ Walk around a maze. Robot walk.
 P10387.cpp: Biliard
 Trivial.
 
+P10391.cpp: Compound Words
+Word search by tree traversal. Construction of "trie"/word search finite state machine.
+
 P10392.cpp: Factoring Large Numbers
 Bitset (bitvector) prime sieve, nextPrime, factorize large primes.
 
