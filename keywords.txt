@@ -319,6 +319,9 @@ Find all palindromes in string. Sub string (substr) on strings.
 P355.cpp: The Bases Are Loaded
 Convert int to any base, std::cin >> std::hex input read, read and write TOUPPER std::cin and std::cout.
 
+P356.c: Square Pegs and Round Holes
+Trivial.
+
 P357.cpp: Let Me Count The Ways
 Combinations of currency down to 1 cent. Up to 30000 cents.
 
@@ -1316,7 +1319,7 @@ P10394.cpp: Twin Primes
 Prime sieve into bitset up to 20.000.000. Twin primes.
 
 P10397.cpp: Connect the Campus
-Connect forrest to tree by using union-find. (no path compression)
+Connect forrest to tree.
 
 P10404.cpp: Batchet's Game
 Simulation of turn based picking stones from table.
@@ -1424,7 +1427,7 @@ P10579.java: Fibonacci Numbers
 Fibonacci numbers up to 5000. BigInteger. Caching.
 
 P10583.cpp: Ubiquitous Religions
-Bad union find.
+Bad UF.
 
 P10589.cpp: Area
 Trivial.
