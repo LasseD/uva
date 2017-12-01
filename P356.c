@@ -19,14 +19,12 @@ int main() {
       }
     }
 
-    //cerr << "n=" << n << " => inside " << i << ", outside: " << o << endl;
     inside[n] = i*4;
     outside[n] = n*n*4 - o*4 - i*4;
   }
 
   first = 1;
   while(scanf("%d", &n) == 1) {
-    // Output:
     if(!first)
       printf("\n");
     first = 0;
