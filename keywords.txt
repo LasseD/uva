@@ -2128,6 +2128,9 @@ Trivial.
 P12289.cpp: One-Two-Three
 std::cin >> int >> char[].
 
+P12342.cpp: Tax Calculator
+Trivial.
+
 P12356.cpp: Army buddies
 Trivial.
 
