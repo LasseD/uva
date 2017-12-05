@@ -778,6 +778,9 @@ Permutation handler of variable size (on vector of chars) which fulfills constra
 P884.cpp: Factorial Factors
 Prime sieve, count number of factors of first 1000000 integers.
 
+P895.cpp: Word Problem
+string -> int[26] word compression.
+
 P897.cpp: Anagrammatic Primes
 Prime sieve, bitset and permutation handler of variable size on ints.
 
