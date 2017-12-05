@@ -724,6 +724,9 @@ Dijkstra for unit weight edge graph.
 P784.cpp: Maze Exploration
 gets and puts to paint maze.
 
+P787.java
+Scanner, BigInteger, multiply, ArrayList::clear()
+
 P793.cpp: Network Connections
 Paranoid parsing.
 
