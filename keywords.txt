@@ -1432,6 +1432,9 @@ Prime sieve, nextPrime, isPrime, bitset can go to 10 000 000.
 P10550.cpp: Combination Lock
 Trivial simulate combination lock.
 
+P10551.java: Basic Remains
+BigInteger, Scanner, BigInteger with radix/base contruct, remainder() and toString(base).
+
 P10566.cpp: Crossed Ladders
 Binary search for double.
 
