@@ -826,6 +826,9 @@ Combinations of non-crossing connections/pairing/matching on circle perimeter.
 P993.cpp: Product of digits
 Given N, find number where N is product of digits of number.
 
+P1112.cpp: Mice and Maze
+Dijkstra, modern, simple application of Dijkstra to compute total number of vertices within reach of source.
+
 P1124.c: Celebrity jeopardy
 Trivial gets puts.
 
