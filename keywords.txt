@@ -838,6 +838,9 @@ Prime sieve. Find consecutive primes that sum to given number.
 P1225.cpp: Digit Counting
 Cache counted digits.
 
+P1230.cpp: MODEX
+Compute x^y mod n (quick exponentiation).
+
 P1237.cpp: Expert Enough?
 lower_bound and iterate maps.
 
