@@ -1411,6 +1411,9 @@ Permutation Handler of variable size to find TSB of link length up to 10.
 P10499.cpp: The Land of Justice
 Area of circle, area of sphere.
 
+P10507.cpp: Waking up brain
+Tiny graph relaxation.
+
 P10515.cpp: Power et al.
 Compute last digit of m^n.
 
