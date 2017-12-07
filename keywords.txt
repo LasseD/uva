@@ -607,6 +607,9 @@ Little to big endian conversion.
 P599.cpp: The Forrest for the Trees
 Union-find (UF) to find graphs with cycles, trees and trees with only a single node (acorns).
 
+P608.cpp: Counterfeit Dollar
+Scale riddle: Rule based elimination.
+
 P612.cpp: DNA Sorting
 read ints and strings as char* to std::string, count inversions.
 
