@@ -2176,6 +2176,9 @@ std::cin to both ints and char arrays.
 P12527.java: Different Digits
 Use Scanner(System.in) to get ints.
 
+P12531.cpp: Hours and Minutes
+Trivial.
+
 P12554.cpp: A Special "Happy Birthday" Song!!!
 Constant string array in c++.
 
