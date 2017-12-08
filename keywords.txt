@@ -1948,6 +1948,9 @@ scanf(%d\n") and gets to read input.
 P11586.cpp: Train Tracks
 Trivial read line as int, read chars in line.
 
+P11597.cpp: Spanning Subtree
+Count max spanning tree cover of complete graph.
+
 P11608.cpp: No Problem
 Simple sum
 
