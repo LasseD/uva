@@ -1630,6 +1630,9 @@ Iterate around in grid.
 P10911.cpp: Forming Quiz Teams
 Permutation handler to find optimal pairing.
 
+P10918.java: Tri Tiling
+Domino placements of height 3 for all lengths.
+
 P10919.cpp: Prerequisites?
 Trivial.
 
