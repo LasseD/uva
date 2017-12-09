@@ -853,6 +853,9 @@ lower_bound and iterate maps.
 P1312.cpp: Cricket Field
 Largest area search by random 2D-KD-partiotioning. Random permutation.
 
+P1583.cpp: Digit Generator
+Trivial.
+
 P1585.cpp: Score
 Trivial score counting in string
 
