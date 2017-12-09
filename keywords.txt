@@ -2113,6 +2113,9 @@ Trivial.
 P11942.cpp: Lumberjack Sequencing
 Trivial all increment or all decrement.
 
+P11946.cpp: Code Number
+Trivial.
+
 P11953.cpp: Battleships
 Simple walk on grid.
 
