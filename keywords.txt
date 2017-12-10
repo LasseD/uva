@@ -727,6 +727,9 @@ Dijkstra for unit weight edge graph.
 P784.cpp: Maze Exploration
 gets and puts to paint maze.
 
+P785.cpp: Grid Colouring
+Flood fill by searching for fill color first.
+
 P787.java
 Scanner, BigInteger, multiply, ArrayList::clear()
 
