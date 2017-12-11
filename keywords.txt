@@ -1351,6 +1351,9 @@ Prime sieve into bitset up to 20.000.000. Twin primes.
 P10397.cpp: Connect the Campus
 Connect forrest to tree.
 
+P10400.cpp: Game Show Math
+Use set<...> rather than normal coin value explosion.
+
 P10404.cpp: Batchet's Game
 Simulation of turn based picking stones from table.
 
