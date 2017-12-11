@@ -2212,6 +2212,9 @@ Use Scanner(System.in) to get ints.
 P12531.cpp: Hours and Minutes
 Trivial.
 
+P12532.cpp: Interval Product
+Maintain binary tree in order to support range queries.
+
 P12554.cpp: A Special "Happy Birthday" Song!!!
 Constant string array in c++.
 
