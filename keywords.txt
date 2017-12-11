@@ -2233,6 +2233,9 @@ Trivial.
 P12646.cpp: Zero or One
 Trivial.
 
+P12700.cpp: Banglawash
+Trivial, but be ware of missing \n in sample output!
+
 P12791.cpp: Lap
 Car race overlapping calculation, reead line as two ints.
 
