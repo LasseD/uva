@@ -169,6 +169,9 @@ factorial prime factorization, aligned printf, primes up to 100, define
 P162.cpp: Beggar My Neighbour
 card game simulation. typedef pair -> SUIT VAL
 
+P164.cpp: String computer
+Edit distance. Backtrack for operations. Maintain result length for correct positions of operations.
+
 P165.cpp: Stamps
 Combinations of stamps, exponential time algorithm
 
