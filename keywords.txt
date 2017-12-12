@@ -775,6 +775,9 @@ Game simulation.
 P850.cpp: Crypt Kicker II (Skiena)
 Substitution cipher
 
+P855.cpp: Lunch in Grid City
+Compute median.
+
 P861.cpp: Little Bishops
 Precompute answer using slow try-all-possibilities algorithm.
 

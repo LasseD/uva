@@ -53,6 +53,7 @@ typedef pair<string,int> PSI;
 typedef pair<int,string> PIS;
 typedef pair<ULL,string> PULLS;
 typedef pair<int,char> PIC;
+typedef pair<char,char> PC;
 typedef pair<char,int> PCI;
 
 typedef PI Point;
