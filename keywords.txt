@@ -1978,6 +1978,9 @@ scanf(%d\n") and gets to read input.
 P11586.cpp: Train Tracks
 Trivial read line as int, read chars in line.
 
+P11588.cpp: Image Coding
+Trivial.
+
 P11597.cpp: Spanning Subtree
 Count max spanning tree cover of complete graph.
 
