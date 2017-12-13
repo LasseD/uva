@@ -1333,6 +1333,9 @@ Analyze if configuration is valid for game.
 P10364.cpp: Square
 N choose K iteration through list. Use bool array to find balanced selection.
 
+P10365.cpp: Blocks
+Compute smallest surface area for any given volume of a "rectangular" block.
+
 P10369.cpp: Arctic Network
 Proper Union Find (UF) with path compression. Computing trees in forest. union-find.
 
