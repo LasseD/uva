@@ -169,6 +169,9 @@ factorial prime factorization, aligned printf, primes up to 100, define
 P162.cpp: Beggar My Neighbour
 card game simulation. typedef pair -> SUIT VAL
 
+P164.cpp: String computer
+Edit distance. Backtrack for operations. Maintain result length for correct positions of operations.
+
 P165.cpp: Stamps
 Combinations of stamps, exponential time algorithm
 
@@ -772,6 +775,9 @@ Game simulation.
 P850.cpp: Crypt Kicker II (Skiena)
 Substitution cipher
 
+P855.cpp: Lunch in Grid City
+Compute median.
+
 P861.cpp: Little Bishops
 Precompute answer using slow try-all-possibilities algorithm.
 
@@ -1327,6 +1333,9 @@ Analyze if configuration is valid for game.
 P10364.cpp: Square
 N choose K iteration through list. Use bool array to find balanced selection.
 
+P10365.cpp: Blocks
+Compute smallest surface area for any given volume of a "rectangular" block.
+
 P10369.cpp: Arctic Network
 Proper Union Find (UF) with path compression. Computing trees in forest. union-find.
 
@@ -1867,6 +1876,9 @@ Trivial. Good base for in/sort/out.
 P11371.cpp: Number Theory for Newbies
 Trivial.
 
+P11385.cpp: Da Vinci Code
+Use both getline(cin,s) and cin >> N together.
+
 P11388.cpp: GCD LCM
 gcd, lcm, thoughts about connection between these in comments of code.
 
@@ -1971,6 +1983,9 @@ scanf(%d\n") and gets to read input.
 
 P11586.cpp: Train Tracks
 Trivial read line as int, read chars in line.
+
+P11588.cpp: Image Coding
+Trivial.
 
 P11597.cpp: Spanning Subtree
 Count max spanning tree cover of complete graph.
@@ -2217,6 +2232,9 @@ Trivial.
 
 P12532.cpp: Interval Product
 Maintain binary tree in order to support range queries.
+
+P12541.cpp: Birthdates
+Trivial.
 
 P12554.cpp: A Special "Happy Birthday" Song!!!
 Constant string array in c++.
