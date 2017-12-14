@@ -1303,6 +1303,9 @@ Fibonacci numbers up to 1000. BigInteger. Caching.
 P10336.cpp: Rank the Languages
 Region find in grid. Read line as int, read line as two ints, union-find.
 
+P10337.cpp: Flight Planner
+Trivial, but poorly worded.
+
 P10338.cpp: Mischievous Children
 Count permutations of letters of string. Sort letters in string.
 
