@@ -2242,6 +2242,9 @@ Trivial string compare.
 P12578.cpp: 10:6:2
 Trivial areas. M_PI
 
+P12592.cpp: Slogan Learning of Princess
+Trivial.
+
 P12602.cpp: Nice Licence Plates
 Trivial.
 
