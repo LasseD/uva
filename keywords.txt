@@ -1873,6 +1873,9 @@ Trivial. Good base for in/sort/out.
 P11371.cpp: Number Theory for Newbies
 Trivial.
 
+P11385.cpp: Da Vinci Code
+Use both getline(cin,s) and cin >> N together.
+
 P11388.cpp: GCD LCM
 gcd, lcm, thoughts about connection between these in comments of code.
 
