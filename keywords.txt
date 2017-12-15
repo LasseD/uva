@@ -985,6 +985,9 @@ abs.
 P10056.cpp: What is the Probability?
 pow.
 
+P10057.cpp: A mid-summer night's dream.
+Walk while maintaining sum of differences to median.
+
 P10062.cpp: Tell me the frequencies!
 Count characters in lines.
 
