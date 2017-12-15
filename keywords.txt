@@ -1441,6 +1441,9 @@ Area of circle, area of sphere.
 P10507.cpp: Waking up brain
 Tiny graph relaxation.
 
+P10509.cpp: R U Kidding Mr. Feynman?
+Approximate cube root. Discriminant b^2-4ac for solutions (-b+-root(b^2-4ac))/2a.
+
 P10515.cpp: Power et al.
 Compute last digit of m^n.
 
