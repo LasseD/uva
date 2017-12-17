@@ -1189,6 +1189,9 @@ Use scanf, gets and atoi to read ints from lines, lines with only one int, detec
 P10209.cpp: Is This Integration?
 Area of isosceles traingle is a^2/2*sinA.
 
+P10213.java: How Many Pieces of Land ?
+BigInteger. Scanner. Moser's Circle Problem. Divide circle into regions using chords.
+
 P10219.cpp: Find the ways !
 log base 10 of binomial coefficient log10(n choose k)
 
