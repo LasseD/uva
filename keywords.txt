@@ -1477,6 +1477,9 @@ Trivial simulate combination lock.
 P10551.java: Basic Remains
 BigInteger, Scanner, BigInteger with radix/base contruct, remainder() and toString(base).
 
+P10557.cpp: XYZZY
+Graph walk using Floyd-Warshall.
+
 P10566.cpp: Crossed Ladders
 Binary search for double.
 
@@ -1665,6 +1668,9 @@ Iterate around in grid.
 
 P10911.cpp: Forming Quiz Teams
 Permutation handler to find optimal pairing.
+
+P10916.cpp: Factstone Benchmark
+log2(N) = loge(N)/loge(2).
 
 P10918.java: Tri Tiling
 Domino placements of height 3 for all lengths.
