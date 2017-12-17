@@ -2203,6 +2203,9 @@ Trivial.
 P12157.cpp: Tariff Plan
 Trivial.
 
+P12243.cpp: Flowers Flourish from France
+tolower on string, stringstream.
+
 P12250.cpp: Language Detection
 Trivial string compare equals
 
