@@ -1636,6 +1636,9 @@ Count inversions by constructing a binary tree with elements maintaining the siz
 P10812.cpp: Beat the Spread!
 given s,d, find a,b where a+b=s, a-b=d
 
+P10814.java: SImplifying Fractions
+BigInteger gcd.
+
 P10815.cpp: Andy's First Dictionary
 Apply tolower.
 
