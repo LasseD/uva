@@ -964,6 +964,9 @@ Prime sieve, isPrime up to 10^9, isSmithNumber, sum digits in numbers.
 P10044.java: Erdos Numbers
 Computing co author dist from Erdos. Sets and maps.
 
+P10047.cpp: The Monocycle
+BFS to walk through grid while minimizing operations and hitting target length.
+
 P10048.cpp: Audiophobia
 All pair shortest path with MAX relaxation function. Floyd-Warshall.
 
@@ -981,6 +984,9 @@ abs.
 
 P10056.cpp: What is the Probability?
 pow.
+
+P10057.cpp: A mid-summer night's dream.
+Walk while maintaining sum of differences to median.
 
 P10062.cpp: Tell me the frequencies!
 Count characters in lines.
@@ -1183,6 +1189,9 @@ Use scanf, gets and atoi to read ints from lines, lines with only one int, detec
 P10209.cpp: Is This Integration?
 Area of isosceles traingle is a^2/2*sinA.
 
+P10213.java: How Many Pieces of Land ?
+BigInteger. Scanner. Moser's Circle Problem. Divide circle into regions using chords.
+
 P10219.cpp: Find the ways !
 log base 10 of binomial coefficient log10(n choose k)
 
@@ -1302,6 +1311,9 @@ Fibonacci numbers up to 1000. BigInteger. Caching.
 
 P10336.cpp: Rank the Languages
 Region find in grid. Read line as int, read line as two ints, union-find.
+
+P10337.cpp: Flight Planner
+Trivial, but poorly worded.
 
 P10338.cpp: Mischievous Children
 Count permutations of letters of string. Sort letters in string.
@@ -1470,6 +1482,9 @@ Trivial simulate combination lock.
 
 P10551.java: Basic Remains
 BigInteger, Scanner, BigInteger with radix/base contruct, remainder() and toString(base).
+
+P10557.cpp: XYZZY
+Graph walk using Floyd-Warshall.
 
 P10566.cpp: Crossed Ladders
 Binary search for double.
@@ -1642,6 +1657,9 @@ Prime sieve on bitset. Extended next prime. Factorizing.
 P10891.cpp: Game of Sum
 Try all possibilities of array game.
 
+P10895.cpp: Matrix Transpose
+Transpose sparsely represented matrices.
+
 P10901.cpp: Ferry Loading III
 Simulate ferry travelling between coasts. Cars line up in queues.
 
@@ -1656,6 +1674,9 @@ Iterate around in grid.
 
 P10911.cpp: Forming Quiz Teams
 Permutation handler to find optimal pairing.
+
+P10916.cpp: Factstone Benchmark
+log2(N) = loge(N)/loge(2).
 
 P10918.java: Tri Tiling
 Domino placements of height 3 for all lengths.
@@ -1821,6 +1842,9 @@ Decode morse code.
 
 P11228.cpp: Transportation system.
 Union-find with path compression to link cities in coordinate system after euclidean dist.
+
+P11231.java: Black and white painting
+Number of chess boards in grid.
 
 P11233.cpp: Deli Deli
 scanf and gets for strings or char*.
@@ -2182,6 +2206,9 @@ Trivial.
 P12157.cpp: Tariff Plan
 Trivial.
 
+P12243.cpp: Flowers Flourish from France
+tolower on string, stringstream.
+
 P12250.cpp: Language Detection
 Trivial string compare equals
 
@@ -2259,6 +2286,9 @@ Trivial.
 
 P12700.cpp: Banglawash
 Trivial, but be ware of missing \n in sample output!
+
+P12704.cpp: Little Masters
+Trivial.
 
 P12791.cpp: Lap
 Car race overlapping calculation, reead line as two ints.
