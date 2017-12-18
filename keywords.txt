@@ -2284,6 +2284,9 @@ Trivial.
 P12602.cpp: Nice Licence Plates
 Trivial.
 
+P12611.cpp: Beautiful Flag
+Trivial.
+
 P12626.cpp: I love pizza
 Trivial.
 

@@ -14,6 +14,7 @@ int main() {
     while(ss >> s) {
       if(s[0] != letter) {
 	ok = false;
+	break;
       }
     }
     cout << (ok ? 'Y' : 'N') << endl;
