@@ -976,6 +976,9 @@ Compute Solomon Golomb's sequence.
 P10050.cpp: Hartals
 Trivial simulation.
 
+P10051.cpp: Tower of Cubes
+DP for tallest tower of colored cubes.
+
 P10054.cpp: The Necklace
 Connect links to form a full chain. Double linked list.
 
