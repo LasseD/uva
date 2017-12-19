@@ -1396,6 +1396,9 @@ Moving knights on a 5x5 chess board. encode and decode configurations.
 P10424.cpp: Love Calculator
 stdio.h gets. printf .2f for two decimals.
 
+P10427.cpp: Naughty Sleepy Boys
+Find digit at index N of sequence 1_2_3_4_5_..._9_10_11_...
+
 P10432.java: Polygon Inside A Circle
 Area of pizza slize, area of circular segment
 
