@@ -862,6 +862,9 @@ lower_bound and iterate maps.
 P1312.cpp: Cricket Field
 Largest area search by random 2D-KD-partiotioning. Random permutation.
 
+P1339.cpp: Ancient Cipher
+Trivial, but poorly formulated.
+
 P1583.cpp: Digit Generator
 Trivial.
 
