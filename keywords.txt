@@ -241,6 +241,9 @@ Rotate colored cube.
 P256.cpp: Quirksome Squares
 printf n wide with leading 0's.
 
+P259.cpp: Software Allocation
+Permutation handler of variable size with initialization. Try all combinations of allocating software.
+
 P260.cpp: Il Gioco dell'X 
 Find path across grid.
 
