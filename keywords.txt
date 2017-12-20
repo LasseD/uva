@@ -442,6 +442,9 @@ Count connected components.
 P460.cpp: Overlapping Rectangles
 Find 2D rectilinear integer rectangle overlap.
 
+P462.cpp: Bridge Hand Evaluator
+Simple card hand calculator.
+
 P465.cpp: Overflow
 Signed in overflow detection.
 
