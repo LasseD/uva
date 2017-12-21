@@ -1666,6 +1666,9 @@ Apply tolower.
 P10819.cpp: Trouble of 13-Dots
 optimal packaging with budget twist.
 
+P10820.cpp: Send a Table
+Euler's Totient function(n) Number of integers x: gcd(c, n) == 1.
+
 P10827.cpp: Maximum sum on a torus
 Maximum sum rectangle on matrix for all widths and heights.
 
