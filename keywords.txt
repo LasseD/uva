@@ -1468,6 +1468,9 @@ Permutation Handler of variable size to find TSB of link length up to 10.
 P10499.cpp: The Land of Justice
 Area of circle, area of sphere.
 
+P10502.cpp: Counting Rectangles
+Count all possible rectangles in input grid.
+
 P10507.cpp: Waking up brain
 Tiny graph relaxation.
 
