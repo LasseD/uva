@@ -1675,6 +1675,9 @@ Euler's Totient function(n) Number of integers x: gcd(c, n) == 1.
 P10827.cpp: Maximum sum on a torus
 Maximum sum rectangle on matrix for all widths and heights.
 
+P10842.cpp: Traffic Flow
+Proper Union-Flow (UF) for MST sorted by negative capacity.
+
 P10852.cpp: Less Prime
 Modern Prime Sieve on bitset, nextPrime, prevPrime, isPrime.
 
