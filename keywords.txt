@@ -1036,6 +1036,9 @@ Trivial circle slicing.
 P10080.cpp: Gopher II
 Use Modified Ford-Fulkerson for Maximum Bipartite Matching: http://www.geeksforgeeks.org/maximum-bipartite-matching/
 
+P10081.java: Tight Words
+BigDecimal, percentage fraction.
+
 P10082.cpp: WERTYU
 Char substitution, use string to build substitution array.
 
