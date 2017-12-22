@@ -1678,6 +1678,9 @@ Maximum sum rectangle on matrix for all widths and heights.
 P10852.cpp: Less Prime
 Modern Prime Sieve on bitset, nextPrime, prevPrime, isPrime.
 
+P10855.cpp: Rotated square
+Trivial.
+
 P10878.cpp: Decode the tape
 Binary decode chars.
 
