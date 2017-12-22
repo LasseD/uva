@@ -1681,6 +1681,9 @@ Proper Union-Flow (UF) for MST sorted by negative capacity.
 P10852.cpp: Less Prime
 Modern Prime Sieve on bitset, nextPrime, prevPrime, isPrime.
 
+P10855.cpp: Rotated square
+Trivial.
+
 P10878.cpp: Decode the tape
 Binary decode chars.
 
@@ -2240,6 +2243,9 @@ P12149.cpp: Feynman
 Trivial.
 
 P12157.cpp: Tariff Plan
+Trivial.
+
+P12210.cpp: A Match Making Problem
 Trivial.
 
 P12243.cpp: Flowers Flourish from France
