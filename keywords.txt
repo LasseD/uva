@@ -430,6 +430,9 @@ Trivial maze decoding.
 P446.cpp: Kibbles "n" Bits "n" Bits "n" Bits
 ANSI C scanf fom int, hex, and string, print binary.
 
+P450.cpp: Little Black Book
+Split string on char by inserting '\0'.
+
 P455.cpp: Periodic Strings
 Read int from char[], gets.
 
