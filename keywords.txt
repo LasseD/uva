@@ -1075,6 +1075,9 @@ Multiset - maintain median using two sets, rbegin, begin, iterators.
 P10110.cpp: Light, more light (Skiena)
 Prime factorization, count divisors.
 
+P10112.cpp: Myacm Triangles
+Right turn or colinear. Area of triangle given by endpoints.
+
 P10114.cpp: Loansome Car Buyer
 Depreciation vs residual loan.
 
