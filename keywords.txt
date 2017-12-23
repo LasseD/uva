@@ -1954,6 +1954,9 @@ Trivial sort twice, once with negative integers for rsort
 P11401.java (and .cpp): Triangle counting
 BigInteger cache build with add and valueOf. (But value fits in long, so c++ also works).
 
+P11407.cpp: Squares
+Find shortest sequence N = a^2 + b^2 + ...
+
 P11413.cpp: Fill the Containers
 Binary search.
 
