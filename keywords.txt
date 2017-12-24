@@ -880,6 +880,9 @@ Largest area search by random 2D-KD-partiotioning. Random permutation.
 P1339.cpp: Ancient Cipher
 Trivial, but poorly formulated.
 
+P1368.cpp: DNA Consensus String
+Trivial.
+
 P1583.cpp: Digit Generator
 Trivial.
 
