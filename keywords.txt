@@ -217,6 +217,9 @@ Trivial.
 P202.cpp: Repeating Decimals
 Find cycle in primary school division.
 
+P213.cpp: Message Decoding
+Trivial.
+
 P216.cpp: Getting in Line
 Permutation handler of variable size - try all.
 
