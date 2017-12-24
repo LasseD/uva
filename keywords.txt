@@ -691,6 +691,9 @@ Placement of knights on a chess board. Notice: Board size down to 0!
 P699.cpp: The Falling Leaves
 Build, traverse and delete binary tree.
 
+P705.cpp: Slash Maze
+Maze traversal.
+
 P706.cpp: LCD Display
 Output as LCD display.
 
