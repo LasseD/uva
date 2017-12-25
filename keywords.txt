@@ -2170,6 +2170,9 @@ Trivial.
 P11805.cpp: Bafana Bafana
 Trivial.
 
+P11824.cpp: A Minimum Land Price
+Trivial.
+
 P11827.cpp: Maximum GCD
 Trivial.
 
