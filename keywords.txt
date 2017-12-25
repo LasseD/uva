@@ -217,6 +217,9 @@ Trivial.
 P202.cpp: Repeating Decimals
 Find cycle in primary school division.
 
+P208.cpp: Firetruck
+BFS with reachability check. Output formatting poorly stated.
+
 P213.cpp: Message Decoding
 Trivial.
 
