@@ -1813,6 +1813,9 @@ Area of triangle using semiperimeter (side lengths).
 P11000.cpp: Bee
 Trivial.
 
+P11005.cpp: Cheapest Base
+Trivial.
+
 P11040.cpp: Add bricks in the wall
 Trivial.
 
