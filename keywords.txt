@@ -301,6 +301,9 @@ DFS, find critical nodes in graph, Edge-list presentation, std::stringstream lin
 P324.java: Factorial Frequencies
 Biginteger, factorials, count characters in string.
 
+P333.cpp: Recognizing Good ISBNs
+Trivial, but problem poorly worded: "May space be in a string?"
+
 P336.cpp: A Node Too Far
 All pair shortest path in arbitrary graph. Floyd-Warshall.
 
