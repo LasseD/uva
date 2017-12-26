@@ -1156,6 +1156,9 @@ Trivial. sqrt.
 P10162.cpp: Last Digit
 Compute (1^1+2^2+...N^N)%10. (It seems to cycle every 100).
 
+P10165.cpp: Stone Game
+Nim/Misere.
+
 P10167.cpp: Birthday Cake
 atan2 for angle. Line (0,0)->(A,B) is Bx-Ay=0. Colinear and left turn.
 
