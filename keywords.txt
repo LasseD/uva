@@ -2314,6 +2314,9 @@ Trivial.
 P12405.cpp: Scarecrow
 Trivial.
 
+P12442.cpp: Forwarding Emails
+Graph traversal for cycle length and path length finding.
+
 P12455.cpp: Bars
 Coin sum problem: Can bars of given lengths sum to X?
 
