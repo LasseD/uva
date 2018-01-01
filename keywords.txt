@@ -808,6 +808,9 @@ Flood fill to find largest component. Including diagonals.
 P872.cpp: Ordering
 Permutation handler of variable size (on vector of chars) which fulfills constraints on order.
 
+P880.cpp: Cantor Fractions
+Walk grid to get from N to display all fractions.
+
 P884.cpp: Factorial Factors
 Prime sieve, count number of factors of first 1000000 integers.
 
