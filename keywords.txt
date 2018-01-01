@@ -1951,6 +1951,9 @@ P11332.cpp: Summing Digits
 P11340.cpp: Newspaper
 Read int from various places in string, read unsigned char (extended ascii up to 255)
 
+P11342.cpp: Three-square
+Find solution for N = x^2 + y^2 + z^2, given N.
+
 P11349.cpp: Symmetric Matrix
 Trivial matrix check. Read both char and long long.
 
