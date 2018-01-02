@@ -52,6 +52,7 @@ typedef pair<LL,LL> PLL;
 typedef pair<ULL,ULL> PULL;
 typedef pair<double,double> PD;
 typedef pair<string,int> PSI;
+typedef pair<string,string> PS;
 typedef pair<int,string> PIS;
 typedef pair<ULL,string> PULLS;
 typedef pair<int,char> PIC;
