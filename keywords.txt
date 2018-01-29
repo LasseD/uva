@@ -952,6 +952,9 @@ Read digits to shorts.
 P10014.cpp: Simple calculations
 Binary search after double.
 
+P10015.cpp: Joseph's Cousin
+Prime sieve<bitset>, nextPrime, isPrime. Execution circle problem - this time with primes.
+
 P10018.cpp: Reverse and Add
 palindrome check for int, int to digit array.
 
@@ -1418,7 +1421,7 @@ P10391.cpp: Compound Words
 Word search by tree traversal. Construction of "trie"/word search finite state machine.
 
 P10392.cpp: Factoring Large Numbers
-Bitset (bitvector) prime sieve, nextPrime, factorize large primes.
+Bitset (bitvector) prime sieve, isPrime, factorize large primes.
 
 P10394.cpp: Twin Primes
 Prime sieve into bitset up to 20.000.000. Twin primes.
