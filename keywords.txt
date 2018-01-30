@@ -1717,6 +1717,9 @@ Maximum sum rectangle on matrix for all widths and heights.
 P10842.cpp: Traffic Flow
 Proper Union-Flow (UF) for MST sorted by negative capacity.
 
+P10849.cpp: Move the bishop
+Bishop moves to get from s to t.
+
 P10852.cpp: Less Prime
 Modern Prime Sieve on bitset, nextPrime, prevPrime, isPrime.
 
