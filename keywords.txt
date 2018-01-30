@@ -859,6 +859,9 @@ Find given permutation of string such as index 2 for aab is baa, fac.
 P948.cpp: Fibonaccimal Base
 Trivial cache fibonacci numbers[45];
 
+P978.cpp: Lemmings Battle!
+Simulate battles.
+
 P990.cpp: Diving for Gold
 Dynamic Programming to decide which treasures to bring home (classical 0/1 knapsack)
 
