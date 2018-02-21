@@ -2011,6 +2011,9 @@ gcd, lcm, thoughts about connection between these in comments of code.
 P11389.cpp: The Bus Driver Problem
 Trivial sort twice, once with negative integers for rsort
 
+P11396.cpp: Claw Decomposition
+Check if graph is bipartite.
+
 P11401.java (and .cpp): Triangle counting
 BigInteger cache build with add and valueOf. (But value fits in long, so c++ also works).
 
