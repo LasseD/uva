@@ -1001,7 +1001,7 @@ P10041.cpp: Vito's Damily (Skiena)
 Trivial array sort, stream for sum
 
 P10042.cpp: Smith Numbers
-Prime sieve, isPrime up to 10^9, isSmithNumber, sum digits in numbers.
+Prime sieve, isSmithNumber, sum digits in numbers.
 
 P10044.java: Erdos Numbers
 Computing co author dist from Erdos. Sets and maps.
@@ -1351,6 +1351,9 @@ Coin problem.
 P10310.cpp: Dog and Gopher
 stringstream read as string, copy to double.
 
+P10311.cpp: Goldbach and Euler
+Prime sieve <bitset> and isPrime of very large number.
+
 P10315.cpp: Poker Hands
 Parse cards with suit and color, rank all hands in poker.
 
@@ -1424,7 +1427,7 @@ P10391.cpp: Compound Words
 Word search by tree traversal. Construction of "trie"/word search finite state machine.
 
 P10392.cpp: Factoring Large Numbers
-Bitset (bitvector) prime sieve, isPrime, factorize large primes.
+Bitset (bitvector) prime sieve, factorize large primes.
 
 P10394.cpp: Twin Primes
 Prime sieve into bitset up to 20.000.000. Twin primes.
@@ -1996,6 +1999,9 @@ Trivial. Good base for in/sort/out.
 P11371.cpp: Number Theory for Newbies
 Trivial.
 
+P11384.cpp: Help is needed for Dexter
+Trivial.
+
 P11385.cpp: Da Vinci Code
 Use both getline(cin,s) and cin >> N together.
 
@@ -2175,6 +2181,9 @@ Trivial.
 
 P11727.cpp: Cost Cutting
 Trivial sort 3 numbers, output middle
+
+P11728.cpp: Alternate Task
+Trivial.
 
 P11729.cpp: Commando War
 Simple job sorting.
