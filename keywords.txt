@@ -1126,6 +1126,9 @@ Find max d in set where a+b+c=d are elements in set.
 P10127.cpp: Ones
 Ad hoc add n until all ones.
 
+P10129.cpp: Play on Words
+Finding Euler tour in directed graph by finding Euler cycle in it. Also: Kosaraju using DFS.
+
 P10130.cpp: SuperSale
 Packing problem with price and weight. Maximize price for a given weight. No duplicate items.
 
