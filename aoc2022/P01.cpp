@@ -18,7 +18,7 @@ int main() {
   sort(all.rbegin(), all.rend());
 
   int sum = 0;
-  FORI(3) {
+  FORI(3) { // For task 1, simply use 1 instead of 3 here.
     sum += all[i];
   }
      

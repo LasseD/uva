@@ -21,6 +21,31 @@ int main() {
       break;
     }
     sum += score1[own];
+
+    /*
+      Part 1 table:
+      A X 3+1=4
+      A Y 6+2=8
+      A Z 0+3=3
+      B X 0+1=1
+      B Y 3+2=5
+      B Z 6+3=9
+      C X 6+1=7
+      C Y 0+2=2
+      C Z 3+3=6
+      Formula: b+1 + (b-a+2)%3*3
+    */
+    
+    /*
+      // Task 1: Use this code instead for updating sum:
+      if(i1 == i2) {
+        sum += 3; // Draw
+      }
+      else if(i1 == (i2+2)%3) {
+        sum += 6; // Win
+      }
+      sum += score1[i2];
+     */
   }
   cout << sum << endl;
 } // int main
